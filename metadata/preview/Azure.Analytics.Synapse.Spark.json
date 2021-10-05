@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.Analytics.Synapse.Spark",
+  "Version": "1.0.0-alpha.20211004.3",
+  "DevVersion": "1.0.0-alpha.20211004.3",
+  "DirectoryPath": "sdk/synapse/Azure.Analytics.Synapse.Spark",
+  "ServiceDirectory": "synapse",
+  "ReadMePath": "sdk/synapse/Azure.Analytics.Synapse.Spark/README.md",
+  "ChangeLogPath": "sdk/synapse/Azure.Analytics.Synapse.Spark/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.Analytics.Synapse.Spark",
+  "ReleaseStatus": null
+}
