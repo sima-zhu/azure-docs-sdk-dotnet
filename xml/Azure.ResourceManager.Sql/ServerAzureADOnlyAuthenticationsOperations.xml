@@ -1,0 +1,289 @@
+<Type Name="ServerAzureADOnlyAuthenticationsOperations" FullName="Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations">
+  <TypeSignature Language="C#" Value="public class ServerAzureADOnlyAuthenticationsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServerAzureADOnlyAuthenticationsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerAzureADOnlyAuthenticationsOperations" />
+  <TypeSignature Language="F#" Value="type ServerAzureADOnlyAuthenticationsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ServerAzureADOnlyAuthentications service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ServerAzureADOnlyAuthenticationsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ServerAzureADOnlyAuthenticationsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt; Get (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt; Get(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.Get(System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, authenticationName As AuthenticationName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServerAzureADOnlyAuthentication)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&#xA;override this.Get : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;" Usage="serverAzureADOnlyAuthenticationsOperations.Get (resourceGroupName, serverName, authenticationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a specific Azure Active Directory only authentication property. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&gt; GetAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&gt; GetAsync(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.GetAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, authenticationName As AuthenticationName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServerAzureADOnlyAuthentication))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&gt;&#xA;override this.GetAsync : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&gt;" Usage="serverAzureADOnlyAuthenticationsOperations.GetAsync (resourceGroupName, serverName, authenticationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a specific Azure Active Directory only authentication property. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServer">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt; ListByServer (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt; ListByServer(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.ListByServer(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServer (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerAzureADOnlyAuthentication)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&#xA;override this.ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;" Usage="serverAzureADOnlyAuthenticationsOperations.ListByServer (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of server Azure Active Directory only authentications. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServerAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt; ListByServerAsync (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt; ListByServerAsync(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.ListByServerAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServerAsync (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerAzureADOnlyAuthentication)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;&#xA;override this.ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;" Usage="serverAzureADOnlyAuthenticationsOperations.ListByServerAsync (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of server Azure Active Directory only authentications. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.StartCreateOrUpdate(System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName,Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, authenticationName As AuthenticationName, parameters As ServerAzureADOnlyAuthentication, Optional cancellationToken As CancellationToken = Nothing) As ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation" Usage="serverAzureADOnlyAuthenticationsOperations.StartCreateOrUpdate (resourceGroupName, serverName, authenticationName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="parameters"> The required parameters for creating or updating an Active Directory only authentication property. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets Server Active Directory only authentication property or updates an existing server Active Directory only authentication property. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.StartCreateOrUpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName,Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, authenticationName As AuthenticationName, parameters As ServerAzureADOnlyAuthentication, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation&gt;" Usage="serverAzureADOnlyAuthenticationsOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, authenticationName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthentication" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="parameters"> The required parameters for creating or updating an Active Directory only authentication property. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets Server Active Directory only authentication property or updates an existing server Active Directory only authentication property. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation StartDelete (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation StartDelete(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.StartDelete(System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, serverName As String, authenticationName As AuthenticationName, Optional cancellationToken As CancellationToken = Nothing) As ServerAzureADOnlyAuthenticationsDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation&#xA;override this.StartDelete : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation" Usage="serverAzureADOnlyAuthenticationsOperations.StartDelete (resourceGroupName, serverName, authenticationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes an existing server Active Directory only authentication property. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations.StartDeleteAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, serverName As String, authenticationName As AuthenticationName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerAzureADOnlyAuthenticationsDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation&gt;" Usage="serverAzureADOnlyAuthenticationsOperations.StartDeleteAsync (resourceGroupName, serverName, authenticationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes an existing server Active Directory only authentication property. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

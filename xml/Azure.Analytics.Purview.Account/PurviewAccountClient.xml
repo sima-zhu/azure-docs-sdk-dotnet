@@ -78,7 +78,31 @@
         <param name="options"> The request options. </param>
         <summary> List the authorization keys associated with this account. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              atlasKafkaPrimaryEndpoint: string,
+              atlasKafkaSecondaryEndpoint: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccessKeysAsync">
@@ -102,7 +126,31 @@
         <param name="options"> The request options. </param>
         <summary> List the authorization keys associated with this account. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              atlasKafkaPrimaryEndpoint: string,
+              atlasKafkaSecondaryEndpoint: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccountProperties">
@@ -126,7 +174,91 @@
         <param name="options"> The request options. </param>
         <summary> Get an account. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              id: string,
+              identity: {
+                principalId: string,
+                tenantId: string,
+                type: "SystemAssigned"
+              },
+              location: string,
+              name: string,
+              properties: {
+                cloudConnectors: {
+                  awsExternalId: string
+                },
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByObjectId: string,
+                endpoints: {
+                  catalog: string,
+                  guardian: string,
+                  scan: string
+                },
+                friendlyName: string,
+                managedResourceGroupName: string,
+                managedResources: {
+                  eventHubNamespace: string,
+                  resourceGroup: string,
+                  storageAccount: string
+                },
+                privateEndpointConnections: [
+                  {
+                    id: string,
+                    name: string,
+                    properties: {
+                      privateEndpoint: {
+                        id: string
+                      },
+                      privateLinkServiceConnectionState: {
+                        actionsRequired: string,
+                        description: string,
+                        status: "Unknown" | "Pending" | "Approved" | "Rejected" | "Disconnected"
+                      },
+                      provisioningState: string
+                    },
+                    type: string
+                  }
+                ],
+                provisioningState: "Unknown" | "Creating" | "Moving" | "Deleting" | "SoftDeleting" | "SoftDeleted" | "Failed" | "Succeeded" | "Canceled",
+                publicNetworkAccess: "NotSpecified" | "Enabled" | "Disabled"
+              },
+              sku: {
+                capacity: number,
+                name: "Standard"
+              },
+              systemData: {
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByType: "User" | "Application" | "ManagedIdentity" | "Key",
+                lastModifiedAt: string (ISO 8601 Format),
+                lastModifiedBy: string,
+                lastModifiedByType: "User" | "Application" | "ManagedIdentity" | "Key"
+              },
+              tags: Dictionary&lt;string, string&gt;,
+              type: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccountPropertiesAsync">
@@ -150,7 +282,91 @@
         <param name="options"> The request options. </param>
         <summary> Get an account. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              id: string,
+              identity: {
+                principalId: string,
+                tenantId: string,
+                type: "SystemAssigned"
+              },
+              location: string,
+              name: string,
+              properties: {
+                cloudConnectors: {
+                  awsExternalId: string
+                },
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByObjectId: string,
+                endpoints: {
+                  catalog: string,
+                  guardian: string,
+                  scan: string
+                },
+                friendlyName: string,
+                managedResourceGroupName: string,
+                managedResources: {
+                  eventHubNamespace: string,
+                  resourceGroup: string,
+                  storageAccount: string
+                },
+                privateEndpointConnections: [
+                  {
+                    id: string,
+                    name: string,
+                    properties: {
+                      privateEndpoint: {
+                        id: string
+                      },
+                      privateLinkServiceConnectionState: {
+                        actionsRequired: string,
+                        description: string,
+                        status: "Unknown" | "Pending" | "Approved" | "Rejected" | "Disconnected"
+                      },
+                      provisioningState: string
+                    },
+                    type: string
+                  }
+                ],
+                provisioningState: "Unknown" | "Creating" | "Moving" | "Deleting" | "SoftDeleting" | "SoftDeleted" | "Failed" | "Succeeded" | "Canceled",
+                publicNetworkAccess: "NotSpecified" | "Enabled" | "Disabled"
+              },
+              sku: {
+                capacity: number,
+                name: "Standard"
+              },
+              systemData: {
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByType: "User" | "Application" | "ManagedIdentity" | "Key",
+                lastModifiedAt: string (ISO 8601 Format),
+                lastModifiedBy: string,
+                lastModifiedByType: "User" | "Application" | "ManagedIdentity" | "Key"
+              },
+              tags: Dictionary&lt;string, string&gt;,
+              type: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCollectionClient">
@@ -202,7 +418,51 @@
         <param name="options"> The request options. </param>
         <summary> List the collections in the account. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              count: number,
+              nextLink: string,
+              value: [
+                {
+                  collectionProvisioningState: "Unknown" | "Creating" | "Moving" | "Deleting" | "Failed" | "Succeeded",
+                  description: string,
+                  friendlyName: string,
+                  name: string,
+                  parentCollection: {
+                    referenceName: string,
+                    type: string
+                  },
+                  systemData: {
+                    createdAt: string (ISO 8601 Format),
+                    createdBy: string,
+                    createdByType: "User" | "Application" | "ManagedIdentity" | "Key",
+                    lastModifiedAt: string (ISO 8601 Format),
+                    lastModifiedBy: string,
+                    lastModifiedByType: "User" | "Application" | "ManagedIdentity" | "Key"
+                  }
+                }
+              ]
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCollectionsAsync">
@@ -228,7 +488,51 @@
         <param name="options"> The request options. </param>
         <summary> List the collections in the account. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              count: number,
+              nextLink: string,
+              value: [
+                {
+                  collectionProvisioningState: "Unknown" | "Creating" | "Moving" | "Deleting" | "Failed" | "Succeeded",
+                  description: string,
+                  friendlyName: string,
+                  name: string,
+                  parentCollection: {
+                    referenceName: string,
+                    type: string
+                  },
+                  systemData: {
+                    createdAt: string (ISO 8601 Format),
+                    createdBy: string,
+                    createdByType: "User" | "Application" | "ManagedIdentity" | "Key",
+                    lastModifiedAt: string (ISO 8601 Format),
+                    lastModifiedBy: string,
+                    lastModifiedByType: "User" | "Application" | "ManagedIdentity" | "Key"
+                  }
+                }
+              ]
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResourceSetRuleClient">
@@ -277,7 +581,125 @@
         <param name="options"> The request options. </param>
         <summary> Get a resource set config service model. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              count: number,
+              nextLink: string,
+              value: [
+                {
+                  advancedResourceSet: {
+                    modifiedAt: string (ISO 8601 Format),
+                    resourceSetProcessing: "Default" | "Advanced"
+                  },
+                  name: string,
+                  pathPatternConfig: {
+                    acceptedPatterns: [
+                      {
+                        createdBy: string,
+                        filterType: "Pattern" | "Regex",
+                        lastUpdatedTimestamp: number,
+                        modifiedBy: string,
+                        name: string,
+                        path: string
+                      }
+                    ],
+                    complexReplacers: [
+                      {
+                        createdBy: string,
+                        description: string,
+                        disabled: boolean,
+                        disableRecursiveReplacerApplication: boolean,
+                        lastUpdatedTimestamp: number,
+                        modifiedBy: string,
+                        name: string,
+                        typeName: string
+                      }
+                    ],
+                    createdBy: string,
+                    enableDefaultPatterns: boolean,
+                    lastUpdatedTimestamp: number,
+                    modifiedBy: string,
+                    normalizationRules: [
+                      {
+                        description: string,
+                        disabled: boolean,
+                        dynamicReplacement: boolean,
+                        entityTypes: [string],
+                        lastUpdatedTimestamp: number,
+                        name: string,
+                        regex: {
+                          maxDigits: number,
+                          maxLetters: number,
+                          minDashes: number,
+                          minDigits: number,
+                          minDigitsOrLetters: number,
+                          minDots: number,
+                          minHex: number,
+                          minLetters: number,
+                          minUnderscores: number,
+                          options: number,
+                          regexStr: string
+                        },
+                        replaceWith: string,
+                        version: number
+                      }
+                    ],
+                    regexReplacers: [
+                      {
+                        condition: string,
+                        createdBy: string,
+                        description: string,
+                        disabled: boolean,
+                        disableRecursiveReplacerApplication: boolean,
+                        doNotReplaceRegex: FastRegex,
+                        lastUpdatedTimestamp: number,
+                        modifiedBy: string,
+                        name: string,
+                        regex: FastRegex,
+                        replaceWith: string
+                      }
+                    ],
+                    rejectedPatterns: [Filter],
+                    scopedRules: [
+                      {
+                        bindingUrl: string,
+                        rules: [
+                          {
+                            displayName: string,
+                            isResourceSet: boolean,
+                            lastUpdatedTimestamp: number,
+                            name: string,
+                            qualifiedName: string
+                          }
+                        ],
+                        storeType: string
+                      }
+                    ],
+                    version: number
+                  }
+                }
+              ]
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResourceSetRulesAsync">
@@ -303,7 +725,125 @@
         <param name="options"> The request options. </param>
         <summary> Get a resource set config service model. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              count: number,
+              nextLink: string,
+              value: [
+                {
+                  advancedResourceSet: {
+                    modifiedAt: string (ISO 8601 Format),
+                    resourceSetProcessing: "Default" | "Advanced"
+                  },
+                  name: string,
+                  pathPatternConfig: {
+                    acceptedPatterns: [
+                      {
+                        createdBy: string,
+                        filterType: "Pattern" | "Regex",
+                        lastUpdatedTimestamp: number,
+                        modifiedBy: string,
+                        name: string,
+                        path: string
+                      }
+                    ],
+                    complexReplacers: [
+                      {
+                        createdBy: string,
+                        description: string,
+                        disabled: boolean,
+                        disableRecursiveReplacerApplication: boolean,
+                        lastUpdatedTimestamp: number,
+                        modifiedBy: string,
+                        name: string,
+                        typeName: string
+                      }
+                    ],
+                    createdBy: string,
+                    enableDefaultPatterns: boolean,
+                    lastUpdatedTimestamp: number,
+                    modifiedBy: string,
+                    normalizationRules: [
+                      {
+                        description: string,
+                        disabled: boolean,
+                        dynamicReplacement: boolean,
+                        entityTypes: [string],
+                        lastUpdatedTimestamp: number,
+                        name: string,
+                        regex: {
+                          maxDigits: number,
+                          maxLetters: number,
+                          minDashes: number,
+                          minDigits: number,
+                          minDigitsOrLetters: number,
+                          minDots: number,
+                          minHex: number,
+                          minLetters: number,
+                          minUnderscores: number,
+                          options: number,
+                          regexStr: string
+                        },
+                        replaceWith: string,
+                        version: number
+                      }
+                    ],
+                    regexReplacers: [
+                      {
+                        condition: string,
+                        createdBy: string,
+                        description: string,
+                        disabled: boolean,
+                        disableRecursiveReplacerApplication: boolean,
+                        doNotReplaceRegex: FastRegex,
+                        lastUpdatedTimestamp: number,
+                        modifiedBy: string,
+                        name: string,
+                        regex: FastRegex,
+                        replaceWith: string
+                      }
+                    ],
+                    rejectedPatterns: [Filter],
+                    scopedRules: [
+                      {
+                        bindingUrl: string,
+                        rules: [
+                          {
+                            displayName: string,
+                            isResourceSet: boolean,
+                            lastUpdatedTimestamp: number,
+                            name: string,
+                            qualifiedName: string
+                          }
+                        ],
+                        storeType: string
+                      }
+                    ],
+                    version: number
+                  }
+                }
+              ]
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">
@@ -351,7 +891,35 @@
         <returns>To be added.</returns>
         <remarks>
             Schema for <c>Request Body</c>:
-            <list type="table"><listheader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listheader><item><term>keyType</term><term>"PrimaryAtlasKafkaKey" | "SecondaryAtlasKafkaKey"</term><term /><term>The access key type.</term></item></list></remarks>
+            <code>{
+              keyType: "PrimaryAtlasKafkaKey" | "SecondaryAtlasKafkaKey"
+            }
+            </code>
+            
+            Schema for <c>Response Body</c>:
+            <code>{
+              atlasKafkaPrimaryEndpoint: string,
+              atlasKafkaSecondaryEndpoint: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="RegenerateAccessKeyAsync">
@@ -379,7 +947,35 @@
         <returns>To be added.</returns>
         <remarks>
             Schema for <c>Request Body</c>:
-            <list type="table"><listheader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listheader><item><term>keyType</term><term>"PrimaryAtlasKafkaKey" | "SecondaryAtlasKafkaKey"</term><term /><term>The access key type.</term></item></list></remarks>
+            <code>{
+              keyType: "PrimaryAtlasKafkaKey" | "SecondaryAtlasKafkaKey"
+            }
+            </code>
+            
+            Schema for <c>Response Body</c>:
+            <code>{
+              atlasKafkaPrimaryEndpoint: string,
+              atlasKafkaSecondaryEndpoint: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAccountProperties">
@@ -407,7 +1003,95 @@
         <returns>To be added.</returns>
         <remarks>
             Schema for <c>Request Body</c>:
-            <list type="table"><listheader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listheader><item><term>friendlyName</term><term>string</term><term /><term>The friendly name for the azure resource.</term></item></list></remarks>
+            <code>{
+              friendlyName: string
+            }
+            </code>
+            
+            Schema for <c>Response Body</c>:
+            <code>{
+              id: string,
+              identity: {
+                principalId: string,
+                tenantId: string,
+                type: "SystemAssigned"
+              },
+              location: string,
+              name: string,
+              properties: {
+                cloudConnectors: {
+                  awsExternalId: string
+                },
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByObjectId: string,
+                endpoints: {
+                  catalog: string,
+                  guardian: string,
+                  scan: string
+                },
+                friendlyName: string,
+                managedResourceGroupName: string,
+                managedResources: {
+                  eventHubNamespace: string,
+                  resourceGroup: string,
+                  storageAccount: string
+                },
+                privateEndpointConnections: [
+                  {
+                    id: string,
+                    name: string,
+                    properties: {
+                      privateEndpoint: {
+                        id: string
+                      },
+                      privateLinkServiceConnectionState: {
+                        actionsRequired: string,
+                        description: string,
+                        status: "Unknown" | "Pending" | "Approved" | "Rejected" | "Disconnected"
+                      },
+                      provisioningState: string
+                    },
+                    type: string
+                  }
+                ],
+                provisioningState: "Unknown" | "Creating" | "Moving" | "Deleting" | "SoftDeleting" | "SoftDeleted" | "Failed" | "Succeeded" | "Canceled",
+                publicNetworkAccess: "NotSpecified" | "Enabled" | "Disabled"
+              },
+              sku: {
+                capacity: number,
+                name: "Standard"
+              },
+              systemData: {
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByType: "User" | "Application" | "ManagedIdentity" | "Key",
+                lastModifiedAt: string (ISO 8601 Format),
+                lastModifiedBy: string,
+                lastModifiedByType: "User" | "Application" | "ManagedIdentity" | "Key"
+              },
+              tags: Dictionary&lt;string, string&gt;,
+              type: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAccountPropertiesAsync">
@@ -435,7 +1119,95 @@
         <returns>To be added.</returns>
         <remarks>
             Schema for <c>Request Body</c>:
-            <list type="table"><listheader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listheader><item><term>friendlyName</term><term>string</term><term /><term>The friendly name for the azure resource.</term></item></list></remarks>
+            <code>{
+              friendlyName: string
+            }
+            </code>
+            
+            Schema for <c>Response Body</c>:
+            <code>{
+              id: string,
+              identity: {
+                principalId: string,
+                tenantId: string,
+                type: "SystemAssigned"
+              },
+              location: string,
+              name: string,
+              properties: {
+                cloudConnectors: {
+                  awsExternalId: string
+                },
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByObjectId: string,
+                endpoints: {
+                  catalog: string,
+                  guardian: string,
+                  scan: string
+                },
+                friendlyName: string,
+                managedResourceGroupName: string,
+                managedResources: {
+                  eventHubNamespace: string,
+                  resourceGroup: string,
+                  storageAccount: string
+                },
+                privateEndpointConnections: [
+                  {
+                    id: string,
+                    name: string,
+                    properties: {
+                      privateEndpoint: {
+                        id: string
+                      },
+                      privateLinkServiceConnectionState: {
+                        actionsRequired: string,
+                        description: string,
+                        status: "Unknown" | "Pending" | "Approved" | "Rejected" | "Disconnected"
+                      },
+                      provisioningState: string
+                    },
+                    type: string
+                  }
+                ],
+                provisioningState: "Unknown" | "Creating" | "Moving" | "Deleting" | "SoftDeleting" | "SoftDeleted" | "Failed" | "Succeeded" | "Canceled",
+                publicNetworkAccess: "NotSpecified" | "Enabled" | "Disabled"
+              },
+              sku: {
+                capacity: number,
+                name: "Standard"
+              },
+              systemData: {
+                createdAt: string (ISO 8601 Format),
+                createdBy: string,
+                createdByType: "User" | "Application" | "ManagedIdentity" | "Key",
+                lastModifiedAt: string (ISO 8601 Format),
+                lastModifiedBy: string,
+                lastModifiedByType: "User" | "Application" | "ManagedIdentity" | "Key"
+              },
+              tags: Dictionary&lt;string, string&gt;,
+              type: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
       </Docs>
     </Member>
   </Members>

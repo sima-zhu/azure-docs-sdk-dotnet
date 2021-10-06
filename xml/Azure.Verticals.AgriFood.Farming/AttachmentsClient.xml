@@ -58,11 +58,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response CreateOrUpdate (string farmerId, string attachmentId, Azure.Core.RequestContent requestBody, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CreateOrUpdate(string farmerId, string attachmentId, class Azure.Core.RequestContent requestBody, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CreateOrUpdate (string farmerId, string attachmentId, Azure.Core.RequestContent content, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CreateOrUpdate(string farmerId, string attachmentId, class Azure.Core.RequestContent content, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.CreateOrUpdate(System.String,System.String,Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (farmerId As String, attachmentId As String, requestBody As RequestContent, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CreateOrUpdate : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.CreateOrUpdate (farmerId, attachmentId, requestBody, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (farmerId As String, attachmentId As String, content As RequestContent, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CreateOrUpdate : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.CreateOrUpdate (farmerId, attachmentId, content, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -74,25 +74,56 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestBody" Type="Azure.Core.RequestContent" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="content" Type="Azure.Core.RequestContent" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer resource. </param>
         <param name="attachmentId"> ID of the attachment resource. </param>
-        <param name="requestBody"> The request body. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="content"> The content to send as the body of the request. </param>
+        <param name="options"> The request options. </param>
         <summary> Creates or updates an attachment resource under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              resourceId: string,
+              resourceType: string,
+              originalFileName: string,
+              id: string,
+              status: string,
+              createdDateTime: string (ISO 8601 Format),
+              modifiedDateTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              eTag: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateOrUpdateAsync (string farmerId, string attachmentId, Azure.Core.RequestContent requestBody, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CreateOrUpdateAsync(string farmerId, string attachmentId, class Azure.Core.RequestContent requestBody, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateOrUpdateAsync (string farmerId, string attachmentId, Azure.Core.RequestContent content, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CreateOrUpdateAsync(string farmerId, string attachmentId, class Azure.Core.RequestContent content, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.CreateOrUpdateAsync(System.String,System.String,Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (farmerId As String, attachmentId As String, requestBody As RequestContent, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CreateOrUpdateAsync : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.CreateOrUpdateAsync (farmerId, attachmentId, requestBody, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (farmerId As String, attachmentId As String, content As RequestContent, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CreateOrUpdateAsync : string * string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.CreateOrUpdateAsync (farmerId, attachmentId, content, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -104,25 +135,56 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestBody" Type="Azure.Core.RequestContent" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="content" Type="Azure.Core.RequestContent" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer resource. </param>
         <param name="attachmentId"> ID of the attachment resource. </param>
-        <param name="requestBody"> The request body. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="content"> The content to send as the body of the request. </param>
+        <param name="options"> The request options. </param>
         <summary> Creates or updates an attachment resource under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              resourceId: string,
+              resourceType: string,
+              originalFileName: string,
+              id: string,
+              status: string,
+              createdDateTime: string (ISO 8601 Format),
+              modifiedDateTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              eTag: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (string farmerId, string attachmentId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(string farmerId, string attachmentId, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (string farmerId, string attachmentId, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(string farmerId, string attachmentId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.Delete(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (farmerId As String, attachmentId As String, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member Delete : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Delete : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.Delete (farmerId, attachmentId, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (farmerId As String, attachmentId As String, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Delete : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.Delete (farmerId, attachmentId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -134,23 +196,38 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the farmer. </param>
         <param name="attachmentId"> ID of the attachment. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Deletes a specified attachment resource under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (string farmerId, string attachmentId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(string farmerId, string attachmentId, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (string farmerId, string attachmentId, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(string farmerId, string attachmentId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.DeleteAsync(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (farmerId As String, attachmentId As String, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.DeleteAsync (farmerId, attachmentId, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (farmerId As String, attachmentId As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.DeleteAsync (farmerId, attachmentId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -162,23 +239,38 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the farmer. </param>
         <param name="attachmentId"> ID of the attachment. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Deletes a specified attachment resource under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="Download">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Download (string farmerId, string attachmentId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Download(string farmerId, string attachmentId, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Download (string farmerId, string attachmentId, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Download(string farmerId, string attachmentId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.Download(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Download (farmerId As String, attachmentId As String, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member Download : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Download : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.Download (farmerId, attachmentId, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Download (farmerId As String, attachmentId As String, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Download : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Download : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.Download (farmerId, attachmentId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -190,23 +282,38 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer. </param>
         <param name="attachmentId"> ID of attachment to be downloaded. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Downloads and returns attachment as response for the given input filePath. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DownloadAsync (string farmerId, string attachmentId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DownloadAsync(string farmerId, string attachmentId, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DownloadAsync (string farmerId, string attachmentId, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DownloadAsync(string farmerId, string attachmentId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.DownloadAsync(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DownloadAsync (farmerId As String, attachmentId As String, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member DownloadAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DownloadAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.DownloadAsync (farmerId, attachmentId, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DownloadAsync (farmerId As String, attachmentId As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DownloadAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DownloadAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.DownloadAsync (farmerId, attachmentId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -218,23 +325,38 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer. </param>
         <param name="attachmentId"> ID of attachment to be downloaded. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Downloads and returns attachment as response for the given input filePath. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Get (string farmerId, string attachmentId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Get(string farmerId, string attachmentId, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Get (string farmerId, string attachmentId, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Get(string farmerId, string attachmentId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.Get(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (farmerId As String, attachmentId As String, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member Get : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Get : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.Get (farmerId, attachmentId, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (farmerId As String, attachmentId As String, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Get : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.Get (farmerId, attachmentId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -246,23 +368,54 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer. </param>
         <param name="attachmentId"> ID of the attachment. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Gets a specified attachment resource under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              resourceId: string,
+              resourceType: string,
+              originalFileName: string,
+              id: string,
+              status: string,
+              createdDateTime: string (ISO 8601 Format),
+              modifiedDateTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              eTag: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetAsync (string farmerId, string attachmentId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetAsync(string farmerId, string attachmentId, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetAsync (string farmerId, string attachmentId, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetAsync(string farmerId, string attachmentId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.GetAsync(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (farmerId As String, attachmentId As String, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.GetAsync (farmerId, attachmentId, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (farmerId As String, attachmentId As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.GetAsync (farmerId, attachmentId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -274,23 +427,54 @@
       <Parameters>
         <Parameter Name="farmerId" Type="System.String" />
         <Parameter Name="attachmentId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer. </param>
         <param name="attachmentId"> ID of the attachment. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Gets a specified attachment resource under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              resourceId: string,
+              resourceType: string,
+              originalFileName: string,
+              id: string,
+              status: string,
+              createdDateTime: string (ISO 8601 Format),
+              modifiedDateTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              eTag: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListByFarmerId">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response ListByFarmerId (string farmerId, System.Collections.Generic.IEnumerable&lt;string&gt; resourceIds = default, System.Collections.Generic.IEnumerable&lt;string&gt; resourceTypes = default, System.Collections.Generic.IEnumerable&lt;string&gt; ids = default, System.Collections.Generic.IEnumerable&lt;string&gt; names = default, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = default, System.Collections.Generic.IEnumerable&lt;string&gt; statuses = default, DateTimeOffset? minCreatedDateTime = default, DateTimeOffset? maxCreatedDateTime = default, DateTimeOffset? minLastModifiedDateTime = default, DateTimeOffset? maxLastModifiedDateTime = default, int? maxPageSize = default, string skipToken = default, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ListByFarmerId(string farmerId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceIds, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceTypes, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ids, class System.Collections.Generic.IEnumerable`1&lt;string&gt; names, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; statuses, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minLastModifiedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxLastModifiedDateTime, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response ListByFarmerId (string farmerId, System.Collections.Generic.IEnumerable&lt;string&gt; resourceIds = default, System.Collections.Generic.IEnumerable&lt;string&gt; resourceTypes = default, System.Collections.Generic.IEnumerable&lt;string&gt; ids = default, System.Collections.Generic.IEnumerable&lt;string&gt; names = default, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = default, System.Collections.Generic.IEnumerable&lt;string&gt; statuses = default, DateTimeOffset? minCreatedDateTime = default, DateTimeOffset? maxCreatedDateTime = default, DateTimeOffset? minLastModifiedDateTime = default, DateTimeOffset? maxLastModifiedDateTime = default, int? maxPageSize = default, string skipToken = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ListByFarmerId(string farmerId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceIds, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceTypes, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ids, class System.Collections.Generic.IEnumerable`1&lt;string&gt; names, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; statuses, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minLastModifiedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxLastModifiedDateTime, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.ListByFarmerId(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByFarmerId (farmerId As String, Optional resourceIds As IEnumerable(Of String) = Nothing, Optional resourceTypes As IEnumerable(Of String) = Nothing, Optional ids As IEnumerable(Of String) = Nothing, Optional names As IEnumerable(Of String) = Nothing, Optional propertyFilters As IEnumerable(Of String) = Nothing, Optional statuses As IEnumerable(Of String) = Nothing, Optional minCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional minLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member ListByFarmerId : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.ListByFarmerId : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.ListByFarmerId (farmerId, resourceIds, resourceTypes, ids, names, propertyFilters, statuses, minCreatedDateTime, maxCreatedDateTime, minLastModifiedDateTime, maxLastModifiedDateTime, maxPageSize, skipToken, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByFarmerId (farmerId As String, Optional resourceIds As IEnumerable(Of String) = Nothing, Optional resourceTypes As IEnumerable(Of String) = Nothing, Optional ids As IEnumerable(Of String) = Nothing, Optional names As IEnumerable(Of String) = Nothing, Optional propertyFilters As IEnumerable(Of String) = Nothing, Optional statuses As IEnumerable(Of String) = Nothing, Optional minCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional minLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member ListByFarmerId : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.ListByFarmerId : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="attachmentsClient.ListByFarmerId (farmerId, resourceIds, resourceTypes, ids, names, propertyFilters, statuses, minCreatedDateTime, maxCreatedDateTime, minLastModifiedDateTime, maxLastModifiedDateTime, maxPageSize, skipToken, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -313,7 +497,7 @@
         <Parameter Name="maxLastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
         <Parameter Name="maxPageSize" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="skipToken" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer. </param>
@@ -323,7 +507,6 @@
         <param name="names"> Names of the resource. </param>
         <param name="propertyFilters">
             Filters on key-value pairs within the Properties object.
-            
             eg. "{testKey} eq {testValue}".
             </param>
         <param name="statuses"> Statuses of the resource. </param>
@@ -333,22 +516,58 @@
         <param name="maxLastModifiedDateTime"> Maximum last modified date of resource (inclusive). </param>
         <param name="maxPageSize">
             Maximum number of items needed (inclusive).
-            
             Minimum = 10, Maximum = 1000, Default value = 50.
             </param>
         <param name="skipToken"> Skip token for getting next set of results. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Returns a paginated list of attachment resources under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              value: [
+                {
+                  farmerId: string,
+                  resourceId: string,
+                  resourceType: string,
+                  originalFileName: string,
+                  id: string,
+                  status: string,
+                  createdDateTime: string (ISO 8601 Format),
+                  modifiedDateTime: string (ISO 8601 Format),
+                  name: string,
+                  description: string,
+                  eTag: string
+                }
+              ],
+              $skipToken: string,
+              nextLink: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListByFarmerIdAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ListByFarmerIdAsync (string farmerId, System.Collections.Generic.IEnumerable&lt;string&gt; resourceIds = default, System.Collections.Generic.IEnumerable&lt;string&gt; resourceTypes = default, System.Collections.Generic.IEnumerable&lt;string&gt; ids = default, System.Collections.Generic.IEnumerable&lt;string&gt; names = default, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = default, System.Collections.Generic.IEnumerable&lt;string&gt; statuses = default, DateTimeOffset? minCreatedDateTime = default, DateTimeOffset? maxCreatedDateTime = default, DateTimeOffset? minLastModifiedDateTime = default, DateTimeOffset? maxLastModifiedDateTime = default, int? maxPageSize = default, string skipToken = default, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ListByFarmerIdAsync(string farmerId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceIds, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceTypes, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ids, class System.Collections.Generic.IEnumerable`1&lt;string&gt; names, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; statuses, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minLastModifiedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxLastModifiedDateTime, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestOptions requestOptions) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ListByFarmerIdAsync (string farmerId, System.Collections.Generic.IEnumerable&lt;string&gt; resourceIds = default, System.Collections.Generic.IEnumerable&lt;string&gt; resourceTypes = default, System.Collections.Generic.IEnumerable&lt;string&gt; ids = default, System.Collections.Generic.IEnumerable&lt;string&gt; names = default, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = default, System.Collections.Generic.IEnumerable&lt;string&gt; statuses = default, DateTimeOffset? minCreatedDateTime = default, DateTimeOffset? maxCreatedDateTime = default, DateTimeOffset? minLastModifiedDateTime = default, DateTimeOffset? maxLastModifiedDateTime = default, int? maxPageSize = default, string skipToken = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ListByFarmerIdAsync(string farmerId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceIds, class System.Collections.Generic.IEnumerable`1&lt;string&gt; resourceTypes, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ids, class System.Collections.Generic.IEnumerable`1&lt;string&gt; names, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; statuses, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxCreatedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; minLastModifiedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; maxLastModifiedDateTime, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.AttachmentsClient.ListByFarmerIdAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByFarmerIdAsync (farmerId As String, Optional resourceIds As IEnumerable(Of String) = Nothing, Optional resourceTypes As IEnumerable(Of String) = Nothing, Optional ids As IEnumerable(Of String) = Nothing, Optional names As IEnumerable(Of String) = Nothing, Optional propertyFilters As IEnumerable(Of String) = Nothing, Optional statuses As IEnumerable(Of String) = Nothing, Optional minCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional minLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member ListByFarmerIdAsync : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ListByFarmerIdAsync : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.ListByFarmerIdAsync (farmerId, resourceIds, resourceTypes, ids, names, propertyFilters, statuses, minCreatedDateTime, maxCreatedDateTime, minLastModifiedDateTime, maxLastModifiedDateTime, maxPageSize, skipToken, requestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByFarmerIdAsync (farmerId As String, Optional resourceIds As IEnumerable(Of String) = Nothing, Optional resourceTypes As IEnumerable(Of String) = Nothing, Optional ids As IEnumerable(Of String) = Nothing, Optional names As IEnumerable(Of String) = Nothing, Optional propertyFilters As IEnumerable(Of String) = Nothing, Optional statuses As IEnumerable(Of String) = Nothing, Optional minCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCreatedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional minLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxLastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member ListByFarmerIdAsync : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ListByFarmerIdAsync : string * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="attachmentsClient.ListByFarmerIdAsync (farmerId, resourceIds, resourceTypes, ids, names, propertyFilters, statuses, minCreatedDateTime, maxCreatedDateTime, minLastModifiedDateTime, maxLastModifiedDateTime, maxPageSize, skipToken, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -371,7 +590,7 @@
         <Parameter Name="maxLastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
         <Parameter Name="maxPageSize" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="skipToken" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="farmerId"> ID of the associated farmer. </param>
@@ -381,7 +600,6 @@
         <param name="names"> Names of the resource. </param>
         <param name="propertyFilters">
             Filters on key-value pairs within the Properties object.
-            
             eg. "{testKey} eq {testValue}".
             </param>
         <param name="statuses"> Statuses of the resource. </param>
@@ -391,14 +609,50 @@
         <param name="maxLastModifiedDateTime"> Maximum last modified date of resource (inclusive). </param>
         <param name="maxPageSize">
             Maximum number of items needed (inclusive).
-            
             Minimum = 10, Maximum = 1000, Default value = 50.
             </param>
         <param name="skipToken"> Skip token for getting next set of results. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="options"> The request options. </param>
         <summary> Returns a paginated list of attachment resources under a particular farmer. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              value: [
+                {
+                  farmerId: string,
+                  resourceId: string,
+                  resourceType: string,
+                  originalFileName: string,
+                  id: string,
+                  status: string,
+                  createdDateTime: string (ISO 8601 Format),
+                  modifiedDateTime: string (ISO 8601 Format),
+                  name: string,
+                  description: string,
+                  eTag: string
+                }
+              ],
+              $skipToken: string,
+              nextLink: string
+            }
+            </code>
+            
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

@@ -1,0 +1,312 @@
+<Type Name="MetricsQueryClientAudience" FullName="Azure.Monitor.Query.MetricsQueryClientAudience">
+  <TypeSignature Language="C#" Value="public struct MetricsQueryClientAudience : IEquatable&lt;Azure.Monitor.Query.MetricsQueryClientAudience&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MetricsQueryClientAudience extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.Monitor.Query.MetricsQueryClientAudience&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.Monitor.Query.MetricsQueryClientAudience" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MetricsQueryClientAudience&#xA;Implements IEquatable(Of MetricsQueryClientAudience)" />
+  <TypeSignature Language="F#" Value="type MetricsQueryClientAudience = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Monitor.Query</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.Monitor.Query.MetricsQueryClientAudience&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Cloud audiences available for <see cref="T:Azure.Monitor.Query.MetricsQueryClient" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetricsQueryClientAudience (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Monitor.Query.MetricsQueryClientAudience : string -&gt; Azure.Monitor.Query.MetricsQueryClientAudience" Usage="new Azure.Monitor.Query.MetricsQueryClientAudience value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClientAudience" /> with a given value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureResourceManagerChina">
+      <MemberSignature Language="C#" Value="public static Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerChina { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerChina" />
+      <MemberSignature Language="DocId" Value="P:Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerChina" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AzureResourceManagerChina As MetricsQueryClientAudience" />
+      <MemberSignature Language="F#" Value="member this.AzureResourceManagerChina : Azure.Monitor.Query.MetricsQueryClientAudience" Usage="Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerChina" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Monitor.Query.MetricsQueryClientAudience</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Azure China. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureResourceManagerGermany">
+      <MemberSignature Language="C#" Value="public static Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerGermany { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerGermany" />
+      <MemberSignature Language="DocId" Value="P:Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerGermany" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AzureResourceManagerGermany As MetricsQueryClientAudience" />
+      <MemberSignature Language="F#" Value="member this.AzureResourceManagerGermany : Azure.Monitor.Query.MetricsQueryClientAudience" Usage="Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerGermany" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Monitor.Query.MetricsQueryClientAudience</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Azure Germany. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureResourceManagerGovernment">
+      <MemberSignature Language="C#" Value="public static Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerGovernment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerGovernment" />
+      <MemberSignature Language="DocId" Value="P:Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerGovernment" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AzureResourceManagerGovernment As MetricsQueryClientAudience" />
+      <MemberSignature Language="F#" Value="member this.AzureResourceManagerGovernment : Azure.Monitor.Query.MetricsQueryClientAudience" Usage="Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerGovernment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Monitor.Query.MetricsQueryClientAudience</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Azure Government. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureResourceManagerPublicCloud">
+      <MemberSignature Language="C#" Value="public static Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerPublicCloud { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Monitor.Query.MetricsQueryClientAudience AzureResourceManagerPublicCloud" />
+      <MemberSignature Language="DocId" Value="P:Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerPublicCloud" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AzureResourceManagerPublicCloud As MetricsQueryClientAudience" />
+      <MemberSignature Language="F#" Value="member this.AzureResourceManagerPublicCloud : Azure.Monitor.Query.MetricsQueryClientAudience" Usage="Azure.Monitor.Query.MetricsQueryClientAudience.AzureResourceManagerPublicCloud" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Monitor.Query.MetricsQueryClientAudience</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Azure Public Cloud. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.Monitor.Query.MetricsQueryClientAudience other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.Monitor.Query.MetricsQueryClientAudience other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.Equals(Azure.Monitor.Query.MetricsQueryClientAudience)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MetricsQueryClientAudience) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.Monitor.Query.MetricsQueryClientAudience -&gt; bool" Usage="metricsQueryClientAudience.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.Monitor.Query.MetricsQueryClientAudience" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="metricsQueryClientAudience.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="metricsQueryClientAudience.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.Monitor.Query.MetricsQueryClientAudience left, Azure.Monitor.Query.MetricsQueryClientAudience right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.Monitor.Query.MetricsQueryClientAudience left, valuetype Azure.Monitor.Query.MetricsQueryClientAudience right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.op_Equality(Azure.Monitor.Query.MetricsQueryClientAudience,Azure.Monitor.Query.MetricsQueryClientAudience)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As MetricsQueryClientAudience, right As MetricsQueryClientAudience) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.Monitor.Query.MetricsQueryClientAudience * Azure.Monitor.Query.MetricsQueryClientAudience -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.Monitor.Query.MetricsQueryClientAudience" />
+        <Parameter Name="right" Type="Azure.Monitor.Query.MetricsQueryClientAudience" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.Monitor.Query.MetricsQueryClientAudience" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.Monitor.Query.MetricsQueryClientAudience (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.Monitor.Query.MetricsQueryClientAudience op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.op_Implicit(System.String)~Azure.Monitor.Query.MetricsQueryClientAudience" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As MetricsQueryClientAudience" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.Monitor.Query.MetricsQueryClientAudience" Usage="Azure.Monitor.Query.MetricsQueryClientAudience.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Monitor.Query.MetricsQueryClientAudience</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a string to a <see cref="T:Azure.Monitor.Query.MetricsQueryClientAudience" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.Monitor.Query.MetricsQueryClientAudience left, Azure.Monitor.Query.MetricsQueryClientAudience right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.Monitor.Query.MetricsQueryClientAudience left, valuetype Azure.Monitor.Query.MetricsQueryClientAudience right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.op_Inequality(Azure.Monitor.Query.MetricsQueryClientAudience,Azure.Monitor.Query.MetricsQueryClientAudience)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As MetricsQueryClientAudience, right As MetricsQueryClientAudience) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.Monitor.Query.MetricsQueryClientAudience * Azure.Monitor.Query.MetricsQueryClientAudience -&gt; bool" Usage="Azure.Monitor.Query.MetricsQueryClientAudience.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.Monitor.Query.MetricsQueryClientAudience" />
+        <Parameter Name="right" Type="Azure.Monitor.Query.MetricsQueryClientAudience" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.Monitor.Query.MetricsQueryClientAudience" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Monitor.Query.MetricsQueryClientAudience.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="metricsQueryClientAudience.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Monitor.Query</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

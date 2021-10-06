@@ -1,0 +1,57 @@
+<Type Name="UnlinkParameters" FullName="Azure.ResourceManager.Sql.Models.UnlinkParameters">
+  <TypeSignature Language="C#" Value="public class UnlinkParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnlinkParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.UnlinkParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class UnlinkParameters" />
+  <TypeSignature Language="F#" Value="type UnlinkParameters = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Represents the parameters for Unlink Replication Link request. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnlinkParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.UnlinkParameters.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of UnlinkParameters. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForcedTermination">
+      <MemberSignature Language="C#" Value="public bool? ForcedTermination { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ForcedTermination" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.UnlinkParameters.ForcedTermination" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForcedTermination As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ForcedTermination : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.UnlinkParameters.ForcedTermination" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Determines whether link will be terminated in a forced or a friendly way. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
