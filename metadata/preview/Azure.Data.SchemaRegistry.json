@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.Data.SchemaRegistry",
+  "Version": "1.0.0-alpha.20211006.2",
+  "DevVersion": "1.0.0-alpha.20211006.2",
+  "DirectoryPath": "sdk/schemaregistry/Azure.Data.SchemaRegistry",
+  "ServiceDirectory": "schemaregistry",
+  "ReadMePath": "sdk/schemaregistry/Azure.Data.SchemaRegistry/README.md",
+  "ChangeLogPath": "sdk/schemaregistry/Azure.Data.SchemaRegistry/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.Data.SchemaRegistry",
+  "ReleaseStatus": null
+}
