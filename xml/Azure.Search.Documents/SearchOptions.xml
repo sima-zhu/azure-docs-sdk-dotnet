@@ -311,12 +311,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="QueryCaptionHighlight">
-      <MemberSignature Language="C#" Value="public bool? QueryCaptionHighlight { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; QueryCaptionHighlight" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.SearchOptions.QueryCaptionHighlight" />
-      <MemberSignature Language="VB.NET" Value="Public Property QueryCaptionHighlight As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.QueryCaptionHighlight : Nullable&lt;bool&gt; with get, set" Usage="Azure.Search.Documents.SearchOptions.QueryCaptionHighlight" />
+    <Member MemberName="QueryCaptionHighlightEnabled">
+      <MemberSignature Language="C#" Value="public bool? QueryCaptionHighlightEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; QueryCaptionHighlightEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.SearchOptions.QueryCaptionHighlightEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryCaptionHighlightEnabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.QueryCaptionHighlightEnabled : Nullable&lt;bool&gt; with get, set" Usage="Azure.Search.Documents.SearchOptions.QueryCaptionHighlightEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>

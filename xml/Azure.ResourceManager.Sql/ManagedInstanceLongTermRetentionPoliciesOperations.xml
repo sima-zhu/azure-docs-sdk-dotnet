@@ -1,0 +1,237 @@
+<Type Name="ManagedInstanceLongTermRetentionPoliciesOperations" FullName="Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations">
+  <TypeSignature Language="C#" Value="public class ManagedInstanceLongTermRetentionPoliciesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedInstanceLongTermRetentionPoliciesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedInstanceLongTermRetentionPoliciesOperations" />
+  <TypeSignature Language="F#" Value="type ManagedInstanceLongTermRetentionPoliciesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ManagedInstanceLongTermRetentionPolicies service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagedInstanceLongTermRetentionPoliciesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ManagedInstanceLongTermRetentionPoliciesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt; Get (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt; Get(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, managedInstanceName As String, databaseName As String, policyName As ManagedInstanceLongTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedInstanceLongTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;" Usage="managedInstanceLongTermRetentionPoliciesOperations.Get (resourceGroupName, managedInstanceName, databaseName, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a managed database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&gt; GetAsync (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&gt; GetAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, policyName As ManagedInstanceLongTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedInstanceLongTermRetentionPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&gt;" Usage="managedInstanceLongTermRetentionPoliciesOperations.GetAsync (resourceGroupName, managedInstanceName, databaseName, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a managed database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt; ListByDatabase (string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt; ListByDatabase(string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.ListByDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabase (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedInstanceLongTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&#xA;override this.ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;" Usage="managedInstanceLongTermRetentionPoliciesOperations.ListByDatabase (resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt; ListByDatabaseAsync (string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt; ListByDatabaseAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.ListByDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabaseAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedInstanceLongTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;&#xA;override this.ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;" Usage="managedInstanceLongTermRetentionPoliciesOperations.ListByDatabaseAsync (resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.StartCreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, managedInstanceName As String, databaseName As String, policyName As ManagedInstanceLongTermRetentionPolicyName, parameters As ManagedInstanceLongTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation" Usage="managedInstanceLongTermRetentionPoliciesOperations.StartCreateOrUpdate (resourceGroupName, managedInstanceName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a managed database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, policyName As ManagedInstanceLongTermRetentionPolicyName, parameters As ManagedInstanceLongTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation&gt;" Usage="managedInstanceLongTermRetentionPoliciesOperations.StartCreateOrUpdateAsync (resourceGroupName, managedInstanceName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a managed database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

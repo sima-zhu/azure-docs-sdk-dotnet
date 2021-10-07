@@ -1,0 +1,209 @@
+<Type Name="JobStepExecutionsOperations" FullName="Azure.ResourceManager.Sql.JobStepExecutionsOperations">
+  <TypeSignature Language="C#" Value="public class JobStepExecutionsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobStepExecutionsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.JobStepExecutionsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class JobStepExecutionsOperations" />
+  <TypeSignature Language="F#" Value="type JobStepExecutionsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The JobStepExecutions service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JobStepExecutionsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepExecutionsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of JobStepExecutionsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt; Get (string resourceGroupName, string serverName, string jobAgentName, string jobName, Guid jobExecutionId, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobExecution&gt; Get(string resourceGroupName, string serverName, string jobAgentName, string jobName, valuetype System.Guid jobExecutionId, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepExecutionsOperations.Get(System.String,System.String,System.String,System.String,System.Guid,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobExecutionId As Guid, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of JobExecution)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * string * Guid * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&#xA;override this.Get : string * string * string * string * Guid * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;" Usage="jobStepExecutionsOperations.Get (resourceGroupName, serverName, jobAgentName, jobName, jobExecutionId, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="jobExecutionId"> The unique id of the job execution. </param>
+        <param name="stepName"> The name of the step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a step execution of a job execution. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&gt; GetAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, Guid jobExecutionId, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobExecution&gt;&gt; GetAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, valuetype System.Guid jobExecutionId, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepExecutionsOperations.GetAsync(System.String,System.String,System.String,System.String,System.Guid,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobExecutionId As Guid, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of JobExecution))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * string * Guid * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&gt;&#xA;override this.GetAsync : string * string * string * string * Guid * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&gt;" Usage="jobStepExecutionsOperations.GetAsync (resourceGroupName, serverName, jobAgentName, jobName, jobExecutionId, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="jobExecutionId"> The unique id of the job execution. </param>
+        <param name="stepName"> The name of the step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a step execution of a job execution. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByJobExecution">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt; ListByJobExecution (string resourceGroupName, string serverName, string jobAgentName, string jobName, Guid jobExecutionId, DateTimeOffset? createTimeMin = default, DateTimeOffset? createTimeMax = default, DateTimeOffset? endTimeMin = default, DateTimeOffset? endTimeMax = default, bool? isActive = default, int? skip = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.JobExecution&gt; ListByJobExecution(string resourceGroupName, string serverName, string jobAgentName, string jobName, valuetype System.Guid jobExecutionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMax, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMax, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepExecutionsOperations.ListByJobExecution(System.String,System.String,System.String,System.String,System.Guid,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByJobExecution (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobExecutionId As Guid, Optional createTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional createTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of JobExecution)" />
+      <MemberSignature Language="F#" Value="abstract member ListByJobExecution : string * string * string * string * Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&#xA;override this.ListByJobExecution : string * string * string * string * Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;" Usage="jobStepExecutionsOperations.ListByJobExecution (resourceGroupName, serverName, jobAgentName, jobName, jobExecutionId, createTimeMin, createTimeMax, endTimeMin, endTimeMax, isActive, skip, top, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
+        <Parameter Name="createTimeMin" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="createTimeMax" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="endTimeMin" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="endTimeMax" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="isActive" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="jobExecutionId"> The id of the job execution. </param>
+        <param name="createTimeMin"> If specified, only job executions created at or after the specified time are included. </param>
+        <param name="createTimeMax"> If specified, only job executions created before the specified time are included. </param>
+        <param name="endTimeMin"> If specified, only job executions completed at or after the specified time are included. </param>
+        <param name="endTimeMax"> If specified, only job executions completed before the specified time are included. </param>
+        <param name="isActive"> If specified, only active or only completed job executions are included. </param>
+        <param name="skip"> The number of elements in the collection to skip. </param>
+        <param name="top"> The number of elements to return from the collection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists the step executions of a job execution. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="jobAgentName" />, or <paramref name="jobName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByJobExecutionAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt; ListByJobExecutionAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, Guid jobExecutionId, DateTimeOffset? createTimeMin = default, DateTimeOffset? createTimeMax = default, DateTimeOffset? endTimeMin = default, DateTimeOffset? endTimeMax = default, bool? isActive = default, int? skip = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.JobExecution&gt; ListByJobExecutionAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, valuetype System.Guid jobExecutionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMax, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMax, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepExecutionsOperations.ListByJobExecutionAsync(System.String,System.String,System.String,System.String,System.Guid,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByJobExecutionAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobExecutionId As Guid, Optional createTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional createTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of JobExecution)" />
+      <MemberSignature Language="F#" Value="abstract member ListByJobExecutionAsync : string * string * string * string * Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;&#xA;override this.ListByJobExecutionAsync : string * string * string * string * Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;" Usage="jobStepExecutionsOperations.ListByJobExecutionAsync (resourceGroupName, serverName, jobAgentName, jobName, jobExecutionId, createTimeMin, createTimeMax, endTimeMin, endTimeMax, isActive, skip, top, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobExecution&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
+        <Parameter Name="createTimeMin" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="createTimeMax" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="endTimeMin" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="endTimeMax" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="isActive" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="jobExecutionId"> The id of the job execution. </param>
+        <param name="createTimeMin"> If specified, only job executions created at or after the specified time are included. </param>
+        <param name="createTimeMax"> If specified, only job executions created before the specified time are included. </param>
+        <param name="endTimeMin"> If specified, only job executions completed at or after the specified time are included. </param>
+        <param name="endTimeMax"> If specified, only job executions completed before the specified time are included. </param>
+        <param name="isActive"> If specified, only active or only completed job executions are included. </param>
+        <param name="skip"> The number of elements in the collection to skip. </param>
+        <param name="top"> The number of elements to return from the collection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists the step executions of a job execution. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="jobAgentName" />, or <paramref name="jobName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
