@@ -1,17 +1,17 @@
 ---
 title: Azure Confidential Ledger client library for .NET
-keywords: Azure, dotnet, SDK, API, Azure.Security.ConfidentialLedger, 
+keywords: Azure, dotnet, SDK, API, Azure.Security.ConfidentialLedger, confidentialledger
 author: maggiepint
 ms.author: magpint
-ms.date: 06/08/2021
+ms.date: 10/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: 
+ms.service: confidentialledger
 ---
 
-# Azure Confidential Ledger client library for .NET - Version 1.0.0-beta.2 
+# Azure Confidential Ledger client library for .NET - Version 1.0.0-alpha.20211006.1 
 
 
 Azure Confidential Ledger provides a service for logging to an immutable, tamper-proof ledger. As part of the [Azure Confidential Computing][azure_confidential_computing]
@@ -27,7 +27,7 @@ This section should include everything a developer needs to do to install and cr
 
 Install the Confidential Ledger client library for .NET with [NuGet][client_nuget_package]:
 
-```bash
+```dotnetcli
 dotnet add package Azure.Security.ConfidentialLedger --prerelease
 ```
 
@@ -62,21 +62,13 @@ Constructing the client also requires your Confidential Ledger's URL and id, whi
 Because Confidential Ledgers use self-signed certificates securely generated and stored in an SGX enclave, the certificate for each Confidential Ledger  must first be retrieved from the Confidential Ledger Identity Service.
 
 ```C# Snippet:GetIdentity
-Uri identityServiceUri = "<the identity service uri>";
-var identityClient = new ConfidentialLedgerIdentityServiceClient(identityServiceUri);
+Uri identityServiceEndpoint = new("https://identity.confidential-ledger.core.azure.com") // The hostname from the identityServiceUri
+var identityClient = new ConfidentialLedgerIdentityServiceClient(identityServiceEndpoint);
 
 // Get the ledger's  TLS certificate for our ledger.
 string ledgerId = "<the ledger id>"; // ex. "my-ledger" from "https://my-ledger.eastus.cloudapp.azure.com"
 Response response = identityClient.GetLedgerIdentity(ledgerId);
-
-// extract the ECC PEM value from the response.
-var eccPem = JsonDocument.Parse(response.Content)
-    .RootElement
-    .GetProperty("ledgerTlsCertificate")
-    .GetString();
-
-// construct an X509Certificate2 with the ECC PEM value.
-X509Certificate2 ledgerTlsCert = new X509Certificate2(Encoding.UTF8.GetBytes(eccPem));
+X509Certificate2 ledgerTlsCert = ConfidentialLedgerIdentityServiceClient.ParseCertificate(response);
 ```
 
 Now we can construct the `ConfidentialLedgerClient` with a transport configuration that trusts the `ledgerTlsCert`.
@@ -91,6 +83,7 @@ certificateChain.ChainPolicy.VerificationTime = DateTime.Now;
 certificateChain.ChainPolicy.UrlRetrievalTimeout = new TimeSpan(0, 0, 0);
 certificateChain.ChainPolicy.ExtraStore.Add(ledgerTlsCert);
 
+var f = certificateChain.Build(ledgerTlsCert);
 // Define a validation function to ensure that the ledger certificate is trusted by the ledger identity TLS certificate.
 bool CertValidationCheck(HttpRequestMessage httpRequestMessage, X509Certificate2 cert, X509Chain x509Chain, SslPolicyErrors sslPolicyErrors)
 {
@@ -108,7 +101,8 @@ httpHandler.ServerCertificateCustomValidationCallback = CertValidationCheck;
 
 // Create the ledger client using a transport that uses our custom ServerCertificateCustomValidationCallback.
 var options = new ConfidentialLedgerClientOptions { Transport = new HttpClientTransport(httpHandler) };
-var ledgerClient = new ConfidentialLedgerClient(TestEnvironment.ConfidentialLedgerUrl, new DefaultAzureCredential(), options);
+
+var ledgerClient = new ConfidentialLedgerClient(new Uri($"https://{ledgerId}.confidential-ledger.azure.com"), new DefaultAzureCredential(), options);
 ```
 
 ## Key concepts
@@ -367,6 +361,7 @@ Console.WriteLine($"The latest ledger entry from the sub-ledger is {latestSubLed
 ##### Ranged queries
 
 Ledger entries in a sub-ledger may be retrieved over a range of transaction ids.
+Note: Both ranges are optional; they can be provided individually or not at all.
 
 ```C# Snippet:RangedQuery
 ledgerClient.GetLedgerEntries(fromTransactionId: "2.1", toTransactionId: subLedgerTransactionId);
@@ -418,12 +413,12 @@ We guarantee that all client instance methods are thread-safe and independent of
 ### Additional concepts
 
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/README.md#mocking) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
 
@@ -466,16 +461,16 @@ For more information see the [Code of Conduct FAQ][coc_faq] or contact
 <!-- LINKS -->
 [style-guide-msft]: https://docs.microsoft.com/style-guide/capitalization
 [style-guide-cloud]: https://aka.ms/azsdk/cloud-style-guide
-[client_src]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/confidentialledger/Azure.Security.ConfidentialLedger
+[client_src]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/confidentialledger/Azure.Security.ConfidentialLedger
 [client_nuget_package]: https://www.nuget.org/packages?q=Azure.Security.ConfidentialLedger
 [azure_cli]: https://docs.microsoft.com/cli/azure
 [azure_cloud_shell]: https://shell.azure.com/bash
 [azure_confidential_computing]: https://azure.microsoft.com/solutions/confidential-compute
-[azure_sub]: https://azure.microsoft.com/free
+[azure_sub]: https://azure.microsoft.com/free/dotnet/
 [ccf]: https://github.com/Microsoft/CCF
-[azure_identity]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/identity/Azure.Identity
-[default_cred_ref]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/identity/Azure.Identity/README.md#defaultazurecredential
-[logging]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.2/sdk/core/Azure.Core/samples/Diagnostics.md
+[azure_identity]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity
+[default_cred_ref]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md#defaultazurecredential
+[logging]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq
 [cla]: https://cla.microsoft.com
