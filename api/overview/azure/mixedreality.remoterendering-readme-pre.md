@@ -3,7 +3,7 @@ title: Azure Remote Rendering client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.MixedReality.RemoteRendering, mixedreality
 author: maggiepint
 ms.author: magpint
-ms.date: 02/24/2021
+ms.date: 10/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: mixedreality
 ---
 
-# Azure Remote Rendering client library for .NET - Version 1.0.0-beta.3 
+# Azure Remote Rendering client library for .NET - Version 1.2.0-alpha.20211008.1 
 
 
 Azure Remote Rendering (ARR) is a service that enables you to render high-quality, interactive 3D content in the cloud and stream it in real time to devices, such as the HoloLens 2.
@@ -35,24 +35,24 @@ Install the Azure Mixed Reality ARR client library for .NET using one of the fol
 From Visual Studio Package Manager:
 
 ```powershell
-Install-Package Azure.MixedReality.RemoteRendering -AllowPrereleaseVersions
+Install-Package Azure.MixedReality.RemoteRendering
 ```
 
 From .NET CLI
 
 ```dotnetcli
-dotnet add package Azure.MixedReality.RemoteRendering --version 1.0.0-beta.3
+dotnet add package Azure.MixedReality.RemoteRendering
 ```
 
 Add a package reference:
 
 ```xml
-<PackageReference Include="Azure.MixedReality.RemoteRendering" Version="1.0.0-beta.3" />
+<PackageReference Include="Azure.MixedReality.RemoteRendering" Version="1.0.0" />
 ```
 
 ### Prerequisites
 
-You will need an [Azure subscription](https://azure.microsoft.com/free/) and an [Azure Remote Rendering account](https://docs.microsoft.com/azure/remote-rendering/how-tos/create-an-account) to use this package.
+You will need an [Azure subscription](https://azure.microsoft.com/free/dotnet/) and an [Azure Remote Rendering account](https://docs.microsoft.com/azure/remote-rendering/how-tos/create-an-account) to use this package.
 
 ### Authenticate the client
 
@@ -142,7 +142,7 @@ RemoteRenderingClient client = new RemoteRenderingClient(remoteRenderingEndpoint
 #### Authenticating with a static access token
 
 You can pass a Mixed Reality access token as an `AccessToken` previously retrieved from the
-[Mixed Reality STS service](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.RemoteRendering_1.0.0-beta.3/sdk/mixedreality/Azure.MixedReality.Authentication)
+[Mixed Reality STS service](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mixedreality/Azure.MixedReality.Authentication)
 to be used with a Mixed Reality client library:
 
 ```csharp Snippet:CreateAClientWithStaticAccessToken
