@@ -1,0 +1,1929 @@
+<Type Name="SqlManagementClient" FullName="Azure.ResourceManager.Sql.SqlManagementClient">
+  <TypeSignature Language="C#" Value="public class SqlManagementClient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlManagementClient extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.SqlManagementClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlManagementClient" />
+  <TypeSignature Language="F#" Value="type SqlManagementClient = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Sql service management client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SqlManagementClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlManagementClient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of SqlManagementClient for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlManagementClient (string subscriptionId, Azure.Core.TokenCredential tokenCredential, Azure.ResourceManager.Sql.SqlManagementClientOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subscriptionId, class Azure.Core.TokenCredential tokenCredential, class Azure.ResourceManager.Sql.SqlManagementClientOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlManagementClient.#ctor(System.String,Azure.Core.TokenCredential,Azure.ResourceManager.Sql.SqlManagementClientOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subscriptionId As String, tokenCredential As TokenCredential, Optional options As SqlManagementClientOptions = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Sql.SqlManagementClient : string * Azure.Core.TokenCredential * Azure.ResourceManager.Sql.SqlManagementClientOptions -&gt; Azure.ResourceManager.Sql.SqlManagementClient" Usage="new Azure.ResourceManager.Sql.SqlManagementClient (subscriptionId, tokenCredential, options)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="tokenCredential" Type="Azure.Core.TokenCredential" />
+        <Parameter Name="options" Type="Azure.ResourceManager.Sql.SqlManagementClientOptions" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"> The subscription ID that identifies an Azure subscription. </param>
+        <param name="tokenCredential"> The OAuth token for making client requests. </param>
+        <param name="options"> The options for configuring the client. </param>
+        <summary> Initializes a new instance of SqlManagementClient. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlManagementClient (string subscriptionId, Uri endpoint, Azure.Core.TokenCredential tokenCredential, Azure.ResourceManager.Sql.SqlManagementClientOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subscriptionId, class System.Uri endpoint, class Azure.Core.TokenCredential tokenCredential, class Azure.ResourceManager.Sql.SqlManagementClientOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlManagementClient.#ctor(System.String,System.Uri,Azure.Core.TokenCredential,Azure.ResourceManager.Sql.SqlManagementClientOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subscriptionId As String, endpoint As Uri, tokenCredential As TokenCredential, Optional options As SqlManagementClientOptions = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Sql.SqlManagementClient : string * Uri * Azure.Core.TokenCredential * Azure.ResourceManager.Sql.SqlManagementClientOptions -&gt; Azure.ResourceManager.Sql.SqlManagementClient" Usage="new Azure.ResourceManager.Sql.SqlManagementClient (subscriptionId, endpoint, tokenCredential, options)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="endpoint" Type="System.Uri" />
+        <Parameter Name="tokenCredential" Type="Azure.Core.TokenCredential" />
+        <Parameter Name="options" Type="Azure.ResourceManager.Sql.SqlManagementClientOptions" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"> The subscription ID that identifies an Azure subscription. </param>
+        <param name="endpoint"> server parameter. </param>
+        <param name="tokenCredential"> The OAuth token for making client requests. </param>
+        <param name="options"> The options for configuring the client. </param>
+        <summary> Initializes a new instance of SqlManagementClient. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupLongTermRetentionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations BackupLongTermRetentionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations BackupLongTermRetentionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.BackupLongTermRetentionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BackupLongTermRetentionPolicies As BackupLongTermRetentionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.BackupLongTermRetentionPolicies : Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.BackupLongTermRetentionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of BackupLongTermRetentionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupShortTermRetentionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations BackupShortTermRetentionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations BackupShortTermRetentionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.BackupShortTermRetentionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BackupShortTermRetentionPolicies As BackupShortTermRetentionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.BackupShortTermRetentionPolicies : Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.BackupShortTermRetentionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of BackupShortTermRetentionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capabilities">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.CapabilitiesOperations Capabilities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.CapabilitiesOperations Capabilities" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Capabilities" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Capabilities As CapabilitiesOperations" />
+      <MemberSignature Language="F#" Value="member this.Capabilities : Azure.ResourceManager.Sql.CapabilitiesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Capabilities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.CapabilitiesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of CapabilitiesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Database">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseOperations Database { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseOperations Database" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Database" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Database As DatabaseOperations" />
+      <MemberSignature Language="F#" Value="member this.Database : Azure.ResourceManager.Sql.DatabaseOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Database" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseAutomaticTuning">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseAutomaticTuningOperations DatabaseAutomaticTuning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseAutomaticTuningOperations DatabaseAutomaticTuning" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseAutomaticTuning" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseAutomaticTuning As DatabaseAutomaticTuningOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseAutomaticTuning : Azure.ResourceManager.Sql.DatabaseAutomaticTuningOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseAutomaticTuning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseAutomaticTuningOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseAutomaticTuningOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseBlobAuditingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseBlobAuditingPoliciesOperations DatabaseBlobAuditingPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseBlobAuditingPoliciesOperations DatabaseBlobAuditingPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseBlobAuditingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseBlobAuditingPolicies As DatabaseBlobAuditingPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseBlobAuditingPolicies : Azure.ResourceManager.Sql.DatabaseBlobAuditingPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseBlobAuditingPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseBlobAuditingPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseBlobAuditingPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Databases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabasesOperations Databases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabasesOperations Databases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Databases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Databases As DatabasesOperations" />
+      <MemberSignature Language="F#" Value="member this.Databases : Azure.ResourceManager.Sql.DatabasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Databases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseThreatDetectionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseThreatDetectionPoliciesOperations DatabaseThreatDetectionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseThreatDetectionPoliciesOperations DatabaseThreatDetectionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseThreatDetectionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseThreatDetectionPolicies As DatabaseThreatDetectionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseThreatDetectionPolicies : Azure.ResourceManager.Sql.DatabaseThreatDetectionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseThreatDetectionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseThreatDetectionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseThreatDetectionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseUsages">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseUsagesOperations DatabaseUsages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseUsagesOperations DatabaseUsages" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseUsages" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseUsages As DatabaseUsagesOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseUsages : Azure.ResourceManager.Sql.DatabaseUsagesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseUsages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseUsagesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseUsagesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseVulnerabilityAssessmentRuleBaselines">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentRuleBaselinesOperations DatabaseVulnerabilityAssessmentRuleBaselines { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentRuleBaselinesOperations DatabaseVulnerabilityAssessmentRuleBaselines" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseVulnerabilityAssessmentRuleBaselines" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseVulnerabilityAssessmentRuleBaselines As DatabaseVulnerabilityAssessmentRuleBaselinesOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseVulnerabilityAssessmentRuleBaselines : Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentRuleBaselinesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseVulnerabilityAssessmentRuleBaselines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentRuleBaselinesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseVulnerabilityAssessmentRuleBaselinesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseVulnerabilityAssessments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentsOperations DatabaseVulnerabilityAssessments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentsOperations DatabaseVulnerabilityAssessments" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseVulnerabilityAssessments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseVulnerabilityAssessments As DatabaseVulnerabilityAssessmentsOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseVulnerabilityAssessments : Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseVulnerabilityAssessments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseVulnerabilityAssessmentsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseVulnerabilityAssessmentScans">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentScansOperations DatabaseVulnerabilityAssessmentScans { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentScansOperations DatabaseVulnerabilityAssessmentScans" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DatabaseVulnerabilityAssessmentScans" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DatabaseVulnerabilityAssessmentScans As DatabaseVulnerabilityAssessmentScansOperations" />
+      <MemberSignature Language="F#" Value="member this.DatabaseVulnerabilityAssessmentScans : Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentScansOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DatabaseVulnerabilityAssessmentScans" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DatabaseVulnerabilityAssessmentScansOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DatabaseVulnerabilityAssessmentScansOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMaskingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DataMaskingPoliciesOperations DataMaskingPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DataMaskingPoliciesOperations DataMaskingPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DataMaskingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataMaskingPolicies As DataMaskingPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.DataMaskingPolicies : Azure.ResourceManager.Sql.DataMaskingPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DataMaskingPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DataMaskingPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DataMaskingPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMaskingRules">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.DataMaskingRulesOperations DataMaskingRules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.DataMaskingRulesOperations DataMaskingRules" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.DataMaskingRules" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataMaskingRules As DataMaskingRulesOperations" />
+      <MemberSignature Language="F#" Value="member this.DataMaskingRules : Azure.ResourceManager.Sql.DataMaskingRulesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.DataMaskingRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.DataMaskingRulesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of DataMaskingRulesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticPool">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ElasticPoolOperations ElasticPool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ElasticPoolOperations ElasticPool" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ElasticPool" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ElasticPool As ElasticPoolOperations" />
+      <MemberSignature Language="F#" Value="member this.ElasticPool : Azure.ResourceManager.Sql.ElasticPoolOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ElasticPool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ElasticPoolOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ElasticPoolOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticPoolActivities">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations ElasticPoolActivities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations ElasticPoolActivities" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ElasticPoolActivities" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ElasticPoolActivities As ElasticPoolActivitiesOperations" />
+      <MemberSignature Language="F#" Value="member this.ElasticPoolActivities : Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ElasticPoolActivities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ElasticPoolActivitiesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticPoolDatabaseActivities">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ElasticPoolDatabaseActivitiesOperations ElasticPoolDatabaseActivities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ElasticPoolDatabaseActivitiesOperations ElasticPoolDatabaseActivities" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ElasticPoolDatabaseActivities" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ElasticPoolDatabaseActivities As ElasticPoolDatabaseActivitiesOperations" />
+      <MemberSignature Language="F#" Value="member this.ElasticPoolDatabaseActivities : Azure.ResourceManager.Sql.ElasticPoolDatabaseActivitiesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ElasticPoolDatabaseActivities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ElasticPoolDatabaseActivitiesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ElasticPoolDatabaseActivitiesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticPools">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ElasticPoolsOperations ElasticPools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ElasticPoolsOperations ElasticPools" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ElasticPools" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ElasticPools As ElasticPoolsOperations" />
+      <MemberSignature Language="F#" Value="member this.ElasticPools : Azure.ResourceManager.Sql.ElasticPoolsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ElasticPools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ElasticPoolsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ElasticPoolsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionProtectors">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.EncryptionProtectorsOperations EncryptionProtectors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.EncryptionProtectorsOperations EncryptionProtectors" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.EncryptionProtectors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EncryptionProtectors As EncryptionProtectorsOperations" />
+      <MemberSignature Language="F#" Value="member this.EncryptionProtectors : Azure.ResourceManager.Sql.EncryptionProtectorsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.EncryptionProtectors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.EncryptionProtectorsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of EncryptionProtectorsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedDatabaseBlobAuditingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPoliciesOperations ExtendedDatabaseBlobAuditingPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPoliciesOperations ExtendedDatabaseBlobAuditingPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ExtendedDatabaseBlobAuditingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExtendedDatabaseBlobAuditingPolicies As ExtendedDatabaseBlobAuditingPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ExtendedDatabaseBlobAuditingPolicies : Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ExtendedDatabaseBlobAuditingPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ExtendedDatabaseBlobAuditingPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedServerBlobAuditingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations ExtendedServerBlobAuditingPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations ExtendedServerBlobAuditingPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ExtendedServerBlobAuditingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExtendedServerBlobAuditingPolicies As ExtendedServerBlobAuditingPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ExtendedServerBlobAuditingPolicies : Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ExtendedServerBlobAuditingPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ExtendedServerBlobAuditingPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailoverGroups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.FailoverGroupsOperations FailoverGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.FailoverGroupsOperations FailoverGroups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.FailoverGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FailoverGroups As FailoverGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.FailoverGroups : Azure.ResourceManager.Sql.FailoverGroupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.FailoverGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.FailoverGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of FailoverGroupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirewallRules">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.FirewallRulesOperations FirewallRules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.FirewallRulesOperations FirewallRules" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.FirewallRules" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FirewallRules As FirewallRulesOperations" />
+      <MemberSignature Language="F#" Value="member this.FirewallRules : Azure.ResourceManager.Sql.FirewallRulesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.FirewallRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.FirewallRulesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of FirewallRulesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeoBackupPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.GeoBackupPoliciesOperations GeoBackupPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.GeoBackupPoliciesOperations GeoBackupPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.GeoBackupPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GeoBackupPolicies As GeoBackupPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.GeoBackupPolicies : Azure.ResourceManager.Sql.GeoBackupPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.GeoBackupPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.GeoBackupPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of GeoBackupPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceFailoverGroups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations InstanceFailoverGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations InstanceFailoverGroups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.InstanceFailoverGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InstanceFailoverGroups As InstanceFailoverGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.InstanceFailoverGroups : Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.InstanceFailoverGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of InstanceFailoverGroupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstancePools">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.InstancePoolsOperations InstancePools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.InstancePoolsOperations InstancePools" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.InstancePools" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InstancePools As InstancePoolsOperations" />
+      <MemberSignature Language="F#" Value="member this.InstancePools : Azure.ResourceManager.Sql.InstancePoolsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.InstancePools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.InstancePoolsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of InstancePoolsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobAgents">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobAgentsOperations JobAgents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobAgentsOperations JobAgents" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobAgents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobAgents As JobAgentsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobAgents : Azure.ResourceManager.Sql.JobAgentsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobAgents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobAgentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobAgentsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobCredentials">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobCredentialsOperations JobCredentials { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobCredentialsOperations JobCredentials" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobCredentials As JobCredentialsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobCredentials : Azure.ResourceManager.Sql.JobCredentialsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobCredentialsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobCredentialsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobExecutions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobExecutionsOperations JobExecutions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobExecutionsOperations JobExecutions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobExecutions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobExecutions As JobExecutionsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobExecutions : Azure.ResourceManager.Sql.JobExecutionsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobExecutions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobExecutionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobExecutionsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Jobs">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobsOperations Jobs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobsOperations Jobs" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Jobs" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Jobs As JobsOperations" />
+      <MemberSignature Language="F#" Value="member this.Jobs : Azure.ResourceManager.Sql.JobsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Jobs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobStepExecutions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobStepExecutionsOperations JobStepExecutions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobStepExecutionsOperations JobStepExecutions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobStepExecutions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobStepExecutions As JobStepExecutionsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobStepExecutions : Azure.ResourceManager.Sql.JobStepExecutionsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobStepExecutions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobStepExecutionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobStepExecutionsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobSteps">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobStepsOperations JobSteps { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobStepsOperations JobSteps" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobSteps" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobSteps As JobStepsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobSteps : Azure.ResourceManager.Sql.JobStepsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobSteps" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobStepsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobStepsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobTargetExecutions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobTargetExecutionsOperations JobTargetExecutions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobTargetExecutionsOperations JobTargetExecutions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobTargetExecutions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobTargetExecutions As JobTargetExecutionsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobTargetExecutions : Azure.ResourceManager.Sql.JobTargetExecutionsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobTargetExecutions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobTargetExecutionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobTargetExecutionsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobTargetGroups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobTargetGroupsOperations JobTargetGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobTargetGroupsOperations JobTargetGroups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobTargetGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobTargetGroups As JobTargetGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobTargetGroups : Azure.ResourceManager.Sql.JobTargetGroupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobTargetGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobTargetGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobTargetGroupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobVersions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.JobVersionsOperations JobVersions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.JobVersionsOperations JobVersions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.JobVersions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JobVersions As JobVersionsOperations" />
+      <MemberSignature Language="F#" Value="member this.JobVersions : Azure.ResourceManager.Sql.JobVersionsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.JobVersions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.JobVersionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of JobVersionsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongTermRetentionBackups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.LongTermRetentionBackupsOperations LongTermRetentionBackups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.LongTermRetentionBackupsOperations LongTermRetentionBackups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.LongTermRetentionBackups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LongTermRetentionBackups As LongTermRetentionBackupsOperations" />
+      <MemberSignature Language="F#" Value="member this.LongTermRetentionBackups : Azure.ResourceManager.Sql.LongTermRetentionBackupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.LongTermRetentionBackups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.LongTermRetentionBackupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of LongTermRetentionBackupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongTermRetentionManagedInstanceBackups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.LongTermRetentionManagedInstanceBackupsOperations LongTermRetentionManagedInstanceBackups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.LongTermRetentionManagedInstanceBackupsOperations LongTermRetentionManagedInstanceBackups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.LongTermRetentionManagedInstanceBackups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LongTermRetentionManagedInstanceBackups As LongTermRetentionManagedInstanceBackupsOperations" />
+      <MemberSignature Language="F#" Value="member this.LongTermRetentionManagedInstanceBackups : Azure.ResourceManager.Sql.LongTermRetentionManagedInstanceBackupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.LongTermRetentionManagedInstanceBackups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.LongTermRetentionManagedInstanceBackupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of LongTermRetentionManagedInstanceBackupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedBackupShortTermRetentionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPoliciesOperations ManagedBackupShortTermRetentionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPoliciesOperations ManagedBackupShortTermRetentionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedBackupShortTermRetentionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedBackupShortTermRetentionPolicies As ManagedBackupShortTermRetentionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedBackupShortTermRetentionPolicies : Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedBackupShortTermRetentionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedBackupShortTermRetentionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabaseRestoreDetails">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations ManagedDatabaseRestoreDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations ManagedDatabaseRestoreDetails" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseRestoreDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabaseRestoreDetails As ManagedDatabaseRestoreDetailsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseRestoreDetails : Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseRestoreDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabaseRestoreDetailsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabasesOperations ManagedDatabases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabasesOperations ManagedDatabases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabases As ManagedDatabasesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabases : Azure.ResourceManager.Sql.ManagedDatabasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabaseSecurityAlertPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations ManagedDatabaseSecurityAlertPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations ManagedDatabaseSecurityAlertPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseSecurityAlertPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabaseSecurityAlertPolicies As ManagedDatabaseSecurityAlertPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseSecurityAlertPolicies : Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseSecurityAlertPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabaseSecurityAlertPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabaseSensitivityLabels">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations ManagedDatabaseSensitivityLabels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations ManagedDatabaseSensitivityLabels" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseSensitivityLabels" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabaseSensitivityLabels As ManagedDatabaseSensitivityLabelsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseSensitivityLabels : Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseSensitivityLabels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabaseSensitivityLabelsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabaseVulnerabilityAssessmentRuleBaselines">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselinesOperations ManagedDatabaseVulnerabilityAssessmentRuleBaselines { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselinesOperations ManagedDatabaseVulnerabilityAssessmentRuleBaselines" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseVulnerabilityAssessmentRuleBaselines" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabaseVulnerabilityAssessmentRuleBaselines As ManagedDatabaseVulnerabilityAssessmentRuleBaselinesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseVulnerabilityAssessmentRuleBaselines : Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselinesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseVulnerabilityAssessmentRuleBaselines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselinesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabaseVulnerabilityAssessmentRuleBaselinesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabaseVulnerabilityAssessments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentsOperations ManagedDatabaseVulnerabilityAssessments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentsOperations ManagedDatabaseVulnerabilityAssessments" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseVulnerabilityAssessments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabaseVulnerabilityAssessments As ManagedDatabaseVulnerabilityAssessmentsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseVulnerabilityAssessments : Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseVulnerabilityAssessments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabaseVulnerabilityAssessmentsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedDatabaseVulnerabilityAssessmentScans">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScansOperations ManagedDatabaseVulnerabilityAssessmentScans { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScansOperations ManagedDatabaseVulnerabilityAssessmentScans" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseVulnerabilityAssessmentScans" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedDatabaseVulnerabilityAssessmentScans As ManagedDatabaseVulnerabilityAssessmentScansOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseVulnerabilityAssessmentScans : Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScansOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedDatabaseVulnerabilityAssessmentScans" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScansOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedDatabaseVulnerabilityAssessmentScansOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstance">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceOperations ManagedInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceOperations ManagedInstance" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstance As ManagedInstanceOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstance : Azure.ResourceManager.Sql.ManagedInstanceOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceAdministrators">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceAdministratorsOperations ManagedInstanceAdministrators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceAdministratorsOperations ManagedInstanceAdministrators" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceAdministrators" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstanceAdministrators As ManagedInstanceAdministratorsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceAdministrators : Azure.ResourceManager.Sql.ManagedInstanceAdministratorsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceAdministrators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceAdministratorsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceAdministratorsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceEncryptionProtectors">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorsOperations ManagedInstanceEncryptionProtectors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorsOperations ManagedInstanceEncryptionProtectors" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceEncryptionProtectors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstanceEncryptionProtectors As ManagedInstanceEncryptionProtectorsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceEncryptionProtectors : Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceEncryptionProtectors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceEncryptionProtectorsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceKeys">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceKeysOperations ManagedInstanceKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceKeysOperations ManagedInstanceKeys" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstanceKeys As ManagedInstanceKeysOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceKeys : Azure.ResourceManager.Sql.ManagedInstanceKeysOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceKeysOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceKeysOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceLongTermRetentionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations ManagedInstanceLongTermRetentionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations ManagedInstanceLongTermRetentionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceLongTermRetentionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstanceLongTermRetentionPolicies As ManagedInstanceLongTermRetentionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceLongTermRetentionPolicies : Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceLongTermRetentionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceLongTermRetentionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstances">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstancesOperations ManagedInstances { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstancesOperations ManagedInstances" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstances" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstances As ManagedInstancesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstances : Azure.ResourceManager.Sql.ManagedInstancesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstances" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstancesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstancesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceTdeCertificates">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceTdeCertificatesOperations ManagedInstanceTdeCertificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceTdeCertificatesOperations ManagedInstanceTdeCertificates" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceTdeCertificates" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstanceTdeCertificates As ManagedInstanceTdeCertificatesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceTdeCertificates : Azure.ResourceManager.Sql.ManagedInstanceTdeCertificatesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceTdeCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceTdeCertificatesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceTdeCertificatesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceVulnerabilityAssessments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentsOperations ManagedInstanceVulnerabilityAssessments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentsOperations ManagedInstanceVulnerabilityAssessments" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceVulnerabilityAssessments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedInstanceVulnerabilityAssessments As ManagedInstanceVulnerabilityAssessmentsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceVulnerabilityAssessments : Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedInstanceVulnerabilityAssessments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedInstanceVulnerabilityAssessmentsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies As ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies : Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedServerSecurityAlertPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedServerSecurityAlertPoliciesOperations ManagedServerSecurityAlertPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ManagedServerSecurityAlertPoliciesOperations ManagedServerSecurityAlertPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ManagedServerSecurityAlertPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ManagedServerSecurityAlertPolicies As ManagedServerSecurityAlertPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedServerSecurityAlertPolicies : Azure.ResourceManager.Sql.ManagedServerSecurityAlertPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ManagedServerSecurityAlertPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedServerSecurityAlertPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ManagedServerSecurityAlertPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operations">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Operations Operations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.Operations Operations" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Operations As Operations" />
+      <MemberSignature Language="F#" Value="member this.Operations : Azure.ResourceManager.Sql.Operations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Operations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Operations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of Operations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateEndpointConnections">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations PrivateEndpointConnections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations PrivateEndpointConnections" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.PrivateEndpointConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PrivateEndpointConnections As PrivateEndpointConnectionsOperations" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.PrivateEndpointConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of PrivateEndpointConnectionsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateLinkResources">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.PrivateLinkResourcesOperations PrivateLinkResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.PrivateLinkResourcesOperations PrivateLinkResources" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.PrivateLinkResources" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PrivateLinkResources As PrivateLinkResourcesOperations" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkResources : Azure.ResourceManager.Sql.PrivateLinkResourcesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.PrivateLinkResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.PrivateLinkResourcesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of PrivateLinkResourcesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecommendedElasticPools">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.RecommendedElasticPoolsOperations RecommendedElasticPools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.RecommendedElasticPoolsOperations RecommendedElasticPools" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.RecommendedElasticPools" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RecommendedElasticPools As RecommendedElasticPoolsOperations" />
+      <MemberSignature Language="F#" Value="member this.RecommendedElasticPools : Azure.ResourceManager.Sql.RecommendedElasticPoolsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.RecommendedElasticPools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.RecommendedElasticPoolsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of RecommendedElasticPoolsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoverableDatabases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.RecoverableDatabasesOperations RecoverableDatabases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.RecoverableDatabasesOperations RecoverableDatabases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.RecoverableDatabases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RecoverableDatabases As RecoverableDatabasesOperations" />
+      <MemberSignature Language="F#" Value="member this.RecoverableDatabases : Azure.ResourceManager.Sql.RecoverableDatabasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.RecoverableDatabases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.RecoverableDatabasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of RecoverableDatabasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoverableManagedDatabases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.RecoverableManagedDatabasesOperations RecoverableManagedDatabases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.RecoverableManagedDatabasesOperations RecoverableManagedDatabases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.RecoverableManagedDatabases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RecoverableManagedDatabases As RecoverableManagedDatabasesOperations" />
+      <MemberSignature Language="F#" Value="member this.RecoverableManagedDatabases : Azure.ResourceManager.Sql.RecoverableManagedDatabasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.RecoverableManagedDatabases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.RecoverableManagedDatabasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of RecoverableManagedDatabasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationLinks">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ReplicationLinksOperations ReplicationLinks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ReplicationLinksOperations ReplicationLinks" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ReplicationLinks" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReplicationLinks As ReplicationLinksOperations" />
+      <MemberSignature Language="F#" Value="member this.ReplicationLinks : Azure.ResourceManager.Sql.ReplicationLinksOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ReplicationLinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ReplicationLinksOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ReplicationLinksOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestorableDroppedDatabases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.RestorableDroppedDatabasesOperations RestorableDroppedDatabases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.RestorableDroppedDatabasesOperations RestorableDroppedDatabases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.RestorableDroppedDatabases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RestorableDroppedDatabases As RestorableDroppedDatabasesOperations" />
+      <MemberSignature Language="F#" Value="member this.RestorableDroppedDatabases : Azure.ResourceManager.Sql.RestorableDroppedDatabasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.RestorableDroppedDatabases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.RestorableDroppedDatabasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of RestorableDroppedDatabasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestorableDroppedManagedDatabases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.RestorableDroppedManagedDatabasesOperations RestorableDroppedManagedDatabases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.RestorableDroppedManagedDatabasesOperations RestorableDroppedManagedDatabases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.RestorableDroppedManagedDatabases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RestorableDroppedManagedDatabases As RestorableDroppedManagedDatabasesOperations" />
+      <MemberSignature Language="F#" Value="member this.RestorableDroppedManagedDatabases : Azure.ResourceManager.Sql.RestorableDroppedManagedDatabasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.RestorableDroppedManagedDatabases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.RestorableDroppedManagedDatabasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of RestorableDroppedManagedDatabasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestorePoints">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.RestorePointsOperations RestorePoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.RestorePointsOperations RestorePoints" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.RestorePoints" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RestorePoints As RestorePointsOperations" />
+      <MemberSignature Language="F#" Value="member this.RestorePoints : Azure.ResourceManager.Sql.RestorePointsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.RestorePoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.RestorePointsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of RestorePointsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SensitivityLabels">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SensitivityLabelsOperations SensitivityLabels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.SensitivityLabelsOperations SensitivityLabels" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.SensitivityLabels" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SensitivityLabels As SensitivityLabelsOperations" />
+      <MemberSignature Language="F#" Value="member this.SensitivityLabels : Azure.ResourceManager.Sql.SensitivityLabelsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.SensitivityLabels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SensitivityLabelsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of SensitivityLabelsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerAutomaticTuning">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerAutomaticTuningOperations ServerAutomaticTuning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerAutomaticTuningOperations ServerAutomaticTuning" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerAutomaticTuning" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerAutomaticTuning As ServerAutomaticTuningOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerAutomaticTuning : Azure.ResourceManager.Sql.ServerAutomaticTuningOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerAutomaticTuning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerAutomaticTuningOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerAutomaticTuningOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerAzureADAdministrators">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerAzureADAdministratorsOperations ServerAzureADAdministrators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerAzureADAdministratorsOperations ServerAzureADAdministrators" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerAzureADAdministrators" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerAzureADAdministrators As ServerAzureADAdministratorsOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerAzureADAdministrators : Azure.ResourceManager.Sql.ServerAzureADAdministratorsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerAzureADAdministrators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerAzureADAdministratorsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerAzureADAdministratorsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerAzureADOnlyAuthentications">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations ServerAzureADOnlyAuthentications { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations ServerAzureADOnlyAuthentications" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerAzureADOnlyAuthentications" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerAzureADOnlyAuthentications As ServerAzureADOnlyAuthenticationsOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerAzureADOnlyAuthentications : Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerAzureADOnlyAuthentications" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerAzureADOnlyAuthenticationsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerBlobAuditingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerBlobAuditingPoliciesOperations ServerBlobAuditingPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerBlobAuditingPoliciesOperations ServerBlobAuditingPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerBlobAuditingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerBlobAuditingPolicies As ServerBlobAuditingPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerBlobAuditingPolicies : Azure.ResourceManager.Sql.ServerBlobAuditingPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerBlobAuditingPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerBlobAuditingPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerBlobAuditingPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerCommunicationLinks">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerCommunicationLinksOperations ServerCommunicationLinks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerCommunicationLinksOperations ServerCommunicationLinks" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerCommunicationLinks" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerCommunicationLinks As ServerCommunicationLinksOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerCommunicationLinks : Azure.ResourceManager.Sql.ServerCommunicationLinksOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerCommunicationLinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerCommunicationLinksOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerCommunicationLinksOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerConnectionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerConnectionPoliciesOperations ServerConnectionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerConnectionPoliciesOperations ServerConnectionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerConnectionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerConnectionPolicies As ServerConnectionPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerConnectionPolicies : Azure.ResourceManager.Sql.ServerConnectionPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerConnectionPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerConnectionPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerConnectionPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerDnsAliases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerDnsAliasesOperations ServerDnsAliases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerDnsAliasesOperations ServerDnsAliases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerDnsAliases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerDnsAliases As ServerDnsAliasesOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerDnsAliases : Azure.ResourceManager.Sql.ServerDnsAliasesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerDnsAliases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerDnsAliasesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerDnsAliasesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerKeys">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerKeysOperations ServerKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerKeysOperations ServerKeys" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerKeys As ServerKeysOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerKeys : Azure.ResourceManager.Sql.ServerKeysOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerKeysOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerKeysOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Servers">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServersOperations Servers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServersOperations Servers" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Servers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Servers As ServersOperations" />
+      <MemberSignature Language="F#" Value="member this.Servers : Azure.ResourceManager.Sql.ServersOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Servers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServersOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServersOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerSecurityAlertPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerSecurityAlertPoliciesOperations ServerSecurityAlertPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerSecurityAlertPoliciesOperations ServerSecurityAlertPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerSecurityAlertPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerSecurityAlertPolicies As ServerSecurityAlertPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerSecurityAlertPolicies : Azure.ResourceManager.Sql.ServerSecurityAlertPoliciesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerSecurityAlertPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerSecurityAlertPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerSecurityAlertPoliciesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerUsages">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerUsagesOperations ServerUsages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerUsagesOperations ServerUsages" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerUsages" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerUsages As ServerUsagesOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerUsages : Azure.ResourceManager.Sql.ServerUsagesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerUsages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerUsagesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerUsagesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerVulnerabilityAssessments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServerVulnerabilityAssessmentsOperations ServerVulnerabilityAssessments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServerVulnerabilityAssessmentsOperations ServerVulnerabilityAssessments" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServerVulnerabilityAssessments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerVulnerabilityAssessments As ServerVulnerabilityAssessmentsOperations" />
+      <MemberSignature Language="F#" Value="member this.ServerVulnerabilityAssessments : Azure.ResourceManager.Sql.ServerVulnerabilityAssessmentsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServerVulnerabilityAssessments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServerVulnerabilityAssessmentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServerVulnerabilityAssessmentsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceObjectives">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServiceObjectivesOperations ServiceObjectives { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServiceObjectivesOperations ServiceObjectives" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServiceObjectives" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServiceObjectives As ServiceObjectivesOperations" />
+      <MemberSignature Language="F#" Value="member this.ServiceObjectives : Azure.ResourceManager.Sql.ServiceObjectivesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServiceObjectives" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServiceObjectivesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServiceObjectivesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceTierAdvisors">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ServiceTierAdvisorsOperations ServiceTierAdvisors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.ServiceTierAdvisorsOperations ServiceTierAdvisors" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.ServiceTierAdvisors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServiceTierAdvisors As ServiceTierAdvisorsOperations" />
+      <MemberSignature Language="F#" Value="member this.ServiceTierAdvisors : Azure.ResourceManager.Sql.ServiceTierAdvisorsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.ServiceTierAdvisors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ServiceTierAdvisorsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of ServiceTierAdvisorsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionUsages">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SubscriptionUsagesOperations SubscriptionUsages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.SubscriptionUsagesOperations SubscriptionUsages" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.SubscriptionUsages" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubscriptionUsages As SubscriptionUsagesOperations" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionUsages : Azure.ResourceManager.Sql.SubscriptionUsagesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.SubscriptionUsages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SubscriptionUsagesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of SubscriptionUsagesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncAgents">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncAgentsOperations SyncAgents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.SyncAgentsOperations SyncAgents" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.SyncAgents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncAgents As SyncAgentsOperations" />
+      <MemberSignature Language="F#" Value="member this.SyncAgents : Azure.ResourceManager.Sql.SyncAgentsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.SyncAgents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncAgentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of SyncAgentsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncGroups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncGroupsOperations SyncGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.SyncGroupsOperations SyncGroups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.SyncGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncGroups As SyncGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.SyncGroups : Azure.ResourceManager.Sql.SyncGroupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.SyncGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of SyncGroupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncMembers">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncMembersOperations SyncMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.SyncMembersOperations SyncMembers" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.SyncMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncMembers As SyncMembersOperations" />
+      <MemberSignature Language="F#" Value="member this.SyncMembers : Azure.ResourceManager.Sql.SyncMembersOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.SyncMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncMembersOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of SyncMembersOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TdeCertificates">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.TdeCertificatesOperations TdeCertificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.TdeCertificatesOperations TdeCertificates" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.TdeCertificates" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TdeCertificates As TdeCertificatesOperations" />
+      <MemberSignature Language="F#" Value="member this.TdeCertificates : Azure.ResourceManager.Sql.TdeCertificatesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.TdeCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.TdeCertificatesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of TdeCertificatesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransparentDataEncryptionActivities">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations TransparentDataEncryptionActivities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations TransparentDataEncryptionActivities" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.TransparentDataEncryptionActivities" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TransparentDataEncryptionActivities As TransparentDataEncryptionActivitiesOperations" />
+      <MemberSignature Language="F#" Value="member this.TransparentDataEncryptionActivities : Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.TransparentDataEncryptionActivities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of TransparentDataEncryptionActivitiesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransparentDataEncryptions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations TransparentDataEncryptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations TransparentDataEncryptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.TransparentDataEncryptions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TransparentDataEncryptions As TransparentDataEncryptionsOperations" />
+      <MemberSignature Language="F#" Value="member this.TransparentDataEncryptions : Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.TransparentDataEncryptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of TransparentDataEncryptionsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Usages">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.UsagesOperations Usages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.UsagesOperations Usages" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.Usages" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Usages As UsagesOperations" />
+      <MemberSignature Language="F#" Value="member this.Usages : Azure.ResourceManager.Sql.UsagesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.Usages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.UsagesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of UsagesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualClusters">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.VirtualClustersOperations VirtualClusters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.VirtualClustersOperations VirtualClusters" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.VirtualClusters" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property VirtualClusters As VirtualClustersOperations" />
+      <MemberSignature Language="F#" Value="member this.VirtualClusters : Azure.ResourceManager.Sql.VirtualClustersOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.VirtualClusters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.VirtualClustersOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of VirtualClustersOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualNetworkRules">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.VirtualNetworkRulesOperations VirtualNetworkRules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.VirtualNetworkRulesOperations VirtualNetworkRules" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.VirtualNetworkRules" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property VirtualNetworkRules As VirtualNetworkRulesOperations" />
+      <MemberSignature Language="F#" Value="member this.VirtualNetworkRules : Azure.ResourceManager.Sql.VirtualNetworkRulesOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.VirtualNetworkRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.VirtualNetworkRulesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of VirtualNetworkRulesOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkloadClassifiers">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.WorkloadClassifiersOperations WorkloadClassifiers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.WorkloadClassifiersOperations WorkloadClassifiers" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.WorkloadClassifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WorkloadClassifiers As WorkloadClassifiersOperations" />
+      <MemberSignature Language="F#" Value="member this.WorkloadClassifiers : Azure.ResourceManager.Sql.WorkloadClassifiersOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.WorkloadClassifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.WorkloadClassifiersOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of WorkloadClassifiersOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkloadGroups">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.WorkloadGroupsOperations WorkloadGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.WorkloadGroupsOperations WorkloadGroups" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlManagementClient.WorkloadGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WorkloadGroups As WorkloadGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.WorkloadGroups : Azure.ResourceManager.Sql.WorkloadGroupsOperations" Usage="Azure.ResourceManager.Sql.SqlManagementClient.WorkloadGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.WorkloadGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Returns an instance of WorkloadGroupsOperations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

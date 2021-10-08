@@ -1,0 +1,233 @@
+<Type Name="ManagedDatabaseSecurityAlertPoliciesOperations" FullName="Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations">
+  <TypeSignature Language="C#" Value="public class ManagedDatabaseSecurityAlertPoliciesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedDatabaseSecurityAlertPoliciesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedDatabaseSecurityAlertPoliciesOperations" />
+  <TypeSignature Language="F#" Value="type ManagedDatabaseSecurityAlertPoliciesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ManagedDatabaseSecurityAlertPolicies service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagedDatabaseSecurityAlertPoliciesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ManagedDatabaseSecurityAlertPoliciesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; CreateOrUpdate (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; CreateOrUpdate(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.CreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (resourceGroupName As String, managedInstanceName As String, databaseName As String, securityAlertPolicyName As SecurityAlertPolicyName, parameters As ManagedDatabaseSecurityAlertPolicy, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedDatabaseSecurityAlertPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&#xA;override this.CreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;" Usage="managedDatabaseSecurityAlertPoliciesOperations.CreateOrUpdate (resourceGroupName, managedInstanceName, databaseName, securityAlertPolicyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the managed database for which the security alert policy is defined. </param>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="parameters"> The database security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a database's security alert policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt; CreateOrUpdateAsync (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt; CreateOrUpdateAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, securityAlertPolicyName As SecurityAlertPolicyName, parameters As ManagedDatabaseSecurityAlertPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedDatabaseSecurityAlertPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt;" Usage="managedDatabaseSecurityAlertPoliciesOperations.CreateOrUpdateAsync (resourceGroupName, managedInstanceName, databaseName, securityAlertPolicyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the managed database for which the security alert policy is defined. </param>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="parameters"> The database security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a database's security alert policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; Get (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; Get(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, managedInstanceName As String, databaseName As String, securityAlertPolicyName As SecurityAlertPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedDatabaseSecurityAlertPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;" Usage="managedDatabaseSecurityAlertPoliciesOperations.Get (resourceGroupName, managedInstanceName, databaseName, securityAlertPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the managed database for which the security alert policy is defined. </param>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a managed database's security alert policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt; GetAsync (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt; GetAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, securityAlertPolicyName As SecurityAlertPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedDatabaseSecurityAlertPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt;" Usage="managedDatabaseSecurityAlertPoliciesOperations.GetAsync (resourceGroupName, managedInstanceName, databaseName, securityAlertPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the managed database for which the security alert policy is defined. </param>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a managed database's security alert policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; ListByDatabase (string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; ListByDatabase(string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.ListByDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabase (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedDatabaseSecurityAlertPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&#xA;override this.ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;" Usage="managedDatabaseSecurityAlertPoliciesOperations.ListByDatabase (resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the managed database for which the security alert policies are defined. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of managed database's security alert policies. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; ListByDatabaseAsync (string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt; ListByDatabaseAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPoliciesOperations.ListByDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabaseAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedDatabaseSecurityAlertPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;&#xA;override this.ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;" Usage="managedDatabaseSecurityAlertPoliciesOperations.ListByDatabaseAsync (resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseSecurityAlertPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the managed database for which the security alert policies are defined. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of managed database's security alert policies. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,233 @@
+<Type Name="BackupLongTermRetentionPoliciesOperations" FullName="Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations">
+  <TypeSignature Language="C#" Value="public class BackupLongTermRetentionPoliciesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupLongTermRetentionPoliciesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackupLongTermRetentionPoliciesOperations" />
+  <TypeSignature Language="F#" Value="type BackupLongTermRetentionPoliciesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The BackupLongTermRetentionPolicies service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BackupLongTermRetentionPoliciesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of BackupLongTermRetentionPoliciesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt; Get (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt; Get(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, databaseName As String, policyName As LongTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of BackupLongTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;" Usage="backupLongTermRetentionPoliciesOperations.Get (resourceGroupName, serverName, databaseName, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt; GetAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt; GetAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, databaseName As String, policyName As LongTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of BackupLongTermRetentionPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt;" Usage="backupLongTermRetentionPoliciesOperations.GetAsync (resourceGroupName, serverName, databaseName, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt; ListByDatabase (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt; ListByDatabase(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.ListByDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabase (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of BackupLongTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&#xA;override this.ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;" Usage="backupLongTermRetentionPoliciesOperations.ListByDatabase (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt; ListByDatabaseAsync (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt; ListByDatabaseAsync(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.ListByDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabaseAsync (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of BackupLongTermRetentionPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt;&#xA;override this.ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt;" Usage="backupLongTermRetentionPoliciesOperations.ListByDatabaseAsync (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.StartCreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, databaseName As String, policyName As LongTermRetentionPolicyName, parameters As BackupLongTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As BackupLongTermRetentionPoliciesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation" Usage="backupLongTermRetentionPoliciesOperations.StartCreateOrUpdate (resourceGroupName, serverName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, policyName As LongTermRetentionPolicyName, parameters As BackupLongTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BackupLongTermRetentionPoliciesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation&gt;" Usage="backupLongTermRetentionPoliciesOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupLongTermRetentionPoliciesCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.BackupLongTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be Default. </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

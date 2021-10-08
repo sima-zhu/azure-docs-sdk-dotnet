@@ -1,0 +1,153 @@
+<Type Name="ServerAutomaticTuningOperations" FullName="Azure.ResourceManager.Sql.ServerAutomaticTuningOperations">
+  <TypeSignature Language="C#" Value="public class ServerAutomaticTuningOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServerAutomaticTuningOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ServerAutomaticTuningOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerAutomaticTuningOperations" />
+  <TypeSignature Language="F#" Value="type ServerAutomaticTuningOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ServerAutomaticTuning service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ServerAutomaticTuningOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAutomaticTuningOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ServerAutomaticTuningOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt; Get (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt; Get(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAutomaticTuningOperations.Get(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServerAutomaticTuning)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&#xA;override this.Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;" Usage="serverAutomaticTuningOperations.Get (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Retrieves server automatic tuning options. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt; GetAsync (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt; GetAsync(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAutomaticTuningOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServerAutomaticTuning))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt;&#xA;override this.GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt;" Usage="serverAutomaticTuningOperations.GetAsync (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Retrieves server automatic tuning options. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt; Update (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.ServerAutomaticTuning parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt; Update(string resourceGroupName, string serverName, class Azure.ResourceManager.Sql.Models.ServerAutomaticTuning parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAutomaticTuningOperations.Update(System.String,System.String,Azure.ResourceManager.Sql.Models.ServerAutomaticTuning,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (resourceGroupName As String, serverName As String, parameters As ServerAutomaticTuning, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServerAutomaticTuning)" />
+      <MemberSignature Language="F#" Value="abstract member Update : string * string * Azure.ResourceManager.Sql.Models.ServerAutomaticTuning * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&#xA;override this.Update : string * string * Azure.ResourceManager.Sql.Models.ServerAutomaticTuning * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;" Usage="serverAutomaticTuningOperations.Update (resourceGroupName, serverName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ServerAutomaticTuning" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="parameters"> The requested automatic tuning resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Update automatic tuning options on server. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt; UpdateAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.ServerAutomaticTuning parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt; UpdateAsync(string resourceGroupName, string serverName, class Azure.ResourceManager.Sql.Models.ServerAutomaticTuning parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAutomaticTuningOperations.UpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.ServerAutomaticTuning,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (resourceGroupName As String, serverName As String, parameters As ServerAutomaticTuning, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServerAutomaticTuning))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ServerAutomaticTuning * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt;&#xA;override this.UpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ServerAutomaticTuning * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt;" Usage="serverAutomaticTuningOperations.UpdateAsync (resourceGroupName, serverName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ServerAutomaticTuning&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ServerAutomaticTuning" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="parameters"> The requested automatic tuning resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Update automatic tuning options on server. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

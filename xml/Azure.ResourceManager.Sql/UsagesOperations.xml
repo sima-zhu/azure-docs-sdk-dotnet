@@ -1,0 +1,101 @@
+<Type Name="UsagesOperations" FullName="Azure.ResourceManager.Sql.UsagesOperations">
+  <TypeSignature Language="C#" Value="public class UsagesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UsagesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.UsagesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class UsagesOperations" />
+  <TypeSignature Language="F#" Value="type UsagesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The Usages service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected UsagesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.UsagesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of UsagesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByInstancePool">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt; ListByInstancePool (string resourceGroupName, string instancePoolName, bool? expandChildren = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.Usage&gt; ListByInstancePool(string resourceGroupName, string instancePoolName, valuetype System.Nullable`1&lt;bool&gt; expandChildren, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.UsagesOperations.ListByInstancePool(System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByInstancePool (resourceGroupName As String, instancePoolName As String, Optional expandChildren As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Usage)" />
+      <MemberSignature Language="F#" Value="abstract member ListByInstancePool : string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt;&#xA;override this.ListByInstancePool : string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt;" Usage="usagesOperations.ListByInstancePool (resourceGroupName, instancePoolName, expandChildren, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="instancePoolName" Type="System.String" />
+        <Parameter Name="expandChildren" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="instancePoolName"> The name of the instance pool to be retrieved. </param>
+        <param name="expandChildren"> Optional request parameter to include managed instance usages within the instance pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all instance pool usage metrics. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="instancePoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByInstancePoolAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt; ListByInstancePoolAsync (string resourceGroupName, string instancePoolName, bool? expandChildren = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.Usage&gt; ListByInstancePoolAsync(string resourceGroupName, string instancePoolName, valuetype System.Nullable`1&lt;bool&gt; expandChildren, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.UsagesOperations.ListByInstancePoolAsync(System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByInstancePoolAsync (resourceGroupName As String, instancePoolName As String, Optional expandChildren As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Usage)" />
+      <MemberSignature Language="F#" Value="abstract member ListByInstancePoolAsync : string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt;&#xA;override this.ListByInstancePoolAsync : string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt;" Usage="usagesOperations.ListByInstancePoolAsync (resourceGroupName, instancePoolName, expandChildren, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.Usage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="instancePoolName" Type="System.String" />
+        <Parameter Name="expandChildren" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="instancePoolName"> The name of the instance pool to be retrieved. </param>
+        <param name="expandChildren"> Optional request parameter to include managed instance usages within the instance pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all instance pool usage metrics. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="instancePoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

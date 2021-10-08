@@ -1,0 +1,509 @@
+<Type Name="ManagedInstancesOperations" FullName="Azure.ResourceManager.Sql.ManagedInstancesOperations">
+  <TypeSignature Language="C#" Value="public class ManagedInstancesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedInstancesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ManagedInstancesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedInstancesOperations" />
+  <TypeSignature Language="F#" Value="type ManagedInstancesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ManagedInstances service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagedInstancesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ManagedInstancesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; Get (string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; Get(string resourceGroupName, string managedInstanceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.Get(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, managedInstanceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.Get (resourceGroupName, managedInstanceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&gt; GetAsync (string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&gt; GetAsync(string resourceGroupName, string managedInstanceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, managedInstanceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedInstance))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&gt;&#xA;override this.GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&gt;" Usage="managedInstancesOperations.GetAsync (resourceGroupName, managedInstanceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; List (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; List(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.List(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function List (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member List : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.List : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.List cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of all managed instances in the subscription. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.ListAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member ListAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.ListAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.ListAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of all managed instances in the subscription. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByInstancePool">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByInstancePool (string resourceGroupName, string instancePoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByInstancePool(string resourceGroupName, string instancePoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.ListByInstancePool(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByInstancePool (resourceGroupName As String, instancePoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member ListByInstancePool : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.ListByInstancePool : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.ListByInstancePool (resourceGroupName, instancePoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="instancePoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="instancePoolName"> The instance pool name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of all managed instances in an instance pool. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="instancePoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByInstancePoolAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByInstancePoolAsync (string resourceGroupName, string instancePoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByInstancePoolAsync(string resourceGroupName, string instancePoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.ListByInstancePoolAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByInstancePoolAsync (resourceGroupName As String, instancePoolName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member ListByInstancePoolAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.ListByInstancePoolAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.ListByInstancePoolAsync (resourceGroupName, instancePoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="instancePoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="instancePoolName"> The instance pool name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of all managed instances in an instance pool. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="instancePoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByResourceGroup">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByResourceGroup (string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByResourceGroup(string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.ListByResourceGroup(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByResourceGroup (resourceGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member ListByResourceGroup : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.ListByResourceGroup : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.ListByResourceGroup (resourceGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of managed instances in a resource group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByResourceGroupAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByResourceGroupAsync (string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedInstance&gt; ListByResourceGroupAsync(string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.ListByResourceGroupAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByResourceGroupAsync (resourceGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedInstance)" />
+      <MemberSignature Language="F#" Value="abstract member ListByResourceGroupAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;&#xA;override this.ListByResourceGroupAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;" Usage="managedInstancesOperations.ListByResourceGroupAsync (resourceGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of managed instances in a resource group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string managedInstanceName, Azure.ResourceManager.Sql.Models.ManagedInstance parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string managedInstanceName, class Azure.ResourceManager.Sql.Models.ManagedInstance parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartCreateOrUpdate(System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstance,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, managedInstanceName As String, parameters As ManagedInstance, Optional cancellationToken As CancellationToken = Nothing) As ManagedInstancesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.ManagedInstance * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.ManagedInstance * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation" Usage="managedInstancesOperations.StartCreateOrUpdate (resourceGroupName, managedInstanceName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedInstance" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="parameters"> The requested managed instance resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string managedInstanceName, Azure.ResourceManager.Sql.Models.ManagedInstance parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string managedInstanceName, class Azure.ResourceManager.Sql.Models.ManagedInstance parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartCreateOrUpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstance,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, managedInstanceName As String, parameters As ManagedInstance, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedInstancesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ManagedInstance * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ManagedInstance * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation&gt;" Usage="managedInstancesOperations.StartCreateOrUpdateAsync (resourceGroupName, managedInstanceName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedInstance" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="parameters"> The requested managed instance resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation StartDelete (string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation StartDelete(string resourceGroupName, string managedInstanceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartDelete(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, managedInstanceName As String, Optional cancellationToken As CancellationToken = Nothing) As ManagedInstancesDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation&#xA;override this.StartDelete : string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation" Usage="managedInstancesOperations.StartDelete (resourceGroupName, managedInstanceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="managedInstanceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string managedInstanceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartDeleteAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, managedInstanceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedInstancesDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation&gt;" Usage="managedInstancesOperations.StartDeleteAsync (resourceGroupName, managedInstanceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="managedInstanceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailover">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation StartFailover (string resourceGroupName, string managedInstanceName, Azure.ResourceManager.Sql.Models.ReplicaType? replicaType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation StartFailover(string resourceGroupName, string managedInstanceName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.ReplicaType&gt; replicaType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartFailover(System.String,System.String,System.Nullable{Azure.ResourceManager.Sql.Models.ReplicaType},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailover (resourceGroupName As String, managedInstanceName As String, Optional replicaType As Nullable(Of ReplicaType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ManagedInstancesFailoverOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartFailover : string * string * Nullable&lt;Azure.ResourceManager.Sql.Models.ReplicaType&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation&#xA;override this.StartFailover : string * string * Nullable&lt;Azure.ResourceManager.Sql.Models.ReplicaType&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation" Usage="managedInstancesOperations.StartFailover (resourceGroupName, managedInstanceName, replicaType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="replicaType" Type="System.Nullable&lt;Azure.ResourceManager.Sql.Models.ReplicaType&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group. The name is case insensitive. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="replicaType"> The type of replica to be failed over. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Failovers a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="managedInstanceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailoverAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation&gt; StartFailoverAsync (string resourceGroupName, string managedInstanceName, Azure.ResourceManager.Sql.Models.ReplicaType? replicaType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation&gt; StartFailoverAsync(string resourceGroupName, string managedInstanceName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.ReplicaType&gt; replicaType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartFailoverAsync(System.String,System.String,System.Nullable{Azure.ResourceManager.Sql.Models.ReplicaType},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailoverAsync (resourceGroupName As String, managedInstanceName As String, Optional replicaType As Nullable(Of ReplicaType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedInstancesFailoverOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartFailoverAsync : string * string * Nullable&lt;Azure.ResourceManager.Sql.Models.ReplicaType&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation&gt;&#xA;override this.StartFailoverAsync : string * string * Nullable&lt;Azure.ResourceManager.Sql.Models.ReplicaType&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation&gt;" Usage="managedInstancesOperations.StartFailoverAsync (resourceGroupName, managedInstanceName, replicaType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesFailoverOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="replicaType" Type="System.Nullable&lt;Azure.ResourceManager.Sql.Models.ReplicaType&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group. The name is case insensitive. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="replicaType"> The type of replica to be failed over. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Failovers a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="managedInstanceName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation StartUpdate (string resourceGroupName, string managedInstanceName, Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation StartUpdate(string resourceGroupName, string managedInstanceName, class Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartUpdate(System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdate (resourceGroupName As String, managedInstanceName As String, parameters As ManagedInstanceUpdate, Optional cancellationToken As CancellationToken = Nothing) As ManagedInstancesUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdate : string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation&#xA;override this.StartUpdate : string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation" Usage="managedInstancesOperations.StartUpdate (resourceGroupName, managedInstanceName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="parameters"> The requested managed instance resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation&gt; StartUpdateAsync (string resourceGroupName, string managedInstanceName, Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation&gt; StartUpdateAsync(string resourceGroupName, string managedInstanceName, class Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedInstancesOperations.StartUpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdateAsync (resourceGroupName As String, managedInstanceName As String, parameters As ManagedInstanceUpdate, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedInstancesUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation&gt;&#xA;override this.StartUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation&gt;" Usage="managedInstancesOperations.StartUpdateAsync (resourceGroupName, managedInstanceName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedInstancesUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedInstanceUpdate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="parameters"> The requested managed instance resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

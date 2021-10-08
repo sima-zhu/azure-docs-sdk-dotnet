@@ -1,0 +1,549 @@
+<Type Name="ManagedDatabaseSensitivityLabelsOperations" FullName="Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations">
+  <TypeSignature Language="C#" Value="public class ManagedDatabaseSensitivityLabelsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedDatabaseSensitivityLabelsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedDatabaseSensitivityLabelsOperations" />
+  <TypeSignature Language="F#" Value="type ManagedDatabaseSensitivityLabelsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ManagedDatabaseSensitivityLabels service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagedDatabaseSensitivityLabelsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ManagedDatabaseSensitivityLabelsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; CreateOrUpdate (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, Azure.ResourceManager.Sql.Models.SensitivityLabel parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; CreateOrUpdate(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, class Azure.ResourceManager.Sql.Models.SensitivityLabel parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.CreateOrUpdate(System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SensitivityLabel,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, parameters As SensitivityLabel, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SensitivityLabel)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabel * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&#xA;override this.CreateOrUpdate : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabel * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;" Usage="managedDatabaseSensitivityLabelsOperations.CreateOrUpdate (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.SensitivityLabel" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="parameters"> The column sensitivity label resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates the sensitivity label of a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt; CreateOrUpdateAsync (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, Azure.ResourceManager.Sql.Models.SensitivityLabel parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt; CreateOrUpdateAsync(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, class Azure.ResourceManager.Sql.Models.SensitivityLabel parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.CreateOrUpdateAsync(System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SensitivityLabel,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, parameters As SensitivityLabel, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SensitivityLabel))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabel * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabel * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt;" Usage="managedDatabaseSensitivityLabelsOperations.CreateOrUpdateAsync (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.SensitivityLabel" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="parameters"> The column sensitivity label resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates the sensitivity label of a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.Delete(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Delete : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="managedDatabaseSensitivityLabelsOperations.Delete (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes the sensitivity label of a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="managedDatabaseSensitivityLabelsOperations.DeleteAsync (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes the sensitivity label of a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableRecommendation">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response DisableRecommendation (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DisableRecommendation(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.DisableRecommendation(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DisableRecommendation (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member DisableRecommendation : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.DisableRecommendation : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="managedDatabaseSensitivityLabelsOperations.DisableRecommendation (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Disables sensitivity recommendations on a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableRecommendationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DisableRecommendationAsync (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DisableRecommendationAsync(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.DisableRecommendationAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DisableRecommendationAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DisableRecommendationAsync : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DisableRecommendationAsync : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="managedDatabaseSensitivityLabelsOperations.DisableRecommendationAsync (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Disables sensitivity recommendations on a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRecommendation">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response EnableRecommendation (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response EnableRecommendation(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.EnableRecommendation(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EnableRecommendation (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member EnableRecommendation : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.EnableRecommendation : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="managedDatabaseSensitivityLabelsOperations.EnableRecommendation (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Enables sensitivity recommendations on a given column (recommendations are enabled by default on all columns). </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRecommendationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; EnableRecommendationAsync (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; EnableRecommendationAsync(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.EnableRecommendationAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EnableRecommendationAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member EnableRecommendationAsync : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.EnableRecommendationAsync : string * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="managedDatabaseSensitivityLabelsOperations.EnableRecommendationAsync (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Enables sensitivity recommendations on a given column (recommendations are enabled by default on all columns). </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; Get (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, Azure.ResourceManager.Sql.Models.SensitivityLabelSource sensitivityLabelSource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; Get(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype Azure.ResourceManager.Sql.Models.SensitivityLabelSource sensitivityLabelSource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.Get(System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SensitivityLabelSource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, sensitivityLabelSource As SensitivityLabelSource, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SensitivityLabel)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabelSource * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&#xA;override this.Get : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabelSource * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;" Usage="managedDatabaseSensitivityLabelsOperations.Get (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, sensitivityLabelSource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="sensitivityLabelSource" Type="Azure.ResourceManager.Sql.Models.SensitivityLabelSource" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="sensitivityLabelSource"> The source of the sensitivity label. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the sensitivity label of a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt; GetAsync (string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, Azure.ResourceManager.Sql.Models.SensitivityLabelSource sensitivityLabelSource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt; GetAsync(string resourceGroupName, string managedInstanceName, string databaseName, string schemaName, string tableName, string columnName, valuetype Azure.ResourceManager.Sql.Models.SensitivityLabelSource sensitivityLabelSource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.GetAsync(System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SensitivityLabelSource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, schemaName As String, tableName As String, columnName As String, sensitivityLabelSource As SensitivityLabelSource, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SensitivityLabel))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabelSource * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt;&#xA;override this.GetAsync : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.SensitivityLabelSource * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt;" Usage="managedDatabaseSensitivityLabelsOperations.GetAsync (resourceGroupName, managedInstanceName, databaseName, schemaName, tableName, columnName, sensitivityLabelSource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="sensitivityLabelSource" Type="Azure.ResourceManager.Sql.Models.SensitivityLabelSource" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="tableName"> The name of the table. </param>
+        <param name="columnName"> The name of the column. </param>
+        <param name="sensitivityLabelSource"> The source of the sensitivity label. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the sensitivity label of a given column. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListCurrentByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListCurrentByDatabase (string resourceGroupName, string managedInstanceName, string databaseName, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListCurrentByDatabase(string resourceGroupName, string managedInstanceName, string databaseName, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.ListCurrentByDatabase(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListCurrentByDatabase (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SensitivityLabel)" />
+      <MemberSignature Language="F#" Value="abstract member ListCurrentByDatabase : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&#xA;override this.ListCurrentByDatabase : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;" Usage="managedDatabaseSensitivityLabelsOperations.ListCurrentByDatabase (resourceGroupName, managedInstanceName, databaseName, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="filter"> An OData filter expression that filters elements in the collection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the sensitivity labels of a given database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListCurrentByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListCurrentByDatabaseAsync (string resourceGroupName, string managedInstanceName, string databaseName, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListCurrentByDatabaseAsync(string resourceGroupName, string managedInstanceName, string databaseName, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.ListCurrentByDatabaseAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListCurrentByDatabaseAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SensitivityLabel)" />
+      <MemberSignature Language="F#" Value="abstract member ListCurrentByDatabaseAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&#xA;override this.ListCurrentByDatabaseAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;" Usage="managedDatabaseSensitivityLabelsOperations.ListCurrentByDatabaseAsync (resourceGroupName, managedInstanceName, databaseName, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="filter"> An OData filter expression that filters elements in the collection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the sensitivity labels of a given database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListRecommendedByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListRecommendedByDatabase (string resourceGroupName, string managedInstanceName, string databaseName, bool? includeDisabledRecommendations = default, string skipToken = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListRecommendedByDatabase(string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Nullable`1&lt;bool&gt; includeDisabledRecommendations, string skipToken, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.ListRecommendedByDatabase(System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListRecommendedByDatabase (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional includeDisabledRecommendations As Nullable(Of Boolean) = Nothing, Optional skipToken As String = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SensitivityLabel)" />
+      <MemberSignature Language="F#" Value="abstract member ListRecommendedByDatabase : string * string * string * Nullable&lt;bool&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&#xA;override this.ListRecommendedByDatabase : string * string * string * Nullable&lt;bool&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;" Usage="managedDatabaseSensitivityLabelsOperations.ListRecommendedByDatabase (resourceGroupName, managedInstanceName, databaseName, includeDisabledRecommendations, skipToken, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="includeDisabledRecommendations" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="skipToken" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="includeDisabledRecommendations"> Specifies whether to include disabled recommendations or not. </param>
+        <param name="skipToken"> The String to use. </param>
+        <param name="filter"> An OData filter expression that filters elements in the collection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the sensitivity labels of a given database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListRecommendedByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListRecommendedByDatabaseAsync (string resourceGroupName, string managedInstanceName, string databaseName, bool? includeDisabledRecommendations = default, string skipToken = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SensitivityLabel&gt; ListRecommendedByDatabaseAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Nullable`1&lt;bool&gt; includeDisabledRecommendations, string skipToken, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelsOperations.ListRecommendedByDatabaseAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListRecommendedByDatabaseAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, Optional includeDisabledRecommendations As Nullable(Of Boolean) = Nothing, Optional skipToken As String = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SensitivityLabel)" />
+      <MemberSignature Language="F#" Value="abstract member ListRecommendedByDatabaseAsync : string * string * string * Nullable&lt;bool&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;&#xA;override this.ListRecommendedByDatabaseAsync : string * string * string * Nullable&lt;bool&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;" Usage="managedDatabaseSensitivityLabelsOperations.ListRecommendedByDatabaseAsync (resourceGroupName, managedInstanceName, databaseName, includeDisabledRecommendations, skipToken, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SensitivityLabel&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="includeDisabledRecommendations" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="skipToken" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="includeDisabledRecommendations"> Specifies whether to include disabled recommendations or not. </param>
+        <param name="skipToken"> The String to use. </param>
+        <param name="filter"> An OData filter expression that filters elements in the collection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the sensitivity labels of a given database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
