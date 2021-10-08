@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Monitor.Query",
-  "Version": "1.0.0",
-  "DevVersion": null,
+  "Version": "1.0.0-alpha.20211008.1",
+  "DevVersion": "1.0.0-alpha.20211008.1",
   "DirectoryPath": "sdk/monitor/Azure.Monitor.Query",
   "ServiceDirectory": "monitor",
   "ReadMePath": "sdk/monitor/Azure.Monitor.Query/README.md",
@@ -10,5 +10,5 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Monitor.Query",
-  "ReleaseStatus": "2021-10-07"
+  "ReleaseStatus": null
 }
