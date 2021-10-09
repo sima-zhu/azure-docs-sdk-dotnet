@@ -1,0 +1,781 @@
+<Type Name="SyncGroupsOperations" FullName="Azure.ResourceManager.Sql.SyncGroupsOperations">
+  <TypeSignature Language="C#" Value="public class SyncGroupsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncGroupsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.SyncGroupsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncGroupsOperations" />
+  <TypeSignature Language="F#" Value="type SyncGroupsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The SyncGroups service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SyncGroupsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of SyncGroupsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelSync">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CancelSync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CancelSync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.CancelSync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CancelSync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member CancelSync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.CancelSync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="syncGroupsOperations.CancelSync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Cancels a sync group synchronization. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelSyncAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CancelSyncAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CancelSyncAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.CancelSyncAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CancelSyncAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member CancelSyncAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CancelSyncAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="syncGroupsOperations.CancelSyncAsync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Cancels a sync group synchronization. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt; Get (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroup&gt; Get(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.Get(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SyncGroup)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&#xA;override this.Get : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;" Usage="syncGroupsOperations.Get (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&gt; GetAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroup&gt;&gt; GetAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.GetAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SyncGroup))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&gt;&#xA;override this.GetAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&gt;" Usage="syncGroupsOperations.GetAsync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt; ListByDatabase (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroup&gt; ListByDatabase(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListByDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabase (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SyncGroup)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&#xA;override this.ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;" Usage="syncGroupsOperations.ListByDatabase (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists sync groups under a hub database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt; ListByDatabaseAsync (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroup&gt; ListByDatabaseAsync(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListByDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabaseAsync (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SyncGroup)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;&#xA;override this.ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;" Usage="syncGroupsOperations.ListByDatabaseAsync (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists sync groups under a hub database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListHubSchemas">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt; ListHubSchemas (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt; ListHubSchemas(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListHubSchemas(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListHubSchemas (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SyncFullSchemaProperties)" />
+      <MemberSignature Language="F#" Value="abstract member ListHubSchemas : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt;&#xA;override this.ListHubSchemas : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt;" Usage="syncGroupsOperations.ListHubSchemas (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a collection of hub database schemas. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="syncGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListHubSchemasAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt; ListHubSchemasAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt; ListHubSchemasAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListHubSchemasAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListHubSchemasAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SyncFullSchemaProperties)" />
+      <MemberSignature Language="F#" Value="abstract member ListHubSchemasAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt;&#xA;override this.ListHubSchemasAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt;" Usage="syncGroupsOperations.ListHubSchemasAsync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncFullSchemaProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a collection of hub database schemas. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="syncGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListLogs">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt; ListLogs (string resourceGroupName, string serverName, string databaseName, string syncGroupName, string startTime, string endTime, Azure.ResourceManager.Sql.Models.Enum65 type, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt; ListLogs(string resourceGroupName, string serverName, string databaseName, string syncGroupName, string startTime, string endTime, valuetype Azure.ResourceManager.Sql.Models.Enum65 type, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListLogs(System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.Enum65,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListLogs (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, startTime As String, endTime As String, type As Enum65, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SyncGroupLogProperties)" />
+      <MemberSignature Language="F#" Value="abstract member ListLogs : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.Enum65 * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt;&#xA;override this.ListLogs : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.Enum65 * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt;" Usage="syncGroupsOperations.ListLogs (resourceGroupName, serverName, databaseName, syncGroupName, startTime, endTime, type, continuationToken, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="startTime" Type="System.String" />
+        <Parameter Name="endTime" Type="System.String" />
+        <Parameter Name="type" Type="Azure.ResourceManager.Sql.Models.Enum65" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="startTime"> Get logs generated after this time. </param>
+        <param name="endTime"> Get logs generated before this time. </param>
+        <param name="type"> The types of logs to retrieve. </param>
+        <param name="continuationToken"> The continuation token for this operation. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a collection of sync group logs. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="syncGroupName" />, <paramref name="startTime" />, or <paramref name="endTime" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListLogsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt; ListLogsAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, string startTime, string endTime, Azure.ResourceManager.Sql.Models.Enum65 type, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt; ListLogsAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, string startTime, string endTime, valuetype Azure.ResourceManager.Sql.Models.Enum65 type, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListLogsAsync(System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.Enum65,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListLogsAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, startTime As String, endTime As String, type As Enum65, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SyncGroupLogProperties)" />
+      <MemberSignature Language="F#" Value="abstract member ListLogsAsync : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.Enum65 * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt;&#xA;override this.ListLogsAsync : string * string * string * string * string * string * Azure.ResourceManager.Sql.Models.Enum65 * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt;" Usage="syncGroupsOperations.ListLogsAsync (resourceGroupName, serverName, databaseName, syncGroupName, startTime, endTime, type, continuationToken, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncGroupLogProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="startTime" Type="System.String" />
+        <Parameter Name="endTime" Type="System.String" />
+        <Parameter Name="type" Type="Azure.ResourceManager.Sql.Models.Enum65" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="startTime"> Get logs generated after this time. </param>
+        <param name="endTime"> Get logs generated before this time. </param>
+        <param name="type"> The types of logs to retrieve. </param>
+        <param name="continuationToken"> The continuation token for this operation. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a collection of sync group logs. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="syncGroupName" />, <paramref name="startTime" />, or <paramref name="endTime" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListSyncDatabaseIds">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt; ListSyncDatabaseIds (string locationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt; ListSyncDatabaseIds(string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListSyncDatabaseIds(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListSyncDatabaseIds (locationName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SyncDatabaseIdProperties)" />
+      <MemberSignature Language="F#" Value="abstract member ListSyncDatabaseIds : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt;&#xA;override this.ListSyncDatabaseIds : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt;" Usage="syncGroupsOperations.ListSyncDatabaseIds (locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a collection of sync database ids. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListSyncDatabaseIdsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt; ListSyncDatabaseIdsAsync (string locationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt; ListSyncDatabaseIdsAsync(string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.ListSyncDatabaseIdsAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListSyncDatabaseIdsAsync (locationName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SyncDatabaseIdProperties)" />
+      <MemberSignature Language="F#" Value="abstract member ListSyncDatabaseIdsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt;&#xA;override this.ListSyncDatabaseIdsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt;" Usage="syncGroupsOperations.ListSyncDatabaseIdsAsync (locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SyncDatabaseIdProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a collection of sync database ids. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, string databaseName, string syncGroupName, Azure.ResourceManager.Sql.Models.SyncGroup parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, string databaseName, string syncGroupName, class Azure.ResourceManager.Sql.Models.SyncGroup parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartCreateOrUpdate(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SyncGroup,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, parameters As SyncGroup, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupsCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation" Usage="syncGroupsOperations.StartCreateOrUpdate (resourceGroupName, serverName, databaseName, syncGroupName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.SyncGroup" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="parameters"> The requested sync group resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="syncGroupName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, Azure.ResourceManager.Sql.Models.SyncGroup parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, class Azure.ResourceManager.Sql.Models.SyncGroup parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SyncGroup,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, parameters As SyncGroup, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupsCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation&gt;" Usage="syncGroupsOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, databaseName, syncGroupName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.SyncGroup" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="parameters"> The requested sync group resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="syncGroupName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncGroupsDeleteOperation StartDelete (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SyncGroupsDeleteOperation StartDelete(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartDelete(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupsDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsDeleteOperation&#xA;override this.StartDelete : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsDeleteOperation" Usage="syncGroupsOperations.StartDelete (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncGroupsDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="syncGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.SyncGroupsDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartDeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupsDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsDeleteOperation&gt;" Usage="syncGroupsOperations.StartDeleteAsync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="syncGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartRefreshHubSchema">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation StartRefreshHubSchema (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation StartRefreshHubSchema(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartRefreshHubSchema(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartRefreshHubSchema (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupsRefreshHubSchemaOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartRefreshHubSchema : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation&#xA;override this.StartRefreshHubSchema : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation" Usage="syncGroupsOperations.StartRefreshHubSchema (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Refreshes a hub database schema. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="syncGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartRefreshHubSchemaAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation&gt; StartRefreshHubSchemaAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation&gt; StartRefreshHubSchemaAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartRefreshHubSchemaAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartRefreshHubSchemaAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupsRefreshHubSchemaOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartRefreshHubSchemaAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation&gt;&#xA;override this.StartRefreshHubSchemaAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation&gt;" Usage="syncGroupsOperations.StartRefreshHubSchemaAsync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsRefreshHubSchemaOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Refreshes a hub database schema. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="syncGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncGroupsUpdateOperation StartUpdate (string resourceGroupName, string serverName, string databaseName, string syncGroupName, Azure.ResourceManager.Sql.Models.SyncGroup parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SyncGroupsUpdateOperation StartUpdate(string resourceGroupName, string serverName, string databaseName, string syncGroupName, class Azure.ResourceManager.Sql.Models.SyncGroup parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartUpdate(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SyncGroup,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdate (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, parameters As SyncGroup, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupsUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdate : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsUpdateOperation&#xA;override this.StartUpdate : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.SyncGroupsUpdateOperation" Usage="syncGroupsOperations.StartUpdate (resourceGroupName, serverName, databaseName, syncGroupName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SyncGroupsUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.SyncGroup" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="parameters"> The requested sync group resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="syncGroupName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsUpdateOperation&gt; StartUpdateAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, Azure.ResourceManager.Sql.Models.SyncGroup parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.SyncGroupsUpdateOperation&gt; StartUpdateAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, class Azure.ResourceManager.Sql.Models.SyncGroup parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.StartUpdateAsync(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SyncGroup,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, parameters As SyncGroup, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupsUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdateAsync : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsUpdateOperation&gt;&#xA;override this.StartUpdateAsync : string * string * string * string * Azure.ResourceManager.Sql.Models.SyncGroup * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsUpdateOperation&gt;" Usage="syncGroupsOperations.StartUpdateAsync (resourceGroupName, serverName, databaseName, syncGroupName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.SyncGroupsUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.SyncGroup" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="parameters"> The requested sync group resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a sync group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="syncGroupName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerSync">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response TriggerSync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response TriggerSync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.TriggerSync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TriggerSync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member TriggerSync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.TriggerSync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="syncGroupsOperations.TriggerSync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Triggers a sync group synchronization. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerSyncAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; TriggerSyncAsync (string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; TriggerSyncAsync(string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroupsOperations.TriggerSyncAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TriggerSyncAsync (resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member TriggerSyncAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.TriggerSyncAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="syncGroupsOperations.TriggerSyncAsync (resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="syncGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database on which the sync group is hosted. </param>
+        <param name="syncGroupName"> The name of the sync group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Triggers a sync group synchronization. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

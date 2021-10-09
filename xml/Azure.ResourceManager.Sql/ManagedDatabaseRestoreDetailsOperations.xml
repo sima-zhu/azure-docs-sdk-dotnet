@@ -1,0 +1,101 @@
+<Type Name="ManagedDatabaseRestoreDetailsOperations" FullName="Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations">
+  <TypeSignature Language="C#" Value="public class ManagedDatabaseRestoreDetailsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedDatabaseRestoreDetailsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedDatabaseRestoreDetailsOperations" />
+  <TypeSignature Language="F#" Value="type ManagedDatabaseRestoreDetailsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ManagedDatabaseRestoreDetails service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagedDatabaseRestoreDetailsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ManagedDatabaseRestoreDetailsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt; Get (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.RestoreDetailsName restoreDetailsName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt; Get(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.RestoreDetailsName restoreDetailsName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.RestoreDetailsName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, managedInstanceName As String, databaseName As String, restoreDetailsName As RestoreDetailsName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedDatabaseRestoreDetailsResult)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.RestoreDetailsName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.RestoreDetailsName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;" Usage="managedDatabaseRestoreDetailsOperations.Get (resourceGroupName, managedInstanceName, databaseName, restoreDetailsName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="restoreDetailsName" Type="Azure.ResourceManager.Sql.Models.RestoreDetailsName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group. The name is case insensitive. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="restoreDetailsName"> The name of the restore details to retrieve. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets managed database restore details. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;&gt; GetAsync (string resourceGroupName, string managedInstanceName, string databaseName, Azure.ResourceManager.Sql.Models.RestoreDetailsName restoreDetailsName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;&gt; GetAsync(string resourceGroupName, string managedInstanceName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.RestoreDetailsName restoreDetailsName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailsOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.RestoreDetailsName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, managedInstanceName As String, databaseName As String, restoreDetailsName As RestoreDetailsName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedDatabaseRestoreDetailsResult))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.RestoreDetailsName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.RestoreDetailsName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;&gt;" Usage="managedDatabaseRestoreDetailsOperations.GetAsync (resourceGroupName, managedInstanceName, databaseName, restoreDetailsName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedDatabaseRestoreDetailsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="restoreDetailsName" Type="Azure.ResourceManager.Sql.Models.RestoreDetailsName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group. The name is case insensitive. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="restoreDetailsName"> The name of the restore details to retrieve. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets managed database restore details. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

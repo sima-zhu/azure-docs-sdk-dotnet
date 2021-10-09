@@ -1,0 +1,330 @@
+<Type Name="ElasticPoolEdition" FullName="Azure.ResourceManager.Sql.Models.ElasticPoolEdition">
+  <TypeSignature Language="C#" Value="public struct ElasticPoolEdition : IEquatable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolEdition&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ElasticPoolEdition extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ElasticPoolEdition&#xA;Implements IEquatable(Of ElasticPoolEdition)" />
+  <TypeSignature Language="F#" Value="type ElasticPoolEdition = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolEdition&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The edition of the recommended elastic pool. The ElasticPoolEdition enumeration contains all the valid editions. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ElasticPoolEdition (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Sql.Models.ElasticPoolEdition : string -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="new Azure.ResourceManager.Sql.Models.ElasticPoolEdition value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolEdition" /> values are the same. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Basic">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ElasticPoolEdition Basic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition Basic" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Basic" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic As ElasticPoolEdition" />
+      <MemberSignature Language="F#" Value="member this.Basic : Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Basic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Basic. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessCritical">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ElasticPoolEdition BusinessCritical { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition BusinessCritical" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.BusinessCritical" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BusinessCritical As ElasticPoolEdition" />
+      <MemberSignature Language="F#" Value="member this.BusinessCritical : Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.BusinessCritical" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> BusinessCritical. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.ResourceManager.Sql.Models.ElasticPoolEdition other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Equals(Azure.ResourceManager.Sql.Models.ElasticPoolEdition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ElasticPoolEdition) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.ResourceManager.Sql.Models.ElasticPoolEdition -&gt; bool" Usage="elasticPoolEdition.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="elasticPoolEdition.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeneralPurpose">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ElasticPoolEdition GeneralPurpose { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition GeneralPurpose" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.GeneralPurpose" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GeneralPurpose As ElasticPoolEdition" />
+      <MemberSignature Language="F#" Value="member this.GeneralPurpose : Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.GeneralPurpose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> GeneralPurpose. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="elasticPoolEdition.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.ResourceManager.Sql.Models.ElasticPoolEdition left, Azure.ResourceManager.Sql.Models.ElasticPoolEdition right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition left, valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.op_Equality(Azure.ResourceManager.Sql.Models.ElasticPoolEdition,Azure.ResourceManager.Sql.Models.ElasticPoolEdition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ElasticPoolEdition, right As ElasticPoolEdition) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.ResourceManager.Sql.Models.ElasticPoolEdition * Azure.ResourceManager.Sql.Models.ElasticPoolEdition -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+        <Parameter Name="right" Type="Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolEdition" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.Sql.Models.ElasticPoolEdition (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.op_Implicit(System.String)~Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As ElasticPoolEdition" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolEdition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a string to a <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.ResourceManager.Sql.Models.ElasticPoolEdition left, Azure.ResourceManager.Sql.Models.ElasticPoolEdition right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition left, valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.op_Inequality(Azure.ResourceManager.Sql.Models.ElasticPoolEdition,Azure.ResourceManager.Sql.Models.ElasticPoolEdition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ElasticPoolEdition, right As ElasticPoolEdition) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.ResourceManager.Sql.Models.ElasticPoolEdition * Azure.ResourceManager.Sql.Models.ElasticPoolEdition -&gt; bool" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+        <Parameter Name="right" Type="Azure.ResourceManager.Sql.Models.ElasticPoolEdition" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolEdition" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Premium">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ElasticPoolEdition Premium { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition Premium" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Premium" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Premium As ElasticPoolEdition" />
+      <MemberSignature Language="F#" Value="member this.Premium : Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Premium" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Premium. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Standard">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ElasticPoolEdition Standard { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition Standard" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Standard" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Standard As ElasticPoolEdition" />
+      <MemberSignature Language="F#" Value="member this.Standard : Azure.ResourceManager.Sql.Models.ElasticPoolEdition" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolEdition.Standard" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Standard. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ElasticPoolEdition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="elasticPoolEdition.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
