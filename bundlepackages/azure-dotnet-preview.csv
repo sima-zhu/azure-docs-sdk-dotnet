@@ -72,7 +72,8 @@ azurecoreexperimental,[tfm=netstandard2.0;isPrerelease=true]Azure.Core.Experimen
 azureresourcemanagerappconfiguration,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.AppConfiguration,1.0.0-preview.1
 azureresourcemanagercompute,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.Compute,1.0.0-beta.2
 azureresourcemanagereventhubs,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.EventHubs,1.0.0-preview.1
-azureresourcemanagerkeyvault,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.KeyVault,1.0.0-beta.2
+,CustomPackageSource
+azureresourcemanagerkeyvault,[tfm=netstandard2.0;isPrerelease=true;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.ResourceManager.KeyVault,1.0.0-alpha.20211012.2
 azureresourcemanagernetwork,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.Network,1.0.0-beta.2
 azureresourcemanagerresources,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.Resources,1.0.0-beta.2
 azureresourcemanagerstorage,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager.Storage,1.0.0-beta.2
@@ -113,7 +114,7 @@ azuremgtpurview,[tfm=netstandard2.0;isPrerelease=true]Microsoft.Azure.Management
 azurepurviewscanning,[tfm=netstandard2.0;isPrerelease=true]Azure.Analytics.Purview.Scanning,1.0.0-beta.1
 microsoftazurewebjobsextensionseventgrid,[tfm=netstandard2.0;isPrerelease=true]Microsoft.Azure.WebJobs.Extensions.EventGrid,3.0.0-beta.4
 microsoftazurewebjobsextensionsservicebus,[tfm=netstandard2.0;isPrerelease=true]Microsoft.Azure.WebJobs.Extensions.ServiceBus,5.0.0-beta.6
-azuretemplate,[tfm=netstandard2.0;isPrerelease=true]Azure.Template,1.0.3-beta.1116220
+azuretemplate,[tfm=netstandard2.0;isPrerelease=true]Azure.Template,1.0.3-beta.1139008
 azureaitranslationdocument,[tfm=netstandard2.0;isPrerelease=true]Azure.AI.Translation.Document,1.0.0-beta.5
 azurecontainerscontainerregistry,[tfm=netstandard2.0;isPrerelease=true]Azure.Containers.ContainerRegistry,1.1.0-beta.1
 azuremessagingwebpubsub,[isPrerelease=true;tfm=netstandard2.0]Azure.Messaging.WebPubSub,1.0.0-beta.3
@@ -131,10 +132,10 @@ azuresearchdocuments,[tfm=netstandard2.0;isPrerelease=true]Azure.Search.Document
 azureailanguagequestionanswering,[tfm=netstandard2.0;isPrerelease=true]Azure.AI.Language.QuestionAnswering,1.0.0-beta.2
 azuredigitaltwinscore,[tfm=netstandard2.0;isPrerelease=true]Azure.DigitalTwins.Core,1.3.0-beta.2
 azureaitextanalytics,[tfm=netstandard2.0;isPrerelease=true]Azure.AI.TextAnalytics,5.2.0-beta.1
-azuresecuritykeyvaultadministration,[tfm=netstandard2.0;isPrerelease=true]Azure.Security.KeyVault.Administration,4.1.0-beta.1
-azuresecuritykeyvaultcertificates,[tfm=netstandard2.0;isPrerelease=true]Azure.Security.KeyVault.Certificates,4.3.0-beta.1
-azuresecuritykeyvaultkeys,[tfm=netstandard2.0;isPrerelease=true]Azure.Security.KeyVault.Keys,4.3.0-beta.1
-azuresecuritykeyvaultsecrets,[tfm=netstandard2.0;isPrerelease=true]Azure.Security.KeyVault.Secrets,4.3.0-beta.1
+azuresecuritykeyvaultadministration,[tfm=netstandard2.0;isPrerelease=true;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.Security.KeyVault.Administration,4.1.0-alpha.20211012.2
+azuresecuritykeyvaultcertificates,[tfm=netstandard2.0;isPrerelease=true;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.Security.KeyVault.Certificates,4.3.0-alpha.20211012.2
+azuresecuritykeyvaultkeys,[tfm=netstandard2.0;isPrerelease=true;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.Security.KeyVault.Keys,4.3.0-alpha.20211012.2
+azuresecuritykeyvaultsecrets,[tfm=netstandard2.0;isPrerelease=true;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.Security.KeyVault.Secrets,4.3.0-alpha.20211012.2
 azureanalyticspurviewaccount,[tfm=netstandard2.0;isPrerelease=true]Azure.Analytics.Purview.Account,1.0.0-beta.1
 azureresourcemanager,[tfm=netstandard2.0;isPrerelease=true]Azure.ResourceManager,1.0.0-beta.4
 azuremessagingservicebus,[tfm=netstandard2.0;isPrerelease=true]Azure.Messaging.ServiceBus,7.5.0-beta.1
