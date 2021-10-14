@@ -13,6 +13,7 @@
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
     <AssemblyVersion>12.9.1.0</AssemblyVersion>
     <AssemblyVersion>12.10.0.0</AssemblyVersion>
+    <AssemblyVersion>12.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Storage.Blobs.BlobClientOptions</BaseTypeName>
@@ -42,6 +43,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
+        <AssemblyVersion>12.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="version" Type="Azure.Storage.Blobs.BlobClientOptions+ServiceVersion" />
@@ -74,6 +76,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.1.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
+        <AssemblyVersion>12.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.ClientSideEncryptionOptions</ReturnType>
