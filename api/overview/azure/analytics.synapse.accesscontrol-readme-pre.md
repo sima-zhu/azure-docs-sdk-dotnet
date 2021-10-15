@@ -3,7 +3,7 @@ title: Azure Synapse Analytics Access Control client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Analytics.Synapse.AccessControl, synapseanalytics
 author: maggiepint
 ms.author: magpint
-ms.date: 08/13/2021
+ms.date: 10/15/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: synapseanalytics
 ---
 
-# Azure Synapse Analytics Access Control client library for .NET - Version 1.0.0-preview.5 
+# Azure Synapse Analytics Access Control client library for .NET - Version 1.0.0-alpha.20211014.1 
 
 
 This directory contains the open source subset of the .NET SDK. For documentation of the complete Azure SDK, please see the [Microsoft Azure .NET Developer Center](https://azure.microsoft.com/develop/net/).
@@ -29,7 +29,7 @@ For the best development experience, developers should use the official Microsof
 ### Install the package
 Install the Azure Synapse Analytics access control client library for .NET with [NuGet](https://www.nuget.org/packages/Azure.Analytics.Synapse.AccessControl/):
 
-```PowerShell
+```dotnetcli
 dotnet add package Azure.Analytics.Synapse.AccessControl --version 0.1.0-preview.1
 ```
 
@@ -51,11 +51,11 @@ az synapse workspace create \
 ```
 
 ### Authenticate the client
-In order to interact with the Azure Synapse Analytics service, you'll need to create an instance of a [RoleAssignmentsClient](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/synapse/Azure.Analytics.Synapse.AccessControl/src/Generated/RoleAssignmentsClient.cs) and/or a [RoleDefinitionsClient](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/synapse/Azure.Analytics.Synapse.AccessControl/src/Generated/RoleDefinitionsClient.cs) class.
+In order to interact with the Azure Synapse Analytics service, you'll need to create an instance of a [RoleAssignmentsClient](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/synapse/Azure.Analytics.Synapse.AccessControl/src/Generated/RoleAssignmentsClient.cs) and/or a [RoleDefinitionsClient](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/synapse/Azure.Analytics.Synapse.AccessControl/src/Generated/RoleDefinitionsClient.cs) class.
 
 You will also  need a **workspace endpoint**, which you may see as "Development endpoint" in the portal, and **client secret credentials (client id, client secret, tenant id)** to instantiate a client object.
 
-Client secret credential authentication is being used in this getting started section but you can find more ways to authenticate with [Azure identity](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/identity/Azure.Identity). To use the [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/identity/Azure.Identity#defaultazurecredential) provider shown below,
+Client secret credential authentication is being used in this getting started section but you can find more ways to authenticate with [Azure identity](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity). To use the [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity#defaultazurecredential) provider shown below,
 or other credential providers provided with the Azure SDK, you should install the Azure.Identity package:
 
 ```PowerShell
@@ -75,15 +75,15 @@ The way you control access to Synapse resources is to create role assignments. A
 We guarantee that all client instance methods are thread-safe and independent of each other ([guideline](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-service-methods-thread-safety)). This ensures that the recommendation of reusing client instances is always safe, even across threads.
 
 ### Additional concepts
-
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Analytics.Synapse.AccessControl_1.0.0-preview.5/sdk/core/Azure.Core/README.md#mocking) |
+<!-- CLIENT COMMON BAR -->
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
-
+<!-- CLIENT COMMON BAR -->
 
 ## Examples
 The Azure.Analytics.Synapse.AccessControl package supports synchronous and asynchronous APIs. The following section covers some of the most common Azure Synapse Analytics access control related tasks:
@@ -112,9 +112,13 @@ RoleDefinitionsClient definitionsClient = new RoleDefinitionsClient(new Uri(endp
 First, you need to the determine the ID of the role you wish to assign, along with the ID of the principal you wish to assign that role.
 
 ```C# Snippet:PrepCreateRoleAssignment
-Response<IReadOnlyList<SynapseRoleDefinition>> roles = definitionsClient.ListRoleDefinitions();
-SynapseRoleDefinition role = roles.Value.Single(role => role.Name == "Synapse Administrator");
-Guid roleId = role.Id.Value;
+Response roleDefinitionsReponse = definitionsClient.ListRoleDefinitions(new());
+BinaryData roleDefinitionsContent = roleDefinitionsReponse.Content;
+JsonDocument roleDefinitionsJson = JsonDocument.Parse(roleDefinitionsContent.ToMemory());
+
+JsonElement adminRoleJson = roleDefinitionsJson.RootElement.EnumerateArray().
+    Single(role => role.GetProperty("name").ToString() == "Synapse Administrator");
+Guid adminRoleId = new Guid(adminRoleJson.GetProperty("id").ToString());
 
 string assignedScope = "workspaces/<my-workspace-name>";
 
@@ -128,8 +132,17 @@ string assignmentId = "<my-assignment-id>";
 Then call `CreateRoleAssignment` with the options to create the role assignment.
 
 ```C# Snippet:CreateRoleAssignment
-Response<RoleAssignmentDetails> response = roleAssignmentsClient.CreateRoleAssignment (assignmentId, roleId, principalId, assignedScope);
-RoleAssignmentDetails roleAssignmentAdded = response.Value;
+var roleAssignmentDetails = new
+{
+    roleId = adminRoleId,
+    principalId = Guid.NewGuid(),
+    scope = assignedScope
+};
+
+Response addedRoleAssignmentResponse = roleAssignmentsClient.CreateRoleAssignment(assignmentId, RequestContent.Create(roleAssignmentDetails));
+BinaryData addedRoleAssignmentContent = addedRoleAssignmentResponse.Content;
+JsonDocument addedRoleAssignmentJson = JsonDocument.Parse(addedRoleAssignmentContent.ToMemory());
+string addedRoleAssignmentId = addedRoleAssignmentJson.RootElement.GetProperty("id").ToString();
 ```
 
 ### Retrieve a role assignment
@@ -137,28 +150,36 @@ RoleAssignmentDetails roleAssignmentAdded = response.Value;
 You can retrieve the details of a role assignment by calling `GetRoleAssignmentById`, passing in the assignment ID.
 
 ```C# Snippet:RetrieveRoleAssignment
-RoleAssignmentDetails roleAssignment = roleAssignmentsClient.GetRoleAssignmentById(roleAssignmentAdded.Id);
-Console.WriteLine($"Role {roleAssignment.RoleDefinitionId} is assigned to {roleAssignment.PrincipalId}.");
+Response roleAssignmentResponse = roleAssignmentsClient.GetRoleAssignmentById(addedRoleAssignmentId, new());
+BinaryData roleAssignmentContent = roleAssignmentResponse.Content;
+JsonDocument roleAssignmentJson = JsonDocument.Parse(roleAssignmentContent.ToMemory());
+string roleAssignmentRoleDefinitionId = roleAssignmentJson.RootElement.GetProperty("roleDefinitionId").ToString();
+string roleAssignmentPrincipalId = roleAssignmentJson.RootElement.GetProperty("principalId").ToString();
+Console.WriteLine($"Role {roleAssignmentRoleDefinitionId} is assigned to {roleAssignmentPrincipalId}.");
 ```
 
 ### List role assignments
 
-To enumerate all role assignments in the Synapse workspace you can call `ListRoleDefinitions`.
+To enumerate all role assignments in the Synapse workspace you can call `ListRoleAssignments`.
 
 ```C# Snippet:ListRoleAssignments
-Response<IReadOnlyList<SynapseRoleDefinition>> roleAssignments = definitionsClient.ListRoleDefinitions();
-foreach (SynapseRoleDefinition assignment in roleAssignments.Value)
+Response roleAssignmentsResponse = roleAssignmentsClient.ListRoleAssignments(new());
+BinaryData roleAssignmentsContent = roleAssignmentsResponse.Content;
+JsonDocument roleAssignmentsJson = JsonDocument.Parse(roleAssignmentsContent.ToMemory());
+
+foreach (JsonElement assignmentJson in roleAssignmentsJson.RootElement.GetProperty("value").EnumerateArray())
 {
-    Console.WriteLine(assignment.Id);
+    Console.WriteLine(assignmentJson.GetProperty("id").ToString());
 }
 ```
+
 
 ### Delete a role assignment
 
 To delete a role assignment no longer needed you can call `DeleteRoleAssignmentById`, passing in the assignment ID.
 
 ```C# Snippet:DeleteRoleAssignment
-roleAssignmentsClient.DeleteRoleAssignmentById(roleAssignment.Id);
+roleAssignmentsClient.DeleteRoleAssignmentById(addedRoleAssignmentId);
 ```
 
 ## To build
