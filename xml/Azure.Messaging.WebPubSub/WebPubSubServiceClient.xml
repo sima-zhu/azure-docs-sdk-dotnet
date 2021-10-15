@@ -209,6 +209,8 @@
         <summary> Add a connection to the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddConnectionToGroupAsync">
@@ -237,6 +239,8 @@
         <summary> Add a connection to the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserToGroup">
@@ -265,6 +269,8 @@
         <summary> Add a user to the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserToGroupAsync">
@@ -293,6 +299,8 @@
         <summary> Add a user to the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckPermission">
@@ -381,6 +389,8 @@
         <summary> Close the client connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseConnectionAsync">
@@ -409,6 +419,8 @@
         <summary> Close the client connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectionExists">
@@ -793,6 +805,8 @@
         <summary> Remove a connection from the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveConnectionFromGroupAsync">
@@ -821,6 +835,8 @@
         <summary> Remove a connection from the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromAllGroups">
@@ -847,6 +863,8 @@
         <summary> Remove a user from all groups. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromAllGroupsAsync">
@@ -873,6 +891,8 @@
         <summary> Remove a user from all groups. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromGroup">
@@ -901,6 +921,8 @@
         <summary> Remove a user from the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromGroupAsync">
@@ -929,6 +951,8 @@
         <summary> Remove a user from the target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RevokePermission">
@@ -1039,12 +1063,14 @@
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Broadcast content inside request body to all the connected client connections. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToAllAsync">
@@ -1095,12 +1121,14 @@
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Broadcast content inside request body to all the connected client connections. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToConnection">
@@ -1156,11 +1184,13 @@
       <Docs>
         <param name="connectionId"> The connection Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToConnectionAsync">
@@ -1216,11 +1246,13 @@
       <Docs>
         <param name="connectionId"> The connection Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToGroup">
@@ -1277,12 +1309,14 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to a group of connections. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToGroupAsync">
@@ -1339,12 +1373,14 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to a group of connections. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToUser">
@@ -1400,11 +1436,13 @@
       <Docs>
         <param name="userId"> The user Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific user. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToUserAsync">
@@ -1460,11 +1498,13 @@
       <Docs>
         <param name="userId"> The user Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific user. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="UserExists">

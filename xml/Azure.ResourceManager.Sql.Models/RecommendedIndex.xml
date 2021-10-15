@@ -1,0 +1,277 @@
+<Type Name="RecommendedIndex" FullName="Azure.ResourceManager.Sql.Models.RecommendedIndex">
+  <TypeSignature Language="C#" Value="public class RecommendedIndex : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecommendedIndex extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.RecommendedIndex" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecommendedIndex&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type RecommendedIndex = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Represents a database recommended index. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecommendedIndex ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.RecommendedIndex.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of RecommendedIndex. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.RecommendedIndexAction? Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexAction&gt; Action" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.Action" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As Nullable(Of RecommendedIndexAction)" />
+      <MemberSignature Language="F#" Value="member this.Action : Nullable&lt;Azure.ResourceManager.Sql.Models.RecommendedIndexAction&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.RecommendedIndexAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The proposed index action. You can create a missing index, drop an unused index, or rebuild an existing index to improve its performance. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; Columns" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As IReadOnlyList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Columns over which to build index. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Created">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? Created { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Created" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.Created" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Created As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.Created : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.Created" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The UTC datetime showing when this resource was created (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EstimatedImpact">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.OperationImpact&gt; EstimatedImpact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.Models.OperationImpact&gt; EstimatedImpact" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.EstimatedImpact" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EstimatedImpact As IReadOnlyList(Of OperationImpact)" />
+      <MemberSignature Language="F#" Value="member this.EstimatedImpact : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.OperationImpact&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.EstimatedImpact" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.OperationImpact&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The estimated impact of doing recommended index action. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludedColumns">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; IncludedColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; IncludedColumns" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.IncludedColumns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncludedColumns As IReadOnlyList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.IncludedColumns : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.IncludedColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of column names to be included in the index. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexScript">
+      <MemberSignature Language="C#" Value="public string IndexScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IndexScript" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.IndexScript" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IndexScript As String" />
+      <MemberSignature Language="F#" Value="member this.IndexScript : string" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.IndexScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The full build index script. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.RecommendedIndexType? IndexType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexType&gt; IndexType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.IndexType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IndexType As Nullable(Of RecommendedIndexType)" />
+      <MemberSignature Language="F#" Value="member this.IndexType : Nullable&lt;Azure.ResourceManager.Sql.Models.RecommendedIndexType&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.IndexType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.RecommendedIndexType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The type of index (CLUSTERED, NONCLUSTERED, COLUMNSTORE, CLUSTERED COLUMNSTORE). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastModified" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastModified : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.LastModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The UTC datetime of when was this resource last changed (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportedImpact">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.OperationImpact&gt; ReportedImpact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.Models.OperationImpact&gt; ReportedImpact" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.ReportedImpact" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReportedImpact As IReadOnlyList(Of OperationImpact)" />
+      <MemberSignature Language="F#" Value="member this.ReportedImpact : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.OperationImpact&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.ReportedImpact" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.OperationImpact&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The values reported after index action is complete. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public string Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Schema" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As String" />
+      <MemberSignature Language="F#" Value="member this.Schema : string" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The schema where table to build index over resides. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.RecommendedIndexState? State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexState&gt; State" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Nullable(Of RecommendedIndexState)" />
+      <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Azure.ResourceManager.Sql.Models.RecommendedIndexState&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.RecommendedIndexState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The current recommendation state. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public string Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Table" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedIndex.Table" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As String" />
+      <MemberSignature Language="F#" Value="member this.Table : string" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndex.Table" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The table on which to build index. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

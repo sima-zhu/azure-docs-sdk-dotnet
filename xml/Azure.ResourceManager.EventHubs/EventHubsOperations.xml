@@ -441,6 +441,8 @@
         <summary> Gets the authorization rules for an Event Hub. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="eventHubName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListAuthorizationRulesAsync">
@@ -471,6 +473,8 @@
         <summary> Gets the authorization rules for an Event Hub. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="eventHubName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByNamespace">
@@ -503,6 +507,8 @@
         <summary> Gets all the Event Hubs in a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByNamespaceAsync">
@@ -535,6 +541,8 @@
         <summary> Gets all the Event Hubs in a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListKeys">

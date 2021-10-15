@@ -161,6 +161,8 @@
         <summary> Lists the available Event Hubs Clusters within an ARM resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroupAsync">
@@ -187,6 +189,8 @@
         <summary> Lists the available Event Hubs Clusters within an ARM resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListNamespaces">
@@ -271,6 +275,8 @@
         <summary> Deletes an existing Event Hubs Cluster. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="clusterName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDeleteAsync">
@@ -299,6 +305,8 @@
         <summary> Deletes an existing Event Hubs Cluster. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="clusterName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartPatch">
@@ -329,6 +337,8 @@
         <summary> Modifies mutable properties on the Event Hubs Cluster. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="clusterName" />, or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartPatchAsync">
@@ -359,6 +369,8 @@
         <summary> Modifies mutable properties on the Event Hubs Cluster. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="clusterName" />, or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartPut">
@@ -387,6 +399,8 @@
         <summary> Creates or updates an instance of an Event Hubs Cluster. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="clusterName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartPutAsync">
@@ -415,6 +429,8 @@
         <summary> Creates or updates an instance of an Event Hubs Cluster. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="clusterName" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

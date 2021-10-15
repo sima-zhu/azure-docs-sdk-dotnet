@@ -1,0 +1,169 @@
+<Type Name="TransparentDataEncryptionsOperations" FullName="Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations">
+  <TypeSignature Language="C#" Value="public class TransparentDataEncryptionsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransparentDataEncryptionsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransparentDataEncryptionsOperations" />
+  <TypeSignature Language="F#" Value="type TransparentDataEncryptionsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The TransparentDataEncryptions service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TransparentDataEncryptionsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of TransparentDataEncryptionsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt; CreateOrUpdate (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, Azure.ResourceManager.Sql.Models.TransparentDataEncryption parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt; CreateOrUpdate(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, class Azure.ResourceManager.Sql.Models.TransparentDataEncryption parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations.CreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,Azure.ResourceManager.Sql.Models.TransparentDataEncryption,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (resourceGroupName As String, serverName As String, databaseName As String, transparentDataEncryptionName As TransparentDataEncryptionName, parameters As TransparentDataEncryption, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TransparentDataEncryption)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.Models.TransparentDataEncryption * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&#xA;override this.CreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.Models.TransparentDataEncryption * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;" Usage="transparentDataEncryptionsOperations.CreateOrUpdate (resourceGroupName, serverName, databaseName, transparentDataEncryptionName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="transparentDataEncryptionName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryption" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database for which setting the transparent data encryption applies. </param>
+        <param name="transparentDataEncryptionName"> The name of the transparent data encryption configuration. </param>
+        <param name="parameters"> The required parameters for creating or updating transparent data encryption. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a database's transparent data encryption configuration. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt; CreateOrUpdateAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, Azure.ResourceManager.Sql.Models.TransparentDataEncryption parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt; CreateOrUpdateAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, class Azure.ResourceManager.Sql.Models.TransparentDataEncryption parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,Azure.ResourceManager.Sql.Models.TransparentDataEncryption,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, transparentDataEncryptionName As TransparentDataEncryptionName, parameters As TransparentDataEncryption, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TransparentDataEncryption))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.Models.TransparentDataEncryption * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.Models.TransparentDataEncryption * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt;" Usage="transparentDataEncryptionsOperations.CreateOrUpdateAsync (resourceGroupName, serverName, databaseName, transparentDataEncryptionName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="transparentDataEncryptionName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryption" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database for which setting the transparent data encryption applies. </param>
+        <param name="transparentDataEncryptionName"> The name of the transparent data encryption configuration. </param>
+        <param name="parameters"> The required parameters for creating or updating transparent data encryption. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a database's transparent data encryption configuration. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt; Get (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt; Get(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, databaseName As String, transparentDataEncryptionName As TransparentDataEncryptionName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TransparentDataEncryption)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;" Usage="transparentDataEncryptionsOperations.Get (resourceGroupName, serverName, databaseName, transparentDataEncryptionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="transparentDataEncryptionName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database for which the transparent data encryption applies. </param>
+        <param name="transparentDataEncryptionName"> The name of the transparent data encryption configuration. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's transparent data encryption configuration. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt; GetAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt; GetAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionsOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, databaseName As String, transparentDataEncryptionName As TransparentDataEncryptionName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TransparentDataEncryption))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt;" Usage="transparentDataEncryptionsOperations.GetAsync (resourceGroupName, serverName, databaseName, transparentDataEncryptionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryption&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="transparentDataEncryptionName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database for which the transparent data encryption applies. </param>
+        <param name="transparentDataEncryptionName"> The name of the transparent data encryption configuration. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's transparent data encryption configuration. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

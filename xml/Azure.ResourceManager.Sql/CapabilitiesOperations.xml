@@ -1,0 +1,93 @@
+<Type Name="CapabilitiesOperations" FullName="Azure.ResourceManager.Sql.CapabilitiesOperations">
+  <TypeSignature Language="C#" Value="public class CapabilitiesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CapabilitiesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.CapabilitiesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class CapabilitiesOperations" />
+  <TypeSignature Language="F#" Value="type CapabilitiesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The Capabilities service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CapabilitiesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.CapabilitiesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of CapabilitiesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByLocation">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt; ListByLocation (string locationName, Azure.ResourceManager.Sql.Models.CapabilityGroup? include = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.LocationCapabilities&gt; ListByLocation(string locationName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; include, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.CapabilitiesOperations.ListByLocation(System.String,System.Nullable{Azure.ResourceManager.Sql.Models.CapabilityGroup},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByLocation (locationName As String, Optional include As Nullable(Of CapabilityGroup) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of LocationCapabilities)" />
+      <MemberSignature Language="F#" Value="abstract member ListByLocation : string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&#xA;override this.ListByLocation : string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;" Usage="capabilitiesOperations.ListByLocation (locationName, include, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="include" Type="System.Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The location name whose capabilities are retrieved. </param>
+        <param name="include"> If specified, restricts the response to only include the selected item. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the subscription capabilities available for the specified location. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByLocationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt; ListByLocationAsync (string locationName, Azure.ResourceManager.Sql.Models.CapabilityGroup? include = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt; ListByLocationAsync(string locationName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; include, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.CapabilitiesOperations.ListByLocationAsync(System.String,System.Nullable{Azure.ResourceManager.Sql.Models.CapabilityGroup},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByLocationAsync (locationName As String, Optional include As Nullable(Of CapabilityGroup) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of LocationCapabilities))" />
+      <MemberSignature Language="F#" Value="abstract member ListByLocationAsync : string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt;&#xA;override this.ListByLocationAsync : string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt;" Usage="capabilitiesOperations.ListByLocationAsync (locationName, include, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="include" Type="System.Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The location name whose capabilities are retrieved. </param>
+        <param name="include"> If specified, restricts the response to only include the selected item. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the subscription capabilities available for the specified location. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

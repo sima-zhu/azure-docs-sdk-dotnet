@@ -10,6 +10,8 @@
     <AssemblyVersion>12.0.1.0</AssemblyVersion>
     <AssemblyVersion>12.1.0.0</AssemblyVersion>
     <AssemblyVersion>12.2.0.0</AssemblyVersion>
+    <AssemblyVersion>12.2.1.0</AssemblyVersion>
+    <AssemblyVersion>12.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +35,8 @@
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.1.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -60,6 +64,8 @@
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.1.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.Tables.Models.TableAccessPolicy</ReturnType>
@@ -83,6 +89,8 @@
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.1.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

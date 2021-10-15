@@ -69,7 +69,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-             Gets or sets the number of queue messages to retrieve from queue (per job method).
+             Gets or sets the number of queue messages to retrieve from the queue (per job method).
              Must be in range within 1 and 32. The default is 16.
             
              <remarks>
@@ -78,7 +78,9 @@
              is above <see cref="P:Microsoft.Azure.WebJobs.Host.QueuesOptions.NewBatchThreshold" />. Then the job requests new batch of messages only if number of currently processed messages
              drops at or below <see cref="P:Microsoft.Azure.WebJobs.Host.QueuesOptions.NewBatchThreshold" />.
             
-             The maximum number of messages processed in parallel by the job is <see cref="P:Microsoft.Azure.WebJobs.Host.QueuesOptions.NewBatchThreshold" /> plus <see cref="P:Microsoft.Azure.WebJobs.Host.QueuesOptions.BatchSize" />.
+             The maximum number of messages processed in parallel by the job is <see cref="P:Microsoft.Azure.WebJobs.Host.QueuesOptions.NewBatchThreshold" /> plus <see cref="P:Microsoft.Azure.WebJobs.Host.QueuesOptions.BatchSize" />. These manually
+             configured options aren't used when Dynamic Concurrency is enabled. See <see cref="P:Microsoft.Azure.WebJobs.Host.Scale.ConcurrencyOptions.DynamicConcurrencyEnabled" /> for details.
+             When dynamic concurrency is enabled, the host will increase/decrease function concurrency dynamically as needed.
              </remarks></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

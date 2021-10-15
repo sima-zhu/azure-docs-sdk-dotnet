@@ -1,0 +1,457 @@
+<Type Name="JobStepsOperations" FullName="Azure.ResourceManager.Sql.JobStepsOperations">
+  <TypeSignature Language="C#" Value="public class JobStepsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobStepsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.JobStepsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class JobStepsOperations" />
+  <TypeSignature Language="F#" Value="type JobStepsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The JobSteps service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JobStepsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of JobStepsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; CreateOrUpdate (string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, Azure.ResourceManager.Sql.Models.JobStep parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; CreateOrUpdate(string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, class Azure.ResourceManager.Sql.Models.JobStep parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.CreateOrUpdate(System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.JobStep,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, stepName As String, parameters As JobStep, Optional cancellationToken As CancellationToken = Nothing) As Response(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * string * string * string * string * Azure.ResourceManager.Sql.Models.JobStep * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.CreateOrUpdate : string * string * string * string * string * Azure.ResourceManager.Sql.Models.JobStep * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.CreateOrUpdate (resourceGroupName, serverName, jobAgentName, jobName, stepName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.JobStep" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="stepName"> The name of the job step. </param>
+        <param name="parameters"> The requested state of the job step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a job step. This will implicitly create a new job version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt; CreateOrUpdateAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, Azure.ResourceManager.Sql.Models.JobStep parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt;&gt; CreateOrUpdateAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, class Azure.ResourceManager.Sql.Models.JobStep parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.CreateOrUpdateAsync(System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.JobStep,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, stepName As String, parameters As JobStep, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of JobStep))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * string * string * string * string * Azure.ResourceManager.Sql.Models.JobStep * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * string * string * string * string * Azure.ResourceManager.Sql.Models.JobStep * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;" Usage="jobStepsOperations.CreateOrUpdateAsync (resourceGroupName, serverName, jobAgentName, jobName, stepName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.JobStep" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="stepName"> The name of the job step. </param>
+        <param name="parameters"> The requested state of the job step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a job step. This will implicitly create a new job version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.Delete(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Delete : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="jobStepsOperations.Delete (resourceGroupName, serverName, jobAgentName, jobName, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="stepName"> The name of the job step to delete. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a job step. This will implicitly create a new job version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="jobStepsOperations.DeleteAsync (resourceGroupName, serverName, jobAgentName, jobName, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="stepName"> The name of the job step to delete. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a job step. This will implicitly create a new job version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; Get (string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; Get(string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.Get(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.Get : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.Get (resourceGroupName, serverName, jobAgentName, jobName, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="stepName"> The name of the job step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a job step in a job's current version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt; GetAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt;&gt; GetAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.GetAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of JobStep))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;&#xA;override this.GetAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;" Usage="jobStepsOperations.GetAsync (resourceGroupName, serverName, jobAgentName, jobName, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="stepName"> The name of the job step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a job step in a job's current version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByVersion">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; GetByVersion (string resourceGroupName, string serverName, string jobAgentName, string jobName, int jobVersion, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; GetByVersion(string resourceGroupName, string serverName, string jobAgentName, string jobName, int32 jobVersion, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.GetByVersion(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByVersion (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobVersion As Integer, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetByVersion : string * string * string * string * int * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.GetByVersion : string * string * string * string * int * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.GetByVersion (resourceGroupName, serverName, jobAgentName, jobName, jobVersion, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobVersion" Type="System.Int32" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="jobVersion"> The version of the job to get. </param>
+        <param name="stepName"> The name of the job step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the specified version of a job step. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByVersionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt; GetByVersionAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, int jobVersion, string stepName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt;&gt; GetByVersionAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, int32 jobVersion, string stepName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.GetByVersionAsync(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByVersionAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobVersion As Integer, stepName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of JobStep))" />
+      <MemberSignature Language="F#" Value="abstract member GetByVersionAsync : string * string * string * string * int * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;&#xA;override this.GetByVersionAsync : string * string * string * string * int * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;" Usage="jobStepsOperations.GetByVersionAsync (resourceGroupName, serverName, jobAgentName, jobName, jobVersion, stepName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobVersion" Type="System.Int32" />
+        <Parameter Name="stepName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job. </param>
+        <param name="jobVersion"> The version of the job to get. </param>
+        <param name="stepName"> The name of the job step. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the specified version of a job step. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByJob">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; ListByJob (string resourceGroupName, string serverName, string jobAgentName, string jobName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; ListByJob(string resourceGroupName, string serverName, string jobAgentName, string jobName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.ListByJob(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByJob (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member ListByJob : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.ListByJob : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.ListByJob (resourceGroupName, serverName, jobAgentName, jobName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all job steps for a job's current version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="jobAgentName" />, or <paramref name="jobName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByJobAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; ListByJobAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; ListByJobAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.ListByJobAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByJobAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member ListByJobAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.ListByJobAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.ListByJobAsync (resourceGroupName, serverName, jobAgentName, jobName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all job steps for a job's current version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="jobAgentName" />, or <paramref name="jobName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByVersion">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; ListByVersion (string resourceGroupName, string serverName, string jobAgentName, string jobName, int jobVersion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; ListByVersion(string resourceGroupName, string serverName, string jobAgentName, string jobName, int32 jobVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.ListByVersion(System.String,System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByVersion (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobVersion As Integer, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member ListByVersion : string * string * string * string * int * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.ListByVersion : string * string * string * string * int * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.ListByVersion (resourceGroupName, serverName, jobAgentName, jobName, jobVersion, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobVersion" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="jobVersion"> The version of the job to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all job steps in the specified job version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="jobAgentName" />, or <paramref name="jobName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByVersionAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt; ListByVersionAsync (string resourceGroupName, string serverName, string jobAgentName, string jobName, int jobVersion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.JobStep&gt; ListByVersionAsync(string resourceGroupName, string serverName, string jobAgentName, string jobName, int32 jobVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobStepsOperations.ListByVersionAsync(System.String,System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByVersionAsync (resourceGroupName As String, serverName As String, jobAgentName As String, jobName As String, jobVersion As Integer, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of JobStep)" />
+      <MemberSignature Language="F#" Value="abstract member ListByVersionAsync : string * string * string * string * int * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;&#xA;override this.ListByVersionAsync : string * string * string * string * int * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;" Usage="jobStepsOperations.ListByVersionAsync (resourceGroupName, serverName, jobAgentName, jobName, jobVersion, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.JobStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobVersion" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="jobAgentName"> The name of the job agent. </param>
+        <param name="jobName"> The name of the job to get. </param>
+        <param name="jobVersion"> The version of the job to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all job steps in the specified job version. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="jobAgentName" />, or <paramref name="jobName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

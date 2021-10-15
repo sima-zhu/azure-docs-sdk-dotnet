@@ -37,6 +37,8 @@
         <param name="sku"> The sku of the configuration store. </param>
         <summary> Initializes a new instance of ConfigurationStore. </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> or <paramref name="sku" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
@@ -120,18 +122,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateEndpointConnections">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt; PrivateEndpointConnections { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt; PrivateEndpointConnections" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt; PrivateEndpointConnections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt; PrivateEndpointConnections" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppConfiguration.Models.ConfigurationStore.PrivateEndpointConnections" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpointConnections As IList(Of PrivateEndpointConnectionReference)" />
-      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : System.Collections.Generic.IList&lt;Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt;" Usage="Azure.ResourceManager.AppConfiguration.Models.ConfigurationStore.PrivateEndpointConnections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpointConnections As IReadOnlyList(Of PrivateEndpointConnectionReference)" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt;" Usage="Azure.ResourceManager.AppConfiguration.Models.ConfigurationStore.PrivateEndpointConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The list of private endpoint connections that are set up for this resource. </summary>

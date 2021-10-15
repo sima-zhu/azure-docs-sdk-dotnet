@@ -1,0 +1,393 @@
+<Type Name="ConversationsModelFactory" FullName="Azure.AI.Language.Conversations.Models.ConversationsModelFactory">
+  <TypeSignature Language="C#" Value="public static class ConversationsModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConversationsModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Language.Conversations.Models.ConversationsModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConversationsModelFactory" />
+  <TypeSignature Language="F#" Value="type ConversationsModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Model factory for read-only models. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnalyzeConversationResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.AnalyzeConversationResult AnalyzeConversationResult (string query = default, string detectedLanguage = default, Azure.AI.Language.Conversations.Models.BasePrediction prediction = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.AnalyzeConversationResult AnalyzeConversationResult(string query, string detectedLanguage, class Azure.AI.Language.Conversations.Models.BasePrediction prediction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.AnalyzeConversationResult(System.String,System.String,Azure.AI.Language.Conversations.Models.BasePrediction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AnalyzeConversationResult (Optional query As String = Nothing, Optional detectedLanguage As String = Nothing, Optional prediction As BasePrediction = Nothing) As AnalyzeConversationResult" />
+      <MemberSignature Language="F#" Value="static member AnalyzeConversationResult : string * string * Azure.AI.Language.Conversations.Models.BasePrediction -&gt; Azure.AI.Language.Conversations.Models.AnalyzeConversationResult" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.AnalyzeConversationResult (query, detectedLanguage, prediction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.AnalyzeConversationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="detectedLanguage" Type="System.String" />
+        <Parameter Name="prediction" Type="Azure.AI.Language.Conversations.Models.BasePrediction" />
+      </Parameters>
+      <Docs>
+        <param name="query"> The conversation utterance given by the caller. </param>
+        <param name="detectedLanguage"> The system detected language for the query. </param>
+        <param name="prediction"> The prediction result of a conversation project. </param>
+        <summary> Initializes a new instance of AnalyzeConversationResult. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.AnalyzeConversationResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasePrediction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.BasePrediction BasePrediction (Azure.AI.Language.Conversations.Models.ProjectKind projectKind = default, string topIntent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.BasePrediction BasePrediction(valuetype Azure.AI.Language.Conversations.Models.ProjectKind projectKind, string topIntent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.BasePrediction(Azure.AI.Language.Conversations.Models.ProjectKind,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BasePrediction (Optional projectKind As ProjectKind = Nothing, Optional topIntent As String = Nothing) As BasePrediction" />
+      <MemberSignature Language="F#" Value="static member BasePrediction : Azure.AI.Language.Conversations.Models.ProjectKind * string -&gt; Azure.AI.Language.Conversations.Models.BasePrediction" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.BasePrediction (projectKind, topIntent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.BasePrediction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectKind" Type="Azure.AI.Language.Conversations.Models.ProjectKind" />
+        <Parameter Name="topIntent" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectKind"> The type of the project. </param>
+        <param name="topIntent"> The intent with the highest score. </param>
+        <summary> Initializes a new instance of BasePrediction. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.BasePrediction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepstackEntity">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DeepstackEntity DeepstackEntity (string category = default, string text = default, int offset = 0, int length = 0, float confidenceScore = 0, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Models.DeepStackEntityResolution&gt; resolution = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DeepstackEntity DeepstackEntity(string category, string text, int32 offset, int32 length, float32 confidenceScore, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Models.DeepStackEntityResolution&gt; resolution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackEntity(System.String,System.String,System.Int32,System.Int32,System.Single,System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Models.DeepStackEntityResolution})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeepstackEntity (Optional category As String = Nothing, Optional text As String = Nothing, Optional offset As Integer = 0, Optional length As Integer = 0, Optional confidenceScore As Single = 0, Optional resolution As IEnumerable(Of DeepStackEntityResolution) = Nothing) As DeepstackEntity" />
+      <MemberSignature Language="F#" Value="static member DeepstackEntity : string * string * int * int * single * seq&lt;Azure.AI.Language.Conversations.Models.DeepStackEntityResolution&gt; -&gt; Azure.AI.Language.Conversations.Models.DeepstackEntity" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackEntity (category, text, offset, length, confidenceScore, resolution)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DeepstackEntity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="confidenceScore" Type="System.Single" />
+        <Parameter Name="resolution" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Models.DeepStackEntityResolution&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="category"> The entity category. </param>
+        <param name="text"> The predicted entity text. </param>
+        <param name="offset"> The starting index of this entity in the query. </param>
+        <param name="length"> The length of the text. </param>
+        <param name="confidenceScore"> The entity confidence score. </param>
+        <param name="resolution"> A array with extra information about the entity. </param>
+        <summary> Initializes a new instance of DeepstackEntity. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DeepstackEntity" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepStackEntityResolution">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DeepStackEntityResolution DeepStackEntityResolution (Azure.AI.Language.Conversations.Models.ResolutionKind resolutionKind = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; additionalProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DeepStackEntityResolution DeepStackEntityResolution(valuetype Azure.AI.Language.Conversations.Models.ResolutionKind resolutionKind, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; additionalProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepStackEntityResolution(Azure.AI.Language.Conversations.Models.ResolutionKind,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeepStackEntityResolution (Optional resolutionKind As ResolutionKind = Nothing, Optional additionalProperties As IReadOnlyDictionary(Of String, Object) = Nothing) As DeepStackEntityResolution" />
+      <MemberSignature Language="F#" Value="static member DeepStackEntityResolution : Azure.AI.Language.Conversations.Models.ResolutionKind * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; -&gt; Azure.AI.Language.Conversations.Models.DeepStackEntityResolution" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepStackEntityResolution (resolutionKind, additionalProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DeepStackEntityResolution</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolutionKind" Type="Azure.AI.Language.Conversations.Models.ResolutionKind" />
+        <Parameter Name="additionalProperties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="resolutionKind"> The type of an entity resolution. </param>
+        <param name="additionalProperties"> Additional Properties. </param>
+        <summary> Initializes a new instance of DeepStackEntityResolution. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DeepStackEntityResolution" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepstackIntent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DeepstackIntent DeepstackIntent (string category = default, float confidenceScore = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DeepstackIntent DeepstackIntent(string category, float32 confidenceScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackIntent(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeepstackIntent (Optional category As String = Nothing, Optional confidenceScore As Single = 0) As DeepstackIntent" />
+      <MemberSignature Language="F#" Value="static member DeepstackIntent : string * single -&gt; Azure.AI.Language.Conversations.Models.DeepstackIntent" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackIntent (category, confidenceScore)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DeepstackIntent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="confidenceScore" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="category"> A predicted class. </param>
+        <param name="confidenceScore"> The confidence score of the class from 0.0 to 1.0. </param>
+        <summary> Initializes a new instance of DeepstackIntent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DeepstackIntent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepstackPrediction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DeepstackPrediction DeepstackPrediction (Azure.AI.Language.Conversations.Models.ProjectKind projectKind = default, string topIntent = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Models.DeepstackIntent&gt; intents = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Models.DeepstackEntity&gt; entities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DeepstackPrediction DeepstackPrediction(valuetype Azure.AI.Language.Conversations.Models.ProjectKind projectKind, string topIntent, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Models.DeepstackIntent&gt; intents, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Models.DeepstackEntity&gt; entities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackPrediction(Azure.AI.Language.Conversations.Models.ProjectKind,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Models.DeepstackIntent},System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Models.DeepstackEntity})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeepstackPrediction (Optional projectKind As ProjectKind = Nothing, Optional topIntent As String = Nothing, Optional intents As IEnumerable(Of DeepstackIntent) = Nothing, Optional entities As IEnumerable(Of DeepstackEntity) = Nothing) As DeepstackPrediction" />
+      <MemberSignature Language="F#" Value="static member DeepstackPrediction : Azure.AI.Language.Conversations.Models.ProjectKind * string * seq&lt;Azure.AI.Language.Conversations.Models.DeepstackIntent&gt; * seq&lt;Azure.AI.Language.Conversations.Models.DeepstackEntity&gt; -&gt; Azure.AI.Language.Conversations.Models.DeepstackPrediction" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackPrediction (projectKind, topIntent, intents, entities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DeepstackPrediction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectKind" Type="Azure.AI.Language.Conversations.Models.ProjectKind" />
+        <Parameter Name="topIntent" Type="System.String" />
+        <Parameter Name="intents" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Models.DeepstackIntent&gt;" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Models.DeepstackEntity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectKind"> The type of the project. </param>
+        <param name="topIntent"> The intent with the highest score. </param>
+        <param name="intents"> The intent classification results. </param>
+        <param name="entities"> The entity extraction results. </param>
+        <summary> Initializes a new instance of DeepstackPrediction. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DeepstackPrediction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepstackResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DeepstackResult DeepstackResult (string query = default, string detectedLanguage = default, Azure.AI.Language.Conversations.Models.DeepstackPrediction prediction = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DeepstackResult DeepstackResult(string query, string detectedLanguage, class Azure.AI.Language.Conversations.Models.DeepstackPrediction prediction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackResult(System.String,System.String,Azure.AI.Language.Conversations.Models.DeepstackPrediction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeepstackResult (Optional query As String = Nothing, Optional detectedLanguage As String = Nothing, Optional prediction As DeepstackPrediction = Nothing) As DeepstackResult" />
+      <MemberSignature Language="F#" Value="static member DeepstackResult : string * string * Azure.AI.Language.Conversations.Models.DeepstackPrediction -&gt; Azure.AI.Language.Conversations.Models.DeepstackResult" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DeepstackResult (query, detectedLanguage, prediction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DeepstackResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="detectedLanguage" Type="System.String" />
+        <Parameter Name="prediction" Type="Azure.AI.Language.Conversations.Models.DeepstackPrediction" />
+      </Parameters>
+      <Docs>
+        <param name="query"> The same query given in request. </param>
+        <param name="detectedLanguage"> The detected language from the query. </param>
+        <param name="prediction"> The predicted result for the query. </param>
+        <summary> Initializes a new instance of DeepstackResult. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DeepstackResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DictionaryNormalizedValueResolution">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DictionaryNormalizedValueResolution DictionaryNormalizedValueResolution (Azure.AI.Language.Conversations.Models.ResolutionKind resolutionKind = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; additionalProperties = default, System.Collections.Generic.IEnumerable&lt;string&gt; values = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DictionaryNormalizedValueResolution DictionaryNormalizedValueResolution(valuetype Azure.AI.Language.Conversations.Models.ResolutionKind resolutionKind, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; additionalProperties, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DictionaryNormalizedValueResolution(Azure.AI.Language.Conversations.Models.ResolutionKind,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DictionaryNormalizedValueResolution (Optional resolutionKind As ResolutionKind = Nothing, Optional additionalProperties As IReadOnlyDictionary(Of String, Object) = Nothing, Optional values As IEnumerable(Of String) = Nothing) As DictionaryNormalizedValueResolution" />
+      <MemberSignature Language="F#" Value="static member DictionaryNormalizedValueResolution : Azure.AI.Language.Conversations.Models.ResolutionKind * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * seq&lt;string&gt; -&gt; Azure.AI.Language.Conversations.Models.DictionaryNormalizedValueResolution" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DictionaryNormalizedValueResolution (resolutionKind, additionalProperties, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DictionaryNormalizedValueResolution</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolutionKind" Type="Azure.AI.Language.Conversations.Models.ResolutionKind" />
+        <Parameter Name="additionalProperties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="resolutionKind"> The type of an entity resolution. </param>
+        <param name="additionalProperties"> Additional Properties. </param>
+        <param name="values"> A list of normalized entities. </param>
+        <summary> Initializes a new instance of DictionaryNormalizedValueResolution. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DictionaryNormalizedValueResolution" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DSTargetIntentResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.DSTargetIntentResult DSTargetIntentResult (Azure.AI.Language.Conversations.Models.TargetKind targetKind = default, string apiVersion = default, double confidenceScore = 0, Azure.AI.Language.Conversations.Models.DeepstackResult result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.DSTargetIntentResult DSTargetIntentResult(valuetype Azure.AI.Language.Conversations.Models.TargetKind targetKind, string apiVersion, float64 confidenceScore, class Azure.AI.Language.Conversations.Models.DeepstackResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DSTargetIntentResult(Azure.AI.Language.Conversations.Models.TargetKind,System.String,System.Double,Azure.AI.Language.Conversations.Models.DeepstackResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DSTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidenceScore As Double = 0, Optional result As DeepstackResult = Nothing) As DSTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member DSTargetIntentResult : Azure.AI.Language.Conversations.Models.TargetKind * string * double * Azure.AI.Language.Conversations.Models.DeepstackResult -&gt; Azure.AI.Language.Conversations.Models.DSTargetIntentResult" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.DSTargetIntentResult (targetKind, apiVersion, confidenceScore, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.DSTargetIntentResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.Models.TargetKind" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="confidenceScore" Type="System.Double" />
+        <Parameter Name="result" Type="Azure.AI.Language.Conversations.Models.DeepstackResult" />
+      </Parameters>
+      <Docs>
+        <param name="targetKind"> This discriminator property specifies the type of the target project that returns the response. 'luis' means the type is LUIS Generally Available. 'luis_deepstack' means LUIS vNext. 'question_answering' means Question Answering. </param>
+        <param name="apiVersion"> The API version used to call a target service. </param>
+        <param name="confidenceScore"> The prediction score and it ranges from 0.0 to 1.0. </param>
+        <param name="result"> The actual response from a LUIS Deepstack application. </param>
+        <summary> Initializes a new instance of DSTargetIntentResult. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.DSTargetIntentResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTargetIntentResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.LuisTargetIntentResult LuisTargetIntentResult (Azure.AI.Language.Conversations.Models.TargetKind targetKind = default, string apiVersion = default, double confidenceScore = 0, object result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.LuisTargetIntentResult LuisTargetIntentResult(valuetype Azure.AI.Language.Conversations.Models.TargetKind targetKind, string apiVersion, float64 confidenceScore, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.LuisTargetIntentResult(Azure.AI.Language.Conversations.Models.TargetKind,System.String,System.Double,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LuisTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidenceScore As Double = 0, Optional result As Object = Nothing) As LuisTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member LuisTargetIntentResult : Azure.AI.Language.Conversations.Models.TargetKind * string * double * obj -&gt; Azure.AI.Language.Conversations.Models.LuisTargetIntentResult" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.LuisTargetIntentResult (targetKind, apiVersion, confidenceScore, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.LuisTargetIntentResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.Models.TargetKind" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="confidenceScore" Type="System.Double" />
+        <Parameter Name="result" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="targetKind"> This discriminator property specifies the type of the target project that returns the response. 'luis' means the type is LUIS Generally Available. 'luis_deepstack' means LUIS vNext. 'question_answering' means Question Answering. </param>
+        <param name="apiVersion"> The API version used to call a target service. </param>
+        <param name="confidenceScore"> The prediction score and it ranges from 0.0 to 1.0. </param>
+        <param name="result"> The actual response from a LUIS Generally Available application. </param>
+        <summary> Initializes a new instance of LuisTargetIntentResult. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.LuisTargetIntentResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringTargetIntentResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.QuestionAnsweringTargetIntentResult QuestionAnsweringTargetIntentResult (Azure.AI.Language.Conversations.Models.TargetKind targetKind = default, string apiVersion = default, double confidenceScore = 0, object result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.QuestionAnsweringTargetIntentResult QuestionAnsweringTargetIntentResult(valuetype Azure.AI.Language.Conversations.Models.TargetKind targetKind, string apiVersion, float64 confidenceScore, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.QuestionAnsweringTargetIntentResult(Azure.AI.Language.Conversations.Models.TargetKind,System.String,System.Double,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidenceScore As Double = 0, Optional result As Object = Nothing) As QuestionAnsweringTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringTargetIntentResult : Azure.AI.Language.Conversations.Models.TargetKind * string * double * obj -&gt; Azure.AI.Language.Conversations.Models.QuestionAnsweringTargetIntentResult" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.QuestionAnsweringTargetIntentResult (targetKind, apiVersion, confidenceScore, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.QuestionAnsweringTargetIntentResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.Models.TargetKind" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="confidenceScore" Type="System.Double" />
+        <Parameter Name="result" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="targetKind"> This discriminator property specifies the type of the target project that returns the response. 'luis' means the type is LUIS Generally Available. 'luis_deepstack' means LUIS vNext. 'question_answering' means Question Answering. </param>
+        <param name="apiVersion"> The API version used to call a target service. </param>
+        <param name="confidenceScore"> The prediction score and it ranges from 0.0 to 1.0. </param>
+        <param name="result"> The generated answer by a Question Answering KB. </param>
+        <summary> Initializes a new instance of QuestionAnsweringTargetIntentResult. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.QuestionAnsweringTargetIntentResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetIntentResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.TargetIntentResult TargetIntentResult (Azure.AI.Language.Conversations.Models.TargetKind targetKind = default, string apiVersion = default, double confidenceScore = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.TargetIntentResult TargetIntentResult(valuetype Azure.AI.Language.Conversations.Models.TargetKind targetKind, string apiVersion, float64 confidenceScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.TargetIntentResult(Azure.AI.Language.Conversations.Models.TargetKind,System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidenceScore As Double = 0) As TargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member TargetIntentResult : Azure.AI.Language.Conversations.Models.TargetKind * string * double -&gt; Azure.AI.Language.Conversations.Models.TargetIntentResult" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.TargetIntentResult (targetKind, apiVersion, confidenceScore)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.TargetIntentResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.Models.TargetKind" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="confidenceScore" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="targetKind"> This discriminator property specifies the type of the target project that returns the response. 'luis' means the type is LUIS Generally Available. 'luis_deepstack' means LUIS vNext. 'question_answering' means Question Answering. </param>
+        <param name="apiVersion"> The API version used to call a target service. </param>
+        <param name="confidenceScore"> The prediction score and it ranges from 0.0 to 1.0. </param>
+        <summary> Initializes a new instance of TargetIntentResult. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.TargetIntentResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowPrediction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Models.WorkflowPrediction WorkflowPrediction (Azure.AI.Language.Conversations.Models.ProjectKind projectKind = default, string topIntent = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.AI.Language.Conversations.Models.TargetIntentResult&gt; intents = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Models.WorkflowPrediction WorkflowPrediction(valuetype Azure.AI.Language.Conversations.Models.ProjectKind projectKind, string topIntent, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.AI.Language.Conversations.Models.TargetIntentResult&gt; intents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Models.ConversationsModelFactory.WorkflowPrediction(Azure.AI.Language.Conversations.Models.ProjectKind,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.AI.Language.Conversations.Models.TargetIntentResult})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WorkflowPrediction (Optional projectKind As ProjectKind = Nothing, Optional topIntent As String = Nothing, Optional intents As IReadOnlyDictionary(Of String, TargetIntentResult) = Nothing) As WorkflowPrediction" />
+      <MemberSignature Language="F#" Value="static member WorkflowPrediction : Azure.AI.Language.Conversations.Models.ProjectKind * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.AI.Language.Conversations.Models.TargetIntentResult&gt; -&gt; Azure.AI.Language.Conversations.Models.WorkflowPrediction" Usage="Azure.AI.Language.Conversations.Models.ConversationsModelFactory.WorkflowPrediction (projectKind, topIntent, intents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.WorkflowPrediction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectKind" Type="Azure.AI.Language.Conversations.Models.ProjectKind" />
+        <Parameter Name="topIntent" Type="System.String" />
+        <Parameter Name="intents" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.AI.Language.Conversations.Models.TargetIntentResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectKind"> The type of the project. </param>
+        <param name="topIntent"> The intent with the highest score. </param>
+        <param name="intents"> A dictionary that contains all intents. A key is an intent name and a value is its confidence score and target type. The top intent's value also contains the actual response from the target project. </param>
+        <summary> Initializes a new instance of WorkflowPrediction. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Models.WorkflowPrediction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -35,6 +35,8 @@
         <param name="key"> The key to retrieve. </param>
         <summary> Initializes a new instance of ListKeyValueParameters. </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Key">
