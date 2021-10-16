@@ -1,0 +1,97 @@
+<Type Name="Job" FullName="Azure.ResourceManager.Sql.Models.Job">
+  <TypeSignature Language="C#" Value="public class Job : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Job extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.Job" />
+  <TypeSignature Language="VB.NET" Value="Public Class Job&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type Job = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A job. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Job ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.Job.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of Job. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.Job.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Azure.ResourceManager.Sql.Models.Job.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> User-defined description of the job. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schedule">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.JobSchedule Schedule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.Models.JobSchedule Schedule" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.Job.Schedule" />
+      <MemberSignature Language="VB.NET" Value="Public Property Schedule As JobSchedule" />
+      <MemberSignature Language="F#" Value="member this.Schedule : Azure.ResourceManager.Sql.Models.JobSchedule with get, set" Usage="Azure.ResourceManager.Sql.Models.Job.Schedule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.JobSchedule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Schedule properties of the job. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int? Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Version" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.Job.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Version : Nullable&lt;int&gt;" Usage="Azure.ResourceManager.Sql.Models.Job.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The job version number. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

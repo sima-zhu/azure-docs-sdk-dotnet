@@ -1,0 +1,309 @@
+<Type Name="ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations" FullName="Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations">
+  <TypeSignature Language="C#" Value="public class ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations" />
+  <TypeSignature Language="F#" Value="type ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; Get (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; Get(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, policyName As ManagedShortTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedBackupShortTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.Get (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="policyName"> The policy name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a dropped database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; GetAsync (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; GetAsync(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, policyName As ManagedShortTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedBackupShortTermRetentionPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.GetAsync (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="policyName"> The policy name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a dropped database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByRestorableDroppedDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; ListByRestorableDroppedDatabase (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; ListByRestorableDroppedDatabase(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.ListByRestorableDroppedDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByRestorableDroppedDatabase (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedBackupShortTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByRestorableDroppedDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&#xA;override this.ListByRestorableDroppedDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.ListByRestorableDroppedDatabase (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a dropped database's short term retention policy list. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="restorableDroppedDatabaseId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByRestorableDroppedDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; ListByRestorableDroppedDatabaseAsync (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; ListByRestorableDroppedDatabaseAsync(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.ListByRestorableDroppedDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByRestorableDroppedDatabaseAsync (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedBackupShortTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByRestorableDroppedDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&#xA;override this.ListByRestorableDroppedDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.ListByRestorableDroppedDatabaseAsync (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a dropped database's short term retention policy list. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, or <paramref name="restorableDroppedDatabaseId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartCreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartCreateOrUpdate (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, <paramref name="restorableDroppedDatabaseId" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt;" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartCreateOrUpdateAsync (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, <paramref name="restorableDroppedDatabaseId" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation StartUpdate (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation StartUpdate(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdate (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation&#xA;override this.StartUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartUpdate (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, <paramref name="restorableDroppedDatabaseId" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation&gt; StartUpdateAsync (string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation&gt; StartUpdateAsync(string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdateAsync (resourceGroupName As String, managedInstanceName As String, restorableDroppedDatabaseId As String, policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation&gt;&#xA;override this.StartUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation&gt;" Usage="managedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations.StartUpdateAsync (resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="restorableDroppedDatabaseId" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ManagedBackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="managedInstanceName"> The name of the managed instance. </param>
+        <param name="restorableDroppedDatabaseId"> The String to use. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The long term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets a database's long term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="managedInstanceName" />, <paramref name="restorableDroppedDatabaseId" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

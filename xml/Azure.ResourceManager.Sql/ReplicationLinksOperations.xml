@@ -1,0 +1,437 @@
+<Type Name="ReplicationLinksOperations" FullName="Azure.ResourceManager.Sql.ReplicationLinksOperations">
+  <TypeSignature Language="C#" Value="public class ReplicationLinksOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReplicationLinksOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ReplicationLinksOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReplicationLinksOperations" />
+  <TypeSignature Language="F#" Value="type ReplicationLinksOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ReplicationLinks service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ReplicationLinksOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ReplicationLinksOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.Delete(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Delete : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="replicationLinksOperations.Delete (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be dropped. </param>
+        <param name="linkId"> The ID of the replication link to be deleted. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a database replication link. Cannot be done during failover. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="replicationLinksOperations.DeleteAsync (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be dropped. </param>
+        <param name="linkId"> The ID of the replication link to be deleted. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a database replication link. Cannot be done during failover. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt; Get (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ReplicationLink&gt; Get(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.Get(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ReplicationLink)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&#xA;override this.Get : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;" Usage="replicationLinksOperations.Get (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database to get the link for. </param>
+        <param name="linkId"> The replication link ID to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database replication link. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&gt; GetAsync (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&gt; GetAsync(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.GetAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ReplicationLink))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&gt;&#xA;override this.GetAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&gt;" Usage="replicationLinksOperations.GetAsync (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database to get the link for. </param>
+        <param name="linkId"> The replication link ID to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database replication link. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt; ListByDatabase (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ReplicationLink&gt; ListByDatabase(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.ListByDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabase (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ReplicationLink)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&#xA;override this.ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;" Usage="replicationLinksOperations.ListByDatabase (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database to retrieve links for. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists a database's replication links. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt; ListByDatabaseAsync (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ReplicationLink&gt; ListByDatabaseAsync(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.ListByDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabaseAsync (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ReplicationLink)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;&#xA;override this.ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;" Usage="replicationLinksOperations.ListByDatabaseAsync (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ReplicationLink&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database to retrieve links for. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists a database's replication links. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailover">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation StartFailover (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation StartFailover(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.StartFailover(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailover (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As ReplicationLinksFailoverOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartFailover : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation&#xA;override this.StartFailover : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation" Usage="replicationLinksOperations.StartFailover (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be failed over. </param>
+        <param name="linkId"> The ID of the replication link to be failed over. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets which replica database is primary by failing over from the current primary replica database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="linkId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailoverAllowDataLoss">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation StartFailoverAllowDataLoss (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation StartFailoverAllowDataLoss(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.StartFailoverAllowDataLoss(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailoverAllowDataLoss (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As ReplicationLinksFailoverAllowDataLossOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartFailoverAllowDataLoss : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation&#xA;override this.StartFailoverAllowDataLoss : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation" Usage="replicationLinksOperations.StartFailoverAllowDataLoss (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be failed over. </param>
+        <param name="linkId"> The ID of the replication link to be failed over. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets which replica database is primary by failing over from the current primary replica database. This operation might result in data loss. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="linkId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailoverAllowDataLossAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation&gt; StartFailoverAllowDataLossAsync (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation&gt; StartFailoverAllowDataLossAsync(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.StartFailoverAllowDataLossAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailoverAllowDataLossAsync (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ReplicationLinksFailoverAllowDataLossOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartFailoverAllowDataLossAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation&gt;&#xA;override this.StartFailoverAllowDataLossAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation&gt;" Usage="replicationLinksOperations.StartFailoverAllowDataLossAsync (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverAllowDataLossOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be failed over. </param>
+        <param name="linkId"> The ID of the replication link to be failed over. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets which replica database is primary by failing over from the current primary replica database. This operation might result in data loss. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="linkId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailoverAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation&gt; StartFailoverAsync (string resourceGroupName, string serverName, string databaseName, string linkId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation&gt; StartFailoverAsync(string resourceGroupName, string serverName, string databaseName, string linkId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.StartFailoverAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailoverAsync (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ReplicationLinksFailoverOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartFailoverAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation&gt;&#xA;override this.StartFailoverAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation&gt;" Usage="replicationLinksOperations.StartFailoverAsync (resourceGroupName, serverName, databaseName, linkId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksFailoverOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be failed over. </param>
+        <param name="linkId"> The ID of the replication link to be failed over. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Sets which replica database is primary by failing over from the current primary replica database. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="linkId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUnlink">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation StartUnlink (string resourceGroupName, string serverName, string databaseName, string linkId, Azure.ResourceManager.Sql.Models.UnlinkParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation StartUnlink(string resourceGroupName, string serverName, string databaseName, string linkId, class Azure.ResourceManager.Sql.Models.UnlinkParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.StartUnlink(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.UnlinkParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUnlink (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, parameters As UnlinkParameters, Optional cancellationToken As CancellationToken = Nothing) As ReplicationLinksUnlinkOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartUnlink : string * string * string * string * Azure.ResourceManager.Sql.Models.UnlinkParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation&#xA;override this.StartUnlink : string * string * string * string * Azure.ResourceManager.Sql.Models.UnlinkParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation" Usage="replicationLinksOperations.StartUnlink (resourceGroupName, serverName, databaseName, linkId, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.UnlinkParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be failed over. </param>
+        <param name="linkId"> The ID of the replication link to be failed over. </param>
+        <param name="parameters"> The required parameters for unlinking replication link. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a database replication link in forced or friendly way. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="linkId" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUnlinkAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation&gt; StartUnlinkAsync (string resourceGroupName, string serverName, string databaseName, string linkId, Azure.ResourceManager.Sql.Models.UnlinkParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation&gt; StartUnlinkAsync(string resourceGroupName, string serverName, string databaseName, string linkId, class Azure.ResourceManager.Sql.Models.UnlinkParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ReplicationLinksOperations.StartUnlinkAsync(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.UnlinkParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUnlinkAsync (resourceGroupName As String, serverName As String, databaseName As String, linkId As String, parameters As UnlinkParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ReplicationLinksUnlinkOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartUnlinkAsync : string * string * string * string * Azure.ResourceManager.Sql.Models.UnlinkParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation&gt;&#xA;override this.StartUnlinkAsync : string * string * string * string * Azure.ResourceManager.Sql.Models.UnlinkParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation&gt;" Usage="replicationLinksOperations.StartUnlinkAsync (resourceGroupName, serverName, databaseName, linkId, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ReplicationLinksUnlinkOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="linkId" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.UnlinkParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database that has the replication link to be failed over. </param>
+        <param name="linkId"> The ID of the replication link to be failed over. </param>
+        <param name="parameters"> The required parameters for unlinking replication link. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a database replication link in forced or friendly way. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="linkId" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,217 @@
+<Type Name="ExtendedServerBlobAuditingPoliciesOperations" FullName="Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations">
+  <TypeSignature Language="C#" Value="public class ExtendedServerBlobAuditingPoliciesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtendedServerBlobAuditingPoliciesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExtendedServerBlobAuditingPoliciesOperations" />
+  <TypeSignature Language="F#" Value="type ExtendedServerBlobAuditingPoliciesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ExtendedServerBlobAuditingPolicies service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExtendedServerBlobAuditingPoliciesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ExtendedServerBlobAuditingPoliciesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt; Get (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt; Get(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.Get(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ExtendedServerBlobAuditingPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&#xA;override this.Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;" Usage="extendedServerBlobAuditingPoliciesOperations.Get (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets an extended server's blob auditing policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&gt; GetAsync (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&gt; GetAsync(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ExtendedServerBlobAuditingPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&gt;&#xA;override this.GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&gt;" Usage="extendedServerBlobAuditingPoliciesOperations.GetAsync (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets an extended server's blob auditing policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServer">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt; ListByServer (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt; ListByServer(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.ListByServer(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServer (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ExtendedServerBlobAuditingPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&#xA;override this.ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;" Usage="extendedServerBlobAuditingPoliciesOperations.ListByServer (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists extended auditing settings of a server. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServerAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt; ListByServerAsync (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt; ListByServerAsync(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.ListByServerAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServerAsync (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ExtendedServerBlobAuditingPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;&#xA;override this.ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;" Usage="extendedServerBlobAuditingPoliciesOperations.ListByServerAsync (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists extended auditing settings of a server. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, class Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.StartCreateOrUpdate(System.String,System.String,Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, parameters As ExtendedServerBlobAuditingPolicy, Optional cancellationToken As CancellationToken = Nothing) As ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation" Usage="extendedServerBlobAuditingPoliciesOperations.StartCreateOrUpdate (resourceGroupName, serverName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="parameters"> Properties of extended blob auditing policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates an extended server's blob auditing policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, class Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesOperations.StartCreateOrUpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, parameters As ExtendedServerBlobAuditingPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation&gt;" Usage="extendedServerBlobAuditingPoliciesOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPoliciesCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ExtendedServerBlobAuditingPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="parameters"> Properties of extended blob auditing policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates an extended server's blob auditing policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

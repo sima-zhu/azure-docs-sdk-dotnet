@@ -261,6 +261,8 @@
         <summary> Gets all the consumer groups in a Namespace. An empty feed is returned if no consumer group exists in the Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="eventHubName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByEventHubAsync">
@@ -295,6 +297,8 @@
         <summary> Gets all the consumer groups in a Namespace. An empty feed is returned if no consumer group exists in the Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="eventHubName" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

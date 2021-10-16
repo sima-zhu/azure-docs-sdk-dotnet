@@ -1,0 +1,289 @@
+<Type Name="PrivateEndpointConnectionsOperations" FullName="Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations">
+  <TypeSignature Language="C#" Value="public class PrivateEndpointConnectionsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrivateEndpointConnectionsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrivateEndpointConnectionsOperations" />
+  <TypeSignature Language="F#" Value="type PrivateEndpointConnectionsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The PrivateEndpointConnections service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PrivateEndpointConnectionsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of PrivateEndpointConnectionsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt; Get (string resourceGroupName, string serverName, string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt; Get(string resourceGroupName, string serverName, string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.Get(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, privateEndpointConnectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PrivateEndpointConnection)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&#xA;override this.Get : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;" Usage="privateEndpointConnectionsOperations.Get (resourceGroupName, serverName, privateEndpointConnectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="privateEndpointConnectionName"> The name of the private endpoint connection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a private endpoint connection. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&gt; GetAsync (string resourceGroupName, string serverName, string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&gt; GetAsync(string resourceGroupName, string serverName, string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, privateEndpointConnectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PrivateEndpointConnection))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&gt;&#xA;override this.GetAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&gt;" Usage="privateEndpointConnectionsOperations.GetAsync (resourceGroupName, serverName, privateEndpointConnectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="privateEndpointConnectionName"> The name of the private endpoint connection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a private endpoint connection. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServer">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt; ListByServer (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt; ListByServer(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.ListByServer(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServer (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of PrivateEndpointConnection)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&#xA;override this.ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;" Usage="privateEndpointConnectionsOperations.ListByServer (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all private endpoint connections on a server. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServerAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt; ListByServerAsync (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt; ListByServerAsync(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.ListByServerAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServerAsync (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of PrivateEndpointConnection)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;&#xA;override this.ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;" Usage="privateEndpointConnectionsOperations.ListByServerAsync (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.PrivateEndpointConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all private endpoint connections on a server. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, string privateEndpointConnectionName, Azure.ResourceManager.Sql.Models.PrivateEndpointConnection parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, string privateEndpointConnectionName, class Azure.ResourceManager.Sql.Models.PrivateEndpointConnection parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.StartCreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.PrivateEndpointConnection,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, privateEndpointConnectionName As String, parameters As PrivateEndpointConnection, Optional cancellationToken As CancellationToken = Nothing) As PrivateEndpointConnectionsCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.PrivateEndpointConnection * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.PrivateEndpointConnection * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation" Usage="privateEndpointConnectionsOperations.StartCreateOrUpdate (resourceGroupName, serverName, privateEndpointConnectionName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.PrivateEndpointConnection" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="privateEndpointConnectionName"> The String to use. </param>
+        <param name="parameters"> The PrivateEndpointConnection to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Approve or reject a private endpoint connection with a given name. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="privateEndpointConnectionName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, string privateEndpointConnectionName, Azure.ResourceManager.Sql.Models.PrivateEndpointConnection parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, string privateEndpointConnectionName, class Azure.ResourceManager.Sql.Models.PrivateEndpointConnection parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.PrivateEndpointConnection,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, privateEndpointConnectionName As String, parameters As PrivateEndpointConnection, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateEndpointConnectionsCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.PrivateEndpointConnection * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.PrivateEndpointConnection * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation&gt;" Usage="privateEndpointConnectionsOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, privateEndpointConnectionName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.PrivateEndpointConnection" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="privateEndpointConnectionName"> The String to use. </param>
+        <param name="parameters"> The PrivateEndpointConnection to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Approve or reject a private endpoint connection with a given name. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="privateEndpointConnectionName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation StartDelete (string resourceGroupName, string serverName, string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation StartDelete(string resourceGroupName, string serverName, string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.StartDelete(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, serverName As String, privateEndpointConnectionName As String, Optional cancellationToken As CancellationToken = Nothing) As PrivateEndpointConnectionsDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation&#xA;override this.StartDelete : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation" Usage="privateEndpointConnectionsOperations.StartDelete (resourceGroupName, serverName, privateEndpointConnectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="privateEndpointConnectionName"> The String to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a private endpoint connection with a given name. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="privateEndpointConnectionName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string serverName, string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string serverName, string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.PrivateEndpointConnectionsOperations.StartDeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, serverName As String, privateEndpointConnectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateEndpointConnectionsDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation&gt;" Usage="privateEndpointConnectionsOperations.StartDeleteAsync (resourceGroupName, serverName, privateEndpointConnectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.PrivateEndpointConnectionsDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="privateEndpointConnectionName"> The String to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a private endpoint connection with a given name. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="privateEndpointConnectionName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
