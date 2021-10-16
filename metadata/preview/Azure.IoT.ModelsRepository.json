@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.IoT.ModelsRepository",
+  "Version": "1.0.0-alpha.20211015.1",
+  "DevVersion": "1.0.0-alpha.20211015.1",
+  "DirectoryPath": "sdk/modelsrepository/Azure.IoT.ModelsRepository",
+  "ServiceDirectory": "modelsrepository",
+  "ReadMePath": "sdk/modelsrepository/Azure.IoT.ModelsRepository/README.md",
+  "ChangeLogPath": "sdk/modelsrepository/Azure.IoT.ModelsRepository/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.IoT.ModelsRepository",
+  "ReleaseStatus": "Unreleased"
+}
