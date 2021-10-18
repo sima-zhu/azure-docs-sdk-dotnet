@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.Data.Tables",
+  "Version": "12.3.0-alpha.20211018.1",
+  "DevVersion": "12.3.0-alpha.20211018.1",
+  "DirectoryPath": "sdk/tables/Azure.Data.Tables",
+  "ServiceDirectory": "tables",
+  "ReadMePath": "sdk/tables/Azure.Data.Tables/README.md",
+  "ChangeLogPath": "sdk/tables/Azure.Data.Tables/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.Data.Tables",
+  "ReleaseStatus": "Unreleased"
+}
