@@ -1,0 +1,443 @@
+<Type Name="DeviceUpdateModelFactory" FullName="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory">
+  <TypeSignature Language="C#" Value="public static class DeviceUpdateModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DeviceUpdateModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeviceUpdateModelFactory" />
+  <TypeSignature Language="F#" Value="type DeviceUpdateModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Model factory for read-only models. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compatibility">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.Compatibility Compatibility (string deviceManufacturer = default, string deviceModel = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.Compatibility Compatibility(string deviceManufacturer, string deviceModel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Compatibility(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compatibility (Optional deviceManufacturer As String = Nothing, Optional deviceModel As String = Nothing) As Compatibility" />
+      <MemberSignature Language="F#" Value="static member Compatibility : string * string -&gt; Azure.IoT.DeviceUpdate.Models.Compatibility" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Compatibility (deviceManufacturer, deviceModel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.Compatibility</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceManufacturer" Type="System.String" />
+        <Parameter Name="deviceModel" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="deviceManufacturer"> The manufacturer of device the update is compatible with. </param>
+        <param name="deviceModel"> The model of device the update is compatible with. </param>
+        <summary> Initializes a new instance of Compatibility. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.Compatibility" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentDeviceState">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.DeploymentDeviceState DeploymentDeviceState (string deviceId = default, int retryCount = 0, bool movedOnToNewDeployment = false, Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState deviceState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.DeploymentDeviceState DeploymentDeviceState(string deviceId, int32 retryCount, bool movedOnToNewDeployment, valuetype Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState deviceState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeploymentDeviceState(System.String,System.Int32,System.Boolean,Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentDeviceState (Optional deviceId As String = Nothing, Optional retryCount As Integer = 0, Optional movedOnToNewDeployment As Boolean = false, Optional deviceState As DeviceDeploymentState = Nothing) As DeploymentDeviceState" />
+      <MemberSignature Language="F#" Value="static member DeploymentDeviceState : string * int * bool * Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState -&gt; Azure.IoT.DeviceUpdate.Models.DeploymentDeviceState" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeploymentDeviceState (deviceId, retryCount, movedOnToNewDeployment, deviceState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.DeploymentDeviceState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceId" Type="System.String" />
+        <Parameter Name="retryCount" Type="System.Int32" />
+        <Parameter Name="movedOnToNewDeployment" Type="System.Boolean" />
+        <Parameter Name="deviceState" Type="Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState" />
+      </Parameters>
+      <Docs>
+        <param name="deviceId"> Device identity. </param>
+        <param name="retryCount"> The number of times this deployment has been retried on this device. </param>
+        <param name="movedOnToNewDeployment"> Boolean flag indicating whether this device is in a newer deployment and can no longer retry this deployment. </param>
+        <param name="deviceState"> Deployment device state. </param>
+        <summary> Initializes a new instance of DeploymentDeviceState. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.DeploymentDeviceState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStatus">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.DeploymentStatus DeploymentStatus (Azure.IoT.DeviceUpdate.Models.DeploymentState deploymentState = default, int? totalDevices = default, int? devicesIncompatibleCount = default, int? devicesInProgressCount = default, int? devicesCompletedFailedCount = default, int? devicesCompletedSucceededCount = default, int? devicesCanceledCount = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.DeploymentStatus DeploymentStatus(valuetype Azure.IoT.DeviceUpdate.Models.DeploymentState deploymentState, valuetype System.Nullable`1&lt;int32&gt; totalDevices, valuetype System.Nullable`1&lt;int32&gt; devicesIncompatibleCount, valuetype System.Nullable`1&lt;int32&gt; devicesInProgressCount, valuetype System.Nullable`1&lt;int32&gt; devicesCompletedFailedCount, valuetype System.Nullable`1&lt;int32&gt; devicesCompletedSucceededCount, valuetype System.Nullable`1&lt;int32&gt; devicesCanceledCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeploymentStatus(Azure.IoT.DeviceUpdate.Models.DeploymentState,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStatus (Optional deploymentState As DeploymentState = Nothing, Optional totalDevices As Nullable(Of Integer) = Nothing, Optional devicesIncompatibleCount As Nullable(Of Integer) = Nothing, Optional devicesInProgressCount As Nullable(Of Integer) = Nothing, Optional devicesCompletedFailedCount As Nullable(Of Integer) = Nothing, Optional devicesCompletedSucceededCount As Nullable(Of Integer) = Nothing, Optional devicesCanceledCount As Nullable(Of Integer) = Nothing) As DeploymentStatus" />
+      <MemberSignature Language="F#" Value="static member DeploymentStatus : Azure.IoT.DeviceUpdate.Models.DeploymentState * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.IoT.DeviceUpdate.Models.DeploymentStatus" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeploymentStatus (deploymentState, totalDevices, devicesIncompatibleCount, devicesInProgressCount, devicesCompletedFailedCount, devicesCompletedSucceededCount, devicesCanceledCount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.DeploymentStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deploymentState" Type="Azure.IoT.DeviceUpdate.Models.DeploymentState" />
+        <Parameter Name="totalDevices" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="devicesIncompatibleCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="devicesInProgressCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="devicesCompletedFailedCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="devicesCompletedSucceededCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="devicesCanceledCount" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="deploymentState"> Gets or sets the state of the deployment. </param>
+        <param name="totalDevices"> Gets or sets the total number of devices in the deployment. </param>
+        <param name="devicesIncompatibleCount"> Gets or sets the number of incompatible devices in the deployment. </param>
+        <param name="devicesInProgressCount"> Gets or sets the number of devices that are currently in deployment. </param>
+        <param name="devicesCompletedFailedCount"> Gets or sets the number of devices that have completed deployment with a failure. </param>
+        <param name="devicesCompletedSucceededCount"> Gets or sets the number of devices which have successfully completed deployment. </param>
+        <param name="devicesCanceledCount"> Gets or sets the number of devices which have had their deployment canceled. </param>
+        <summary> Initializes a new instance of DeploymentStatus. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.DeploymentStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.Device Device (string deviceId = default, string deviceClassId = default, string manufacturer = default, string model = default, string groupId = default, Azure.IoT.DeviceUpdate.Models.UpdateId lastAttemptedUpdateId = default, Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState? deploymentStatus = default, Azure.IoT.DeviceUpdate.Models.UpdateId installedUpdateId = default, bool onLatestUpdate = false, string lastDeploymentId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.Device Device(string deviceId, string deviceClassId, string manufacturer, string model, string groupId, class Azure.IoT.DeviceUpdate.Models.UpdateId lastAttemptedUpdateId, valuetype System.Nullable`1&lt;valuetype Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState&gt; deploymentStatus, class Azure.IoT.DeviceUpdate.Models.UpdateId installedUpdateId, bool onLatestUpdate, string lastDeploymentId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Device(System.String,System.String,System.String,System.String,System.String,Azure.IoT.DeviceUpdate.Models.UpdateId,System.Nullable{Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState},Azure.IoT.DeviceUpdate.Models.UpdateId,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Device (Optional deviceId As String = Nothing, Optional deviceClassId As String = Nothing, Optional manufacturer As String = Nothing, Optional model As String = Nothing, Optional groupId As String = Nothing, Optional lastAttemptedUpdateId As UpdateId = Nothing, Optional deploymentStatus As Nullable(Of DeviceDeploymentState) = Nothing, Optional installedUpdateId As UpdateId = Nothing, Optional onLatestUpdate As Boolean = false, Optional lastDeploymentId As String = Nothing) As Device" />
+      <MemberSignature Language="F#" Value="static member Device : string * string * string * string * string * Azure.IoT.DeviceUpdate.Models.UpdateId * Nullable&lt;Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState&gt; * Azure.IoT.DeviceUpdate.Models.UpdateId * bool * string -&gt; Azure.IoT.DeviceUpdate.Models.Device" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Device (deviceId, deviceClassId, manufacturer, model, groupId, lastAttemptedUpdateId, deploymentStatus, installedUpdateId, onLatestUpdate, lastDeploymentId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.Device</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceId" Type="System.String" />
+        <Parameter Name="deviceClassId" Type="System.String" />
+        <Parameter Name="manufacturer" Type="System.String" />
+        <Parameter Name="model" Type="System.String" />
+        <Parameter Name="groupId" Type="System.String" />
+        <Parameter Name="lastAttemptedUpdateId" Type="Azure.IoT.DeviceUpdate.Models.UpdateId" />
+        <Parameter Name="deploymentStatus" Type="System.Nullable&lt;Azure.IoT.DeviceUpdate.Models.DeviceDeploymentState&gt;" />
+        <Parameter Name="installedUpdateId" Type="Azure.IoT.DeviceUpdate.Models.UpdateId" />
+        <Parameter Name="onLatestUpdate" Type="System.Boolean" />
+        <Parameter Name="lastDeploymentId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="deviceId"> Device identity. </param>
+        <param name="deviceClassId"> Device class identity. </param>
+        <param name="manufacturer"> Device manufacturer. </param>
+        <param name="model"> Device model. </param>
+        <param name="groupId"> Device group identity. </param>
+        <param name="lastAttemptedUpdateId"> Update identity. </param>
+        <param name="deploymentStatus"> State of the device in its last deployment. </param>
+        <param name="installedUpdateId"> Update identity. </param>
+        <param name="onLatestUpdate"> Boolean flag indicating whether the latest update is installed on the device. </param>
+        <param name="lastDeploymentId"> The deployment identifier for the last deployment to the device. </param>
+        <summary> Initializes a new instance of Device. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.Device" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClass">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.DeviceClass DeviceClass (string deviceClassId = default, string manufacturer = default, string model = default, Azure.IoT.DeviceUpdate.Models.UpdateId bestCompatibleUpdateId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.DeviceClass DeviceClass(string deviceClassId, string manufacturer, string model, class Azure.IoT.DeviceUpdate.Models.UpdateId bestCompatibleUpdateId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeviceClass(System.String,System.String,System.String,Azure.IoT.DeviceUpdate.Models.UpdateId)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeviceClass (Optional deviceClassId As String = Nothing, Optional manufacturer As String = Nothing, Optional model As String = Nothing, Optional bestCompatibleUpdateId As UpdateId = Nothing) As DeviceClass" />
+      <MemberSignature Language="F#" Value="static member DeviceClass : string * string * string * Azure.IoT.DeviceUpdate.Models.UpdateId -&gt; Azure.IoT.DeviceUpdate.Models.DeviceClass" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeviceClass (deviceClassId, manufacturer, model, bestCompatibleUpdateId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.DeviceClass</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceClassId" Type="System.String" />
+        <Parameter Name="manufacturer" Type="System.String" />
+        <Parameter Name="model" Type="System.String" />
+        <Parameter Name="bestCompatibleUpdateId" Type="Azure.IoT.DeviceUpdate.Models.UpdateId" />
+      </Parameters>
+      <Docs>
+        <param name="deviceClassId"> The device class identifier. </param>
+        <param name="manufacturer"> Device manufacturer. </param>
+        <param name="model"> Device model. </param>
+        <param name="bestCompatibleUpdateId"> Update identity. </param>
+        <summary> Initializes a new instance of DeviceClass. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.DeviceClass" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceTag">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.DeviceTag DeviceTag (string tagName = default, int deviceCount = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.DeviceTag DeviceTag(string tagName, int32 deviceCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeviceTag(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeviceTag (Optional tagName As String = Nothing, Optional deviceCount As Integer = 0) As DeviceTag" />
+      <MemberSignature Language="F#" Value="static member DeviceTag : string * int -&gt; Azure.IoT.DeviceUpdate.Models.DeviceTag" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.DeviceTag (tagName, deviceCount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.DeviceTag</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tagName" Type="System.String" />
+        <Parameter Name="deviceCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tagName"> Tag name. </param>
+        <param name="deviceCount"> Number of devices with this tag. </param>
+        <summary> Initializes a new instance of DeviceTag. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.DeviceTag" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.Error Error (string code = default, string message = default, string target = default, System.Collections.Generic.IEnumerable&lt;Azure.IoT.DeviceUpdate.Models.Error&gt; details = default, Azure.IoT.DeviceUpdate.Models.InnerError innererror = default, DateTimeOffset? occurredDateTime = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.Error Error(string code, string message, string target, class System.Collections.Generic.IEnumerable`1&lt;class Azure.IoT.DeviceUpdate.Models.Error&gt; details, class Azure.IoT.DeviceUpdate.Models.InnerError innererror, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; occurredDateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Error(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.IoT.DeviceUpdate.Models.Error},Azure.IoT.DeviceUpdate.Models.InnerError,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Error (Optional code As String = Nothing, Optional message As String = Nothing, Optional target As String = Nothing, Optional details As IEnumerable(Of Error) = Nothing, Optional innererror As InnerError = Nothing, Optional occurredDateTime As Nullable(Of DateTimeOffset) = Nothing) As Error" />
+      <MemberSignature Language="F#" Value="static member Error : string * string * string * seq&lt;Azure.IoT.DeviceUpdate.Models.Error&gt; * Azure.IoT.DeviceUpdate.Models.InnerError * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.IoT.DeviceUpdate.Models.Error" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Error (code, message, target, details, innererror, occurredDateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.Error</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="details" Type="System.Collections.Generic.IEnumerable&lt;Azure.IoT.DeviceUpdate.Models.Error&gt;" />
+        <Parameter Name="innererror" Type="Azure.IoT.DeviceUpdate.Models.InnerError" />
+        <Parameter Name="occurredDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="code"> Server defined error code. </param>
+        <param name="message"> A human-readable representation of the error. </param>
+        <param name="target"> The target of the error. </param>
+        <param name="details"> An array of errors that led to the reported error. </param>
+        <param name="innererror"> An object containing more specific information than the current object about the error. </param>
+        <param name="occurredDateTime"> Date and time in UTC when the error occurred. </param>
+        <summary> Initializes a new instance of Error. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.Error" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="File">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.File File (string fileId = default, string fileName = default, long sizeInBytes = 0, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; hashes = default, string mimeType = default, string etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.File File(string fileId, string fileName, int64 sizeInBytes, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; hashes, string mimeType, string etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.File(System.String,System.String,System.Int64,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function File (Optional fileId As String = Nothing, Optional fileName As String = Nothing, Optional sizeInBytes As Long = 0, Optional hashes As IReadOnlyDictionary(Of String, String) = Nothing, Optional mimeType As String = Nothing, Optional etag As String = Nothing) As File" />
+      <MemberSignature Language="F#" Value="static member File : string * string * int64 * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string * string -&gt; Azure.IoT.DeviceUpdate.Models.File" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.File (fileId, fileName, sizeInBytes, hashes, mimeType, etag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.File</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileId" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="sizeInBytes" Type="System.Int64" />
+        <Parameter Name="hashes" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="mimeType" Type="System.String" />
+        <Parameter Name="etag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileId"> File identity, generated by server at import time. </param>
+        <param name="fileName"> File name. </param>
+        <param name="sizeInBytes"> File size in number of bytes. </param>
+        <param name="hashes"> Mapping of hashing algorithm to base64 encoded hash values. </param>
+        <param name="mimeType"> File MIME type. </param>
+        <param name="etag"> File ETag. </param>
+        <summary> Initializes a new instance of File. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.File" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerError">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.InnerError InnerError (string code = default, string message = default, string errorDetail = default, Azure.IoT.DeviceUpdate.Models.InnerError innerErrorValue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.InnerError InnerError(string code, string message, string errorDetail, class Azure.IoT.DeviceUpdate.Models.InnerError innerErrorValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.InnerError(System.String,System.String,System.String,Azure.IoT.DeviceUpdate.Models.InnerError)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InnerError (Optional code As String = Nothing, Optional message As String = Nothing, Optional errorDetail As String = Nothing, Optional innerErrorValue As InnerError = Nothing) As InnerError" />
+      <MemberSignature Language="F#" Value="static member InnerError : string * string * string * Azure.IoT.DeviceUpdate.Models.InnerError -&gt; Azure.IoT.DeviceUpdate.Models.InnerError" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.InnerError (code, message, errorDetail, innerErrorValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.InnerError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="errorDetail" Type="System.String" />
+        <Parameter Name="innerErrorValue" Type="Azure.IoT.DeviceUpdate.Models.InnerError" />
+      </Parameters>
+      <Docs>
+        <param name="code"> A more specific error code than what was provided by the containing error. </param>
+        <param name="message"> A human-readable representation of the error. </param>
+        <param name="errorDetail"> The internal error or exception message. </param>
+        <param name="innerErrorValue"> An object containing more specific information than the current object about the error. </param>
+        <summary> Initializes a new instance of InnerError. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.InnerError" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operation">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.Operation Operation (string operationId = default, Azure.IoT.DeviceUpdate.Models.OperationStatus status = default, Azure.IoT.DeviceUpdate.Models.UpdateId updateId = default, string resourceLocation = default, Azure.IoT.DeviceUpdate.Models.Error error = default, string traceId = default, DateTimeOffset lastActionDateTime = default, DateTimeOffset createdDateTime = default, string etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.Operation Operation(string operationId, valuetype Azure.IoT.DeviceUpdate.Models.OperationStatus status, class Azure.IoT.DeviceUpdate.Models.UpdateId updateId, string resourceLocation, class Azure.IoT.DeviceUpdate.Models.Error error, string traceId, valuetype System.DateTimeOffset lastActionDateTime, valuetype System.DateTimeOffset createdDateTime, string etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Operation(System.String,Azure.IoT.DeviceUpdate.Models.OperationStatus,Azure.IoT.DeviceUpdate.Models.UpdateId,System.String,Azure.IoT.DeviceUpdate.Models.Error,System.String,System.DateTimeOffset,System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Operation (Optional operationId As String = Nothing, Optional status As OperationStatus = Nothing, Optional updateId As UpdateId = Nothing, Optional resourceLocation As String = Nothing, Optional error As Error = Nothing, Optional traceId As String = Nothing, Optional lastActionDateTime As DateTimeOffset = Nothing, Optional createdDateTime As DateTimeOffset = Nothing, Optional etag As String = Nothing) As Operation" />
+      <MemberSignature Language="F#" Value="static member Operation : string * Azure.IoT.DeviceUpdate.Models.OperationStatus * Azure.IoT.DeviceUpdate.Models.UpdateId * string * Azure.IoT.DeviceUpdate.Models.Error * string * DateTimeOffset * DateTimeOffset * string -&gt; Azure.IoT.DeviceUpdate.Models.Operation" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Operation (operationId, status, updateId, resourceLocation, error, traceId, lastActionDateTime, createdDateTime, etag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.Operation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationId" Type="System.String" />
+        <Parameter Name="status" Type="Azure.IoT.DeviceUpdate.Models.OperationStatus" />
+        <Parameter Name="updateId" Type="Azure.IoT.DeviceUpdate.Models.UpdateId" />
+        <Parameter Name="resourceLocation" Type="System.String" />
+        <Parameter Name="error" Type="Azure.IoT.DeviceUpdate.Models.Error" />
+        <Parameter Name="traceId" Type="System.String" />
+        <Parameter Name="lastActionDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="etag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operationId"> Operation Id. </param>
+        <param name="status"> Operation status. </param>
+        <param name="updateId"> The identity of update being imported or deleted. For import, this property will only be populated after import manifest is processed successfully. </param>
+        <param name="resourceLocation"> Location of the imported update when operation is successful. </param>
+        <param name="error"> Operation error encountered, if any. </param>
+        <param name="traceId"> Operation correlation identity that can used by Microsoft Support for troubleshooting. </param>
+        <param name="lastActionDateTime"> Date and time in UTC when the operation status was last updated. </param>
+        <param name="createdDateTime"> Date and time in UTC when the operation was created. </param>
+        <param name="etag"> Operation ETag. </param>
+        <summary> Initializes a new instance of Operation. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.Operation" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatableDevices">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.UpdatableDevices UpdatableDevices (Azure.IoT.DeviceUpdate.Models.UpdateId updateId = default, int deviceCount = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.UpdatableDevices UpdatableDevices(class Azure.IoT.DeviceUpdate.Models.UpdateId updateId, int32 deviceCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.UpdatableDevices(Azure.IoT.DeviceUpdate.Models.UpdateId,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UpdatableDevices (Optional updateId As UpdateId = Nothing, Optional deviceCount As Integer = 0) As UpdatableDevices" />
+      <MemberSignature Language="F#" Value="static member UpdatableDevices : Azure.IoT.DeviceUpdate.Models.UpdateId * int -&gt; Azure.IoT.DeviceUpdate.Models.UpdatableDevices" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.UpdatableDevices (updateId, deviceCount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.UpdatableDevices</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateId" Type="Azure.IoT.DeviceUpdate.Models.UpdateId" />
+        <Parameter Name="deviceCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="updateId"> Update identity. </param>
+        <param name="deviceCount"> Total number of devices for which the update is applicable. </param>
+        <summary> Initializes a new instance of UpdatableDevices. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.UpdatableDevices" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.Update Update (Azure.IoT.DeviceUpdate.Models.UpdateId updateId = default, string updateType = default, string installedCriteria = default, System.Collections.Generic.IEnumerable&lt;Azure.IoT.DeviceUpdate.Models.Compatibility&gt; compatibility = default, string manifestVersion = default, DateTimeOffset importedDateTime = default, DateTimeOffset createdDateTime = default, string etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.Update Update(class Azure.IoT.DeviceUpdate.Models.UpdateId updateId, string updateType, string installedCriteria, class System.Collections.Generic.IEnumerable`1&lt;class Azure.IoT.DeviceUpdate.Models.Compatibility&gt; compatibility, string manifestVersion, valuetype System.DateTimeOffset importedDateTime, valuetype System.DateTimeOffset createdDateTime, string etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Update(Azure.IoT.DeviceUpdate.Models.UpdateId,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.IoT.DeviceUpdate.Models.Compatibility},System.String,System.DateTimeOffset,System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Update (Optional updateId As UpdateId = Nothing, Optional updateType As String = Nothing, Optional installedCriteria As String = Nothing, Optional compatibility As IEnumerable(Of Compatibility) = Nothing, Optional manifestVersion As String = Nothing, Optional importedDateTime As DateTimeOffset = Nothing, Optional createdDateTime As DateTimeOffset = Nothing, Optional etag As String = Nothing) As Update" />
+      <MemberSignature Language="F#" Value="static member Update : Azure.IoT.DeviceUpdate.Models.UpdateId * string * string * seq&lt;Azure.IoT.DeviceUpdate.Models.Compatibility&gt; * string * DateTimeOffset * DateTimeOffset * string -&gt; Azure.IoT.DeviceUpdate.Models.Update" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.Update (updateId, updateType, installedCriteria, compatibility, manifestVersion, importedDateTime, createdDateTime, etag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.Update</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateId" Type="Azure.IoT.DeviceUpdate.Models.UpdateId" />
+        <Parameter Name="updateType" Type="System.String" />
+        <Parameter Name="installedCriteria" Type="System.String" />
+        <Parameter Name="compatibility" Type="System.Collections.Generic.IEnumerable&lt;Azure.IoT.DeviceUpdate.Models.Compatibility&gt;" />
+        <Parameter Name="manifestVersion" Type="System.String" />
+        <Parameter Name="importedDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="etag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="updateId"> Update identity. </param>
+        <param name="updateType"> Update type. </param>
+        <param name="installedCriteria"> String interpreted by Device Update client to determine if the update is installed on the device. </param>
+        <param name="compatibility"> List of update compatibility information. </param>
+        <param name="manifestVersion"> Schema version of manifest used to import the update. </param>
+        <param name="importedDateTime"> Date and time in UTC when the update was imported. </param>
+        <param name="createdDateTime"> Date and time in UTC when the update was created. </param>
+        <param name="etag"> Update ETag. </param>
+        <summary> Initializes a new instance of Update. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.Update" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCompliance">
+      <MemberSignature Language="C#" Value="public static Azure.IoT.DeviceUpdate.Models.UpdateCompliance UpdateCompliance (int totalDeviceCount = 0, int onLatestUpdateDeviceCount = 0, int newUpdatesAvailableDeviceCount = 0, int updatesInProgressDeviceCount = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.IoT.DeviceUpdate.Models.UpdateCompliance UpdateCompliance(int32 totalDeviceCount, int32 onLatestUpdateDeviceCount, int32 newUpdatesAvailableDeviceCount, int32 updatesInProgressDeviceCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.UpdateCompliance(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UpdateCompliance (Optional totalDeviceCount As Integer = 0, Optional onLatestUpdateDeviceCount As Integer = 0, Optional newUpdatesAvailableDeviceCount As Integer = 0, Optional updatesInProgressDeviceCount As Integer = 0) As UpdateCompliance" />
+      <MemberSignature Language="F#" Value="static member UpdateCompliance : int * int * int * int -&gt; Azure.IoT.DeviceUpdate.Models.UpdateCompliance" Usage="Azure.IoT.DeviceUpdate.Models.DeviceUpdateModelFactory.UpdateCompliance (totalDeviceCount, onLatestUpdateDeviceCount, newUpdatesAvailableDeviceCount, updatesInProgressDeviceCount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.DeviceUpdate</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.IoT.DeviceUpdate.Models.UpdateCompliance</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="totalDeviceCount" Type="System.Int32" />
+        <Parameter Name="onLatestUpdateDeviceCount" Type="System.Int32" />
+        <Parameter Name="newUpdatesAvailableDeviceCount" Type="System.Int32" />
+        <Parameter Name="updatesInProgressDeviceCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="totalDeviceCount"> Total number of devices. </param>
+        <param name="onLatestUpdateDeviceCount"> Number of devices on the latest update. </param>
+        <param name="newUpdatesAvailableDeviceCount"> Number of devices with a newer update available. </param>
+        <param name="updatesInProgressDeviceCount"> Number of devices with update in-progress. </param>
+        <summary> Initializes a new instance of UpdateCompliance. </summary>
+        <returns> A new <see cref="T:Azure.IoT.DeviceUpdate.Models.UpdateCompliance" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
