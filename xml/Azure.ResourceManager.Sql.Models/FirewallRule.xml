@@ -1,0 +1,117 @@
+<Type Name="FirewallRule" FullName="Azure.ResourceManager.Sql.Models.FirewallRule">
+  <TypeSignature Language="C#" Value="public class FirewallRule : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FirewallRule extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.FirewallRule" />
+  <TypeSignature Language="VB.NET" Value="Public Class FirewallRule&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type FirewallRule = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Represents a server firewall rule. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FirewallRule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.FirewallRule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of FirewallRule. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndIpAddress">
+      <MemberSignature Language="C#" Value="public string EndIpAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndIpAddress" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.FirewallRule.EndIpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndIpAddress As String" />
+      <MemberSignature Language="F#" Value="member this.EndIpAddress : string with get, set" Usage="Azure.ResourceManager.Sql.Models.FirewallRule.EndIpAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The end IP address of the firewall rule. Must be IPv4 format. Must be greater than or equal to startIpAddress. Use value '0.0.0.0' to represent all Azure-internal IP addresses. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public string Kind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Kind" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.FirewallRule.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As String" />
+      <MemberSignature Language="F#" Value="member this.Kind : string" Usage="Azure.ResourceManager.Sql.Models.FirewallRule.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Kind of server that contains this firewall rule. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.FirewallRule.Location" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As String" />
+      <MemberSignature Language="F#" Value="member this.Location : string" Usage="Azure.ResourceManager.Sql.Models.FirewallRule.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Location of the server that contains this firewall rule. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartIpAddress">
+      <MemberSignature Language="C#" Value="public string StartIpAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StartIpAddress" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.FirewallRule.StartIpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartIpAddress As String" />
+      <MemberSignature Language="F#" Value="member this.StartIpAddress : string with get, set" Usage="Azure.ResourceManager.Sql.Models.FirewallRule.StartIpAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The start IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

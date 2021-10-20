@@ -74,11 +74,11 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateEndpoint">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.Models.PrivateEndpoint PrivateEndpoint { get; set; }" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.Models.PrivateEndpoint PrivateEndpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.AppConfiguration.Models.PrivateEndpoint PrivateEndpoint" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateEndpoint" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivateEndpoint As PrivateEndpoint" />
-      <MemberSignature Language="F#" Value="member this.PrivateEndpoint : Azure.ResourceManager.AppConfiguration.Models.PrivateEndpoint with get, set" Usage="Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpoint As PrivateEndpoint" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpoint : Azure.ResourceManager.AppConfiguration.Models.PrivateEndpoint" Usage="Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
@@ -94,11 +94,11 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateLinkServiceConnectionState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState { get; set; }" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateLinkServiceConnectionState" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivateLinkServiceConnectionState As PrivateLinkServiceConnectionState" />
-      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState with get, set" Usage="Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceConnectionState As PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState" Usage="Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateLinkServiceConnectionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>

@@ -1,0 +1,177 @@
+<Type Name="SyncAgent" FullName="Azure.ResourceManager.Sql.Models.SyncAgent">
+  <TypeSignature Language="C#" Value="public class SyncAgent : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncAgent extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.SyncAgent" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncAgent&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type SyncAgent = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> An Azure SQL Database sync agent. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyncAgent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.SyncAgent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of SyncAgent. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpiryTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ExpiryTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ExpiryTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.ExpiryTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpiryTime As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ExpiryTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.ExpiryTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Expiration time of the sync agent version. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpToDate">
+      <MemberSignature Language="C#" Value="public bool? IsUpToDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsUpToDate" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.IsUpToDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUpToDate As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsUpToDate : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.IsUpToDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> If the sync agent version is up to date. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastAliveTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastAliveTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastAliveTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.LastAliveTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastAliveTime As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastAliveTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.LastAliveTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Last alive time of the sync agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamePropertiesName">
+      <MemberSignature Language="C#" Value="public string NamePropertiesName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamePropertiesName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.NamePropertiesName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamePropertiesName As String" />
+      <MemberSignature Language="F#" Value="member this.NamePropertiesName : string" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.NamePropertiesName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Name of the sync agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.SyncAgentState? State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.SyncAgentState&gt; State" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Nullable(Of SyncAgentState)" />
+      <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Azure.ResourceManager.Sql.Models.SyncAgentState&gt;" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.SyncAgentState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> State of the sync agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncDatabaseId">
+      <MemberSignature Language="C#" Value="public string SyncDatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SyncDatabaseId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.SyncDatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncDatabaseId As String" />
+      <MemberSignature Language="F#" Value="member this.SyncDatabaseId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.SyncDatabaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> ARM resource id of the sync database in the sync agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SyncAgent.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Azure.ResourceManager.Sql.Models.SyncAgent.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Version of the sync agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

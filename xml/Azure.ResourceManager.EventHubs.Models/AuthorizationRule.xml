@@ -34,11 +34,11 @@
       </Docs>
     </Member>
     <Member MemberName="Rights">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.AccessRights&gt; Rights { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.AccessRights&gt; Rights { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.EventHubs.Models.AccessRights&gt; Rights" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.Models.AuthorizationRule.Rights" />
-      <MemberSignature Language="VB.NET" Value="Public Property Rights As IList(Of AccessRights)" />
-      <MemberSignature Language="F#" Value="member this.Rights : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.AccessRights&gt; with get, set" Usage="Azure.ResourceManager.EventHubs.Models.AuthorizationRule.Rights" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rights As IList(Of AccessRights)" />
+      <MemberSignature Language="F#" Value="member this.Rights : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.AccessRights&gt;" Usage="Azure.ResourceManager.EventHubs.Models.AuthorizationRule.Rights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>

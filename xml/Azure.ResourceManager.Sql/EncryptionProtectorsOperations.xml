@@ -1,0 +1,289 @@
+<Type Name="EncryptionProtectorsOperations" FullName="Azure.ResourceManager.Sql.EncryptionProtectorsOperations">
+  <TypeSignature Language="C#" Value="public class EncryptionProtectorsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EncryptionProtectorsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.EncryptionProtectorsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class EncryptionProtectorsOperations" />
+  <TypeSignature Language="F#" Value="type EncryptionProtectorsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The EncryptionProtectors service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EncryptionProtectorsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of EncryptionProtectorsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt; Get (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.EncryptionProtector&gt; Get(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.Get(System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, encryptionProtectorName As EncryptionProtectorName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of EncryptionProtector)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&#xA;override this.Get : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;" Usage="encryptionProtectorsOperations.Get (resourceGroupName, serverName, encryptionProtectorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="encryptionProtectorName" Type="Azure.ResourceManager.Sql.Models.EncryptionProtectorName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="encryptionProtectorName"> The name of the encryption protector to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a server encryption protector. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&gt; GetAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&gt; GetAsync(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.GetAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, encryptionProtectorName As EncryptionProtectorName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of EncryptionProtector))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&gt;&#xA;override this.GetAsync : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&gt;" Usage="encryptionProtectorsOperations.GetAsync (resourceGroupName, serverName, encryptionProtectorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="encryptionProtectorName" Type="Azure.ResourceManager.Sql.Models.EncryptionProtectorName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="encryptionProtectorName"> The name of the encryption protector to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a server encryption protector. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServer">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt; ListByServer (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.EncryptionProtector&gt; ListByServer(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.ListByServer(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServer (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of EncryptionProtector)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&#xA;override this.ListByServer : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;" Usage="encryptionProtectorsOperations.ListByServer (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of server encryption protectors. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServerAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt; ListByServerAsync (string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.EncryptionProtector&gt; ListByServerAsync(string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.ListByServerAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByServerAsync (resourceGroupName As String, serverName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of EncryptionProtector)" />
+      <MemberSignature Language="F#" Value="abstract member ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;&#xA;override this.ListByServerAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;" Usage="encryptionProtectorsOperations.ListByServerAsync (resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.EncryptionProtector&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of server encryption protectors. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, Azure.ResourceManager.Sql.Models.EncryptionProtector parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, class Azure.ResourceManager.Sql.Models.EncryptionProtector parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.StartCreateOrUpdate(System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName,Azure.ResourceManager.Sql.Models.EncryptionProtector,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, encryptionProtectorName As EncryptionProtectorName, parameters As EncryptionProtector, Optional cancellationToken As CancellationToken = Nothing) As EncryptionProtectorsCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * Azure.ResourceManager.Sql.Models.EncryptionProtector * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * Azure.ResourceManager.Sql.Models.EncryptionProtector * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation" Usage="encryptionProtectorsOperations.StartCreateOrUpdate (resourceGroupName, serverName, encryptionProtectorName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="encryptionProtectorName" Type="Azure.ResourceManager.Sql.Models.EncryptionProtectorName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.EncryptionProtector" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="encryptionProtectorName"> The name of the encryption protector to be updated. </param>
+        <param name="parameters"> The requested encryption protector resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates an existing encryption protector. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, Azure.ResourceManager.Sql.Models.EncryptionProtector parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, class Azure.ResourceManager.Sql.Models.EncryptionProtector parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.StartCreateOrUpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName,Azure.ResourceManager.Sql.Models.EncryptionProtector,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, encryptionProtectorName As EncryptionProtectorName, parameters As EncryptionProtector, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EncryptionProtectorsCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * Azure.ResourceManager.Sql.Models.EncryptionProtector * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * Azure.ResourceManager.Sql.Models.EncryptionProtector * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation&gt;" Usage="encryptionProtectorsOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, encryptionProtectorName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="encryptionProtectorName" Type="Azure.ResourceManager.Sql.Models.EncryptionProtectorName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.EncryptionProtector" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="encryptionProtectorName"> The name of the encryption protector to be updated. </param>
+        <param name="parameters"> The requested encryption protector resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates an existing encryption protector. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartRevalidate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation StartRevalidate (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation StartRevalidate(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.StartRevalidate(System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartRevalidate (resourceGroupName As String, serverName As String, encryptionProtectorName As EncryptionProtectorName, Optional cancellationToken As CancellationToken = Nothing) As EncryptionProtectorsRevalidateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartRevalidate : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation&#xA;override this.StartRevalidate : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation" Usage="encryptionProtectorsOperations.StartRevalidate (resourceGroupName, serverName, encryptionProtectorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="encryptionProtectorName" Type="Azure.ResourceManager.Sql.Models.EncryptionProtectorName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="encryptionProtectorName"> The name of the encryption protector to be updated. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Revalidates an existing encryption protector. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartRevalidateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation&gt; StartRevalidateAsync (string resourceGroupName, string serverName, Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation&gt; StartRevalidateAsync(string resourceGroupName, string serverName, valuetype Azure.ResourceManager.Sql.Models.EncryptionProtectorName encryptionProtectorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.EncryptionProtectorsOperations.StartRevalidateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartRevalidateAsync (resourceGroupName As String, serverName As String, encryptionProtectorName As EncryptionProtectorName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EncryptionProtectorsRevalidateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartRevalidateAsync : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation&gt;&#xA;override this.StartRevalidateAsync : string * string * Azure.ResourceManager.Sql.Models.EncryptionProtectorName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation&gt;" Usage="encryptionProtectorsOperations.StartRevalidateAsync (resourceGroupName, serverName, encryptionProtectorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.EncryptionProtectorsRevalidateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="encryptionProtectorName" Type="Azure.ResourceManager.Sql.Models.EncryptionProtectorName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="encryptionProtectorName"> The name of the encryption protector to be updated. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Revalidates an existing encryption protector. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
