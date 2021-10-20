@@ -1,7 +1,7 @@
 {
   "Name": "Microsoft.Azure.WebJobs.Extensions.WebPubSub",
-  "Version": "1.0.0-alpha.20211019.1",
-  "DevVersion": "1.0.0-alpha.20211019.1",
+  "Version": "1.0.0-alpha.20211020.1",
+  "DevVersion": "1.0.0-alpha.20211020.1",
   "DirectoryPath": "sdk/webpubsub/Microsoft.Azure.WebJobs.Extensions.WebPubSub",
   "ServiceDirectory": "webpubsub",
   "ReadMePath": "sdk/webpubsub/Microsoft.Azure.WebJobs.Extensions.WebPubSub/README.md",
