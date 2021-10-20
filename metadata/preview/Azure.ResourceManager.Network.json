@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.ResourceManager.Network",
+  "Version": "1.0.0-alpha.20211019.1",
+  "DevVersion": "1.0.0-alpha.20211019.1",
+  "DirectoryPath": "sdk/network/Azure.ResourceManager.Network",
+  "ServiceDirectory": "network",
+  "ReadMePath": "sdk/network/Azure.ResourceManager.Network/README.md",
+  "ChangeLogPath": "sdk/network/Azure.ResourceManager.Network/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.ResourceManager.Network",
+  "ReleaseStatus": "Unreleased"
+}
