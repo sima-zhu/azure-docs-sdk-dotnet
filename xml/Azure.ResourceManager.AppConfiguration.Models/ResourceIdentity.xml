@@ -94,11 +94,11 @@
       </Docs>
     </Member>
     <Member MemberName="UserAssignedIdentities">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.AppConfiguration.Models.UserIdentity&gt; UserAssignedIdentities { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.AppConfiguration.Models.UserIdentity&gt; UserAssignedIdentities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.AppConfiguration.Models.UserIdentity&gt; UserAssignedIdentities" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppConfiguration.Models.ResourceIdentity.UserAssignedIdentities" />
-      <MemberSignature Language="VB.NET" Value="Public Property UserAssignedIdentities As IDictionary(Of String, UserIdentity)" />
-      <MemberSignature Language="F#" Value="member this.UserAssignedIdentities : System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.AppConfiguration.Models.UserIdentity&gt; with get, set" Usage="Azure.ResourceManager.AppConfiguration.Models.ResourceIdentity.UserAssignedIdentities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserAssignedIdentities As IDictionary(Of String, UserIdentity)" />
+      <MemberSignature Language="F#" Value="member this.UserAssignedIdentities : System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.AppConfiguration.Models.UserIdentity&gt;" Usage="Azure.ResourceManager.AppConfiguration.Models.ResourceIdentity.UserAssignedIdentities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>

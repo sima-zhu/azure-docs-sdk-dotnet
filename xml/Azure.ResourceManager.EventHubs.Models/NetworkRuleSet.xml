@@ -54,11 +54,11 @@
       </Docs>
     </Member>
     <Member MemberName="IpRules">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetIpRules&gt; IpRules { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetIpRules&gt; IpRules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.EventHubs.Models.NWRuleSetIpRules&gt; IpRules" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.Models.NetworkRuleSet.IpRules" />
-      <MemberSignature Language="VB.NET" Value="Public Property IpRules As IList(Of NWRuleSetIpRules)" />
-      <MemberSignature Language="F#" Value="member this.IpRules : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetIpRules&gt; with get, set" Usage="Azure.ResourceManager.EventHubs.Models.NetworkRuleSet.IpRules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IpRules As IList(Of NWRuleSetIpRules)" />
+      <MemberSignature Language="F#" Value="member this.IpRules : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetIpRules&gt;" Usage="Azure.ResourceManager.EventHubs.Models.NetworkRuleSet.IpRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -74,11 +74,11 @@
       </Docs>
     </Member>
     <Member MemberName="VirtualNetworkRules">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetVirtualNetworkRules&gt; VirtualNetworkRules { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetVirtualNetworkRules&gt; VirtualNetworkRules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.EventHubs.Models.NWRuleSetVirtualNetworkRules&gt; VirtualNetworkRules" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.Models.NetworkRuleSet.VirtualNetworkRules" />
-      <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkRules As IList(Of NWRuleSetVirtualNetworkRules)" />
-      <MemberSignature Language="F#" Value="member this.VirtualNetworkRules : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetVirtualNetworkRules&gt; with get, set" Usage="Azure.ResourceManager.EventHubs.Models.NetworkRuleSet.VirtualNetworkRules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualNetworkRules As IList(Of NWRuleSetVirtualNetworkRules)" />
+      <MemberSignature Language="F#" Value="member this.VirtualNetworkRules : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.Models.NWRuleSetVirtualNetworkRules&gt;" Usage="Azure.ResourceManager.EventHubs.Models.NetworkRuleSet.VirtualNetworkRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>

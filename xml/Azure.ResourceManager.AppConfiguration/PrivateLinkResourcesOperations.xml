@@ -119,6 +119,8 @@
         <summary> Gets the private link resources that need to be created for a configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByConfigurationStoreAsync">
@@ -147,6 +149,8 @@
         <summary> Gets the private link resources that need to be created for a configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
   </Members>
