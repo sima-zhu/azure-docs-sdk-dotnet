@@ -239,3 +239,5 @@ azureaimetricsadvisor,[tfm=netstandard2.0]Azure.AI.MetricsAdvisor,1.1.0
 microsoftazuremessagingeventgridcloudnativecloudevents,[tfm=netstandard2.0]Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents,1.0.0
 microsoftazurewebjobsextensionsstorage,[tfm=netstandard2.0]Microsoft.Azure.WebJobs.Extensions.Storage,4.0.3
 azuremonitorquery,[tfm=netstandard2.0]Azure.Monitor.Query,1.0.0
+microsoftazurewebjobsextensionsservicebus,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Microsoft.Azure.WebJobs.Extensions.ServiceBus,5.0.0-alpha.20211022.1
+microsoftazurewebjobsextensionswebpubsub,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Microsoft.Azure.WebJobs.Extensions.WebPubSub,1.0.0-alpha.20211022.3
