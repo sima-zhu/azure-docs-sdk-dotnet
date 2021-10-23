@@ -23,7 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Attribute used to bind a parameter to an Azure Web PubSub client negotiate websocket url.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,6 +45,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public string Connection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Connection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnectionAttribute.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Connection As String" />
+      <MemberSignature Language="F#" Value="member this.Connection : string with get, set" Usage="Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnectionAttribute.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.WebJobs.Extensions.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[Microsoft.Azure.WebJobs.Description.ConnectionString]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.WebJobs.Description.ConnectionString&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Target Web PubSub service connection string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ConnectionStringSetting">
       <MemberSignature Language="C#" Value="public string ConnectionStringSetting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionStringSetting" />
@@ -55,7 +85,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName Language="C#">[Microsoft.Azure.WebJobs.Description.ConnectionString]</AttributeName>
           <AttributeName Language="F#">[&lt;Microsoft.Azure.WebJobs.Description.ConnectionString&gt;]</AttributeName>
         </Attribute>
@@ -90,7 +120,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Target hub name.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +148,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Client userId.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
