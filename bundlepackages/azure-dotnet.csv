@@ -211,7 +211,7 @@ azureaiformrecognizer,[tfm=netstandard2.0]Azure.AI.FormRecognizer,3.1.1
 microsoftazureapplicationinsightsquery,[tfm=netstandard2.0]Microsoft.Azure.ApplicationInsights.Query
 microsoftazureeventhubs,[tfm=netstandard2.0]Microsoft.Azure.EventHubs
 microsoftazureeventhubsprocessor,[tfm=netstandard2.0]Microsoft.Azure.EventHubs.Processor
-systemmemorydata,[tfm=netstandard2.0]System.Memory.Data,1.0.2
+systemmemorydata,[tfm=netstandard2.0]System.Memory.Data
 azurestackhci,Microsoft.Azure.Management.AzureStackHCI
 azurecoreamqp,[tfm=netstandard2.0]Azure.Core.Amqp,1.2.0
 azuremessagingservicebus,[tfm=netstandard2.0]Azure.Messaging.ServiceBus,7.4.0
@@ -239,3 +239,7 @@ azureaimetricsadvisor,[tfm=netstandard2.0]Azure.AI.MetricsAdvisor,1.1.0
 microsoftazuremessagingeventgridcloudnativecloudevents,[tfm=netstandard2.0]Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents,1.0.0
 microsoftazurewebjobsextensionsstorage,[tfm=netstandard2.0]Microsoft.Azure.WebJobs.Extensions.Storage,4.0.3
 azuremonitorquery,[tfm=netstandard2.0]Azure.Monitor.Query,1.0.0
+microsoftazurewebjobsextensionseventgrid,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Microsoft.Azure.WebJobs.Extensions.EventGrid,3.0.0-alpha.20211025.1
+microsoftazurewebjobsextensionseventhubs,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Microsoft.Azure.WebJobs.Extensions.EventHubs,5.0.0-alpha.20211025.1
+microsoftazurewebjobsextensionsservicebus,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Microsoft.Azure.WebJobs.Extensions.ServiceBus,5.0.0-alpha.20211025.1
+microsoftazurewebjobsextensionswebpubsub,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Microsoft.Azure.WebJobs.Extensions.WebPubSub,1.0.0-alpha.20211025.1
