@@ -3,7 +3,7 @@ title: Azure Web PubSub service client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Messaging.WebPubSub, webpubsub
 author: maggiepint
 ms.author: magpint
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: webpubsub
 ---
 
-# Azure Web PubSub service client library for .NET - Version 1.0.0-beta.3 
+# Azure Web PubSub service client library for .NET - Version 1.0.0-alpha.20211025.1 
 
 
 [Azure Web PubSub Service](https://aka.ms/awps/doc) is a service that enables you to build real-time messaging web applications using WebSockets and the publish-subscribe pattern. Any platform supporting WebSocket APIs can connect to the service easily, e.g. web pages, mobile applications, edge devices, etc. The service manages the WebSocket connections for you and allows up to 100K **concurrent** connections. It provides powerful APIs for you to manage these clients and deliver real-time messages.
@@ -26,7 +26,7 @@ This library can be used to do the following actions. Details about the terms us
 - Close connections
 - Grant, revoke, and check permissions for an existing connection
 
-[Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Messaging.WebPubSub_1.0.0-beta.3/sdk/webpubsub/Azure.Messaging.WebPubSub/src) |
+[Source code](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/webpubsub/Azure.Messaging.WebPubSub/src) |
 [Package](https://www.nuget.org/packages/Azure.Messaging.WebPubSub) |
 [API reference documentation](https://aka.ms/awps/sdk/csharp) |
 [Product documentation](https://aka.ms/awps/doc) |
@@ -38,7 +38,7 @@ This library can be used to do the following actions. Details about the terms us
 
 Install the client library from [NuGet](https://www.nuget.org/):
 
-```PowerShell
+```dotnetcli
 dotnet add package Azure.Messaging.WebPubSub --prerelease
 ```
 
@@ -115,7 +115,7 @@ serviceClient.SendToAll(RequestContent.Create(stream), ContentType.ApplicationOc
 ## Troubleshooting
 
 ### Setting up console logging
-You can also easily [enable console logging](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Messaging.WebPubSub_1.0.0-beta.3/sdk/core/Azure.Core/samples/Diagnostics.md#logging) if you want to dig deeper into the requests you're making against the service.
+You can also easily [enable console logging](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md#logging) if you want to dig deeper into the requests you're making against the service.
 
 ## Next steps
 
@@ -136,8 +136,8 @@ You will only need to do this once across all repos using our CLA.
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-
+![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsdk%2Ftemplate%2FAzure.Template%2FREADME.png)
 
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
-[samples_ref]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Messaging.WebPubSub_1.0.0-beta.3/sdk/webpubsub/Azure.Messaging.WebPubSub/tests/Samples/
+[samples_ref]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/webpubsub/Azure.Messaging.WebPubSub/tests/Samples/
 
