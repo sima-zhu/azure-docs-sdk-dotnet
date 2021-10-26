@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -63,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Media.VideoAnalyzer.Edge.Models.PipelineTopologyCollection</ReturnType>
@@ -73,9 +77,9 @@
       <Docs>
         <param name="json">The json data that is to be deserialized.</param>
         <summary>
-             Deserialize PipelineTopology.
+             Deserialize PipelineTopologyCollection.
             </summary>
-        <returns>A Json string representation of a list of PipelineTopology.</returns>
+        <returns>A Json string representation of a list of pipeline topologies.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.Media.VideoAnalyzer.Edge.Models.PipelineTopology&gt;</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -49,6 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Media.VideoAnalyzer.Edge.Models.LivePipeline</ReturnType>
@@ -61,7 +64,7 @@
         <summary>
              Deserialize LivePipeline.
             </summary>
-        <returns>A LivePipelineCollection.</returns>
+        <returns>A Stream.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,6 +78,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Media.VideoAnalyzer.Edge.Models.LivePipelineProperties</ReturnType>
@@ -115,6 +120,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Media.VideoAnalyzer.Edge.Models.SystemData</ReturnType>

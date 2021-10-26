@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Media.VideoAnalyzer.Edge.Models.SinkNodeBase</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -77,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -97,6 +101,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Media.VideoAnalyzer.Edge.Models.VideoCreationProperties</ReturnType>
@@ -117,12 +122,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Name of a new or existing Video Analyzer video resource used for the media recording. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoPublishingOptions">
+      <MemberSignature Language="C#" Value="public Azure.Media.VideoAnalyzer.Edge.Models.VideoPublishingOptions VideoPublishingOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Media.VideoAnalyzer.Edge.Models.VideoPublishingOptions VideoPublishingOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Media.VideoAnalyzer.Edge.Models.VideoSink.VideoPublishingOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property VideoPublishingOptions As VideoPublishingOptions" />
+      <MemberSignature Language="F#" Value="member this.VideoPublishingOptions : Azure.Media.VideoAnalyzer.Edge.Models.VideoPublishingOptions with get, set" Usage="Azure.Media.VideoAnalyzer.Edge.Models.VideoSink.VideoPublishingOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Media.VideoAnalyzer.Edge</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Media.VideoAnalyzer.Edge.Models.VideoPublishingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Optional video publishing options to be used for changing publishing behavior of the output video. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

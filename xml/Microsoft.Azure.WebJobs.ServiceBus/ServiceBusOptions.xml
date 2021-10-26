@@ -172,9 +172,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of concurrent calls to a function. Note each call
-            would be passing a different message. This does not apply for functions that receive a batch of messages.
-            The default is 16 times the return value of <see cref="M:Microsoft.Azure.WebJobs.ServiceBus.Utility.GetProcessorCount" />.
+        <summary>
+            Gets or sets the maximum number of messages that can be processed concurrently by a function.
+            This setting does not apply for functions that receive a batch of messages. The default is 16 times
+            the return value of <see cref="M:Microsoft.Azure.WebJobs.ServiceBus.Utility.GetProcessorCount" />. When <see cref="P:Microsoft.Azure.WebJobs.Host.Scale.ConcurrencyOptions.DynamicConcurrencyEnabled" />
+            is true, this value will be ignored, and concurrency will be increased/decreased dynamically.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -198,6 +200,8 @@
         <summary>
             Gets or sets the maximum number of sessions that can be processed concurrently by a function.
             The default value is 8. This does not apply for functions that receive a batch of messages.
+            When <see cref="P:Microsoft.Azure.WebJobs.Host.Scale.ConcurrencyOptions.DynamicConcurrencyEnabled" /> is true, this value will be ignored,
+            and concurrency will be increased/decreased dynamically.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

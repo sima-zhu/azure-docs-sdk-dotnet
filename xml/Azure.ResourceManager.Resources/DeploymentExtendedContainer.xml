@@ -314,7 +314,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateResourceType(class Azure.ResourceManager.ResourceIdentifier identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentExtendedContainer.ValidateResourceType(Azure.ResourceManager.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateResourceType (identifier As ResourceIdentifier)" />
-      <MemberSignature Language="F#" Value="override this.ValidateResourceType : Azure.ResourceManager.ResourceIdentifier -&gt; unit" Usage="deploymentExtendedContainer.ValidateResourceType identifier" />
+      <MemberSignature Language="F#" Value="abstract member ValidateResourceType : Azure.ResourceManager.ResourceIdentifier -&gt; unit&#xA;override this.ValidateResourceType : Azure.ResourceManager.ResourceIdentifier -&gt; unit" Usage="deploymentExtendedContainer.ValidateResourceType identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
