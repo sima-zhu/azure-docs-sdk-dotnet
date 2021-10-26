@@ -1,17 +1,17 @@
 ---
 title: Azure Communication Services management client library for .NET
-keywords: Azure, .net, SDK, API, Azure.ResourceManager.Communication, communication
+keywords: Azure, dotnet, SDK, API, Azure.ResourceManager.Communication, communication
 author: maggiepint
 ms.author: magpint
-ms.date: 11/16/2020
+ms.date: 10/26/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
-ms.devlang: .net
+ms.devlang: dotnet
 ms.service: communication
 ---
 
-# Azure Communication Services management client library for .NET - Version 1.0.0-beta.3 
+# Azure Communication Services management client library for .NET - Version 1.1.0-alpha.20211025.2 
 
 
 Azure Communication Services enable developers to securely bring human connected experiences to their own
@@ -35,8 +35,8 @@ Use the management library for Azure Communication Services to:
 
 Install the Azure Management SDK for .NET with [NuGet][nuget]:
 
-```PowerShell
-dotnet add package Azure.ResourceManager.Communication --version 1.0.0-beta.3
+```dotnetcli
+dotnet add package Azure.ResourceManager.Communication --version 1.0.0
 ``` 
 
 ### Include the client library
@@ -66,7 +66,7 @@ You will need to have a resource group to put your Azure Communication Services 
 group, create one by using the [Azure
 portal](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal)
 or the [ARM Management
-SDK](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.Communication_1.0.0-beta.3/doc/mgmt_preview_quickstart.md).
+SDK](https://github.com/Azure/azure-sdk-for-net/blob/main/doc/mgmt_preview_quickstart.md).
 
 ### Authenticate the client
 
@@ -162,7 +162,7 @@ Your instance of the Communication Services Management client library client (``
 
 #### Create a Communication Services resource
 
-When creating a Communication Services resource, you'll specify the resource group name and resource name. Note that the `Location` property will always be `global`, and during public preview the `DataLocation` value must be `UnitedStates`.
+When creating a Communication Services resource, you'll specify the resource group name and resource name. Note that the `Location` property will always be `global` and the `DataLocation` value must be `UnitedStates`.
 
 ```csharp
 var resourceGroupName = "myResourceGroupName";
