@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: communication
 ---
 
-# Azure Communication Identity client library for .NET - Version 1.1.0-alpha.20211025.2 
+# Azure Communication Identity client library for .NET - Version 1.1.0-alpha.20211026.1 
 
 
 Azure Communication Identity is managing tokens for Azure Communication Services.

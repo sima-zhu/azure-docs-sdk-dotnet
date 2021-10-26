@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: communication
 ---
 
-# Azure Communication Network Traversal client library for .NET - Version 1.0.0-alpha.20211025.2 
+# Azure Communication Network Traversal client library for .NET - Version 1.0.0-alpha.20211026.1 
 
 
 Azure Communication Network Traversal enables high bandwidth, low latency connections between peers for real-time communication scenarios and data transfer scenarios by providing access to low-level STUN and TURN services.

@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: communication
 ---
 
-# Azure Communication CallingServer client library for .NET - Version 1.0.0-alpha.20211025.2 
+# Azure Communication CallingServer client library for .NET - Version 1.0.0-alpha.20211026.1 
 
 
 This package contains a C# SDK for Azure Communication Services for Calling.
