@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> A class representing collection of DeploymentOperation and their operations over a DeploymentExtended. </summary>
+    <summary> A class representing collection of DeploymentOperation and their operations over a Deployment. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

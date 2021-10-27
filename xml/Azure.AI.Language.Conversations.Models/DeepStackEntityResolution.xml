@@ -1,0 +1,61 @@
+<Type Name="DeepStackEntityResolution" FullName="Azure.AI.Language.Conversations.Models.DeepStackEntityResolution">
+  <TypeSignature Language="C#" Value="public class DeepStackEntityResolution" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeepStackEntityResolution extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Language.Conversations.Models.DeepStackEntityResolution" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeepStackEntityResolution" />
+  <TypeSignature Language="F#" Value="type DeepStackEntityResolution = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> This is the base class of all kinds of entity resolutions. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdditionalProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; AdditionalProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; AdditionalProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Models.DeepStackEntityResolution.AdditionalProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalProperties As IReadOnlyDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.AdditionalProperties : System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt;" Usage="Azure.AI.Language.Conversations.Models.DeepStackEntityResolution.AdditionalProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Additional Properties. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolutionKind">
+      <MemberSignature Language="C#" Value="public Azure.AI.Language.Conversations.Models.ResolutionKind ResolutionKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.AI.Language.Conversations.Models.ResolutionKind ResolutionKind" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Models.DeepStackEntityResolution.ResolutionKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolutionKind As ResolutionKind" />
+      <MemberSignature Language="F#" Value="member this.ResolutionKind : Azure.AI.Language.Conversations.Models.ResolutionKind" Usage="Azure.AI.Language.Conversations.Models.DeepStackEntityResolution.ResolutionKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Models.ResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The type of an entity resolution. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

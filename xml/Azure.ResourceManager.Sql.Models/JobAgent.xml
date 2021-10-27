@@ -1,0 +1,103 @@
+<Type Name="JobAgent" FullName="Azure.ResourceManager.Sql.Models.JobAgent">
+  <TypeSignature Language="C#" Value="public class JobAgent : Azure.ResourceManager.Sql.Models.TrackedResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobAgent extends Azure.ResourceManager.Sql.Models.TrackedResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.JobAgent" />
+  <TypeSignature Language="VB.NET" Value="Public Class JobAgent&#xA;Inherits TrackedResource" />
+  <TypeSignature Language="F#" Value="type JobAgent = class&#xA;    inherit TrackedResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.TrackedResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> An Azure SQL job agent. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobAgent (string location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.JobAgent.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Sql.Models.JobAgent : string -&gt; Azure.ResourceManager.Sql.Models.JobAgent" Usage="new Azure.ResourceManager.Sql.Models.JobAgent location" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="location" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="location"> Resource location. </param>
+        <summary> Initializes a new instance of JobAgent. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseId">
+      <MemberSignature Language="C#" Value="public string DatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.JobAgent.DatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseId As String" />
+      <MemberSignature Language="F#" Value="member this.DatabaseId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.JobAgent.DatabaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Resource ID of the database to store job metadata in. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sku">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.Sku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.Models.Sku Sku" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.JobAgent.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As Sku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.Sql.Models.Sku with get, set" Usage="Azure.ResourceManager.Sql.Models.JobAgent.Sku" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.Sku</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The name and tier of the SKU. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.JobAgentState? State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.JobAgentState&gt; State" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.JobAgent.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Nullable(Of JobAgentState)" />
+      <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Azure.ResourceManager.Sql.Models.JobAgentState&gt;" Usage="Azure.ResourceManager.Sql.Models.JobAgent.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.JobAgentState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The state of the job agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

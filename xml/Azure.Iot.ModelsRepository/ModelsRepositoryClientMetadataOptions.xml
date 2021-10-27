@@ -1,0 +1,134 @@
+<Type Name="ModelsRepositoryClientMetadataOptions" FullName="Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions">
+  <TypeSignature Language="C#" Value="public class ModelsRepositoryClientMetadataOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelsRepositoryClientMetadataOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelsRepositoryClientMetadataOptions" />
+  <TypeSignature Language="F#" Value="type ModelsRepositoryClientMetadataOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.IoT.ModelsRepository</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Options that configure how the client uses models repository metadata.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelsRepositoryClientMetadataOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.ModelsRepository</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions" /> class using the
+            <see cref="T:System.TimeSpan" /> value from <see cref="P:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.DefaultMetadataExpiration" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelsRepositoryClientMetadataOptions (TimeSpan expiration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan expiration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expiration As TimeSpan)" />
+      <MemberSignature Language="F#" Value="new Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions : TimeSpan -&gt; Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions" Usage="new Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions expiration" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.ModelsRepository</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expiration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="expiration">
+            The minimum <see cref="T:System.TimeSpan" /> for which the client considers fetched repository metadata stale.
+            When metadata is stale, the next service operation that can make use of metadata will first attempt to
+            fetch and refresh the client metadata state. The operation will then continue as normal.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMetadataExpiration">
+      <MemberSignature Language="C#" Value="public static TimeSpan DefaultMetadataExpiration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan DefaultMetadataExpiration" />
+      <MemberSignature Language="DocId" Value="P:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.DefaultMetadataExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultMetadataExpiration As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultMetadataExpiration : TimeSpan" Usage="Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.DefaultMetadataExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.ModelsRepository</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default <see cref="T:System.TimeSpan" /> of <see cref="F:System.TimeSpan.MaxValue" /> for <see cref="P:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.Expiration" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.ModelsRepository</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if models repository metadata processing should be enabled for the client.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expiration">
+      <MemberSignature Language="C#" Value="public TimeSpan Expiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Expiration" />
+      <MemberSignature Language="DocId" Value="P:Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.Expiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expiration As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Expiration : TimeSpan with get, set" Usage="Azure.IoT.ModelsRepository.ModelsRepositoryClientMetadataOptions.Expiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.IoT.ModelsRepository</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:System.TimeSpan" /> for which the client considers repository metadata stale.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

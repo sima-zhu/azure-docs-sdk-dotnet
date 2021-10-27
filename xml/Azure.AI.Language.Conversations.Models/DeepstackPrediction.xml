@@ -1,0 +1,61 @@
+<Type Name="DeepstackPrediction" FullName="Azure.AI.Language.Conversations.Models.DeepstackPrediction">
+  <TypeSignature Language="C#" Value="public class DeepstackPrediction : Azure.AI.Language.Conversations.Models.BasePrediction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeepstackPrediction extends Azure.AI.Language.Conversations.Models.BasePrediction" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Language.Conversations.Models.DeepstackPrediction" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeepstackPrediction&#xA;Inherits BasePrediction" />
+  <TypeSignature Language="F#" Value="type DeepstackPrediction = class&#xA;    inherit BasePrediction" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.AI.Language.Conversations.Models.BasePrediction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Represents the prediction section of a LUIS Deepstack project. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Entities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Language.Conversations.Models.DeepstackEntity&gt; Entities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.AI.Language.Conversations.Models.DeepstackEntity&gt; Entities" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Models.DeepstackPrediction.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entities As IReadOnlyList(Of DeepstackEntity)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Language.Conversations.Models.DeepstackEntity&gt;" Usage="Azure.AI.Language.Conversations.Models.DeepstackPrediction.Entities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Language.Conversations.Models.DeepstackEntity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The entity extraction results. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intents">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Language.Conversations.Models.DeepstackIntent&gt; Intents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.AI.Language.Conversations.Models.DeepstackIntent&gt; Intents" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Models.DeepstackPrediction.Intents" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Intents As IReadOnlyList(Of DeepstackIntent)" />
+      <MemberSignature Language="F#" Value="member this.Intents : System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Language.Conversations.Models.DeepstackIntent&gt;" Usage="Azure.AI.Language.Conversations.Models.DeepstackPrediction.Intents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Language.Conversations.Models.DeepstackIntent&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The intent classification results. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
