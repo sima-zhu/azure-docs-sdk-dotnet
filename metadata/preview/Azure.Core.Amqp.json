@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Core.Amqp",
-  "Version": "1.3.0-alpha.20211027.1",
-  "DevVersion": "1.3.0-alpha.20211027.1",
+  "Version": "1.3.0-alpha.20211027.3",
+  "DevVersion": "1.3.0-alpha.20211027.3",
   "DirectoryPath": "sdk/core/Azure.Core.Amqp",
   "ServiceDirectory": "core",
   "ReadMePath": "sdk/core/Azure.Core.Amqp/README.md",
