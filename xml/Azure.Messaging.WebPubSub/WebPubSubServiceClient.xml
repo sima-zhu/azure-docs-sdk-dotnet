@@ -208,7 +208,21 @@
         <param name="options"> The request options. </param>
         <summary> Add a connection to the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddConnectionToGroupAsync">
@@ -236,7 +250,21 @@
         <param name="options"> The request options. </param>
         <summary> Add a connection to the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserToGroup">
@@ -264,7 +292,21 @@
         <param name="options"> The request options. </param>
         <summary> Add a user to the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserToGroupAsync">
@@ -292,7 +334,21 @@
         <param name="options"> The request options. </param>
         <summary> Add a user to the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckPermission">
@@ -355,6 +411,86 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CloseAllConnections">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CloseAllConnections (System.Collections.Generic.IEnumerable&lt;string&gt; excluded = default, string reason = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CloseAllConnections(class System.Collections.Generic.IEnumerable`1&lt;string&gt; excluded, string reason, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.CloseAllConnections(System.Collections.Generic.IEnumerable{System.String},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseAllConnections (Optional excluded As IEnumerable(Of String) = Nothing, Optional reason As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member CloseAllConnections : seq&lt;string&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CloseAllConnections : seq&lt;string&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="webPubSubServiceClient.CloseAllConnections (excluded, reason, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="excluded" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="excluded"> Exclude these connectionIds when closing the connections in the hub. </param>
+        <param name="reason"> The reason closing the client connection. </param>
+        <param name="options"> The request options. </param>
+        <summary> Close the connections in the hub. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseAllConnectionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CloseAllConnectionsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; excluded = default, string reason = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CloseAllConnectionsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; excluded, string reason, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.CloseAllConnectionsAsync(System.Collections.Generic.IEnumerable{System.String},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseAllConnectionsAsync (Optional excluded As IEnumerable(Of String) = Nothing, Optional reason As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member CloseAllConnectionsAsync : seq&lt;string&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CloseAllConnectionsAsync : seq&lt;string&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="webPubSubServiceClient.CloseAllConnectionsAsync (excluded, reason, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="excluded" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="excluded"> Exclude these connectionIds when closing the connections in the hub. </param>
+        <param name="reason"> The reason closing the client connection. </param>
+        <param name="options"> The request options. </param>
+        <summary> Close the connections in the hub. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CloseConnection">
       <MemberSignature Language="C#" Value="public virtual Azure.Response CloseConnection (string connectionId, string reason = default, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CloseConnection(string connectionId, string reason, class Azure.RequestOptions options) cil managed" />
@@ -380,7 +516,21 @@
         <param name="options"> The request options. </param>
         <summary> Close the client connection. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseConnectionAsync">
@@ -408,7 +558,197 @@
         <param name="options"> The request options. </param>
         <summary> Close the client connection. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseGroupConnections">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CloseGroupConnections (string group, System.Collections.Generic.IEnumerable&lt;string&gt; excluded = default, string reason = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CloseGroupConnections(string group, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excluded, string reason, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.CloseGroupConnections(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseGroupConnections (group As String, Optional excluded As IEnumerable(Of String) = Nothing, Optional reason As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member CloseGroupConnections : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CloseGroupConnections : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="webPubSubServiceClient.CloseGroupConnections (group, excluded, reason, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="System.String" />
+        <Parameter Name="excluded" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
+        <param name="excluded"> Exclude these connectionIds when closing the connections in the group. </param>
+        <param name="reason"> The reason closing the client connection. </param>
+        <param name="options"> The request options. </param>
+        <summary> Close connections in the specific group. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseGroupConnectionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CloseGroupConnectionsAsync (string group, System.Collections.Generic.IEnumerable&lt;string&gt; excluded = default, string reason = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CloseGroupConnectionsAsync(string group, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excluded, string reason, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.CloseGroupConnectionsAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseGroupConnectionsAsync (group As String, Optional excluded As IEnumerable(Of String) = Nothing, Optional reason As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member CloseGroupConnectionsAsync : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CloseGroupConnectionsAsync : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="webPubSubServiceClient.CloseGroupConnectionsAsync (group, excluded, reason, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="System.String" />
+        <Parameter Name="excluded" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
+        <param name="excluded"> Exclude these connectionIds when closing the connections in the group. </param>
+        <param name="reason"> The reason closing the client connection. </param>
+        <param name="options"> The request options. </param>
+        <summary> Close connections in the specific group. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseUserConnections">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CloseUserConnections (string userId, System.Collections.Generic.IEnumerable&lt;string&gt; excluded = default, string reason = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CloseUserConnections(string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excluded, string reason, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.CloseUserConnections(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseUserConnections (userId As String, Optional excluded As IEnumerable(Of String) = Nothing, Optional reason As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member CloseUserConnections : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CloseUserConnections : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="webPubSubServiceClient.CloseUserConnections (userId, excluded, reason, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="excluded" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="userId"> The user Id. </param>
+        <param name="excluded"> Exclude these connectionIds when closing the connections for the user. </param>
+        <param name="reason"> The reason closing the client connection. </param>
+        <param name="options"> The request options. </param>
+        <summary> Close connections for the specific user. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseUserConnectionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CloseUserConnectionsAsync (string userId, System.Collections.Generic.IEnumerable&lt;string&gt; excluded = default, string reason = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CloseUserConnectionsAsync(string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excluded, string reason, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.CloseUserConnectionsAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseUserConnectionsAsync (userId As String, Optional excluded As IEnumerable(Of String) = Nothing, Optional reason As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member CloseUserConnectionsAsync : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CloseUserConnectionsAsync : string * seq&lt;string&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="webPubSubServiceClient.CloseUserConnectionsAsync (userId, excluded, reason, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="excluded" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="userId"> The user Id. </param>
+        <param name="excluded"> Exclude these connectionIds when closing the connections for the user. </param>
+        <param name="reason"> The reason closing the client connection. </param>
+        <param name="options"> The request options. </param>
+        <summary> Close connections for the specific user. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectionExists">
@@ -485,12 +825,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GenerateClientAccessUri">
-      <MemberSignature Language="C#" Value="public virtual Uri GenerateClientAccessUri (DateTimeOffset expiresAt, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GenerateClientAccessUri(valuetype System.DateTimeOffset expiresAt, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GenerateClientAccessUri(System.DateTimeOffset,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateClientAccessUri (expiresAt As DateTimeOffset, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Uri" />
-      <MemberSignature Language="F#" Value="abstract member GenerateClientAccessUri : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri&#xA;override this.GenerateClientAccessUri : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri" Usage="webPubSubServiceClient.GenerateClientAccessUri (expiresAt, userId, roles, cancellationToken)" />
+    <Member MemberName="GetClientAccessUri">
+      <MemberSignature Language="C#" Value="public virtual Uri GetClientAccessUri (DateTimeOffset expiresAt, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GetClientAccessUri(valuetype System.DateTimeOffset expiresAt, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GetClientAccessUri(System.DateTimeOffset,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientAccessUri (expiresAt As DateTimeOffset, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Uri" />
+      <MemberSignature Language="F#" Value="abstract member GetClientAccessUri : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri&#xA;override this.GetClientAccessUri : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri" Usage="webPubSubServiceClient.GetClientAccessUri (expiresAt, userId, roles, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
@@ -517,12 +857,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GenerateClientAccessUri">
-      <MemberSignature Language="C#" Value="public virtual Uri GenerateClientAccessUri (TimeSpan expiresAfter = default, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GenerateClientAccessUri(valuetype System.TimeSpan expiresAfter, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GenerateClientAccessUri(System.TimeSpan,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateClientAccessUri (Optional expiresAfter As TimeSpan = Nothing, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Uri" />
-      <MemberSignature Language="F#" Value="abstract member GenerateClientAccessUri : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri&#xA;override this.GenerateClientAccessUri : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri" Usage="webPubSubServiceClient.GenerateClientAccessUri (expiresAfter, userId, roles, cancellationToken)" />
+    <Member MemberName="GetClientAccessUri">
+      <MemberSignature Language="C#" Value="public virtual Uri GetClientAccessUri (TimeSpan expiresAfter = default, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GetClientAccessUri(valuetype System.TimeSpan expiresAfter, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GetClientAccessUri(System.TimeSpan,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientAccessUri (Optional expiresAfter As TimeSpan = Nothing, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Uri" />
+      <MemberSignature Language="F#" Value="abstract member GetClientAccessUri : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri&#xA;override this.GetClientAccessUri : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; Uri" Usage="webPubSubServiceClient.GetClientAccessUri (expiresAfter, userId, roles, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
@@ -549,12 +889,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GenerateClientAccessUriAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Uri&gt; GenerateClientAccessUriAsync (DateTimeOffset expiresAt, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Uri&gt; GenerateClientAccessUriAsync(valuetype System.DateTimeOffset expiresAt, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GenerateClientAccessUriAsync(System.DateTimeOffset,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateClientAccessUriAsync (expiresAt As DateTimeOffset, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Uri)" />
-      <MemberSignature Language="F#" Value="abstract member GenerateClientAccessUriAsync : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;&#xA;override this.GenerateClientAccessUriAsync : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;" Usage="webPubSubServiceClient.GenerateClientAccessUriAsync (expiresAt, userId, roles, cancellationToken)" />
+    <Member MemberName="GetClientAccessUriAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Uri&gt; GetClientAccessUriAsync (DateTimeOffset expiresAt, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Uri&gt; GetClientAccessUriAsync(valuetype System.DateTimeOffset expiresAt, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GetClientAccessUriAsync(System.DateTimeOffset,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientAccessUriAsync (expiresAt As DateTimeOffset, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Uri)" />
+      <MemberSignature Language="F#" Value="abstract member GetClientAccessUriAsync : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;&#xA;override this.GetClientAccessUriAsync : DateTimeOffset * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;" Usage="webPubSubServiceClient.GetClientAccessUriAsync (expiresAt, userId, roles, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
@@ -581,12 +921,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GenerateClientAccessUriAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Uri&gt; GenerateClientAccessUriAsync (TimeSpan expiresAfter = default, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Uri&gt; GenerateClientAccessUriAsync(valuetype System.TimeSpan expiresAfter, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GenerateClientAccessUriAsync(System.TimeSpan,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateClientAccessUriAsync (Optional expiresAfter As TimeSpan = Nothing, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Uri)" />
-      <MemberSignature Language="F#" Value="abstract member GenerateClientAccessUriAsync : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;&#xA;override this.GenerateClientAccessUriAsync : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;" Usage="webPubSubServiceClient.GenerateClientAccessUriAsync (expiresAfter, userId, roles, cancellationToken)" />
+    <Member MemberName="GetClientAccessUriAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Uri&gt; GetClientAccessUriAsync (TimeSpan expiresAfter = default, string userId = default, System.Collections.Generic.IEnumerable&lt;string&gt; roles = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Uri&gt; GetClientAccessUriAsync(valuetype System.TimeSpan expiresAfter, string userId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; roles, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.WebPubSub.WebPubSubServiceClient.GetClientAccessUriAsync(System.TimeSpan,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientAccessUriAsync (Optional expiresAfter As TimeSpan = Nothing, Optional userId As String = Nothing, Optional roles As IEnumerable(Of String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Uri)" />
+      <MemberSignature Language="F#" Value="abstract member GetClientAccessUriAsync : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;&#xA;override this.GetClientAccessUriAsync : TimeSpan * string * seq&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Uri&gt;" Usage="webPubSubServiceClient.GetClientAccessUriAsync (expiresAfter, userId, roles, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
@@ -792,7 +1132,21 @@
         <param name="options"> The request options. </param>
         <summary> Remove a connection from the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveConnectionFromGroupAsync">
@@ -820,7 +1174,21 @@
         <param name="options"> The request options. </param>
         <summary> Remove a connection from the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromAllGroups">
@@ -846,7 +1214,21 @@
         <param name="options"> The request options. </param>
         <summary> Remove a user from all groups. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromAllGroupsAsync">
@@ -872,7 +1254,21 @@
         <param name="options"> The request options. </param>
         <summary> Remove a user from all groups. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromGroup">
@@ -900,7 +1296,21 @@
         <param name="options"> The request options. </param>
         <summary> Remove a user from the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromGroupAsync">
@@ -928,7 +1338,21 @@
         <param name="options"> The request options. </param>
         <summary> Remove a user from the target group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RevokePermission">
@@ -1039,12 +1463,26 @@
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Broadcast content inside request body to all the connected client connections. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToAllAsync">
@@ -1095,12 +1533,26 @@
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Broadcast content inside request body to all the connected client connections. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToConnection">
@@ -1156,11 +1608,25 @@
       <Docs>
         <param name="connectionId"> The connection Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific connection. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToConnectionAsync">
@@ -1216,11 +1682,25 @@
       <Docs>
         <param name="connectionId"> The connection Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific connection. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToGroup">
@@ -1277,12 +1757,26 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to a group of connections. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToGroupAsync">
@@ -1339,12 +1833,26 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="excluded"> Excluded connection Ids. </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to a group of connections. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToUser">
@@ -1400,11 +1908,25 @@
       <Docs>
         <param name="userId"> The user Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific user. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToUserAsync">
@@ -1460,11 +1982,25 @@
       <Docs>
         <param name="userId"> The user Id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
         <param name="options"> The request options. </param>
         <summary> Send content inside request body to the specific user. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              code: string,
+              message: string,
+              target: string,
+              details: [ErrorDetail],
+              inner: {
+                code: string,
+                inner: InnerError
+              }
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userId" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="UserExists">

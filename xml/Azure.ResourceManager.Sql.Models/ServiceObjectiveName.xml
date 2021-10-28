@@ -1,0 +1,1530 @@
+<Type Name="ServiceObjectiveName" FullName="Azure.ResourceManager.Sql.Models.ServiceObjectiveName">
+  <TypeSignature Language="C#" Value="public struct ServiceObjectiveName : IEquatable&lt;Azure.ResourceManager.Sql.Models.ServiceObjectiveName&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ServiceObjectiveName extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ServiceObjectiveName&#xA;Implements IEquatable(Of ServiceObjectiveName)" />
+  <TypeSignature Language="F#" Value="type ServiceObjectiveName = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.ResourceManager.Sql.Models.ServiceObjectiveName&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The name of the service objective to assign to the database. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceObjectiveName (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Sql.Models.ServiceObjectiveName : string -&gt; Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="new Azure.ResourceManager.Sql.Models.ServiceObjectiveName value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Sql.Models.ServiceObjectiveName" /> values are the same. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Basic">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName Basic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName Basic" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.Basic" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.Basic : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.Basic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Basic. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS100">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS100 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS100" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS100" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS100 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS100 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS100" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS100. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS1000">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS1000 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS1000" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS1000" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS1000 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS1000 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS1000" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS1000. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS1200">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS1200 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS1200" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS1200" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS1200 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS1200 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS1200" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS1200. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS1500">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS1500 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS1500" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS1500" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS1500 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS1500 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS1500" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS1500. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS200">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS200 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS200" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS200" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS200 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS200 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS200" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS200. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS2000">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS2000 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS2000" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS2000" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS2000 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS2000 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS2000" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS2000. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS300">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS300 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS300" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS300" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS300 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS300 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS300" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS300. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS400">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS400 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS400" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS400" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS400 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS400 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS400" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS400. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS500">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS500 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS500" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS500" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS500 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS500 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS500" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS500. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DS600">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS600 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DS600" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS600" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DS600 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DS600 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DS600" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DS600. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW100">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW100 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW100" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW100" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW100 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW100 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW100" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW100. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW1000">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1000 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1000" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1000" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW1000 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW1000 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1000" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW1000. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW10000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW10000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW10000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW10000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW10000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW10000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW10000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW10000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW1000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW1000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW1000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW1000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW1200">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1200 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1200" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1200" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW1200 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW1200 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1200" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW1200. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW1500">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1500 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1500" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1500" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW1500 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW1500 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1500" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW1500. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW15000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW15000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW15000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW15000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW15000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW15000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW15000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW15000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW1500C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1500C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW1500C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1500C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW1500C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW1500C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW1500C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW1500c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW200">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW200 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW200" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW200" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW200 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW200 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW200" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW200. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW2000">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW2000 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW2000" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW2000" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW2000 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW2000 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW2000" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW2000. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW2000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW2000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW2000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW2000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW2000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW2000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW2000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW2000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW2500C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW2500C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW2500C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW2500C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW2500C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW2500C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW2500C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW2500c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW300">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW300 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW300" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW300" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW300 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW300 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW300" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW300. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW3000">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW3000 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW3000" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW3000" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW3000 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW3000 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW3000" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW3000. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW30000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW30000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW30000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW30000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW30000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW30000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW30000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW30000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW3000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW3000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW3000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW3000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW3000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW3000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW3000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW3000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW400">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW400 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW400" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW400" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW400 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW400 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW400" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW400. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW500">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW500 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW500" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW500" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW500 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW500 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW500" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW500. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW5000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW5000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW5000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW5000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW5000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW5000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW5000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW5000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW600">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW600 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW600" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW600" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW600 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW600 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW600" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW600. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW6000">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW6000 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW6000" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW6000" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW6000 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW6000 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW6000" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW6000. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW6000C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW6000C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW6000C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW6000C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW6000C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW6000C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW6000C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW6000c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DW7500C">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW7500C { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName DW7500C" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW7500C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DW7500C As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.DW7500C : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.DW7500C" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> DW7500c. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticPool">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName ElasticPool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName ElasticPool" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.ElasticPool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ElasticPool As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.ElasticPool : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.ElasticPool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> ElasticPool. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.ResourceManager.Sql.Models.ServiceObjectiveName other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.Equals(Azure.ResourceManager.Sql.Models.ServiceObjectiveName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ServiceObjectiveName) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.ResourceManager.Sql.Models.ServiceObjectiveName -&gt; bool" Usage="serviceObjectiveName.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="serviceObjectiveName.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Free">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName Free { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName Free" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.Free" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Free As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.Free : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.Free" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Free. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="serviceObjectiveName.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.ResourceManager.Sql.Models.ServiceObjectiveName left, Azure.ResourceManager.Sql.Models.ServiceObjectiveName right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName left, valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.op_Equality(Azure.ResourceManager.Sql.Models.ServiceObjectiveName,Azure.ResourceManager.Sql.Models.ServiceObjectiveName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ServiceObjectiveName, right As ServiceObjectiveName) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.ResourceManager.Sql.Models.ServiceObjectiveName * Azure.ResourceManager.Sql.Models.ServiceObjectiveName -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+        <Parameter Name="right" Type="Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Sql.Models.ServiceObjectiveName" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.Sql.Models.ServiceObjectiveName (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.op_Implicit(System.String)~Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a string to a <see cref="T:Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.ResourceManager.Sql.Models.ServiceObjectiveName left, Azure.ResourceManager.Sql.Models.ServiceObjectiveName right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName left, valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.op_Inequality(Azure.ResourceManager.Sql.Models.ServiceObjectiveName,Azure.ResourceManager.Sql.Models.ServiceObjectiveName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ServiceObjectiveName, right As ServiceObjectiveName) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.ResourceManager.Sql.Models.ServiceObjectiveName * Azure.ResourceManager.Sql.Models.ServiceObjectiveName -&gt; bool" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+        <Parameter Name="right" Type="Azure.ResourceManager.Sql.Models.ServiceObjectiveName" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Sql.Models.ServiceObjectiveName" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P1">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P1" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P1 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P1 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P1. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P11">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P11 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P11" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P11 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P11 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P11. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P15">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P15 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P15" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P15 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P15 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P15" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P15. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P2">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P2" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P2 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P2 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P2. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P3">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P3" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P3" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P3 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P3 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P3. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P4">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P4" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P4 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P4 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P4. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P6">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName P6 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName P6" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P6" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P6 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.P6 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.P6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> P6. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PRS1">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS1" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PRS1 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.PRS1 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> PRS1. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PRS2">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS2" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PRS2 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.PRS2 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> PRS2. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PRS4">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS4" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PRS4 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.PRS4 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> PRS4. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PRS6">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS6 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName PRS6" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS6" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PRS6 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.PRS6 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.PRS6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> PRS6. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S0">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S0 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S0" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S0 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S0 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S0" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S0. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S1">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S1" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S1 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S1 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S1. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S12">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S12 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S12" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S12" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S12 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S12 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S12" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S12. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S2">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S2" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S2 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S2 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S2. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S3">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S3" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S3" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S3 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S3 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S3. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S4">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S4" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S4 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S4 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S4. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S6">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S6 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S6" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S6" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S6 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S6 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S6. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S7">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S7 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S7" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S7" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S7 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S7 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S7" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S7. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="S9">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName S9 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName S9" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S9" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property S9 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.S9 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.S9" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> S9. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System0">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System0 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System0" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System0 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System0 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System0" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System0. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System1">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System1" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System1 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System1 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System1. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System2">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System2" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System2 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System2 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System2. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System2L">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System2L { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System2L" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System2L" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System2L As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System2L : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System2L" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System2L. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System3">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System3" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System3" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System3 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System3 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System3. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System3L">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System3L { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System3L" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System3L" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System3L As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System3L : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System3L" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System3L. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System4">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System4" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System4 As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System4 : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System4. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System4L">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ServiceObjectiveName System4L { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ServiceObjectiveName System4L" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System4L" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System4L As ServiceObjectiveName" />
+      <MemberSignature Language="F#" Value="member this.System4L : Azure.ResourceManager.Sql.Models.ServiceObjectiveName" Usage="Azure.ResourceManager.Sql.Models.ServiceObjectiveName.System4L" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServiceObjectiveName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> System4L. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceObjectiveName.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="serviceObjectiveName.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,101 @@
+<Type Name="ElasticPoolActivitiesOperations" FullName="Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations">
+  <TypeSignature Language="C#" Value="public class ElasticPoolActivitiesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ElasticPoolActivitiesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ElasticPoolActivitiesOperations" />
+  <TypeSignature Language="F#" Value="type ElasticPoolActivitiesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The ElasticPoolActivities service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ElasticPoolActivitiesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ElasticPoolActivitiesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByElasticPool">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt; ListByElasticPool (string resourceGroupName, string serverName, string elasticPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt; ListByElasticPool(string resourceGroupName, string serverName, string elasticPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations.ListByElasticPool(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByElasticPool (resourceGroupName As String, serverName As String, elasticPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ElasticPoolActivity)" />
+      <MemberSignature Language="F#" Value="abstract member ListByElasticPool : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt;&#xA;override this.ListByElasticPool : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt;" Usage="elasticPoolActivitiesOperations.ListByElasticPool (resourceGroupName, serverName, elasticPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="elasticPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="elasticPoolName"> The name of the elastic pool for which to get the current activity. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Returns elastic pool activities. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="elasticPoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByElasticPoolAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt; ListByElasticPoolAsync (string resourceGroupName, string serverName, string elasticPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt; ListByElasticPoolAsync(string resourceGroupName, string serverName, string elasticPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPoolActivitiesOperations.ListByElasticPoolAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByElasticPoolAsync (resourceGroupName As String, serverName As String, elasticPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ElasticPoolActivity)" />
+      <MemberSignature Language="F#" Value="abstract member ListByElasticPoolAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt;&#xA;override this.ListByElasticPoolAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt;" Usage="elasticPoolActivitiesOperations.ListByElasticPoolAsync (resourceGroupName, serverName, elasticPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="elasticPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="elasticPoolName"> The name of the elastic pool for which to get the current activity. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Returns elastic pool activities. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="elasticPoolName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

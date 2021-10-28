@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.WebJobs.Extensions.ServiceBus</AssemblyName>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,15 +21,16 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageProcessor (Azure.Messaging.ServiceBus.ServiceBusProcessor processor);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Messaging.ServiceBus.ServiceBusProcessor processor) cil managed" />
+      <MemberSignature Language="C#" Value="protected internal MessageProcessor (Azure.Messaging.ServiceBus.ServiceBusProcessor processor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class Azure.Messaging.ServiceBus.ServiceBusProcessor processor) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.ServiceBus.MessageProcessor.#ctor(Azure.Messaging.ServiceBus.ServiceBusProcessor)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (processor As ServiceBusProcessor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (processor As ServiceBusProcessor)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.WebJobs.ServiceBus.MessageProcessor : Azure.Messaging.ServiceBus.ServiceBusProcessor -&gt; Microsoft.Azure.WebJobs.ServiceBus.MessageProcessor" Usage="new Microsoft.Azure.WebJobs.ServiceBus.MessageProcessor processor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.ServiceBus</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="processor" Type="Azure.Messaging.ServiceBus.ServiceBusProcessor" />
@@ -51,6 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.ServiceBus</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -82,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.ServiceBus</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -118,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.ServiceBus</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusProcessor</ReturnType>

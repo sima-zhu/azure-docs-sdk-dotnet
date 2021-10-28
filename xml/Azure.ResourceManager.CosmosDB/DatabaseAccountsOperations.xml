@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="CheckNameExists">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response CheckNameExists (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CheckNameExists(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; CheckNameExists (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; CheckNameExists(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountsOperations.CheckNameExists(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckNameExists (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member CheckNameExists : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.CheckNameExists : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="databaseAccountsOperations.CheckNameExists (accountName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckNameExists (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member CheckNameExists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.CheckNameExists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="databaseAccountsOperations.CheckNameExists (accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response</ReturnType>
+        <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="accountName" Type="System.String" />
@@ -60,18 +60,18 @@
       </Docs>
     </Member>
     <Member MemberName="CheckNameExistsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CheckNameExistsAsync (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CheckNameExistsAsync(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; CheckNameExistsAsync (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; CheckNameExistsAsync(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountsOperations.CheckNameExistsAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckNameExistsAsync (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member CheckNameExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CheckNameExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="databaseAccountsOperations.CheckNameExistsAsync (accountName, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckNameExistsAsync (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member CheckNameExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.CheckNameExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="databaseAccountsOperations.CheckNameExistsAsync (accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="accountName" Type="System.String" />

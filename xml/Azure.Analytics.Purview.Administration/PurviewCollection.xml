@@ -285,6 +285,116 @@
             </code></remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetChildCollectionNames">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetChildCollectionNames (Azure.RequestOptions options, string skipToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetChildCollectionNames(class Azure.RequestOptions options, string skipToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewCollection.GetChildCollectionNames(Azure.RequestOptions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildCollectionNames (options As RequestOptions, Optional skipToken As String = Nothing) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetChildCollectionNames : Azure.RequestOptions * string -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetChildCollectionNames : Azure.RequestOptions * string -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewCollection.GetChildCollectionNames (options, skipToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;System.BinaryData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="skipToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The request options. </param>
+        <param name="skipToken"> The String to use. </param>
+        <summary> Lists the child collections names in the collection. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              count: number,
+              nextLink: string,
+              value: [
+                {
+                  friendlyName: string,
+                  name: string
+                }
+              ]
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollectionNamesAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetChildCollectionNamesAsync (Azure.RequestOptions options, string skipToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetChildCollectionNamesAsync(class Azure.RequestOptions options, string skipToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewCollection.GetChildCollectionNamesAsync(Azure.RequestOptions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildCollectionNamesAsync (options As RequestOptions, Optional skipToken As String = Nothing) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetChildCollectionNamesAsync : Azure.RequestOptions * string -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetChildCollectionNamesAsync : Azure.RequestOptions * string -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewCollection.GetChildCollectionNamesAsync (options, skipToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;System.BinaryData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="skipToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The request options. </param>
+        <param name="skipToken"> The String to use. </param>
+        <summary> Lists the child collections names in the collection. </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              count: number,
+              nextLink: string,
+              value: [
+                {
+                  friendlyName: string,
+                  name: string
+                }
+              ]
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                details: [
+                  {
+                    code: string,
+                    details: [ErrorModel],
+                    message: string,
+                    target: string
+                  }
+                ],
+                message: string,
+                target: string
+              }
+            }
+            </code></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetCollection">
       <MemberSignature Language="C#" Value="public virtual Azure.Response GetCollection (Azure.RequestOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetCollection(class Azure.RequestOptions options) cil managed" />
@@ -480,116 +590,6 @@
             <code>{
               parentFriendlyNameChain: [string],
               parentNameChain: [string]
-            }
-            </code>
-            Schema for <c>Response Error</c>:
-            <code>{
-              error: {
-                code: string,
-                details: [
-                  {
-                    code: string,
-                    details: [ErrorModel],
-                    message: string,
-                    target: string
-                  }
-                ],
-                message: string,
-                target: string
-              }
-            }
-            </code></remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ListChildCollectionNames">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; ListChildCollectionNames (Azure.RequestOptions options, string skipToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; ListChildCollectionNames(class Azure.RequestOptions options, string skipToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewCollection.ListChildCollectionNames(Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListChildCollectionNames (options As RequestOptions, Optional skipToken As String = Nothing) As Pageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member ListChildCollectionNames : Azure.RequestOptions * string -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.ListChildCollectionNames : Azure.RequestOptions * string -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewCollection.ListChildCollectionNames (options, skipToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;System.BinaryData&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
-        <Parameter Name="skipToken" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="options"> The request options. </param>
-        <param name="skipToken"> The String to use. </param>
-        <summary> Lists the child collections names in the collection. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Body</c>:
-            <code>{
-              count: number,
-              nextLink: string,
-              value: [
-                {
-                  friendlyName: string,
-                  name: string
-                }
-              ]
-            }
-            </code>
-            Schema for <c>Response Error</c>:
-            <code>{
-              error: {
-                code: string,
-                details: [
-                  {
-                    code: string,
-                    details: [ErrorModel],
-                    message: string,
-                    target: string
-                  }
-                ],
-                message: string,
-                target: string
-              }
-            }
-            </code></remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ListChildCollectionNamesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; ListChildCollectionNamesAsync (Azure.RequestOptions options, string skipToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; ListChildCollectionNamesAsync(class Azure.RequestOptions options, string skipToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewCollection.ListChildCollectionNamesAsync(Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListChildCollectionNamesAsync (options As RequestOptions, Optional skipToken As String = Nothing) As AsyncPageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member ListChildCollectionNamesAsync : Azure.RequestOptions * string -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.ListChildCollectionNamesAsync : Azure.RequestOptions * string -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewCollection.ListChildCollectionNamesAsync (options, skipToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;System.BinaryData&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
-        <Parameter Name="skipToken" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="options"> The request options. </param>
-        <param name="skipToken"> The String to use. </param>
-        <summary> Lists the child collections names in the collection. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Body</c>:
-            <code>{
-              count: number,
-              nextLink: string,
-              value: [
-                {
-                  friendlyName: string,
-                  name: string
-                }
-              ]
             }
             </code>
             Schema for <c>Response Error</c>:
