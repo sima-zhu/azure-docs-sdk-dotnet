@@ -2346,11 +2346,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetCategoryTerms">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetCategoryTerms (string categoryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetCategoryTerms(string categoryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetCategoryTerms(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCategoryTerms (categoryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetCategoryTerms : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetCategoryTerms : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetCategoryTerms (categoryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetCategoryTerms (string categoryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetCategoryTerms(string categoryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetCategoryTerms(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCategoryTerms (categoryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetCategoryTerms : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetCategoryTerms : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetCategoryTerms (categoryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2361,17 +2361,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="categoryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="categoryGuid"> The globally unique identifier of the category. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all terms associated with the specific category. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2399,11 +2399,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetCategoryTermsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetCategoryTermsAsync (string categoryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetCategoryTermsAsync(string categoryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetCategoryTermsAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCategoryTermsAsync (categoryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetCategoryTermsAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetCategoryTermsAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetCategoryTermsAsync (categoryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetCategoryTermsAsync (string categoryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetCategoryTermsAsync(string categoryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetCategoryTermsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCategoryTermsAsync (categoryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetCategoryTermsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetCategoryTermsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetCategoryTermsAsync (categoryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2414,17 +2414,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="categoryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="categoryGuid"> The globally unique identifier of the category. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all terms associated with the specific category. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2452,11 +2452,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetDetailedGlossary">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetDetailedGlossary (string glossaryGuid, Azure.RequestOptions options, bool? includeTermHierarchy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetDetailedGlossary(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetDetailedGlossary(System.String,Azure.RequestOptions,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDetailedGlossary (glossaryGuid As String, options As RequestOptions, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetDetailedGlossary : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; Azure.Response&#xA;override this.GetDetailedGlossary : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; Azure.Response" Usage="purviewGlossaries.GetDetailedGlossary (glossaryGuid, options, includeTermHierarchy)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetDetailedGlossary (string glossaryGuid, bool? includeTermHierarchy = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetDetailedGlossary(string glossaryGuid, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetDetailedGlossary(System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDetailedGlossary (glossaryGuid As String, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetDetailedGlossary : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetDetailedGlossary : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetDetailedGlossary (glossaryGuid, includeTermHierarchy, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2467,13 +2467,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
+        <param name="options"> The request options. </param>
         <summary> Get a specific glossary with detailed information. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2543,11 +2543,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetDetailedGlossaryAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetDetailedGlossaryAsync (string glossaryGuid, Azure.RequestOptions options, bool? includeTermHierarchy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetDetailedGlossaryAsync(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetDetailedGlossaryAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDetailedGlossaryAsync (glossaryGuid As String, options As RequestOptions, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetDetailedGlossaryAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetDetailedGlossaryAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetDetailedGlossaryAsync (glossaryGuid, options, includeTermHierarchy)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetDetailedGlossaryAsync (string glossaryGuid, bool? includeTermHierarchy = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetDetailedGlossaryAsync(string glossaryGuid, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetDetailedGlossaryAsync(System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDetailedGlossaryAsync (glossaryGuid As String, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetDetailedGlossaryAsync : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetDetailedGlossaryAsync : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetDetailedGlossaryAsync (glossaryGuid, includeTermHierarchy, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2558,13 +2558,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
+        <param name="options"> The request options. </param>
         <summary> Get a specific glossary with detailed information. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2634,11 +2634,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntitiesAssignedWithTerm">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntitiesAssignedWithTerm (string termGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEntitiesAssignedWithTerm(string termGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetEntitiesAssignedWithTerm(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesAssignedWithTerm (termGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetEntitiesAssignedWithTerm : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetEntitiesAssignedWithTerm : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetEntitiesAssignedWithTerm (termGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntitiesAssignedWithTerm (string termGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEntitiesAssignedWithTerm(string termGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetEntitiesAssignedWithTerm(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesAssignedWithTerm (termGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetEntitiesAssignedWithTerm : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetEntitiesAssignedWithTerm : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetEntitiesAssignedWithTerm (termGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2649,17 +2649,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="termGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="termGuid"> The globally unique identifier for glossary term. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all related objects assigned with the specified term. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2692,11 +2692,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntitiesAssignedWithTermAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntitiesAssignedWithTermAsync (string termGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEntitiesAssignedWithTermAsync(string termGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetEntitiesAssignedWithTermAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesAssignedWithTermAsync (termGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetEntitiesAssignedWithTermAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEntitiesAssignedWithTermAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetEntitiesAssignedWithTermAsync (termGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntitiesAssignedWithTermAsync (string termGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEntitiesAssignedWithTermAsync(string termGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetEntitiesAssignedWithTermAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesAssignedWithTermAsync (termGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetEntitiesAssignedWithTermAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEntitiesAssignedWithTermAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetEntitiesAssignedWithTermAsync (termGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2707,17 +2707,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="termGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="termGuid"> The globally unique identifier for glossary term. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all related objects assigned with the specified term. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2750,11 +2750,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaries">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaries (Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default, bool? ignoreTermsAndCategories = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaries(class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, valuetype System.Nullable`1&lt;bool&gt; ignoreTermsAndCategories) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaries(Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaries (options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional ignoreTermsAndCategories As Nullable(Of Boolean) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaries : Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; -&gt; Azure.Response&#xA;override this.GetGlossaries : Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaries (options, limit, offset, sort, ignoreTermsAndCategories)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaries (int? limit = default, int? offset = default, string sort = default, bool? ignoreTermsAndCategories = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaries(valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, valuetype System.Nullable`1&lt;bool&gt; ignoreTermsAndCategories, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaries(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaries (Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional ignoreTermsAndCategories As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaries : Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaries : Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaries (limit, offset, sort, ignoreTermsAndCategories, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2764,18 +2764,18 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
         <Parameter Name="ignoreTermsAndCategories" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
         <param name="ignoreTermsAndCategories"> Whether ignore terms and categories. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all glossaries registered with Atlas. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2841,11 +2841,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossariesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossariesAsync (Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default, bool? ignoreTermsAndCategories = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossariesAsync(class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, valuetype System.Nullable`1&lt;bool&gt; ignoreTermsAndCategories) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossariesAsync(Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossariesAsync (options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional ignoreTermsAndCategories As Nullable(Of Boolean) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossariesAsync : Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossariesAsync : Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossariesAsync (options, limit, offset, sort, ignoreTermsAndCategories)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossariesAsync (int? limit = default, int? offset = default, string sort = default, bool? ignoreTermsAndCategories = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossariesAsync(valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, valuetype System.Nullable`1&lt;bool&gt; ignoreTermsAndCategories, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossariesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossariesAsync (Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional ignoreTermsAndCategories As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossariesAsync : Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossariesAsync : Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossariesAsync (limit, offset, sort, ignoreTermsAndCategories, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2855,18 +2855,18 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
         <Parameter Name="ignoreTermsAndCategories" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
         <param name="ignoreTermsAndCategories"> Whether ignore terms and categories. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all glossaries registered with Atlas. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2932,10 +2932,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossary">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossary (string glossaryGuid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossary (string glossaryGuid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossary(string glossaryGuid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossary(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossary (glossaryGuid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossary (glossaryGuid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetGlossary : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossary : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossary (glossaryGuid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3019,10 +3019,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryAsync (string glossaryGuid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryAsync (string glossaryGuid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryAsync(string glossaryGuid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryAsync (glossaryGuid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryAsync (glossaryGuid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetGlossaryAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryAsync (glossaryGuid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3106,11 +3106,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryCategories">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryCategories (string glossaryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryCategories(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategories(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategories (glossaryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategories : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetGlossaryCategories : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryCategories (glossaryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryCategories (string glossaryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryCategories(string glossaryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategories(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategories (glossaryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategories : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaryCategories : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryCategories (glossaryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3121,17 +3121,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get the categories belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3203,11 +3203,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryCategoriesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryCategoriesAsync (string glossaryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryCategoriesAsync(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoriesAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoriesAsync (glossaryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoriesAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryCategoriesAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryCategoriesAsync (glossaryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryCategoriesAsync (string glossaryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryCategoriesAsync(string glossaryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoriesAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoriesAsync (glossaryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoriesAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryCategoriesAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryCategoriesAsync (glossaryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3218,17 +3218,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get the categories belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3300,11 +3300,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryCategoriesHeaders">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryCategoriesHeaders (string glossaryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryCategoriesHeaders(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoriesHeaders(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoriesHeaders (glossaryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoriesHeaders : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetGlossaryCategoriesHeaders : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryCategoriesHeaders (glossaryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryCategoriesHeaders (string glossaryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryCategoriesHeaders(string glossaryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoriesHeaders(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoriesHeaders (glossaryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoriesHeaders : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaryCategoriesHeaders : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryCategoriesHeaders (glossaryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3315,17 +3315,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get the category headers belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3350,11 +3350,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryCategoriesHeadersAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryCategoriesHeadersAsync (string glossaryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryCategoriesHeadersAsync(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoriesHeadersAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoriesHeadersAsync (glossaryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoriesHeadersAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryCategoriesHeadersAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryCategoriesHeadersAsync (glossaryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryCategoriesHeadersAsync (string glossaryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryCategoriesHeadersAsync(string glossaryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoriesHeadersAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoriesHeadersAsync (glossaryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoriesHeadersAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryCategoriesHeadersAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryCategoriesHeadersAsync (glossaryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3365,17 +3365,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get the category headers belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3400,10 +3400,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryCategory">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryCategory (string categoryGuid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryCategory (string categoryGuid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryCategory(string categoryGuid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategory(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategory (categoryGuid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategory (categoryGuid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetGlossaryCategory : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaryCategory : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryCategory (categoryGuid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3491,10 +3491,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryCategoryAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryCategoryAsync (string categoryGuid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryCategoryAsync (string categoryGuid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryCategoryAsync(string categoryGuid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryCategoryAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoryAsync (categoryGuid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryCategoryAsync (categoryGuid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetGlossaryCategoryAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryCategoryAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryCategoryAsync (categoryGuid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3582,11 +3582,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryTerm">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryTerm (string termGuid, Azure.RequestOptions options, bool? includeTermHierarchy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryTerm(string termGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTerm(System.String,Azure.RequestOptions,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTerm (termGuid As String, options As RequestOptions, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryTerm : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; Azure.Response&#xA;override this.GetGlossaryTerm : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryTerm (termGuid, options, includeTermHierarchy)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryTerm (string termGuid, bool? includeTermHierarchy = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryTerm(string termGuid, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTerm(System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTerm (termGuid As String, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryTerm : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaryTerm : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryTerm (termGuid, includeTermHierarchy, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3597,13 +3597,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="termGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="termGuid"> The globally unique identifier for glossary term. </param>
-        <param name="options"> The request options. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
+        <param name="options"> The request options. </param>
         <summary> Get a specific glossary term by its GUID. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3720,11 +3720,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryTermAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryTermAsync (string termGuid, Azure.RequestOptions options, bool? includeTermHierarchy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryTermAsync(string termGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermAsync (termGuid As String, options As RequestOptions, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryTermAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryTermAsync (termGuid, options, includeTermHierarchy)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryTermAsync (string termGuid, bool? includeTermHierarchy = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryTermAsync(string termGuid, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermAsync(System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermAsync (termGuid As String, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermAsync : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryTermAsync : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryTermAsync (termGuid, includeTermHierarchy, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3735,13 +3735,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="termGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="termGuid"> The globally unique identifier for glossary term. </param>
-        <param name="options"> The request options. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
+        <param name="options"> The request options. </param>
         <summary> Get a specific glossary term by its GUID. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3858,11 +3858,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryTermHeaders">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryTermHeaders (string glossaryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryTermHeaders(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermHeaders(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermHeaders (glossaryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermHeaders : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetGlossaryTermHeaders : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryTermHeaders (glossaryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryTermHeaders (string glossaryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryTermHeaders(string glossaryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermHeaders(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermHeaders (glossaryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermHeaders : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaryTermHeaders : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryTermHeaders (glossaryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3873,17 +3873,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get term headers belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3911,11 +3911,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryTermHeadersAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryTermHeadersAsync (string glossaryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryTermHeadersAsync(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermHeadersAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermHeadersAsync (glossaryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermHeadersAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryTermHeadersAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryTermHeadersAsync (glossaryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryTermHeadersAsync (string glossaryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryTermHeadersAsync(string glossaryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermHeadersAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermHeadersAsync (glossaryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermHeadersAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryTermHeadersAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryTermHeadersAsync (glossaryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3926,17 +3926,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get term headers belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -3964,11 +3964,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryTerms">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryTerms (string glossaryGuid, Azure.RequestOptions options, bool? includeTermHierarchy = default, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryTerms(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTerms(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTerms (glossaryGuid As String, options As RequestOptions, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryTerms : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetGlossaryTerms : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryTerms (glossaryGuid, options, includeTermHierarchy, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetGlossaryTerms (string glossaryGuid, bool? includeTermHierarchy = default, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetGlossaryTerms(string glossaryGuid, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTerms(System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTerms (glossaryGuid As String, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryTerms : string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetGlossaryTerms : string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetGlossaryTerms (glossaryGuid, includeTermHierarchy, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -3979,19 +3979,19 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get terms belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4108,11 +4108,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetGlossaryTermsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryTermsAsync (string glossaryGuid, Azure.RequestOptions options, bool? includeTermHierarchy = default, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryTermsAsync(string glossaryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermsAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermsAsync (glossaryGuid As String, options As RequestOptions, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermsAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryTermsAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryTermsAsync (glossaryGuid, options, includeTermHierarchy, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetGlossaryTermsAsync (string glossaryGuid, bool? includeTermHierarchy = default, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetGlossaryTermsAsync(string glossaryGuid, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetGlossaryTermsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlossaryTermsAsync (glossaryGuid As String, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetGlossaryTermsAsync : string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetGlossaryTermsAsync : string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetGlossaryTermsAsync (glossaryGuid, includeTermHierarchy, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4123,19 +4123,19 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryGuid"> The globally unique identifier for glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get terms belonging to a specific glossary. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4252,10 +4252,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetImportCsvOperationStatus">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetImportCsvOperationStatus (string operationGuid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetImportCsvOperationStatus (string operationGuid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetImportCsvOperationStatus(string operationGuid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetImportCsvOperationStatus(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImportCsvOperationStatus (operationGuid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImportCsvOperationStatus (operationGuid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetImportCsvOperationStatus : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetImportCsvOperationStatus : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetImportCsvOperationStatus (operationGuid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4303,10 +4303,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetImportCsvOperationStatusAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetImportCsvOperationStatusAsync (string operationGuid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetImportCsvOperationStatusAsync (string operationGuid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetImportCsvOperationStatusAsync(string operationGuid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetImportCsvOperationStatusAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImportCsvOperationStatusAsync (operationGuid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImportCsvOperationStatusAsync (operationGuid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetImportCsvOperationStatusAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetImportCsvOperationStatusAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetImportCsvOperationStatusAsync (operationGuid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4354,11 +4354,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelatedCategories">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelatedCategories (string categoryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRelatedCategories(string categoryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedCategories(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedCategories (categoryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetRelatedCategories : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetRelatedCategories : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetRelatedCategories (categoryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelatedCategories (string categoryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRelatedCategories(string categoryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedCategories(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedCategories (categoryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetRelatedCategories : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetRelatedCategories : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetRelatedCategories (categoryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4369,17 +4369,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="categoryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="categoryGuid"> The globally unique identifier of the category. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all related categories (parent and children). Limit, offset, and sort parameters are currently not being enabled and won't work even they are passed. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4404,11 +4404,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelatedCategoriesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelatedCategoriesAsync (string categoryGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetRelatedCategoriesAsync(string categoryGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedCategoriesAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedCategoriesAsync (categoryGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetRelatedCategoriesAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetRelatedCategoriesAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetRelatedCategoriesAsync (categoryGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelatedCategoriesAsync (string categoryGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetRelatedCategoriesAsync(string categoryGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedCategoriesAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedCategoriesAsync (categoryGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetRelatedCategoriesAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetRelatedCategoriesAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetRelatedCategoriesAsync (categoryGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4419,17 +4419,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="categoryGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="categoryGuid"> The globally unique identifier of the category. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all related categories (parent and children). Limit, offset, and sort parameters are currently not being enabled and won't work even they are passed. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4454,11 +4454,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelatedTerms">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelatedTerms (string termGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRelatedTerms(string termGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedTerms(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedTerms (termGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetRelatedTerms : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response&#xA;override this.GetRelatedTerms : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.Response" Usage="purviewGlossaries.GetRelatedTerms (termGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelatedTerms (string termGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRelatedTerms(string termGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedTerms(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedTerms (termGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetRelatedTerms : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetRelatedTerms : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetRelatedTerms (termGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4469,17 +4469,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="termGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="termGuid"> The globally unique identifier for glossary term. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all related terms for a specific term by its GUID. Limit, offset, and sort parameters are currently not being enabled and won't work even they are passed. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4507,11 +4507,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelatedTermsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelatedTermsAsync (string termGuid, Azure.RequestOptions options, int? limit = default, int? offset = default, string sort = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetRelatedTermsAsync(string termGuid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedTermsAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedTermsAsync (termGuid As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetRelatedTermsAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetRelatedTermsAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetRelatedTermsAsync (termGuid, options, limit, offset, sort)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelatedTermsAsync (string termGuid, int? limit = default, int? offset = default, string sort = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetRelatedTermsAsync(string termGuid, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, string sort, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetRelatedTermsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedTermsAsync (termGuid As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional sort As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetRelatedTermsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetRelatedTermsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetRelatedTermsAsync (termGuid, limit, offset, sort, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4522,17 +4522,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="termGuid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="sort" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="termGuid"> The globally unique identifier for glossary term. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="sort"> The sort order, ASC (default) or DESC. </param>
+        <param name="options"> The request options. </param>
         <summary> Get all related terms for a specific term by its GUID. Limit, offset, and sort parameters are currently not being enabled and won't work even they are passed. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4560,11 +4560,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTermsByGlossaryName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTermsByGlossaryName (string glossaryName, Azure.RequestOptions options, int? limit = default, int? offset = default, bool? includeTermHierarchy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTermsByGlossaryName(string glossaryName, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetTermsByGlossaryName(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermsByGlossaryName (glossaryName As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetTermsByGlossaryName : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; -&gt; Azure.Response&#xA;override this.GetTermsByGlossaryName : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; -&gt; Azure.Response" Usage="purviewGlossaries.GetTermsByGlossaryName (glossaryName, options, limit, offset, includeTermHierarchy)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTermsByGlossaryName (string glossaryName, int? limit = default, int? offset = default, bool? includeTermHierarchy = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTermsByGlossaryName(string glossaryName, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetTermsByGlossaryName(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermsByGlossaryName (glossaryName As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetTermsByGlossaryName : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTermsByGlossaryName : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewGlossaries.GetTermsByGlossaryName (glossaryName, limit, offset, includeTermHierarchy, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4575,17 +4575,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryName" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryName"> The name of the glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
+        <param name="options"> The request options. </param>
         <summary> Get terms by glossary name. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -4702,11 +4702,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTermsByGlossaryNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTermsByGlossaryNameAsync (string glossaryName, Azure.RequestOptions options, int? limit = default, int? offset = default, bool? includeTermHierarchy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTermsByGlossaryNameAsync(string glossaryName, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetTermsByGlossaryNameAsync(System.String,Azure.RequestOptions,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermsByGlossaryNameAsync (glossaryName As String, options As RequestOptions, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetTermsByGlossaryNameAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTermsByGlossaryNameAsync : string * Azure.RequestOptions * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetTermsByGlossaryNameAsync (glossaryName, options, limit, offset, includeTermHierarchy)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTermsByGlossaryNameAsync (string glossaryName, int? limit = default, int? offset = default, bool? includeTermHierarchy = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTermsByGlossaryNameAsync(string glossaryName, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;int32&gt; offset, valuetype System.Nullable`1&lt;bool&gt; includeTermHierarchy, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewGlossaries.GetTermsByGlossaryNameAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermsByGlossaryNameAsync (glossaryName As String, Optional limit As Nullable(Of Integer) = Nothing, Optional offset As Nullable(Of Integer) = Nothing, Optional includeTermHierarchy As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetTermsByGlossaryNameAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTermsByGlossaryNameAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewGlossaries.GetTermsByGlossaryNameAsync (glossaryName, limit, offset, includeTermHierarchy, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -4717,17 +4717,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="glossaryName" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="offset" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="includeTermHierarchy" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="glossaryName"> The name of the glossary. </param>
-        <param name="options"> The request options. </param>
         <param name="limit"> The page size - by default there is no paging. </param>
         <param name="offset"> The offset for pagination purpose. </param>
         <param name="includeTermHierarchy"> Whether include term hierarchy. </param>
+        <param name="options"> The request options. </param>
         <summary> Get terms by glossary name. </summary>
         <returns>To be added.</returns>
         <remarks>

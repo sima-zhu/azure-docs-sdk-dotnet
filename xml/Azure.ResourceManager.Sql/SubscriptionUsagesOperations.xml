@@ -1,0 +1,149 @@
+<Type Name="SubscriptionUsagesOperations" FullName="Azure.ResourceManager.Sql.SubscriptionUsagesOperations">
+  <TypeSignature Language="C#" Value="public class SubscriptionUsagesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubscriptionUsagesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.SubscriptionUsagesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class SubscriptionUsagesOperations" />
+  <TypeSignature Language="F#" Value="type SubscriptionUsagesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The SubscriptionUsages service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SubscriptionUsagesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SubscriptionUsagesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of SubscriptionUsagesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt; Get (string locationName, string usageName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt; Get(string locationName, string usageName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SubscriptionUsagesOperations.Get(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (locationName As String, usageName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SubscriptionUsage)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&#xA;override this.Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;" Usage="subscriptionUsagesOperations.Get (locationName, usageName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="usageName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="usageName"> Name of usage metric to return. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a subscription usage metric. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&gt; GetAsync (string locationName, string usageName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&gt; GetAsync(string locationName, string usageName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SubscriptionUsagesOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (locationName As String, usageName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SubscriptionUsage))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&gt;&#xA;override this.GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&gt;" Usage="subscriptionUsagesOperations.GetAsync (locationName, usageName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="usageName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="usageName"> Name of usage metric to return. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a subscription usage metric. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByLocation">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt; ListByLocation (string locationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt; ListByLocation(string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SubscriptionUsagesOperations.ListByLocation(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByLocation (locationName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SubscriptionUsage)" />
+      <MemberSignature Language="F#" Value="abstract member ListByLocation : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&#xA;override this.ListByLocation : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;" Usage="subscriptionUsagesOperations.ListByLocation (locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all subscription usage metrics in a given location. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByLocationAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt; ListByLocationAsync (string locationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt; ListByLocationAsync(string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SubscriptionUsagesOperations.ListByLocationAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByLocationAsync (locationName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SubscriptionUsage)" />
+      <MemberSignature Language="F#" Value="abstract member ListByLocationAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;&#xA;override this.ListByLocationAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;" Usage="subscriptionUsagesOperations.ListByLocationAsync (locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SubscriptionUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets all subscription usage metrics in a given location. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

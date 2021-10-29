@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The exception that is thrown when the lock on the Session has expired.  Callers should receive the Session again.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

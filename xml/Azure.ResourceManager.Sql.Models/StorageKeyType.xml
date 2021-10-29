@@ -1,0 +1,58 @@
+<Type Name="StorageKeyType" FullName="Azure.ResourceManager.Sql.Models.StorageKeyType">
+  <TypeSignature Language="C#" Value="public enum StorageKeyType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StorageKeyType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.StorageKeyType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StorageKeyType" />
+  <TypeSignature Language="F#" Value="type StorageKeyType = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary> The type of the storage key to use. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SharedAccessKey">
+      <MemberSignature Language="C#" Value="SharedAccessKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.StorageKeyType SharedAccessKey = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.StorageKeyType.SharedAccessKey" />
+      <MemberSignature Language="VB.NET" Value="SharedAccessKey" />
+      <MemberSignature Language="F#" Value="SharedAccessKey = 1" Usage="Azure.ResourceManager.Sql.Models.StorageKeyType.SharedAccessKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.StorageKeyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> SharedAccessKey. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageAccessKey">
+      <MemberSignature Language="C#" Value="StorageAccessKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.StorageKeyType StorageAccessKey = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.StorageKeyType.StorageAccessKey" />
+      <MemberSignature Language="VB.NET" Value="StorageAccessKey" />
+      <MemberSignature Language="F#" Value="StorageAccessKey = 0" Usage="Azure.ResourceManager.Sql.Models.StorageKeyType.StorageAccessKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.StorageKeyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary> StorageAccessKey. </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

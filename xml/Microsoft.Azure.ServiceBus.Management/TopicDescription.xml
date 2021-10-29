@@ -17,7 +17,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the metadata description of the topic.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,8 +38,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">Path of the topic relative to the namespace base address.</param>
+        <summary>
+            Initializes a new instance of TopicDescription class with the specified relative path.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +60,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.Management.AuthorizationRules</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The <see cref="P:Microsoft.Azure.ServiceBus.Management.TopicDescription.AuthorizationRules" /> on the topic to control user access at entity level.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,9 +82,11 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The <see cref="T:System.TimeSpan" /> idle interval after which the topic is automatically deleted.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The minimum duration is 5 minutes. Default value is <see cref="F:System.TimeSpan.MaxValue" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultMessageTimeToLive">
@@ -96,9 +104,16 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The default time to live value for the messages. This is the duration after which the message expires, starting from when
+            the message is sent to Service Bus. </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This is the default value used when <see cref="P:Microsoft.Azure.ServiceBus.Message.TimeToLive" /> is not set on a
+             message itself. Messages older than their TimeToLive value will expire and no longer be retained in the message store.
+             Subscribers will be unable to receive expired messages.
+             Default value is <see cref="F:System.TimeSpan.MaxValue" />.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="DuplicateDetectionHistoryTimeWindow">
@@ -116,9 +131,13 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The <see cref="T:System.TimeSpan" /> duration of duplicate detection history that is maintained by the service.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The default value is 1 minute. Max value is 7 days and minimum is 20 seconds.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableBatchedOperations">
@@ -136,9 +155,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates whether server-side batched operations are enabled.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to true.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnablePartitioning">
@@ -156,9 +177,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates whether the topic is to be partitioned across multiple message brokers.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to false.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -248,9 +271,11 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The maximum size of the topic in megabytes, which is the size of memory allocated for the topic.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Default value is 1024.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -320,9 +345,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Path of the topic relative to the namespace base address.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Max length is 260 chars. Cannot start or end with a slash.
+            Cannot have restricted characters: '@','?','#','*'</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresDuplicateDetection">
@@ -340,9 +368,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            This value indicates if the topic requires guard against duplicate messages. If true, duplicate messages having same
+            <see cref="P:Microsoft.Azure.ServiceBus.Message.MessageId" /> and sent to topic within duration of <see cref="P:Microsoft.Azure.ServiceBus.Management.TopicDescription.DuplicateDetectionHistoryTimeWindow" />
+            will be discarded.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to false.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -360,9 +392,11 @@
         <ReturnType>Microsoft.Azure.ServiceBus.Management.EntityStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The current status of the topic (Enabled / Disabled).
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>When an entity is disabled, that entity cannot send or receive messages.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportOrdering">
@@ -380,9 +414,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Defines whether ordering needs to be maintained. If true, messages sent to topic will be
+            forwarded to the subscription in order.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to false.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserMetadata">
@@ -400,9 +437,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Custom metdata that user can associate with the description.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Cannot be null. Max length is 1024 chars.</remarks>
       </Docs>
     </Member>
   </Members>

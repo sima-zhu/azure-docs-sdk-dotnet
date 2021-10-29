@@ -119,6 +119,8 @@
         <summary> Lists all private endpoint connections for a configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByConfigurationStoreAsync">
@@ -147,6 +149,8 @@
         <summary> Lists all private endpoint connections for a configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartCreateOrUpdate">
@@ -179,6 +183,8 @@
         <summary> Update the state of the specified private endpoint connection associated with the configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, <paramref name="privateEndpointConnectionName" />, or <paramref name="privateEndpointConnection" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartCreateOrUpdateAsync">
@@ -211,6 +217,8 @@
         <summary> Update the state of the specified private endpoint connection associated with the configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, <paramref name="privateEndpointConnectionName" />, or <paramref name="privateEndpointConnection" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDelete">
@@ -241,6 +249,8 @@
         <summary> Deletes a private endpoint connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, or <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDeleteAsync">
@@ -271,6 +281,8 @@
         <summary> Deletes a private endpoint connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, or <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

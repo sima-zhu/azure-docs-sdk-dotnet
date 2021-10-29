@@ -266,11 +266,11 @@
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Get (string guid, Azure.RequestOptions options, bool? extendedInfo = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Get(string guid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; extendedInfo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewRelationships.Get(System.String,Azure.RequestOptions,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (guid As String, options As RequestOptions, Optional extendedInfo As Nullable(Of Boolean) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member Get : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; Azure.Response&#xA;override this.Get : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; Azure.Response" Usage="purviewRelationships.Get (guid, options, extendedInfo)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Get (string guid, bool? extendedInfo = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Get(string guid, valuetype System.Nullable`1&lt;bool&gt; extendedInfo, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewRelationships.Get(System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (guid As String, Optional extendedInfo As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Get : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewRelationships.Get (guid, extendedInfo, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -281,13 +281,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="guid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="extendedInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="guid"> The globally unique identifier of the relationship. </param>
-        <param name="options"> The request options. </param>
         <param name="extendedInfo"> Limits whether includes extended information. </param>
+        <param name="options"> The request options. </param>
         <summary> Get relationship information between entities by its GUID. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -329,11 +329,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetAsync (string guid, Azure.RequestOptions options, bool? extendedInfo = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetAsync(string guid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; extendedInfo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewRelationships.GetAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (guid As String, options As RequestOptions, Optional extendedInfo As Nullable(Of Boolean) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewRelationships.GetAsync (guid, options, extendedInfo)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetAsync (string guid, bool? extendedInfo = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetAsync(string guid, valuetype System.Nullable`1&lt;bool&gt; extendedInfo, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewRelationships.GetAsync(System.String,System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (guid As String, Optional extendedInfo As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetAsync : string * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewRelationships.GetAsync (guid, extendedInfo, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -344,13 +344,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="guid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="extendedInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="guid"> The globally unique identifier of the relationship. </param>
-        <param name="options"> The request options. </param>
         <param name="extendedInfo"> Limits whether includes extended information. </param>
+        <param name="options"> The request options. </param>
         <summary> Get relationship information between entities by its GUID. </summary>
         <returns>To be added.</returns>
         <remarks>

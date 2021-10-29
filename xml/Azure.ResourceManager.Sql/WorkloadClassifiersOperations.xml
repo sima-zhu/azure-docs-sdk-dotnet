@@ -1,0 +1,321 @@
+<Type Name="WorkloadClassifiersOperations" FullName="Azure.ResourceManager.Sql.WorkloadClassifiersOperations">
+  <TypeSignature Language="C#" Value="public class WorkloadClassifiersOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkloadClassifiersOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.WorkloadClassifiersOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkloadClassifiersOperations" />
+  <TypeSignature Language="F#" Value="type WorkloadClassifiersOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The WorkloadClassifiers service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkloadClassifiersOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of WorkloadClassifiersOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt; Get (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt; Get(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.Get(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, workloadClassifierName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of WorkloadClassifier)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&#xA;override this.Get : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;" Usage="workloadClassifiersOperations.Get (resourceGroupName, serverName, databaseName, workloadGroupName, workloadClassifierName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="workloadClassifierName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifier from. </param>
+        <param name="workloadClassifierName"> The name of the workload classifier. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a workload classifier. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&gt; GetAsync (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&gt; GetAsync(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.GetAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, workloadClassifierName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of WorkloadClassifier))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&gt;&#xA;override this.GetAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&gt;" Usage="workloadClassifiersOperations.GetAsync (resourceGroupName, serverName, databaseName, workloadGroupName, workloadClassifierName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="workloadClassifierName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifier from. </param>
+        <param name="workloadClassifierName"> The name of the workload classifier. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a workload classifier. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByWorkloadGroup">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt; ListByWorkloadGroup (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt; ListByWorkloadGroup(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.ListByWorkloadGroup(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByWorkloadGroup (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of WorkloadClassifier)" />
+      <MemberSignature Language="F#" Value="abstract member ListByWorkloadGroup : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&#xA;override this.ListByWorkloadGroup : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;" Usage="workloadClassifiersOperations.ListByWorkloadGroup (resourceGroupName, serverName, databaseName, workloadGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifiers from. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the list of workload classifiers for a workload group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="workloadGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByWorkloadGroupAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt; ListByWorkloadGroupAsync (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt; ListByWorkloadGroupAsync(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.ListByWorkloadGroupAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByWorkloadGroupAsync (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of WorkloadClassifier)" />
+      <MemberSignature Language="F#" Value="abstract member ListByWorkloadGroupAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;&#xA;override this.ListByWorkloadGroupAsync : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;" Usage="workloadClassifiersOperations.ListByWorkloadGroupAsync (resourceGroupName, serverName, databaseName, workloadGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.WorkloadClassifier&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifiers from. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets the list of workload classifiers for a workload group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="workloadGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, Azure.ResourceManager.Sql.Models.WorkloadClassifier parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, class Azure.ResourceManager.Sql.Models.WorkloadClassifier parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.StartCreateOrUpdate(System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.WorkloadClassifier,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, workloadClassifierName As String, parameters As WorkloadClassifier, Optional cancellationToken As CancellationToken = Nothing) As WorkloadClassifiersCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * string * string * Azure.ResourceManager.Sql.Models.WorkloadClassifier * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * string * string * Azure.ResourceManager.Sql.Models.WorkloadClassifier * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation" Usage="workloadClassifiersOperations.StartCreateOrUpdate (resourceGroupName, serverName, databaseName, workloadGroupName, workloadClassifierName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="workloadClassifierName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.WorkloadClassifier" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifier from. </param>
+        <param name="workloadClassifierName"> The name of the workload classifier to create/update. </param>
+        <param name="parameters"> The properties of the workload classifier. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a workload classifier. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="workloadGroupName" />, <paramref name="workloadClassifierName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, Azure.ResourceManager.Sql.Models.WorkloadClassifier parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, class Azure.ResourceManager.Sql.Models.WorkloadClassifier parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.WorkloadClassifier,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, workloadClassifierName As String, parameters As WorkloadClassifier, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkloadClassifiersCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * string * string * Azure.ResourceManager.Sql.Models.WorkloadClassifier * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * string * string * Azure.ResourceManager.Sql.Models.WorkloadClassifier * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation&gt;" Usage="workloadClassifiersOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, databaseName, workloadGroupName, workloadClassifierName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="workloadClassifierName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.WorkloadClassifier" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifier from. </param>
+        <param name="workloadClassifierName"> The name of the workload classifier to create/update. </param>
+        <param name="parameters"> The properties of the workload classifier. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a workload classifier. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="workloadGroupName" />, <paramref name="workloadClassifierName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation StartDelete (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation StartDelete(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.StartDelete(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, workloadClassifierName As String, Optional cancellationToken As CancellationToken = Nothing) As WorkloadClassifiersDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation&#xA;override this.StartDelete : string * string * string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation" Usage="workloadClassifiersOperations.StartDelete (resourceGroupName, serverName, databaseName, workloadGroupName, workloadClassifierName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="workloadClassifierName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifier from. </param>
+        <param name="workloadClassifierName"> The name of the workload classifier to delete. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a workload classifier. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="workloadGroupName" />, or <paramref name="workloadClassifierName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string serverName, string databaseName, string workloadGroupName, string workloadClassifierName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.WorkloadClassifiersOperations.StartDeleteAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, serverName As String, databaseName As String, workloadGroupName As String, workloadClassifierName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkloadClassifiersDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation&gt;" Usage="workloadClassifiersOperations.StartDeleteAsync (resourceGroupName, serverName, databaseName, workloadGroupName, workloadClassifierName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.WorkloadClassifiersDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="workloadGroupName" Type="System.String" />
+        <Parameter Name="workloadClassifierName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="workloadGroupName"> The name of the workload group from which to receive the classifier from. </param>
+        <param name="workloadClassifierName"> The name of the workload classifier to delete. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a workload classifier. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, <paramref name="workloadGroupName" />, or <paramref name="workloadClassifierName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

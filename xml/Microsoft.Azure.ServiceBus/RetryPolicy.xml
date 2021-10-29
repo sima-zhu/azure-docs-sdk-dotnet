@@ -13,7 +13,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an abstraction for retrying messaging operations. Users should not
+            implement this class, and instead should use one of the provided implementations.
+            <remarks>RetryPolicy will not be applied when an ambient transaction is found.</remarks></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +51,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.RetryPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the default retry policy, <see cref="T:Microsoft.Azure.ServiceBus.RetryExponential" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,8 +77,10 @@
       </Parameters>
       <Docs>
         <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Determines whether or not the exception can be retried.
+            </summary>
+        <returns>A bool indicating whether or not the operation can be retried.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +99,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Determines whether or not the server returned a busy error.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +121,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.RetryPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns a <see cref="P:Microsoft.Azure.ServiceBus.RetryPolicy.NoRetry" /> retry policy.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,9 +175,11 @@
         <Parameter Name="operationTimeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
-        <param name="operationTimeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operation">A <see cref="T:System.Func`2" /> to be executed.</param>
+        <param name="operationTimeout">The timeout for the entire operation.</param>
+        <summary>
+            Runs a <see cref="T:System.Func`2" />, using the current RetryPolicy.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,7 +199,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the exception message when a server busy error is returned.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

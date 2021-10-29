@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The exception that is thrown when the lock on the message is lost.  Callers should call Receive and process the message again.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

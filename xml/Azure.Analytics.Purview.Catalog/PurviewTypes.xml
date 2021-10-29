@@ -1528,11 +1528,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetAllTypeDefinitions">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetAllTypeDefinitions (Azure.RequestOptions options, bool? includeTermTemplate = default, string type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetAllTypeDefinitions(class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetAllTypeDefinitions(Azure.RequestOptions,System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllTypeDefinitions (options As RequestOptions, Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetAllTypeDefinitions : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; Azure.Response&#xA;override this.GetAllTypeDefinitions : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; Azure.Response" Usage="purviewTypes.GetAllTypeDefinitions (options, includeTermTemplate, type)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetAllTypeDefinitions (bool? includeTermTemplate = default, string type = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetAllTypeDefinitions(valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetAllTypeDefinitions(System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllTypeDefinitions (Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetAllTypeDefinitions : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetAllTypeDefinitions : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetAllTypeDefinitions (includeTermTemplate, type, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -1542,17 +1542,17 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermTemplate" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="includeTermTemplate">
             Whether include termtemplatedef when return all typedefs.
             This is always true when search filter type=term_template
             </param>
         <param name="type"> Typedef name as search filter when get typedefs. Allowed values: "enum" | "entity" | "classification" | "relationship" | "struct" | "term_template". </param>
+        <param name="options"> The request options. </param>
         <summary> Get all type definitions in Atlas in bulk. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1779,11 +1779,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetAllTypeDefinitionsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetAllTypeDefinitionsAsync (Azure.RequestOptions options, bool? includeTermTemplate = default, string type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetAllTypeDefinitionsAsync(class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetAllTypeDefinitionsAsync(Azure.RequestOptions,System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllTypeDefinitionsAsync (options As RequestOptions, Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetAllTypeDefinitionsAsync : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetAllTypeDefinitionsAsync : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetAllTypeDefinitionsAsync (options, includeTermTemplate, type)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetAllTypeDefinitionsAsync (bool? includeTermTemplate = default, string type = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetAllTypeDefinitionsAsync(valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetAllTypeDefinitionsAsync(System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllTypeDefinitionsAsync (Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetAllTypeDefinitionsAsync : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetAllTypeDefinitionsAsync : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetAllTypeDefinitionsAsync (includeTermTemplate, type, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -1793,17 +1793,17 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermTemplate" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="includeTermTemplate">
             Whether include termtemplatedef when return all typedefs.
             This is always true when search filter type=term_template
             </param>
         <param name="type"> Typedef name as search filter when get typedefs. Allowed values: "enum" | "entity" | "classification" | "relationship" | "struct" | "term_template". </param>
+        <param name="options"> The request options. </param>
         <summary> Get all type definitions in Atlas in bulk. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2030,10 +2030,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationDefByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassificationDefByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassificationDefByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetClassificationDefByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetClassificationDefByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetClassificationDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetClassificationDefByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2140,10 +2140,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationDefByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationDefByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationDefByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetClassificationDefByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetClassificationDefByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetClassificationDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetClassificationDefByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2250,10 +2250,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationDefByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassificationDefByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassificationDefByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetClassificationDefByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetClassificationDefByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationDefByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetClassificationDefByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetClassificationDefByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2360,10 +2360,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationDefByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationDefByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationDefByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetClassificationDefByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetClassificationDefByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationDefByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetClassificationDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetClassificationDefByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2470,10 +2470,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntityDefinitionByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntityDefinitionByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntityDefinitionByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEntityDefinitionByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEntityDefinitionByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetEntityDefinitionByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetEntityDefinitionByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetEntityDefinitionByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2598,10 +2598,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntityDefinitionByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntityDefinitionByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntityDefinitionByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEntityDefinitionByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEntityDefinitionByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetEntityDefinitionByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEntityDefinitionByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetEntityDefinitionByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2726,10 +2726,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntityDefinitionByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntityDefinitionByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntityDefinitionByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEntityDefinitionByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEntityDefinitionByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetEntityDefinitionByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetEntityDefinitionByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetEntityDefinitionByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2854,10 +2854,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntityDefinitionByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntityDefinitionByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntityDefinitionByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEntityDefinitionByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEntityDefinitionByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityDefinitionByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetEntityDefinitionByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEntityDefinitionByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetEntityDefinitionByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2982,10 +2982,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEnumDefByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEnumDefByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEnumDefByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEnumDefByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEnumDefByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetEnumDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetEnumDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetEnumDefByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3075,10 +3075,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEnumDefByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEnumDefByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEnumDefByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEnumDefByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEnumDefByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEnumDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetEnumDefByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3168,10 +3168,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEnumDefByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEnumDefByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEnumDefByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEnumDefByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEnumDefByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetEnumDefByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetEnumDefByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetEnumDefByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3261,10 +3261,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEnumDefByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEnumDefByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEnumDefByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEnumDefByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetEnumDefByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumDefByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEnumDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetEnumDefByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3354,10 +3354,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipDefByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelationshipDefByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelationshipDefByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRelationshipDefByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetRelationshipDefByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetRelationshipDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetRelationshipDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetRelationshipDefByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3472,10 +3472,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipDefByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelationshipDefByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelationshipDefByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetRelationshipDefByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetRelationshipDefByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetRelationshipDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetRelationshipDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetRelationshipDefByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3590,10 +3590,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipDefByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelationshipDefByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetRelationshipDefByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRelationshipDefByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetRelationshipDefByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetRelationshipDefByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetRelationshipDefByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetRelationshipDefByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3708,10 +3708,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipDefByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelationshipDefByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetRelationshipDefByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetRelationshipDefByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetRelationshipDefByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelationshipDefByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetRelationshipDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetRelationshipDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetRelationshipDefByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3826,10 +3826,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStructDefByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetStructDefByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetStructDefByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetStructDefByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetStructDefByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetStructDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetStructDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetStructDefByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3933,10 +3933,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStructDefByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetStructDefByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetStructDefByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetStructDefByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetStructDefByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetStructDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetStructDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetStructDefByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4040,10 +4040,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStructDefByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetStructDefByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetStructDefByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetStructDefByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetStructDefByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetStructDefByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetStructDefByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetStructDefByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4147,10 +4147,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStructDefByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetStructDefByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetStructDefByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetStructDefByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetStructDefByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStructDefByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetStructDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetStructDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetStructDefByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4254,10 +4254,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTermTemplateDefByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTermTemplateDefByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTermTemplateDefByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTermTemplateDefByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTermTemplateDefByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetTermTemplateDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTermTemplateDefByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetTermTemplateDefByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4361,10 +4361,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTermTemplateDefByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTermTemplateDefByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTermTemplateDefByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTermTemplateDefByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTermTemplateDefByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetTermTemplateDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTermTemplateDefByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetTermTemplateDefByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4468,10 +4468,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTermTemplateDefByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTermTemplateDefByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTermTemplateDefByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTermTemplateDefByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTermTemplateDefByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetTermTemplateDefByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTermTemplateDefByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetTermTemplateDefByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4575,10 +4575,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTermTemplateDefByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTermTemplateDefByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTermTemplateDefByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTermTemplateDefByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTermTemplateDefByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTermTemplateDefByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetTermTemplateDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTermTemplateDefByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetTermTemplateDefByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4682,10 +4682,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTypeDefinitionByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTypeDefinitionByGuid (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTypeDefinitionByGuid (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTypeDefinitionByGuid(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionByGuid(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByGuid (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByGuid (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionByGuid : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTypeDefinitionByGuid : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetTypeDefinitionByGuid (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4830,10 +4830,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTypeDefinitionByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTypeDefinitionByGuidAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTypeDefinitionByGuidAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTypeDefinitionByGuidAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionByGuidAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByGuidAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByGuidAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTypeDefinitionByGuidAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetTypeDefinitionByGuidAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4978,10 +4978,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTypeDefinitionByName">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTypeDefinitionByName (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTypeDefinitionByName (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTypeDefinitionByName(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionByName(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByName (name As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByName (name As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionByName : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTypeDefinitionByName : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetTypeDefinitionByName (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5126,10 +5126,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTypeDefinitionByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTypeDefinitionByNameAsync (string name, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTypeDefinitionByNameAsync (string name, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTypeDefinitionByNameAsync(string name, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionByNameAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByNameAsync (name As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionByNameAsync (name As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTypeDefinitionByNameAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetTypeDefinitionByNameAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5274,11 +5274,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTypeDefinitionHeaders">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTypeDefinitionHeaders (Azure.RequestOptions options, bool? includeTermTemplate = default, string type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTypeDefinitionHeaders(class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionHeaders(Azure.RequestOptions,System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionHeaders (options As RequestOptions, Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionHeaders : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; Azure.Response&#xA;override this.GetTypeDefinitionHeaders : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; Azure.Response" Usage="purviewTypes.GetTypeDefinitionHeaders (options, includeTermTemplate, type)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTypeDefinitionHeaders (bool? includeTermTemplate = default, string type = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTypeDefinitionHeaders(valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionHeaders(System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionHeaders (Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionHeaders : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTypeDefinitionHeaders : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewTypes.GetTypeDefinitionHeaders (includeTermTemplate, type, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -5288,17 +5288,17 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermTemplate" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="includeTermTemplate">
             Whether include termtemplatedef when return all typedefs.
             This is always true when search filter type=term_template
             </param>
         <param name="type"> Typedef name as search filter when get typedefs. Allowed values: "enum" | "entity" | "classification" | "relationship" | "struct" | "term_template". </param>
+        <param name="options"> The request options. </param>
         <summary> List all type definitions returned as a list of minimal information header. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -5319,11 +5319,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTypeDefinitionHeadersAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTypeDefinitionHeadersAsync (Azure.RequestOptions options, bool? includeTermTemplate = default, string type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTypeDefinitionHeadersAsync(class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionHeadersAsync(Azure.RequestOptions,System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionHeadersAsync (options As RequestOptions, Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionHeadersAsync : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTypeDefinitionHeadersAsync : Azure.RequestOptions * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetTypeDefinitionHeadersAsync (options, includeTermTemplate, type)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTypeDefinitionHeadersAsync (bool? includeTermTemplate = default, string type = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTypeDefinitionHeadersAsync(valuetype System.Nullable`1&lt;bool&gt; includeTermTemplate, string type, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewTypes.GetTypeDefinitionHeadersAsync(System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDefinitionHeadersAsync (Optional includeTermTemplate As Nullable(Of Boolean) = Nothing, Optional type As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeDefinitionHeadersAsync : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTypeDefinitionHeadersAsync : Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewTypes.GetTypeDefinitionHeadersAsync (includeTermTemplate, type, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -5333,17 +5333,17 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="includeTermTemplate" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="includeTermTemplate">
             Whether include termtemplatedef when return all typedefs.
             This is always true when search filter type=term_template
             </param>
         <param name="type"> Typedef name as search filter when get typedefs. Allowed values: "enum" | "entity" | "classification" | "relationship" | "struct" | "term_template". </param>
+        <param name="options"> The request options. </param>
         <summary> List all type definitions returned as a list of minimal information header. </summary>
         <returns>To be added.</returns>
         <remarks>

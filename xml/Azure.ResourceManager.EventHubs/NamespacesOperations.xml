@@ -883,6 +883,8 @@
         <summary> Gets a list of authorization rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListAuthorizationRulesAsync">
@@ -911,6 +913,8 @@
         <summary> Gets a list of authorization rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroup">
@@ -937,6 +941,8 @@
         <summary> Lists the available Namespaces within a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroupAsync">
@@ -963,6 +969,8 @@
         <summary> Lists the available Namespaces within a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListIPFilterRules">
@@ -991,6 +999,8 @@
         <summary> Gets a list of IP Filter rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListIPFilterRulesAsync">
@@ -1019,6 +1029,8 @@
         <summary> Gets a list of IP Filter rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListKeys">
@@ -1107,6 +1119,8 @@
         <summary> Gets a list of VirtualNetwork rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListVirtualNetworkRulesAsync">
@@ -1135,6 +1149,8 @@
         <summary> Gets a list of VirtualNetwork rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RegenerateKeys">
@@ -1229,6 +1245,8 @@
         <summary> Creates or updates a namespace. Once created, this namespace's resource manifest is immutable. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartCreateOrUpdateAsync">
@@ -1259,6 +1277,8 @@
         <summary> Creates or updates a namespace. Once created, this namespace's resource manifest is immutable. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDelete">
@@ -1287,6 +1307,8 @@
         <summary> Deletes an existing namespace. This operation also removes all associated resources under the namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDeleteAsync">
@@ -1315,6 +1337,8 @@
         <summary> Deletes an existing namespace. This operation also removes all associated resources under the namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Update">
