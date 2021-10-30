@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.Models.NameAvailability&gt;</ReturnType>
@@ -69,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.Models.NameAvailability&gt;&gt;</ReturnType>
@@ -95,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;</ReturnType>
@@ -123,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;&gt;</ReturnType>
@@ -151,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.Models.LinkedNotificationHub&gt;</ReturnType>
@@ -181,6 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.Models.LinkedNotificationHub&gt;&gt;</ReturnType>
@@ -211,6 +219,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;</ReturnType>
@@ -239,6 +248,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;</ReturnType>
@@ -267,6 +277,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;</ReturnType>
@@ -291,6 +302,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;</ReturnType>
@@ -315,6 +327,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceKeys&gt;</ReturnType>
@@ -343,6 +356,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceKeys&gt;&gt;</ReturnType>
@@ -371,6 +385,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceKeys&gt;</ReturnType>
@@ -401,6 +416,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceKeys&gt;&gt;</ReturnType>
@@ -431,6 +447,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Communication.CommunicationServiceCreateOrUpdateOperation</ReturnType>
@@ -463,6 +480,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Communication.CommunicationServiceCreateOrUpdateOperation&gt;</ReturnType>
@@ -495,6 +513,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Communication.CommunicationServiceDeleteOperation</ReturnType>
@@ -525,6 +544,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Communication.CommunicationServiceDeleteOperation&gt;</ReturnType>
@@ -555,6 +575,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;</ReturnType>
@@ -585,6 +606,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Communication</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Communication.Models.CommunicationServiceResource&gt;&gt;</ReturnType>

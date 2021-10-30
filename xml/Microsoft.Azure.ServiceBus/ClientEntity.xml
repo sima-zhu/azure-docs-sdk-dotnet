@@ -17,7 +17,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Contract for all client entities with Open-Close/Abort state m/c
+            main-purpose: closeAll related entities
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,9 +63,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the ID to identify this client. This can be used to correlate logs and exceptions.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Every new client has a unique ID (in that process).</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseAsync">
@@ -84,7 +89,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Closes the Client. Closes the connections opened by it.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,8 +116,10 @@
       </Parameters>
       <Docs>
         <param name="clientTypeName">To be added.</param>
-        <param name="postfix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="postfix">Information that can be appended by the client.</param>
+        <summary>
+            Generates a new client id that can be used to identify a specific client in logs and error messages.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,7 +160,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns true if the client is closed or closing.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +206,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Duration after which individual operations will timeout.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,7 +228,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns true if connection is owned and false if connection is shared.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,7 +253,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the name of the entity.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +278,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a list of currently registered plugins for this client.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,8 +306,10 @@
         <Parameter Name="serviceBusPlugin" Type="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin" />
       </Parameters>
       <Docs>
-        <param name="serviceBusPlugin">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceBusPlugin">The <see cref="T:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin" /> to register.</param>
+        <summary>
+            Registers a <see cref="T:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin" /> to be used with this client.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,7 +328,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.RetryPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the <see cref="T:Microsoft.Azure.ServiceBus.RetryPolicy" /> defined on the client.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -330,7 +353,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.ServiceBusConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Connection object to the service bus namespace.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,7 +376,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Throw an OperationCanceledException if the object is Closing.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +403,10 @@
         <Parameter Name="serviceBusPluginName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceBusPluginName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceBusPluginName">The name <see cref="P:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.Name" /> to be unregistered</param>
+        <summary>
+            Unregisters a <see cref="T:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

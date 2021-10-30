@@ -64,10 +64,10 @@
       </Docs>
     </Member>
     <Member MemberName="CancelScan">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response CancelScan (string runId, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CancelScan (string runId, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CancelScan(string runId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.CancelScan(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CancelScan (runId As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CancelScan (runId As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member CancelScan : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CancelScan : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanClient.CancelScan (runId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -130,10 +130,10 @@
       </Docs>
     </Member>
     <Member MemberName="CancelScanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CancelScanAsync (string runId, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CancelScanAsync (string runId, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CancelScanAsync(string runId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.CancelScanAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CancelScanAsync (runId As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CancelScanAsync (runId As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member CancelScanAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CancelScanAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanClient.CancelScanAsync (runId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1170,10 +1170,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFilter">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetFilter (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetFilter (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetFilter(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetFilter(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilter (options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilter (Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetFilter : Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetFilter : Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanClient.GetFilter options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1221,10 +1221,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFilterAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetFilterAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetFilterAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetFilterAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetFilterAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilterAsync (options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilterAsync (Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetFilterAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetFilterAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanClient.GetFilterAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1272,10 +1272,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetProperties (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetProperties (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetProperties(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetProperties(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetProperties : Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetProperties : Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanClient.GetProperties options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1362,10 +1362,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetPropertiesAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetPropertiesAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetPropertiesAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetPropertiesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPropertiesAsync (options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPropertiesAsync (Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetPropertiesAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetPropertiesAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanClient.GetPropertiesAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1452,10 +1452,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRuns">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetRuns (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetRuns (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetRuns(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetRuns(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuns (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuns (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetRuns : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetRuns : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanClient.GetRuns options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1541,10 +1541,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRunsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetRunsAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetRunsAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetRunsAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetRunsAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRunsAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRunsAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetRunsAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetRunsAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanClient.GetRunsAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1630,10 +1630,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTrigger">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTrigger (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetTrigger (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetTrigger(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetTrigger(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTrigger (options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTrigger (Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetTrigger : Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetTrigger : Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanClient.GetTrigger options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1706,10 +1706,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTriggerAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTriggerAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetTriggerAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetTriggerAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.GetTriggerAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTriggerAsync (options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTriggerAsync (Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetTriggerAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetTriggerAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanClient.GetTriggerAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1802,11 +1802,11 @@
       </Docs>
     </Member>
     <Member MemberName="RunScan">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response RunScan (string runId, Azure.RequestOptions options, string scanLevel = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response RunScan(string runId, class Azure.RequestOptions options, string scanLevel) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.RunScan(System.String,Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunScan (runId As String, options As RequestOptions, Optional scanLevel As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member RunScan : string * Azure.RequestOptions * string -&gt; Azure.Response&#xA;override this.RunScan : string * Azure.RequestOptions * string -&gt; Azure.Response" Usage="purviewScanClient.RunScan (runId, options, scanLevel)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response RunScan (string runId, string scanLevel = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response RunScan(string runId, string scanLevel, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.RunScan(System.String,System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunScan (runId As String, Optional scanLevel As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member RunScan : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.RunScan : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanClient.RunScan (runId, scanLevel, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1817,13 +1817,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="runId" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="scanLevel" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="runId"> The String to use. </param>
-        <param name="options"> The request options. </param>
         <param name="scanLevel"> The ScanLevelType to use. Allowed values: "Full" | "Incremental". </param>
+        <param name="options"> The request options. </param>
         <summary> Runs the scan. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1870,11 +1870,11 @@
       </Docs>
     </Member>
     <Member MemberName="RunScanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; RunScanAsync (string runId, Azure.RequestOptions options, string scanLevel = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; RunScanAsync(string runId, class Azure.RequestOptions options, string scanLevel) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.RunScanAsync(System.String,Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunScanAsync (runId As String, options As RequestOptions, Optional scanLevel As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member RunScanAsync : string * Azure.RequestOptions * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.RunScanAsync : string * Azure.RequestOptions * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanClient.RunScanAsync (runId, options, scanLevel)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; RunScanAsync (string runId, string scanLevel = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; RunScanAsync(string runId, string scanLevel, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanClient.RunScanAsync(System.String,System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunScanAsync (runId As String, Optional scanLevel As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member RunScanAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.RunScanAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanClient.RunScanAsync (runId, scanLevel, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1885,13 +1885,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="runId" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="scanLevel" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="runId"> The String to use. </param>
-        <param name="options"> The request options. </param>
         <param name="scanLevel"> The ScanLevelType to use. Allowed values: "Full" | "Incremental". </param>
+        <param name="options"> The request options. </param>
         <summary> Runs the scan. </summary>
         <returns>To be added.</returns>
         <remarks>

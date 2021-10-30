@@ -1,0 +1,37 @@
+<Type Name="SqlManagementClientOptions" FullName="Azure.ResourceManager.Sql.SqlManagementClientOptions">
+  <TypeSignature Language="C#" Value="public class SqlManagementClientOptions : Azure.Core.ClientOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlManagementClientOptions extends Azure.Core.ClientOptions" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.SqlManagementClientOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlManagementClientOptions&#xA;Inherits ClientOptions" />
+  <TypeSignature Language="F#" Value="type SqlManagementClientOptions = class&#xA;    inherit ClientOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Core.ClientOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Client options for Sql. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlManagementClientOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlManagementClientOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

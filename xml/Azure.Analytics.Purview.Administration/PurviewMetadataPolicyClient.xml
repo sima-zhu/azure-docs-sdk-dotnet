@@ -62,10 +62,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPolicies">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetMetadataPolicies (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetMetadataPolicies (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetMetadataPolicies(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicies(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicies (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicies (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetMetadataPolicies : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetMetadataPolicies : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPolicies options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -131,10 +131,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPoliciesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetMetadataPoliciesAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetMetadataPoliciesAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetMetadataPoliciesAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPoliciesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPoliciesAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPoliciesAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetMetadataPoliciesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetMetadataPoliciesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPoliciesAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -200,10 +200,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPolicy">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetMetadataPolicy (string policyId, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetMetadataPolicy (string policyId, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetMetadataPolicy(string policyId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicy(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicy (policyId As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicy (policyId As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetMetadataPolicy : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetMetadataPolicy : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewMetadataPolicyClient.GetMetadataPolicy (policyId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -268,10 +268,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPolicyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetMetadataPolicyAsync (string policyId, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetMetadataPolicyAsync (string policyId, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetMetadataPolicyAsync(string policyId, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicyAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicyAsync (policyId As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicyAsync (policyId As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetMetadataPolicyAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetMetadataPolicyAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPolicyAsync (policyId, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
