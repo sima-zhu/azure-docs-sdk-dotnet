@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Exception for signaling general communication errors related to messaging operations.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

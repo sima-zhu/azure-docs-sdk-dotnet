@@ -582,10 +582,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResourceSetRule">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetResourceSetRule (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetResourceSetRule (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetResourceSetRule(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.GetResourceSetRule(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRule (options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRule (Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetResourceSetRule : Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetResourceSetRule : Azure.RequestOptions -&gt; Azure.Response" Usage="purviewResourceSetRule.GetResourceSetRule options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -717,10 +717,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResourceSetRuleAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetResourceSetRuleAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetResourceSetRuleAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetResourceSetRuleAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.GetResourceSetRuleAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRuleAsync (options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRuleAsync (Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetResourceSetRuleAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetResourceSetRuleAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.GetResourceSetRuleAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

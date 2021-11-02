@@ -17,7 +17,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the metadata description of the subscription.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,9 +39,11 @@
         <Parameter Name="subscriptionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="topicPath">To be added.</param>
-        <param name="subscriptionName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="topicPath">Path of the topic relative to the namespace base address.</param>
+        <param name="subscriptionName">Name of the subscription.</param>
+        <summary>
+            Initializes a new instance of SubscriptionDescription class with the specified name and topic path.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +62,11 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The <see cref="T:System.TimeSpan" /> idle interval after which the subscription is automatically deleted.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The minimum duration is 5 minutes. Default value is <see cref="F:System.TimeSpan.MaxValue" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultMessageTimeToLive">
@@ -78,9 +84,16 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The default time to live value for the messages. This is the duration after which the message expires, starting from when
+            the message is sent to Service Bus. </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This is the default value used when <see cref="P:Microsoft.Azure.ServiceBus.Message.TimeToLive" /> is not set on a
+             message itself. Messages older than their TimeToLive value will expire and no longer be retained in the message store.
+             Subscribers will be unable to receive expired messages. 
+             Default value is <see cref="F:System.TimeSpan.MaxValue" />.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableBatchedOperations">
@@ -98,9 +111,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates whether server-side batched operations are enabled.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to true.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableDeadLetteringOnFilterEvaluationExceptions">
@@ -118,9 +133,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            indicates whether messages need to be forwarded to dead-letter sub queue when subscription rule evaluation fails.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to true.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableDeadLetteringOnMessageExpiration">
@@ -138,9 +155,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates whether this subscription has dead letter support when a message expires.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>If true, the expired messages are moved to dead-letter sub-queue. Default value is false.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -209,9 +228,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The path of the recipient entity to which all the dead-lettered messages of this subscription are forwarded to.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>If set, user cannot manually receive dead-lettered messages from this subscription. The destination
+            entity must already exist.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForwardTo">
@@ -229,9 +251,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The path of the recipient entity to which all the messages sent to the subscription are forwarded to.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>If set, user cannot manually receive messages from this subscription. The destination entity 
+            must be an already existing entity.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -270,9 +295,12 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Duration of a peek lock receive. i.e., the amount of time that the message is locked by a given receiver so that
+            no other receiver receives the same message.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Max value is 5 minutes. Default value is 60 seconds.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxDeliveryCount">
@@ -290,9 +318,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The maximum delivery count of a message before it is dead-lettered.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The delivery count is increased when a message is received in <see cref="F:Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock" /> mode 
+            and didn't complete the message before the message lock expired.
+            Default value is 10. Minimum value is 1.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -362,9 +394,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            This indicates whether the subscription supports the concept of session. Sessionful-messages follow FIFO ordering.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            If true, the receiver can only receive messages using <see cref="M:Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync" />.
+            Defaults to false. 
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -382,9 +419,11 @@
         <ReturnType>Microsoft.Azure.ServiceBus.Management.EntityStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The current status of the subscription (Enabled / Disabled).
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>When an entity is disabled, that entity cannot send or receive messages.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubscriptionName">
@@ -402,9 +441,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Name of the subscription.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Value cannot be null or empty. Value cannot exceed 50 chars.
+            Cannot have restricted characters: '@','?','#','*','/','\'</remarks>
       </Docs>
     </Member>
     <Member MemberName="TopicPath">
@@ -422,9 +464,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Path of the topic under which subscription exists.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Value cannot be null or empty. Value cannot exceed 260 chars. Cannot start or end with a slash. 
+            Cannot have restricted characters: '@','?','#','*'</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserMetadata">
@@ -442,9 +487,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Custom metdata that user can associate with the description.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Cannot be null. Max length is 1024 chars.</remarks>
       </Docs>
     </Member>
   </Members>

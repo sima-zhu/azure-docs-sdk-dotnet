@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The exception that is thrown when the Messaging Entity is disabled. Enable the entity again using Portal.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

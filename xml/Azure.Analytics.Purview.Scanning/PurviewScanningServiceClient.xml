@@ -572,10 +572,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationRules">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetClassificationRules (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetClassificationRules (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetClassificationRules(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetClassificationRules(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationRules (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationRules (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationRules : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetClassificationRules : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetClassificationRules options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -626,10 +626,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationRulesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetClassificationRulesAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetClassificationRulesAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetClassificationRulesAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetClassificationRulesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationRulesAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationRulesAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationRulesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetClassificationRulesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetClassificationRulesAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -704,10 +704,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDataSources">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetDataSources (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetDataSources (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetDataSources(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetDataSources(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataSources (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataSources (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetDataSources : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetDataSources : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetDataSources options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -807,10 +807,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDataSourcesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetDataSourcesAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetDataSourcesAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetDataSourcesAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetDataSourcesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataSourcesAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataSourcesAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetDataSourcesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetDataSourcesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetDataSourcesAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -910,10 +910,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetKeyVaultReference">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetKeyVaultReference (string keyVaultName, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetKeyVaultReference (string keyVaultName, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetKeyVaultReference(string keyVaultName, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetKeyVaultReference(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReference (keyVaultName As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReference (keyVaultName As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetKeyVaultReference : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetKeyVaultReference : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetKeyVaultReference (keyVaultName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -965,10 +965,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetKeyVaultReferenceAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetKeyVaultReferenceAsync (string keyVaultName, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetKeyVaultReferenceAsync (string keyVaultName, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetKeyVaultReferenceAsync(string keyVaultName, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetKeyVaultReferenceAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReferenceAsync (keyVaultName As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReferenceAsync (keyVaultName As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetKeyVaultReferenceAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetKeyVaultReferenceAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetKeyVaultReferenceAsync (keyVaultName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1020,10 +1020,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetKeyVaultReferences">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetKeyVaultReferences (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetKeyVaultReferences (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetKeyVaultReferences(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetKeyVaultReferences(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReferences (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReferences (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetKeyVaultReferences : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetKeyVaultReferences : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetKeyVaultReferences options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1077,10 +1077,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetKeyVaultReferencesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetKeyVaultReferencesAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetKeyVaultReferencesAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetKeyVaultReferencesAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetKeyVaultReferencesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReferencesAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyVaultReferencesAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetKeyVaultReferencesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetKeyVaultReferencesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetKeyVaultReferencesAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1134,11 +1134,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetLatestSystemRulesets">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetLatestSystemRulesets (Azure.RequestOptions options, string dataSourceType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetLatestSystemRulesets(class Azure.RequestOptions options, string dataSourceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetLatestSystemRulesets(Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLatestSystemRulesets (options As RequestOptions, Optional dataSourceType As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetLatestSystemRulesets : Azure.RequestOptions * string -&gt; Azure.Response&#xA;override this.GetLatestSystemRulesets : Azure.RequestOptions * string -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetLatestSystemRulesets (options, dataSourceType)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetLatestSystemRulesets (string dataSourceType = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetLatestSystemRulesets(string dataSourceType, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetLatestSystemRulesets(System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLatestSystemRulesets (Optional dataSourceType As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetLatestSystemRulesets : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetLatestSystemRulesets : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetLatestSystemRulesets (dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1148,12 +1148,12 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="dataSourceType" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="dataSourceType"> The DataSourceType to use. Allowed values: "None" | "AzureSubscription" | "AzureResourceGroup" | "AzureSynapseWorkspace" | "AzureSynapse" | "AdlsGen1" | "AdlsGen2" | "AmazonAccount" | "AmazonS3" | "AmazonSql" | "AzureCosmosDb" | "AzureDataExplorer" | "AzureFileService" | "AzureSqlDatabase" | "AmazonPostgreSql" | "AzurePostgreSql" | "SqlServerDatabase" | "AzureSqlDatabaseManagedInstance" | "AzureSqlDataWarehouse" | "AzureMySql" | "AzureStorage" | "Teradata" | "Oracle" | "SapS4Hana" | "SapEcc" | "PowerBI". </param>
+        <param name="options"> The request options. </param>
         <summary> Get the latest version of a system scan ruleset. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1187,11 +1187,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetLatestSystemRulesetsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetLatestSystemRulesetsAsync (Azure.RequestOptions options, string dataSourceType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetLatestSystemRulesetsAsync(class Azure.RequestOptions options, string dataSourceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetLatestSystemRulesetsAsync(Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLatestSystemRulesetsAsync (options As RequestOptions, Optional dataSourceType As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetLatestSystemRulesetsAsync : Azure.RequestOptions * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetLatestSystemRulesetsAsync : Azure.RequestOptions * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetLatestSystemRulesetsAsync (options, dataSourceType)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetLatestSystemRulesetsAsync (string dataSourceType = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetLatestSystemRulesetsAsync(string dataSourceType, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetLatestSystemRulesetsAsync(System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLatestSystemRulesetsAsync (Optional dataSourceType As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetLatestSystemRulesetsAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetLatestSystemRulesetsAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetLatestSystemRulesetsAsync (dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1201,12 +1201,12 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="dataSourceType" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="dataSourceType"> The DataSourceType to use. Allowed values: "None" | "AzureSubscription" | "AzureResourceGroup" | "AzureSynapseWorkspace" | "AzureSynapse" | "AdlsGen1" | "AdlsGen2" | "AmazonAccount" | "AmazonS3" | "AmazonSql" | "AzureCosmosDb" | "AzureDataExplorer" | "AzureFileService" | "AzureSqlDatabase" | "AmazonPostgreSql" | "AzurePostgreSql" | "SqlServerDatabase" | "AzureSqlDatabaseManagedInstance" | "AzureSqlDataWarehouse" | "AzureMySql" | "AzureStorage" | "Teradata" | "Oracle" | "SapS4Hana" | "SapEcc" | "PowerBI". </param>
+        <param name="options"> The request options. </param>
         <summary> Get the latest version of a system scan ruleset. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1240,10 +1240,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetScanRuleset">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetScanRuleset (string scanRulesetName, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetScanRuleset (string scanRulesetName, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetScanRuleset(string scanRulesetName, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetScanRuleset(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRuleset (scanRulesetName As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRuleset (scanRulesetName As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetScanRuleset : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetScanRuleset : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetScanRuleset (scanRulesetName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1295,10 +1295,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetScanRulesetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetScanRulesetAsync (string scanRulesetName, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetScanRulesetAsync (string scanRulesetName, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetScanRulesetAsync(string scanRulesetName, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetScanRulesetAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRulesetAsync (scanRulesetName As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRulesetAsync (scanRulesetName As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetScanRulesetAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetScanRulesetAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetScanRulesetAsync (scanRulesetName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1350,10 +1350,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetScanRulesets">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetScanRulesets (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetScanRulesets (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetScanRulesets(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetScanRulesets(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRulesets (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRulesets (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetScanRulesets : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetScanRulesets : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetScanRulesets options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1407,10 +1407,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetScanRulesetsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetScanRulesetsAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetScanRulesetsAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetScanRulesetsAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetScanRulesetsAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRulesetsAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScanRulesetsAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetScanRulesetsAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetScanRulesetsAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetScanRulesetsAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1464,10 +1464,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesets">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetSystemRulesets (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetSystemRulesets (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetSystemRulesets(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesets(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesets (options As RequestOptions) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesets (Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetSystemRulesets : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetSystemRulesets : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetSystemRulesets options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1521,10 +1521,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetSystemRulesetsAsync (Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetSystemRulesetsAsync (Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetSystemRulesetsAsync(class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsAsync (Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
       <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetSystemRulesetsAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1578,10 +1578,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsForDataSource">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetSystemRulesetsForDataSource (string dataSourceType, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetSystemRulesetsForDataSource (string dataSourceType, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetSystemRulesetsForDataSource(string dataSourceType, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsForDataSource(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForDataSource (dataSourceType As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForDataSource (dataSourceType As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsForDataSource : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetSystemRulesetsForDataSource : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetSystemRulesetsForDataSource (dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1633,10 +1633,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsForDataSourceAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetSystemRulesetsForDataSourceAsync (string dataSourceType, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetSystemRulesetsForDataSourceAsync (string dataSourceType, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetSystemRulesetsForDataSourceAsync(string dataSourceType, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsForDataSourceAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForDataSourceAsync (dataSourceType As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForDataSourceAsync (dataSourceType As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsForDataSourceAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetSystemRulesetsForDataSourceAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsForDataSourceAsync (dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1688,11 +1688,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsForVersion">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetSystemRulesetsForVersion (int version, Azure.RequestOptions options, string dataSourceType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetSystemRulesetsForVersion(int32 version, class Azure.RequestOptions options, string dataSourceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsForVersion(System.Int32,Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForVersion (version As Integer, options As RequestOptions, Optional dataSourceType As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsForVersion : int * Azure.RequestOptions * string -&gt; Azure.Response&#xA;override this.GetSystemRulesetsForVersion : int * Azure.RequestOptions * string -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetSystemRulesetsForVersion (version, options, dataSourceType)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetSystemRulesetsForVersion (int version, string dataSourceType = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetSystemRulesetsForVersion(int32 version, string dataSourceType, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsForVersion(System.Int32,System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForVersion (version As Integer, Optional dataSourceType As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsForVersion : int * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetSystemRulesetsForVersion : int * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewScanningServiceClient.GetSystemRulesetsForVersion (version, dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1703,13 +1703,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="version" Type="System.Int32" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="dataSourceType" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="version"> The Integer to use. </param>
-        <param name="options"> The request options. </param>
         <param name="dataSourceType"> The DataSourceType to use. Allowed values: "None" | "AzureSubscription" | "AzureResourceGroup" | "AzureSynapseWorkspace" | "AzureSynapse" | "AdlsGen1" | "AdlsGen2" | "AmazonAccount" | "AmazonS3" | "AmazonSql" | "AzureCosmosDb" | "AzureDataExplorer" | "AzureFileService" | "AzureSqlDatabase" | "AmazonPostgreSql" | "AzurePostgreSql" | "SqlServerDatabase" | "AzureSqlDatabaseManagedInstance" | "AzureSqlDataWarehouse" | "AzureMySql" | "AzureStorage" | "Teradata" | "Oracle" | "SapS4Hana" | "SapEcc" | "PowerBI". </param>
+        <param name="options"> The request options. </param>
         <summary> Get a scan ruleset by version. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1743,11 +1743,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsForVersionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetSystemRulesetsForVersionAsync (int version, Azure.RequestOptions options, string dataSourceType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetSystemRulesetsForVersionAsync(int32 version, class Azure.RequestOptions options, string dataSourceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsForVersionAsync(System.Int32,Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForVersionAsync (version As Integer, options As RequestOptions, Optional dataSourceType As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsForVersionAsync : int * Azure.RequestOptions * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetSystemRulesetsForVersionAsync : int * Azure.RequestOptions * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsForVersionAsync (version, options, dataSourceType)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetSystemRulesetsForVersionAsync (int version, string dataSourceType = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetSystemRulesetsForVersionAsync(int32 version, string dataSourceType, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsForVersionAsync(System.Int32,System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsForVersionAsync (version As Integer, Optional dataSourceType As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsForVersionAsync : int * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetSystemRulesetsForVersionAsync : int * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsForVersionAsync (version, dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1758,13 +1758,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="version" Type="System.Int32" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="dataSourceType" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="version"> The Integer to use. </param>
-        <param name="options"> The request options. </param>
         <param name="dataSourceType"> The DataSourceType to use. Allowed values: "None" | "AzureSubscription" | "AzureResourceGroup" | "AzureSynapseWorkspace" | "AzureSynapse" | "AdlsGen1" | "AdlsGen2" | "AmazonAccount" | "AmazonS3" | "AmazonSql" | "AzureCosmosDb" | "AzureDataExplorer" | "AzureFileService" | "AzureSqlDatabase" | "AmazonPostgreSql" | "AzurePostgreSql" | "SqlServerDatabase" | "AzureSqlDatabaseManagedInstance" | "AzureSqlDataWarehouse" | "AzureMySql" | "AzureStorage" | "Teradata" | "Oracle" | "SapS4Hana" | "SapEcc" | "PowerBI". </param>
+        <param name="options"> The request options. </param>
         <summary> Get a scan ruleset by version. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1798,11 +1798,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsVersions">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetSystemRulesetsVersions (Azure.RequestOptions options, string dataSourceType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetSystemRulesetsVersions(class Azure.RequestOptions options, string dataSourceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsVersions(Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsVersions (options As RequestOptions, Optional dataSourceType As String = Nothing) As Pageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsVersions : Azure.RequestOptions * string -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetSystemRulesetsVersions : Azure.RequestOptions * string -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsVersions (options, dataSourceType)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetSystemRulesetsVersions (string dataSourceType = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetSystemRulesetsVersions(string dataSourceType, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsVersions(System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsVersions (Optional dataSourceType As String = Nothing, Optional options As RequestOptions = Nothing) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsVersions : string * Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetSystemRulesetsVersions : string * Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsVersions (dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1812,12 +1812,12 @@
         <ReturnType>Azure.Pageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="dataSourceType" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="dataSourceType"> The DataSourceType to use. Allowed values: "None" | "AzureSubscription" | "AzureResourceGroup" | "AzureSynapseWorkspace" | "AzureSynapse" | "AdlsGen1" | "AdlsGen2" | "AmazonAccount" | "AmazonS3" | "AmazonSql" | "AzureCosmosDb" | "AzureDataExplorer" | "AzureFileService" | "AzureSqlDatabase" | "AmazonPostgreSql" | "AzurePostgreSql" | "SqlServerDatabase" | "AzureSqlDatabaseManagedInstance" | "AzureSqlDataWarehouse" | "AzureMySql" | "AzureStorage" | "Teradata" | "Oracle" | "SapS4Hana" | "SapEcc" | "PowerBI". </param>
+        <param name="options"> The request options. </param>
         <summary> List system scan ruleset versions in Data catalog. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1857,11 +1857,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSystemRulesetsVersionsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetSystemRulesetsVersionsAsync (Azure.RequestOptions options, string dataSourceType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetSystemRulesetsVersionsAsync(class Azure.RequestOptions options, string dataSourceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsVersionsAsync(Azure.RequestOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsVersionsAsync (options As RequestOptions, Optional dataSourceType As String = Nothing) As AsyncPageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsVersionsAsync : Azure.RequestOptions * string -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetSystemRulesetsVersionsAsync : Azure.RequestOptions * string -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsVersionsAsync (options, dataSourceType)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetSystemRulesetsVersionsAsync (string dataSourceType = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetSystemRulesetsVersionsAsync(string dataSourceType, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Scanning.PurviewScanningServiceClient.GetSystemRulesetsVersionsAsync(System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSystemRulesetsVersionsAsync (Optional dataSourceType As String = Nothing, Optional options As RequestOptions = Nothing) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetSystemRulesetsVersionsAsync : string * Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetSystemRulesetsVersionsAsync : string * Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewScanningServiceClient.GetSystemRulesetsVersionsAsync (dataSourceType, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Scanning</AssemblyName>
@@ -1871,12 +1871,12 @@
         <ReturnType>Azure.AsyncPageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="dataSourceType" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
         <param name="dataSourceType"> The DataSourceType to use. Allowed values: "None" | "AzureSubscription" | "AzureResourceGroup" | "AzureSynapseWorkspace" | "AzureSynapse" | "AdlsGen1" | "AdlsGen2" | "AmazonAccount" | "AmazonS3" | "AmazonSql" | "AzureCosmosDb" | "AzureDataExplorer" | "AzureFileService" | "AzureSqlDatabase" | "AmazonPostgreSql" | "AzurePostgreSql" | "SqlServerDatabase" | "AzureSqlDatabaseManagedInstance" | "AzureSqlDataWarehouse" | "AzureMySql" | "AzureStorage" | "Teradata" | "Oracle" | "SapS4Hana" | "SapEcc" | "PowerBI". </param>
+        <param name="options"> The request options. </param>
         <summary> List system scan ruleset versions in Data catalog. </summary>
         <returns>To be added.</returns>
         <remarks>
