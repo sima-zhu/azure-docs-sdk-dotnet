@@ -1654,11 +1654,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetByGuid">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetByGuid (string guid, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetByGuid(string guid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuid(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuid (guid As String, options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetByGuid : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Azure.Response&#xA;override this.GetByGuid : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Azure.Response" Usage="purviewEntities.GetByGuid (guid, options, minExtInfo, ignoreRelationships)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetByGuid (string guid, bool? minExtInfo = default, bool? ignoreRelationships = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetByGuid(string guid, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuid(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuid (guid As String, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetByGuid : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetByGuid : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetByGuid (guid, minExtInfo, ignoreRelationships, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -1669,15 +1669,15 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="guid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="guid"> The globally unique identifier of the entity. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
+        <param name="options"> The request options. </param>
         <summary> Get complete definition of an entity given its GUID. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1750,11 +1750,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetByGuidAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetByGuidAsync (string guid, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetByGuidAsync(string guid, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuidAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuidAsync (guid As String, options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetByGuidAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetByGuidAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetByGuidAsync (guid, options, minExtInfo, ignoreRelationships)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetByGuidAsync (string guid, bool? minExtInfo = default, bool? ignoreRelationships = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetByGuidAsync(string guid, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuidAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuidAsync (guid As String, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetByGuidAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetByGuidAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetByGuidAsync (guid, minExtInfo, ignoreRelationships, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -1765,15 +1765,15 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="guid" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="guid"> The globally unique identifier of the entity. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
+        <param name="options"> The request options. </param>
         <summary> Get complete definition of an entity given its GUID. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1846,11 +1846,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetByGuids">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetByGuids (System.Collections.Generic.IEnumerable&lt;string&gt; guids, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default, System.Collections.Generic.IEnumerable&lt;string&gt; excludeRelationshipTypes = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetByGuids(class System.Collections.Generic.IEnumerable`1&lt;string&gt; guids, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excludeRelationshipTypes) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuids(System.Collections.Generic.IEnumerable{System.String},Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuids (guids As IEnumerable(Of String), options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional excludeRelationshipTypes As IEnumerable(Of String) = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetByGuids : seq&lt;string&gt; * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; -&gt; Azure.Response&#xA;override this.GetByGuids : seq&lt;string&gt; * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; -&gt; Azure.Response" Usage="purviewEntities.GetByGuids (guids, options, minExtInfo, ignoreRelationships, excludeRelationshipTypes)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetByGuids (System.Collections.Generic.IEnumerable&lt;string&gt; guids, bool? minExtInfo = default, bool? ignoreRelationships = default, System.Collections.Generic.IEnumerable&lt;string&gt; excludeRelationshipTypes = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetByGuids(class System.Collections.Generic.IEnumerable`1&lt;string&gt; guids, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excludeRelationshipTypes, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuids(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuids (guids As IEnumerable(Of String), Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional excludeRelationshipTypes As IEnumerable(Of String) = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetByGuids : seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetByGuids : seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetByGuids (guids, minExtInfo, ignoreRelationships, excludeRelationshipTypes, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -1861,17 +1861,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="guids" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="excludeRelationshipTypes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="guids"> An array of GUIDs of entities to create. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
         <param name="excludeRelationshipTypes"> An array of the relationship types need to be excluded from the response. </param>
+        <param name="options"> The request options. </param>
         <summary> List entities in bulk identified by its GUIDs. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1946,11 +1946,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetByGuidsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetByGuidsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; guids, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default, System.Collections.Generic.IEnumerable&lt;string&gt; excludeRelationshipTypes = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetByGuidsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; guids, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excludeRelationshipTypes) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuidsAsync(System.Collections.Generic.IEnumerable{System.String},Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuidsAsync (guids As IEnumerable(Of String), options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional excludeRelationshipTypes As IEnumerable(Of String) = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetByGuidsAsync : seq&lt;string&gt; * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetByGuidsAsync : seq&lt;string&gt; * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetByGuidsAsync (guids, options, minExtInfo, ignoreRelationships, excludeRelationshipTypes)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetByGuidsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; guids, bool? minExtInfo = default, bool? ignoreRelationships = default, System.Collections.Generic.IEnumerable&lt;string&gt; excludeRelationshipTypes = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetByGuidsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; guids, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excludeRelationshipTypes, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByGuidsAsync(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByGuidsAsync (guids As IEnumerable(Of String), Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional excludeRelationshipTypes As IEnumerable(Of String) = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetByGuidsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetByGuidsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetByGuidsAsync (guids, minExtInfo, ignoreRelationships, excludeRelationshipTypes, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -1961,17 +1961,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="guids" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="excludeRelationshipTypes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="guids"> An array of GUIDs of entities to create. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
         <param name="excludeRelationshipTypes"> An array of the relationship types need to be excluded from the response. </param>
+        <param name="options"> The request options. </param>
         <summary> List entities in bulk identified by its GUIDs. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -2046,11 +2046,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetByUniqueAttributes">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetByUniqueAttributes (string typeName, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrQualifiedName = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetByUniqueAttributes(string typeName, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrQualifiedName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByUniqueAttributes(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByUniqueAttributes (typeName As String, options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrQualifiedName As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetByUniqueAttributes : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Azure.Response&#xA;override this.GetByUniqueAttributes : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Azure.Response" Usage="purviewEntities.GetByUniqueAttributes (typeName, options, minExtInfo, ignoreRelationships, attrQualifiedName)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetByUniqueAttributes (string typeName, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrQualifiedName = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetByUniqueAttributes(string typeName, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrQualifiedName, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByUniqueAttributes(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByUniqueAttributes (typeName As String, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrQualifiedName As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetByUniqueAttributes : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetByUniqueAttributes : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetByUniqueAttributes (typeName, minExtInfo, ignoreRelationships, attrQualifiedName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2061,17 +2061,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="typeName" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="attrQualifiedName" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="typeName"> The name of the type. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
         <param name="attrQualifiedName"> The qualified name of the entity. </param>
+        <param name="options"> The request options. </param>
         <summary>
             Get complete definition of an entity given its type and unique attribute.
             In addition to the typeName path parameter, attribute key-value pair(s) can be provided in the following format:
@@ -2151,11 +2151,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetByUniqueAttributesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetByUniqueAttributesAsync (string typeName, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrQualifiedName = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetByUniqueAttributesAsync(string typeName, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrQualifiedName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByUniqueAttributesAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByUniqueAttributesAsync (typeName As String, options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrQualifiedName As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetByUniqueAttributesAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetByUniqueAttributesAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetByUniqueAttributesAsync (typeName, options, minExtInfo, ignoreRelationships, attrQualifiedName)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetByUniqueAttributesAsync (string typeName, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrQualifiedName = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetByUniqueAttributesAsync(string typeName, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrQualifiedName, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetByUniqueAttributesAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByUniqueAttributesAsync (typeName As String, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrQualifiedName As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetByUniqueAttributesAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetByUniqueAttributesAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetByUniqueAttributesAsync (typeName, minExtInfo, ignoreRelationships, attrQualifiedName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2166,17 +2166,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="typeName" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="attrQualifiedName" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="typeName"> The name of the type. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
         <param name="attrQualifiedName"> The qualified name of the entity. </param>
+        <param name="options"> The request options. </param>
         <summary>
             Get complete definition of an entity given its type and unique attribute.
             In addition to the typeName path parameter, attribute key-value pair(s) can be provided in the following format:
@@ -2256,10 +2256,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassification">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassification (string guid, string classificationName, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassification (string guid, string classificationName, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetClassification(string guid, string classificationName, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetClassification(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassification (guid As String, classificationName As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassification (guid As String, classificationName As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetClassification : string * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetClassification : string * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetClassification (guid, classificationName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2312,10 +2312,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationAsync (string guid, string classificationName, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationAsync (string guid, string classificationName, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetClassificationAsync(string guid, string classificationName, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetClassificationAsync(System.String,System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationAsync (guid As String, classificationName As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationAsync (guid As String, classificationName As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetClassificationAsync : string * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetClassificationAsync (guid, classificationName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2368,10 +2368,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassifications">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassifications (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetClassifications (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetClassifications(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetClassifications(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassifications (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassifications (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetClassifications : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetClassifications : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetClassifications (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2413,10 +2413,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetClassificationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationsAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetClassificationsAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetClassificationsAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetClassificationsAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationsAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassificationsAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetClassificationsAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetClassificationsAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetClassificationsAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2458,11 +2458,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntitiesByUniqueAttributes">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntitiesByUniqueAttributes (string typeName, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrNQualifiedName = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEntitiesByUniqueAttributes(string typeName, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrNQualifiedName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetEntitiesByUniqueAttributes(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesByUniqueAttributes (typeName As String, options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrNQualifiedName As String = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetEntitiesByUniqueAttributes : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Azure.Response&#xA;override this.GetEntitiesByUniqueAttributes : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Azure.Response" Usage="purviewEntities.GetEntitiesByUniqueAttributes (typeName, options, minExtInfo, ignoreRelationships, attrNQualifiedName)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetEntitiesByUniqueAttributes (string typeName, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrNQualifiedName = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetEntitiesByUniqueAttributes(string typeName, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrNQualifiedName, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetEntitiesByUniqueAttributes(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesByUniqueAttributes (typeName As String, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrNQualifiedName As String = Nothing, Optional options As RequestOptions = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetEntitiesByUniqueAttributes : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetEntitiesByUniqueAttributes : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetEntitiesByUniqueAttributes (typeName, minExtInfo, ignoreRelationships, attrNQualifiedName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2473,17 +2473,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="typeName" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="attrNQualifiedName" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="typeName"> The name of the type. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
         <param name="attrNQualifiedName"> Qualified name of an entity. E.g. to find 2 entities you can set attrs_0:qualifiedName=db1@cl1&amp;attrs_2:qualifiedName=db2@cl1. </param>
+        <param name="options"> The request options. </param>
         <summary>
             Bulk API to retrieve list of entities identified by its unique attributes.
             
@@ -2570,11 +2570,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntitiesByUniqueAttributesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntitiesByUniqueAttributesAsync (string typeName, Azure.RequestOptions options, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrNQualifiedName = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEntitiesByUniqueAttributesAsync(string typeName, class Azure.RequestOptions options, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrNQualifiedName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetEntitiesByUniqueAttributesAsync(System.String,Azure.RequestOptions,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesByUniqueAttributesAsync (typeName As String, options As RequestOptions, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrNQualifiedName As String = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetEntitiesByUniqueAttributesAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEntitiesByUniqueAttributesAsync : string * Azure.RequestOptions * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetEntitiesByUniqueAttributesAsync (typeName, options, minExtInfo, ignoreRelationships, attrNQualifiedName)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetEntitiesByUniqueAttributesAsync (string typeName, bool? minExtInfo = default, bool? ignoreRelationships = default, string attrNQualifiedName = default, Azure.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetEntitiesByUniqueAttributesAsync(string typeName, valuetype System.Nullable`1&lt;bool&gt; minExtInfo, valuetype System.Nullable`1&lt;bool&gt; ignoreRelationships, string attrNQualifiedName, class Azure.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetEntitiesByUniqueAttributesAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Azure.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntitiesByUniqueAttributesAsync (typeName As String, Optional minExtInfo As Nullable(Of Boolean) = Nothing, Optional ignoreRelationships As Nullable(Of Boolean) = Nothing, Optional attrNQualifiedName As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetEntitiesByUniqueAttributesAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetEntitiesByUniqueAttributesAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetEntitiesByUniqueAttributesAsync (typeName, minExtInfo, ignoreRelationships, attrNQualifiedName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Catalog</AssemblyName>
@@ -2585,17 +2585,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="typeName" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
         <Parameter Name="minExtInfo" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="ignoreRelationships" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="attrNQualifiedName" Type="System.String" />
+        <Parameter Name="options" Type="Azure.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="typeName"> The name of the type. </param>
-        <param name="options"> The request options. </param>
         <param name="minExtInfo"> Whether to return minimal information for referred entities. </param>
         <param name="ignoreRelationships"> Whether to ignore relationship attributes. </param>
         <param name="attrNQualifiedName"> Qualified name of an entity. E.g. to find 2 entities you can set attrs_0:qualifiedName=db1@cl1&amp;attrs_2:qualifiedName=db2@cl1. </param>
+        <param name="options"> The request options. </param>
         <summary>
             Bulk API to retrieve list of entities identified by its unique attributes.
             
@@ -2682,10 +2682,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetHeader">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetHeader (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetHeader (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetHeader(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetHeader(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHeader (guid As String, options As RequestOptions) As Response" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHeader (guid As String, Optional options As RequestOptions = Nothing) As Response" />
       <MemberSignature Language="F#" Value="abstract member GetHeader : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetHeader : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewEntities.GetHeader (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2762,10 +2762,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetHeaderAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetHeaderAsync (string guid, Azure.RequestOptions options);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetHeaderAsync (string guid, Azure.RequestOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetHeaderAsync(string guid, class Azure.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Catalog.PurviewEntities.GetHeaderAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHeaderAsync (guid As String, options As RequestOptions) As Task(Of Response)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHeaderAsync (guid As String, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member GetHeaderAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetHeaderAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewEntities.GetHeaderAsync (guid, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

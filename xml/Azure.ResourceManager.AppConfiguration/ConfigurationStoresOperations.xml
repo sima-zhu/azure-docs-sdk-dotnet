@@ -167,6 +167,8 @@
         <summary> Lists the configuration stores for a given resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroupAsync">
@@ -195,6 +197,8 @@
         <summary> Lists the configuration stores for a given resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListKeys">
@@ -225,6 +229,8 @@
         <summary> Lists the access key for the specified configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListKeysAsync">
@@ -255,6 +261,8 @@
         <summary> Lists the access key for the specified configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListKeyValue">
@@ -405,6 +413,8 @@
         <summary> Creates a configuration store with the specified parameters. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, or <paramref name="configStoreCreationParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartCreateAsync">
@@ -435,6 +445,8 @@
         <summary> Creates a configuration store with the specified parameters. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, or <paramref name="configStoreCreationParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDelete">
@@ -463,6 +475,8 @@
         <summary> Deletes a configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartDeleteAsync">
@@ -491,6 +505,8 @@
         <summary> Deletes a configuration store. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="configStoreName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartUpdate">
@@ -521,6 +537,8 @@
         <summary> Updates a configuration store with the specified parameters. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, or <paramref name="configStoreUpdateParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="StartUpdateAsync">
@@ -551,6 +569,8 @@
         <summary> Updates a configuration store with the specified parameters. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="configStoreName" />, or <paramref name="configStoreUpdateParameters" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

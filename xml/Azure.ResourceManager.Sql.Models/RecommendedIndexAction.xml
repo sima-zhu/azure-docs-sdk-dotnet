@@ -1,0 +1,77 @@
+<Type Name="RecommendedIndexAction" FullName="Azure.ResourceManager.Sql.Models.RecommendedIndexAction">
+  <TypeSignature Language="C#" Value="public enum RecommendedIndexAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecommendedIndexAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.RecommendedIndexAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecommendedIndexAction" />
+  <TypeSignature Language="F#" Value="type RecommendedIndexAction = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary> The proposed index action. You can create a missing index, drop an unused index, or rebuild an existing index to improve its performance. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="Create" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexAction Create = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexAction.Create" />
+      <MemberSignature Language="VB.NET" Value="Create" />
+      <MemberSignature Language="F#" Value="Create = 0" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexAction.Create" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexAction</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary> Create. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="Drop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexAction Drop = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexAction.Drop" />
+      <MemberSignature Language="VB.NET" Value="Drop" />
+      <MemberSignature Language="F#" Value="Drop = 1" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexAction.Drop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexAction</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> Drop. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rebuild">
+      <MemberSignature Language="C#" Value="Rebuild" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexAction Rebuild = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexAction.Rebuild" />
+      <MemberSignature Language="VB.NET" Value="Rebuild" />
+      <MemberSignature Language="F#" Value="Rebuild = 2" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexAction.Rebuild" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexAction</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary> Rebuild. </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

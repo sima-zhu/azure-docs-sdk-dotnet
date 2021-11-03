@@ -1,0 +1,309 @@
+<Type Name="BackupShortTermRetentionPoliciesOperations" FullName="Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations">
+  <TypeSignature Language="C#" Value="public class BackupShortTermRetentionPoliciesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupShortTermRetentionPoliciesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackupShortTermRetentionPoliciesOperations" />
+  <TypeSignature Language="F#" Value="type BackupShortTermRetentionPoliciesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The BackupShortTermRetentionPolicies service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BackupShortTermRetentionPoliciesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of BackupShortTermRetentionPoliciesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt; Get (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt; Get(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.Get(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, serverName As String, databaseName As String, policyName As ShortTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of BackupShortTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&#xA;override this.Get : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;" Usage="backupShortTermRetentionPoliciesOperations.Get (resourceGroupName, serverName, databaseName, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&gt; GetAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&gt; GetAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.GetAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, serverName As String, databaseName As String, policyName As ShortTermRetentionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of BackupShortTermRetentionPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&gt;&#xA;override this.GetAsync : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&gt;" Usage="backupShortTermRetentionPoliciesOperations.GetAsync (resourceGroupName, serverName, databaseName, policyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabase">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt; ListByDatabase (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt; ListByDatabase(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.ListByDatabase(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabase (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of BackupShortTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&#xA;override this.ListByDatabase : string * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;" Usage="backupShortTermRetentionPoliciesOperations.ListByDatabase (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByDatabaseAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt; ListByDatabaseAsync (string resourceGroupName, string serverName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt; ListByDatabaseAsync(string resourceGroupName, string serverName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.ListByDatabaseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByDatabaseAsync (resourceGroupName As String, serverName As String, databaseName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of BackupShortTermRetentionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;&#xA;override this.ListByDatabaseAsync : string * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;" Usage="backupShortTermRetentionPoliciesOperations.ListByDatabaseAsync (resourceGroupName, serverName, databaseName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.StartCreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, serverName As String, databaseName As String, policyName As ShortTermRetentionPolicyName, parameters As BackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As BackupShortTermRetentionPoliciesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation" Usage="backupShortTermRetentionPoliciesOperations.StartCreateOrUpdate (resourceGroupName, serverName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The short term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, policyName As ShortTermRetentionPolicyName, parameters As BackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BackupShortTermRetentionPoliciesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt;" Usage="backupShortTermRetentionPoliciesOperations.StartCreateOrUpdateAsync (resourceGroupName, serverName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The short term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation StartUpdate (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation StartUpdate(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.StartUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdate (resourceGroupName As String, serverName As String, databaseName As String, policyName As ShortTermRetentionPolicyName, parameters As BackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As BackupShortTermRetentionPoliciesUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation&#xA;override this.StartUpdate : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation" Usage="backupShortTermRetentionPoliciesOperations.StartUpdate (resourceGroupName, serverName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The short term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation&gt; StartUpdateAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation&gt; StartUpdateAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesOperations.StartUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName,Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdateAsync (resourceGroupName As String, serverName As String, databaseName As String, policyName As ShortTermRetentionPolicyName, parameters As BackupShortTermRetentionPolicy, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BackupShortTermRetentionPoliciesUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation&gt;&#xA;override this.StartUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName * Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation&gt;" Usage="backupShortTermRetentionPoliciesOperations.StartUpdateAsync (resourceGroupName, serverName, databaseName, policyName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.BackupShortTermRetentionPoliciesUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.BackupShortTermRetentionPolicy" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database. </param>
+        <param name="policyName"> The policy name. Should always be "default". </param>
+        <param name="parameters"> The short term retention policy info. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a database's short term retention policy. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, <paramref name="databaseName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Action taking place when <see cref="T:Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs" /> is raised.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Message abandon operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session start operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session close operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Message completion operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +108,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Message receive operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +127,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Message lock renewal operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +146,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User message handler invocation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Matches all the messages arriving to be selected for the subscription.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.TrueFilter" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +174,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Converts the value of the current instance to its equivalent string representation.
+            </summary>
+        <returns>A string representation of the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

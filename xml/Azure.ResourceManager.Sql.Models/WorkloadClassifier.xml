@@ -1,0 +1,157 @@
+<Type Name="WorkloadClassifier" FullName="Azure.ResourceManager.Sql.Models.WorkloadClassifier">
+  <TypeSignature Language="C#" Value="public class WorkloadClassifier : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkloadClassifier extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.WorkloadClassifier" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkloadClassifier&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type WorkloadClassifier = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Workload classifier operations for a data warehouse. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkloadClassifier ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.WorkloadClassifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of WorkloadClassifier. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public string Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Context" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.WorkloadClassifier.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As String" />
+      <MemberSignature Language="F#" Value="member this.Context : string with get, set" Usage="Azure.ResourceManager.Sql.Models.WorkloadClassifier.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The workload classifier context. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="public string EndTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.WorkloadClassifier.EndTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndTime As String" />
+      <MemberSignature Language="F#" Value="member this.EndTime : string with get, set" Usage="Azure.ResourceManager.Sql.Models.WorkloadClassifier.EndTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The workload classifier end time for classification. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Importance">
+      <MemberSignature Language="C#" Value="public string Importance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Importance" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.WorkloadClassifier.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Importance As String" />
+      <MemberSignature Language="F#" Value="member this.Importance : string with get, set" Usage="Azure.ResourceManager.Sql.Models.WorkloadClassifier.Importance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The workload classifier importance. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.WorkloadClassifier.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="Azure.ResourceManager.Sql.Models.WorkloadClassifier.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The workload classifier label. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberName">
+      <MemberSignature Language="C#" Value="public string MemberName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.WorkloadClassifier.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="Azure.ResourceManager.Sql.Models.WorkloadClassifier.MemberName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The workload classifier member name. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public string StartTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StartTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.WorkloadClassifier.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartTime As String" />
+      <MemberSignature Language="F#" Value="member this.StartTime : string with get, set" Usage="Azure.ResourceManager.Sql.Models.WorkloadClassifier.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The workload classifier start time for classification. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

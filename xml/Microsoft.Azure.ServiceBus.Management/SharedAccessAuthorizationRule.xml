@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines the authorization rule for an entity using SAS.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +35,9 @@
         <Parameter Name="rights" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.ServiceBus.Management.AccessRights&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyName">To be added.</param>
-        <param name="rights">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyName">The authorization rule key name.</param>
+        <param name="rights">The list of rights.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.Management.SharedAccessAuthorizationRule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +58,10 @@
         <Parameter Name="rights" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.ServiceBus.Management.AccessRights&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyName">To be added.</param>
-        <param name="primaryKey">To be added.</param>
-        <param name="rights">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyName">The authorization rule key name.</param>
+        <param name="primaryKey">The primary key for the authorization rule.</param>
+        <param name="rights">The list of rights.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.Management.SharedAccessAuthorizationRule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,11 +83,11 @@
         <Parameter Name="rights" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.ServiceBus.Management.AccessRights&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyName">To be added.</param>
-        <param name="primaryKey">To be added.</param>
-        <param name="secondaryKey">To be added.</param>
-        <param name="rights">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyName">The authorization rule key name.</param>
+        <param name="primaryKey">The primary key for the authorization rule.</param>
+        <param name="secondaryKey">The secondary key for the authorization rule.</param>
+        <param name="rights">The list of rights.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.Management.SharedAccessAuthorizationRule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +129,9 @@
         <Parameter Name="other" Type="Microsoft.Azure.ServiceBus.Management.AuthorizationRule" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>true if the specified object is equal to the current object; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +175,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the hash code for this instance.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,8 +195,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the authorization rule key name.</summary>
+        <value>The authorization rule key name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +267,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the primary key for the authorization rule.</summary>
+        <value>The primary key for the authorization rule.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,8 +307,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the secondary key for the authorization rule.</summary>
+        <value>The secondary key for the authorization rule.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

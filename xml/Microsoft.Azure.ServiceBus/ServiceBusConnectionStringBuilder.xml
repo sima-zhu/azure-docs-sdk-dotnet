@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Used to generate Service Bus connection strings.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +51,10 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">Connection string for namespace or the entity.</param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,11 +75,22 @@
         <Parameter Name="sharedAccessSignature" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
         <param name="entityPath">To be added.</param>
         <param name="sharedAccessSignature">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Fully qualified endpoint.</param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <example>
+          <code>
+            var connectionStringBuilder = new ServiceBusConnectionStringBuilder(
+                "contoso.servicebus.windows.net",
+                "myQueue",
+                "{ ... SAS token ... }"
+            );
+            </code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,12 +111,24 @@
         <Parameter Name="transportType" Type="Microsoft.Azure.ServiceBus.TransportType" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
         <param name="entityPath">To be added.</param>
         <param name="sharedAccessSignature">To be added.</param>
         <param name="transportType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Fully qualified endpoint.</param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <example>
+          <code>
+            var connectionStringBuilder = new ServiceBusConnectionStringBuilder(
+                "contoso.servicebus.windows.net",
+                "myQueue",
+                "{ ... SAS token ... }",
+                TransportType.Amqp
+            );
+            </code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,12 +149,24 @@
         <Parameter Name="sharedAccessKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
         <param name="entityPath">To be added.</param>
         <param name="sharedAccessKeyName">To be added.</param>
         <param name="sharedAccessKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Fully qualified endpoint.</param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <example>
+          <code>
+            var connectionStringBuilder = new ServiceBusConnectionStringBuilder(
+                "contoso.servicebus.windows.net",
+                "myQueue",
+                "RootManageSharedAccessKey",
+                "&amp;lt;sharedAccessKey&amp;gt;
+            );
+            </code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,13 +188,26 @@
         <Parameter Name="transportType" Type="Microsoft.Azure.ServiceBus.TransportType" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
         <param name="entityPath">To be added.</param>
         <param name="sharedAccessKeyName">To be added.</param>
         <param name="sharedAccessKey">To be added.</param>
         <param name="transportType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Fully qualified endpoint.</param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <example>
+          <code>
+            var connectionStringBuilder = new ServiceBusConnectionStringBuilder(
+                "contoso.servicebus.windows.net",
+                "myQueue",
+                "RootManageSharedAccessKey",
+                "&amp;lt;sharedAccessKey&amp;gt;,
+                TransportType.Amqp
+            );
+            </code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Authentication">
@@ -172,7 +225,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder+AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Enables Azure Active Directory Managed Identity authentication when set to ServiceBusConnectionStringBuilder.AuthenticationType.ManagedIdentity
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,9 +247,12 @@
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Maximum duration after which an idle connection is closed.A connection is considered
+            idle if it receives no traffic.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to null.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Endpoint">
@@ -212,9 +270,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Fully qualified domain name of the endpoint.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <code>this.Endpoint = contoso.servicebus.windows.net</code>
+        </example>
+        <exception cref="T:System.ArgumentException">Throws when endpoint is not fully qualified endpoint.</exception>
+        <exception cref="T:System.UriFormatException">Throws when the hostname cannot be parsed</exception>
       </Docs>
     </Member>
     <Member MemberName="EntityPath">
@@ -232,7 +297,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Get the entity path value from the connection string
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -253,8 +320,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an interoperable connection string that can be used to connect to the given ServiceBus Entity
+            </summary>
+        <returns>Entity connection string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +343,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an interoperable connection string that can be used to connect to ServiceBus Namespace
+            </summary>
+        <returns>Namespace connection string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,9 +365,11 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Duration after which individual operations will timeout.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Defaults to 1 minute.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SasKey">
@@ -314,8 +387,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Get the shared access policy key value from the connection string
+            </summary>
+        <value>Shared Access Signature key</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +409,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Get the shared access policy owner name from the connection string
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,8 +431,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Get the shared access signature token from the connection string
+            </summary>
+        <value>Shared Access Signature token</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,8 +454,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an interoperable connection string that can be used to connect to ServiceBus Namespace
+            </summary>
+        <returns>The connection string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,7 +476,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Get the transport type from the connection string
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

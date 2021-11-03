@@ -1,0 +1,321 @@
+<Type Name="VirtualClustersOperations" FullName="Azure.ResourceManager.Sql.VirtualClustersOperations">
+  <TypeSignature Language="C#" Value="public class VirtualClustersOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualClustersOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.VirtualClustersOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualClustersOperations" />
+  <TypeSignature Language="F#" Value="type VirtualClustersOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The VirtualClusters service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected VirtualClustersOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of VirtualClustersOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt; Get (string resourceGroupName, string virtualClusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.VirtualCluster&gt; Get(string resourceGroupName, string virtualClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.Get(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, virtualClusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of VirtualCluster)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&#xA;override this.Get : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;" Usage="virtualClustersOperations.Get (resourceGroupName, virtualClusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="virtualClusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a virtual cluster. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&gt; GetAsync (string resourceGroupName, string virtualClusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&gt; GetAsync(string resourceGroupName, string virtualClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, virtualClusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of VirtualCluster))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&gt;&#xA;override this.GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&gt;" Usage="virtualClustersOperations.GetAsync (resourceGroupName, virtualClusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="virtualClusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a virtual cluster. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt; List (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.VirtualCluster&gt; List(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.List(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function List (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of VirtualCluster)" />
+      <MemberSignature Language="F#" Value="abstract member List : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&#xA;override this.List : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;" Usage="virtualClustersOperations.List cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of all virtualClusters in the subscription. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt; ListAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.VirtualCluster&gt; ListAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.ListAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of VirtualCluster)" />
+      <MemberSignature Language="F#" Value="abstract member ListAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&#xA;override this.ListAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;" Usage="virtualClustersOperations.ListAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of all virtualClusters in the subscription. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByResourceGroup">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt; ListByResourceGroup (string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.VirtualCluster&gt; ListByResourceGroup(string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.ListByResourceGroup(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByResourceGroup (resourceGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of VirtualCluster)" />
+      <MemberSignature Language="F#" Value="abstract member ListByResourceGroup : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&#xA;override this.ListByResourceGroup : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;" Usage="virtualClustersOperations.ListByResourceGroup (resourceGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of virtual clusters in a resource group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByResourceGroupAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt; ListByResourceGroupAsync (string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.VirtualCluster&gt; ListByResourceGroupAsync(string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.ListByResourceGroupAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByResourceGroupAsync (resourceGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of VirtualCluster)" />
+      <MemberSignature Language="F#" Value="abstract member ListByResourceGroupAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;&#xA;override this.ListByResourceGroupAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;" Usage="virtualClustersOperations.ListByResourceGroupAsync (resourceGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.VirtualCluster&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a list of virtual clusters in a resource group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.VirtualClustersDeleteOperation StartDelete (string resourceGroupName, string virtualClusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.VirtualClustersDeleteOperation StartDelete(string resourceGroupName, string virtualClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.StartDelete(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, virtualClusterName As String, Optional cancellationToken As CancellationToken = Nothing) As VirtualClustersDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.VirtualClustersDeleteOperation&#xA;override this.StartDelete : string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.VirtualClustersDeleteOperation" Usage="virtualClustersOperations.StartDelete (resourceGroupName, virtualClusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.VirtualClustersDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="virtualClusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a virtual cluster. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="virtualClusterName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string virtualClusterName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.VirtualClustersDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string virtualClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.StartDeleteAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, virtualClusterName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualClustersDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersDeleteOperation&gt;" Usage="virtualClustersOperations.StartDeleteAsync (resourceGroupName, virtualClusterName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="virtualClusterName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a virtual cluster. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="virtualClusterName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.VirtualClustersUpdateOperation StartUpdate (string resourceGroupName, string virtualClusterName, Azure.ResourceManager.Sql.Models.VirtualClusterUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.VirtualClustersUpdateOperation StartUpdate(string resourceGroupName, string virtualClusterName, class Azure.ResourceManager.Sql.Models.VirtualClusterUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.StartUpdate(System.String,System.String,Azure.ResourceManager.Sql.Models.VirtualClusterUpdate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdate (resourceGroupName As String, virtualClusterName As String, parameters As VirtualClusterUpdate, Optional cancellationToken As CancellationToken = Nothing) As VirtualClustersUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdate : string * string * Azure.ResourceManager.Sql.Models.VirtualClusterUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.VirtualClustersUpdateOperation&#xA;override this.StartUpdate : string * string * Azure.ResourceManager.Sql.Models.VirtualClusterUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.VirtualClustersUpdateOperation" Usage="virtualClustersOperations.StartUpdate (resourceGroupName, virtualClusterName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.VirtualClustersUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="virtualClusterName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.VirtualClusterUpdate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="parameters"> The requested managed instance resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a virtual cluster. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="virtualClusterName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersUpdateOperation&gt; StartUpdateAsync (string resourceGroupName, string virtualClusterName, Azure.ResourceManager.Sql.Models.VirtualClusterUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.VirtualClustersUpdateOperation&gt; StartUpdateAsync(string resourceGroupName, string virtualClusterName, class Azure.ResourceManager.Sql.Models.VirtualClusterUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClustersOperations.StartUpdateAsync(System.String,System.String,Azure.ResourceManager.Sql.Models.VirtualClusterUpdate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartUpdateAsync (resourceGroupName As String, virtualClusterName As String, parameters As VirtualClusterUpdate, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualClustersUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.VirtualClusterUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersUpdateOperation&gt;&#xA;override this.StartUpdateAsync : string * string * Azure.ResourceManager.Sql.Models.VirtualClusterUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersUpdateOperation&gt;" Usage="virtualClustersOperations.StartUpdateAsync (resourceGroupName, virtualClusterName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.VirtualClustersUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="virtualClusterName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.VirtualClusterUpdate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="parameters"> The requested managed instance resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Updates a virtual cluster. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="virtualClusterName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
