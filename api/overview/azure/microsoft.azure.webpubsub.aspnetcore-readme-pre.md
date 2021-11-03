@@ -1,6 +1,6 @@
 ---
-title: Azure Web PubSub service client library for .NET
-keywords: Azure, dotnet, SDK, API, Azure.Messaging.WebPubSub, webpubsub
+title: Azure Web PubSub service middleware client library for .NET
+keywords: Azure, dotnet, SDK, API, Microsoft.Azure.WebPubSub.AspNetCore, webpubsub
 author: maggiepint
 ms.author: magpint
 ms.date: 11/03/2021
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.service: webpubsub
 ---
 
-# Azure Web PubSub service client library for .NET - Version 1.0.0-alpha.20211103.1 
+# Azure Web PubSub service middleware client library for .NET - Version 1.0.0-alpha.20211103.1 
 
 
 [Azure Web PubSub Service](https://aka.ms/awps/doc) is a service that enables you to build real-time messaging web applications using WebSockets and the publish-subscribe pattern. Any platform supporting WebSocket APIs can connect to the service easily, e.g. web pages, mobile applications, edge devices, etc. The service manages the WebSocket connections for you and allows up to 100K **concurrent** connections. It provides powerful APIs for you to manage these clients and deliver real-time messages.
@@ -20,17 +20,15 @@ Any scenario that requires real-time publish-subscribe messaging between server 
 
 This library can be used to do the following actions. Details about the terms used here are described in [Key concepts](#key-concepts) section.
 
-- Send messages to hubs and groups. 
-- Send messages to particular users and connections.
-- Organize users and connections into groups.
-- Close connections
-- Grant, revoke, and check permissions for an existing connection
+- Parse upstream request under CloudNative CloudEvents
+- Add validation options for upstream request
+- API to add user defined functionality to handle different upstream events
 
-[Source code](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/webpubsub/Azure.Messaging.WebPubSub/src) |
-[Package](https://www.nuget.org/packages/Azure.Messaging.WebPubSub) |
+[Source code](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/webpubsub/Microsoft.Azure.WebPubSub.AspNetCore/src) |
+Package |
 [API reference documentation](https://aka.ms/awps/sdk/csharp) |
 [Product documentation](https://aka.ms/awps/doc) |
-[Samples][samples_ref]
+[Samples][sample_ref] |
 
 ## Getting started
 
@@ -38,8 +36,8 @@ This library can be used to do the following actions. Details about the terms us
 
 Install the client library from [NuGet](https://www.nuget.org/):
 
-```dotnetcli
-dotnet add package Azure.Messaging.WebPubSub --prerelease
+```PowerShell
+dotnet add package Microsoft.Azure.WebPubSub.AspNetCore --prerelease
 ```
 
 ### Prerequisites
@@ -59,57 +57,47 @@ var serviceClient = new WebPubSubServiceClient(new Uri(endpoint), "some_hub", ne
 
 ## Key concepts
 
-### Connection
-
-Connections, represented by a connection id, represent an individual websocket connection to the Web PubSub service. Connection id is always unique.
-
-### Hub
-
-Hub is a logical concept for a set of connections. Connections are always connected to a specific hub. Messages that are broadcast to the hub are dispatched to all connections to that hub. Hub can be used for different applications, different applications can share one Azure Web PubSub service by using different hub names.
-
-### Group
-
-Group allow broadcast messages to a subset of connections to the hub. You can add and remove users and connections as needed. A client can join multiple groups, and a group can contain multiple clients.
-
-### User
-
-Connections to Web PubSub can belong to one user. A user might have multiple connections, for example when a single user is connected across multiple devices or multiple browser tabs.
-
-### Message
-
-Using this library, you can send messages to the client connections. A message can either be string text, JSON or binary payload.
+For information about general Web PubSub concepts [Concepts in Azure Web PubSub](https://docs.microsoft.com/azure/azure-web-pubsub/key-concepts)
 
 ## Examples
 
-### Broadcast a text message to all clients
+### Add Web PubSub service with options
 
-```C# Snippet:WebPubSubHelloWorld
-var serviceClient = new WebPubSubServiceClient(new Uri(endpoint), "some_hub", new AzureKeyCredential(key));
-
-serviceClient.SendToAll("Hello World!");
+```C#
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddWebPubSub(o =>
+    {
+        o.ValidationOptions.Add("<connection-string>");
+    });
+}
 ```
 
-### Broadcast a JSON message to all clients
+### Map `WebPubSubHub` to endpoint routing.
 
-```C# Snippet:WebPubSubSendJson
-var serviceClient = new WebPubSubServiceClient(new Uri(endpoint), "some_hub", new AzureKeyCredential(key));
+The path should match the value configured in the Azure Web PubSub service `EventHandler`. For example, if placeholder is using like `/api/{event}`, then the path set in code should be `/api/{event}` as well.
 
-serviceClient.SendToAll(RequestContent.Create(
-        new
-        {
-            Foo = "Hello World!",
-            Bar = 42
-        }),
-        ContentType.ApplicationJson);
+```C#
+public void Configure(IApplicationBuilder app)
+{
+    app.UseEndpoints(endpoint =>
+    {
+        endpoint.MapWebPubSubHub<SampleHub>("/eventhander");
+    });
+}
 ```
 
-### Broadcast a binary message to all clients
+### Handle Upstream event
 
-```C# Snippet:WebPubSubSendBinary
-var serviceClient = new WebPubSubServiceClient(new Uri(endpoint), "some_hub", new AzureKeyCredential(key));
-
-Stream stream = BinaryData.FromString("Hello World!").ToStream();
-serviceClient.SendToAll(RequestContent.Create(stream), ContentType.ApplicationOctetStream);
+```C#
+public override ValueTask<WebPubSubEventResponse> OnConnectAsync(ConnectEventRequest request, CancellationToken cancellationToken)
+{
+    var response = new ConnectEventResponse
+    {
+        UserId = request.ConnectionContext.UserId
+    };
+    return new ValueTask<WebPubSubEventResponse>(response);
+}
 ```
 
 ## Troubleshooting
@@ -139,5 +127,5 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsdk%2Ftemplate%2FAzure.Template%2FREADME.png)
 
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
-[samples_ref]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/webpubsub/Azure.Messaging.WebPubSub/tests/Samples/
+[sample_ref]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/webpubsub/Microsoft.Azure.WebPubSub.AspNetCore/tests/Samples/
 
