@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.Storage.Blobs",
+  "Version": "12.11.0-alpha.20211104.1",
+  "DevVersion": "12.11.0-alpha.20211104.1",
+  "DirectoryPath": "sdk/storage/Azure.Storage.Blobs",
+  "ServiceDirectory": "storage",
+  "ReadMePath": "sdk/storage/Azure.Storage.Blobs/README.md",
+  "ChangeLogPath": "sdk/storage/Azure.Storage.Blobs/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.Storage.Blobs",
+  "ReleaseStatus": "Unreleased"
+}
