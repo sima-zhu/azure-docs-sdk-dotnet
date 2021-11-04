@@ -12,7 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies the type of entities the namespace can contain.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Supported only for backward compatibility.
+            Namespace can contain mixture of messaging entities and notification hubs. 
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Others">
@@ -51,7 +56,9 @@
       </ReturnValue>
       <MemberValue>99</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Other type of resource.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceBus">
@@ -70,7 +77,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Namespace contains service bus entities (queues, topics)
+            </summary>
       </Docs>
     </Member>
   </Members>

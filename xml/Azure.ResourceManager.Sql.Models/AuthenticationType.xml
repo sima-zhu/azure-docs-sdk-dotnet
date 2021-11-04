@@ -1,0 +1,58 @@
+<Type Name="AuthenticationType" FullName="Azure.ResourceManager.Sql.Models.AuthenticationType">
+  <TypeSignature Language="C#" Value="public enum AuthenticationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.AuthenticationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationType" />
+  <TypeSignature Language="F#" Value="type AuthenticationType = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary> The authentication type. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ADPassword">
+      <MemberSignature Language="C#" Value="ADPassword" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.AuthenticationType ADPassword = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.AuthenticationType.ADPassword" />
+      <MemberSignature Language="VB.NET" Value="ADPassword" />
+      <MemberSignature Language="F#" Value="ADPassword = 1" Usage="Azure.ResourceManager.Sql.Models.AuthenticationType.ADPassword" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.AuthenticationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> ADPassword. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SQL">
+      <MemberSignature Language="C#" Value="SQL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.AuthenticationType SQL = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.AuthenticationType.SQL" />
+      <MemberSignature Language="VB.NET" Value="SQL" />
+      <MemberSignature Language="F#" Value="SQL = 0" Usage="Azure.ResourceManager.Sql.Models.AuthenticationType.SQL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.AuthenticationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary> SQL. </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

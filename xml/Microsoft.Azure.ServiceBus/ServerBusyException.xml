@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The exception that is thrown when a server is busy.  Callers should wait a while and retry the operation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

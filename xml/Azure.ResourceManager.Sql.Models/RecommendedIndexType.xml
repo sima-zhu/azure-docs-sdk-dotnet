@@ -1,0 +1,96 @@
+<Type Name="RecommendedIndexType" FullName="Azure.ResourceManager.Sql.Models.RecommendedIndexType">
+  <TypeSignature Language="C#" Value="public enum RecommendedIndexType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecommendedIndexType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.RecommendedIndexType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecommendedIndexType" />
+  <TypeSignature Language="F#" Value="type RecommendedIndexType = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary> The type of index (CLUSTERED, NONCLUSTERED, COLUMNSTORE, CLUSTERED COLUMNSTORE). </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clustered">
+      <MemberSignature Language="C#" Value="Clustered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexType Clustered = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexType.Clustered" />
+      <MemberSignature Language="VB.NET" Value="Clustered" />
+      <MemberSignature Language="F#" Value="Clustered = 0" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexType.Clustered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary> CLUSTERED. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusteredColumnstore">
+      <MemberSignature Language="C#" Value="ClusteredColumnstore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexType ClusteredColumnstore = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexType.ClusteredColumnstore" />
+      <MemberSignature Language="VB.NET" Value="ClusteredColumnstore" />
+      <MemberSignature Language="F#" Value="ClusteredColumnstore = 3" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexType.ClusteredColumnstore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary> CLUSTERED COLUMNSTORE. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Columnstore">
+      <MemberSignature Language="C#" Value="Columnstore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexType Columnstore = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexType.Columnstore" />
+      <MemberSignature Language="VB.NET" Value="Columnstore" />
+      <MemberSignature Language="F#" Value="Columnstore = 2" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexType.Columnstore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary> COLUMNSTORE. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nonclustered">
+      <MemberSignature Language="C#" Value="Nonclustered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.ResourceManager.Sql.Models.RecommendedIndexType Nonclustered = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.Models.RecommendedIndexType.Nonclustered" />
+      <MemberSignature Language="VB.NET" Value="Nonclustered" />
+      <MemberSignature Language="F#" Value="Nonclustered = 1" Usage="Azure.ResourceManager.Sql.Models.RecommendedIndexType.Nonclustered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.RecommendedIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> NONCLUSTERED. </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

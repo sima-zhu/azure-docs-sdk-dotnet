@@ -10,7 +10,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides interface definition of a token provider.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +35,14 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="appliesTo">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appliesTo">The URI which the access token applies to</param>
+        <param name="timeout">The time span that specifies the timeout value for the message that gets the security token</param>
+        <summary>
+            Gets a <see cref="T:Microsoft.Azure.ServiceBus.Primitives.SecurityToken" />.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Azure.ServiceBus.Primitives.SecurityToken" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

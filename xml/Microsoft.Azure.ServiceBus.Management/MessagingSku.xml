@@ -12,7 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies the SKU/tier of the messaging namespace.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Basic namespace. Shared Resource. Only queues are available.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Others">
@@ -51,7 +55,9 @@
       </ReturnValue>
       <MemberValue>99</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Other SKUs.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Premium">
@@ -70,7 +76,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Premium namespace. Dedicated Resource. Queues and topics.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -89,7 +97,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Standard namespace. Shared Resource. Queues and topics.
+            </summary>
       </Docs>
     </Member>
   </Members>
