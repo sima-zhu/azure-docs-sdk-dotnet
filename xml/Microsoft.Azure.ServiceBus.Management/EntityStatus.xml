@@ -12,7 +12,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The status of the messaging entity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The status of the messaging entity is active.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -63,7 +63,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The status of the messaging entity is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveDisabled">
@@ -88,7 +88,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The receiving status of the messaging entity is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="SendDisabled">
@@ -113,7 +113,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The sending status of the messaging entity is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -138,7 +138,7 @@
       </ReturnValue>
       <MemberValue>99</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The status of the messaging entity is unknown.</summary>
       </Docs>
     </Member>
   </Members>

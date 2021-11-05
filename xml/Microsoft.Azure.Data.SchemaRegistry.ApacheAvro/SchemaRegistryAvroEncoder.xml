@@ -1,0 +1,179 @@
+<Type Name="SchemaRegistryAvroEncoder" FullName="Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder">
+  <TypeSignature Language="C#" Value="public class SchemaRegistryAvroEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SchemaRegistryAvroEncoder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Class SchemaRegistryAvroEncoder" />
+  <TypeSignature Language="F#" Value="type SchemaRegistryAvroEncoder = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder" /> uses the <see cref="T:Azure.Data.SchemaRegistry.SchemaRegistryClient" /> to
+            encode and decode Avro payloads.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SchemaRegistryAvroEncoder (Azure.Data.SchemaRegistry.SchemaRegistryClient client, string groupName, Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroObjectEncoderOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Data.SchemaRegistry.SchemaRegistryClient client, string groupName, class Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroObjectEncoderOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder.#ctor(Azure.Data.SchemaRegistry.SchemaRegistryClient,System.String,Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroObjectEncoderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (client As SchemaRegistryClient, groupName As String, Optional options As SchemaRegistryAvroObjectEncoderOptions = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder : Azure.Data.SchemaRegistry.SchemaRegistryClient * string * Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroObjectEncoderOptions -&gt; Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder" Usage="new Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder (client, groupName, options)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.Data.SchemaRegistry.SchemaRegistryClient" />
+        <Parameter Name="groupName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroObjectEncoderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="client">To be added.</param>
+        <param name="groupName">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>
+            Initializes new instance of <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeMessageData">
+      <MemberSignature Language="C#" Value="public object DecodeMessageData (Azure.Messaging.IMessageWithContentType message, Type returnType, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object DecodeMessageData(class Azure.Messaging.IMessageWithContentType message, class System.Type returnType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder.DecodeMessageData(Azure.Messaging.IMessageWithContentType,System.Type,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeMessageData (message As IMessageWithContentType, returnType As Type, Optional cancellationToken As CancellationToken = Nothing) As Object" />
+      <MemberSignature Language="F#" Value="member this.DecodeMessageData : Azure.Messaging.IMessageWithContentType * Type * System.Threading.CancellationToken -&gt; obj" Usage="schemaRegistryAvroEncoder.DecodeMessageData (message, returnType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Messaging.IMessageWithContentType" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message containing the data to decode.</param>
+        <param name="returnType">The type to deserialize to.</param>
+        <param name="cancellationToken">An optional <see cref="T:System.Threading.CancellationToken" /> instance to signal the request to cancel the operation.</param>
+        <summary>
+            Decodes the message data into the specified type using the schema information populated in <see cref="P:Azure.Messaging.IMessageWithContentType.ContentType" />.
+            </summary>
+        <returns>The deserialized data.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">Thrown if the content type is not in the expected format.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown if an attempt is made to decode non-Avro data.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeMessageDataAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;object&gt; DecodeMessageDataAsync (Azure.Messaging.IMessageWithContentType message, Type returnType, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask`1&lt;object&gt; DecodeMessageDataAsync(class Azure.Messaging.IMessageWithContentType message, class System.Type returnType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder.DecodeMessageDataAsync(Azure.Messaging.IMessageWithContentType,System.Type,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeMessageDataAsync (message As IMessageWithContentType, returnType As Type, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.DecodeMessageDataAsync : Azure.Messaging.IMessageWithContentType * Type * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;obj&gt;" Usage="schemaRegistryAvroEncoder.DecodeMessageDataAsync (message, returnType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Messaging.IMessageWithContentType" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message containing the data to decode.</param>
+        <param name="returnType">The type to deserialize to.</param>
+        <param name="cancellationToken">An optional <see cref="T:System.Threading.CancellationToken" /> instance to signal the request to cancel the operation.</param>
+        <summary>
+            Decodes the message data into the specified type using the schema information populated in <see cref="P:Azure.Messaging.IMessageWithContentType.ContentType" />.
+            </summary>
+        <returns>The deserialized data.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">Thrown if the content type is not in the expected format.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown if an attempt is made to decode non-Avro data.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeMessageData">
+      <MemberSignature Language="C#" Value="public void EncodeMessageData (Azure.Messaging.IMessageWithContentType message, object data, Type inputType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EncodeMessageData(class Azure.Messaging.IMessageWithContentType message, object data, class System.Type inputType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder.EncodeMessageData(Azure.Messaging.IMessageWithContentType,System.Object,System.Type,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EncodeMessageData (message As IMessageWithContentType, data As Object, Optional inputType As Type = Nothing, Optional cancellationToken As CancellationToken = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.EncodeMessageData : Azure.Messaging.IMessageWithContentType * obj * Type * System.Threading.CancellationToken -&gt; unit" Usage="schemaRegistryAvroEncoder.EncodeMessageData (message, data, inputType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Messaging.IMessageWithContentType" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="inputType" Type="System.Type" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to store the data into.</param>
+        <param name="data">The data to serialize to Avro and encode into the message.</param>
+        <param name="inputType">The type to use to serialize the data.</param>
+        <param name="cancellationToken">An optional <see cref="T:System.Threading.CancellationToken" /> instance to signal the request to cancel the operation.</param>
+        <summary>
+            Encodes the message data into Avro and stores it in <see cref="P:Azure.Messaging.IMessageWithContentType.Data" />. The <see cref="P:Azure.Messaging.IMessageWithContentType.ContentType" />
+            will be set to "avro/binary+schemaId" where schemaId is the ID of the schema used to encode the data.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeMessageDataAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask EncodeMessageDataAsync (Azure.Messaging.IMessageWithContentType message, object data, Type inputType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask EncodeMessageDataAsync(class Azure.Messaging.IMessageWithContentType message, object data, class System.Type inputType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroEncoder.EncodeMessageDataAsync(Azure.Messaging.IMessageWithContentType,System.Object,System.Type,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EncodeMessageDataAsync (message As IMessageWithContentType, data As Object, Optional inputType As Type = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ValueTask" />
+      <MemberSignature Language="F#" Value="member this.EncodeMessageDataAsync : Azure.Messaging.IMessageWithContentType * obj * Type * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="schemaRegistryAvroEncoder.EncodeMessageDataAsync (message, data, inputType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Data.SchemaRegistry.ApacheAvro</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Messaging.IMessageWithContentType" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="inputType" Type="System.Type" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to store the data into.</param>
+        <param name="data">The data to serialize to Avro and encode into the message.</param>
+        <param name="inputType">The type to use to serialize the data.</param>
+        <param name="cancellationToken">An optional <see cref="T:System.Threading.CancellationToken" /> instance to signal the request to cancel the operation.</param>
+        <summary>
+            Encodes the message data into Avro and stores it in <see cref="P:Azure.Messaging.IMessageWithContentType.Data" />. The <see cref="P:Azure.Messaging.IMessageWithContentType.ContentType" />
+            will be set to "avro/binary+schemaId" where schemaId is the ID of the schema used to encode the data.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

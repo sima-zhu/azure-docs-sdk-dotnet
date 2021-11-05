@@ -1,0 +1,257 @@
+<Type Name="RecommendedElasticPool" FullName="Azure.ResourceManager.Sql.Models.RecommendedElasticPool">
+  <TypeSignature Language="C#" Value="public class RecommendedElasticPool : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecommendedElasticPool extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.RecommendedElasticPool" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecommendedElasticPool&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type RecommendedElasticPool = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Represents a recommended elastic pool. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecommendedElasticPool ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of RecommendedElasticPool. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseDtuMax">
+      <MemberSignature Language="C#" Value="public double? DatabaseDtuMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; DatabaseDtuMax" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.DatabaseDtuMax" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseDtuMax As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.DatabaseDtuMax : Nullable&lt;double&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.DatabaseDtuMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The maximum DTU for the database. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseDtuMin">
+      <MemberSignature Language="C#" Value="public double? DatabaseDtuMin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; DatabaseDtuMin" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.DatabaseDtuMin" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseDtuMin As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.DatabaseDtuMin : Nullable&lt;double&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.DatabaseDtuMin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The minimum DTU for the database. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseEdition">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.ElasticPoolEdition? DatabaseEdition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.ElasticPoolEdition&gt; DatabaseEdition" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.DatabaseEdition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseEdition As Nullable(Of ElasticPoolEdition)" />
+      <MemberSignature Language="F#" Value="member this.DatabaseEdition : Nullable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolEdition&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.DatabaseEdition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.ElasticPoolEdition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The edition of the recommended elastic pool. The ElasticPoolEdition enumeration contains all the valid editions. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Databases">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.TrackedResource&gt; Databases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.Models.TrackedResource&gt; Databases" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.Databases" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Databases As IReadOnlyList(Of TrackedResource)" />
+      <MemberSignature Language="F#" Value="member this.Databases : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.TrackedResource&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.Databases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.TrackedResource&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of databases in this pool. Expanded property. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dtu">
+      <MemberSignature Language="C#" Value="public double? Dtu { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Dtu" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.Dtu" />
+      <MemberSignature Language="VB.NET" Value="Public Property Dtu As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Dtu : Nullable&lt;double&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.Dtu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The DTU for the recommended elastic pool. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxObservedDtu">
+      <MemberSignature Language="C#" Value="public double? MaxObservedDtu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxObservedDtu" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.MaxObservedDtu" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxObservedDtu As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MaxObservedDtu : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.MaxObservedDtu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets maximum observed DTU. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxObservedStorageMB">
+      <MemberSignature Language="C#" Value="public double? MaxObservedStorageMB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxObservedStorageMB" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.MaxObservedStorageMB" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxObservedStorageMB As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MaxObservedStorageMB : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.MaxObservedStorageMB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets maximum observed storage in megabytes. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Metrics">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.RecommendedElasticPoolMetric&gt; Metrics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.Models.RecommendedElasticPoolMetric&gt; Metrics" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.Metrics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metrics As IReadOnlyList(Of RecommendedElasticPoolMetric)" />
+      <MemberSignature Language="F#" Value="member this.Metrics : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.RecommendedElasticPoolMetric&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.Metrics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.RecommendedElasticPoolMetric&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of databases housed in the server. Expanded property. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObservationPeriodEnd">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ObservationPeriodEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ObservationPeriodEnd" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.ObservationPeriodEnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObservationPeriodEnd As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ObservationPeriodEnd : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.ObservationPeriodEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The observation period start (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObservationPeriodStart">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ObservationPeriodStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ObservationPeriodStart" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.ObservationPeriodStart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObservationPeriodStart As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ObservationPeriodStart : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.ObservationPeriodStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The observation period start (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageMB">
+      <MemberSignature Language="C#" Value="public double? StorageMB { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; StorageMB" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.RecommendedElasticPool.StorageMB" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageMB As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.StorageMB : Nullable&lt;double&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.RecommendedElasticPool.StorageMB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets storage size in megabytes. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

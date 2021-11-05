@@ -17,7 +17,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a description of a rule.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +35,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.RuleDescription" /> class with default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +62,10 @@
         <Parameter Name="filter" Type="Microsoft.Azure.ServiceBus.Filter" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filter">The filter expression used to match messages.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.RuleDescription" /> class with the specified filter expression.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +85,9 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.RuleDescription" /> class with the specified name.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +108,10 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filter">The filter expression used to match messages.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.ServiceBus.RuleDescription" /> class with the specified name and filter expression.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +130,10 @@
         <ReturnType>Microsoft.Azure.ServiceBus.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the action to perform if the message satisfies the filtering expression.
+            </summary>
+        <value>The action to perform if the message satisfies the filtering expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +152,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets the name of the default rule on the subscription.
+            </summary>
+        <remarks>
+            Whenever a new subscription is created, a default rule is always added.
+            The default rule is a <see cref="T:Microsoft.Azure.ServiceBus.TrueFilter" /> which will enable all messages in the topic to reach subscription.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -210,9 +227,12 @@
         <ReturnType>Microsoft.Azure.ServiceBus.Filter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the filter expression used to match messages.
+            </summary>
+        <value>The filter expression used to match messages.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">null (Nothing in Visual Basic) is assigned.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -251,9 +271,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the name of the rule.
+            </summary>
+        <value>Returns a <see cref="T:System.String" /> Representing the name of the rule.</value>
+        <remarks>Max allowed length of rule name is 50 chars.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">

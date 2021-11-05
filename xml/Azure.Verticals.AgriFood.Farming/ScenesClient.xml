@@ -55,102 +55,210 @@
         <param name="options"> The options for configuring the client. </param>
         <summary> Initializes a new instance of ScenesClient. </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpoint" /> or <paramref name="credential" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSatelliteDataIngestionJob">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response CreateSatelliteDataIngestionJob (string jobId, Azure.Core.RequestContent requestBody, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CreateSatelliteDataIngestionJob(string jobId, class Azure.Core.RequestContent requestBody, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.CreateSatelliteDataIngestionJob(System.String,Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSatelliteDataIngestionJob (jobId As String, requestBody As RequestContent, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member CreateSatelliteDataIngestionJob : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CreateSatelliteDataIngestionJob : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response" Usage="scenesClient.CreateSatelliteDataIngestionJob (jobId, requestBody, requestOptions)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Operation&lt;BinaryData&gt; CreateSatelliteDataIngestionJob (string jobId, Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation`1&lt;class System.BinaryData&gt; CreateSatelliteDataIngestionJob(string jobId, class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.CreateSatelliteDataIngestionJob(System.String,Azure.Core.RequestContent,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSatelliteDataIngestionJob (jobId As String, content As RequestContent, Optional context As RequestContext = Nothing) As Operation(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member CreateSatelliteDataIngestionJob : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; Azure.Operation&lt;BinaryData&gt;&#xA;override this.CreateSatelliteDataIngestionJob : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; Azure.Operation&lt;BinaryData&gt;" Usage="scenesClient.CreateSatelliteDataIngestionJob (jobId, content, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response</ReturnType>
+        <ReturnType>Azure.Operation&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="jobId" Type="System.String" />
-        <Parameter Name="requestBody" Type="Azure.Core.RequestContent" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="content" Type="Azure.Core.RequestContent" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="jobId"> JobId provided by user. </param>
-        <param name="requestBody"> The request body. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="content"> The content to send as the body of the request. </param>
+        <param name="context"> The request context. </param>
         <summary> Create a satellite data ingestion job. </summary>
         <returns>To be added.</returns>
         <remarks>
             Schema for <c>Request Body</c>:
-            <list type="table"><listeader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listeader><item><term>farmerId</term><term>string</term><term>Yes</term><term> Farmer ID. </term></item><item><term>boundaryId</term><term>string</term><term>Yes</term><term> The id of the boundary object for which satellite data is being fetched. </term></item><item><term>startDateTime</term><term>string (ISO 8601 Format)</term><term>Yes</term><term> Start Date. </term></item><item><term>endDateTime</term><term>string (ISO 8601 Format)</term><term>Yes</term><term> End Date. </term></item><item><term>provider</term><term>"Microsoft"</term><term /><term> Provider of satellite data. </term></item><item><term>source</term><term>"Sentinel_2_L2A"</term><term /><term> Source of satellite data. </term></item><item><term>data</term><term>SatelliteData</term><term /><term> Data Model for SatelliteIngestionJobRequest. </term></item><item><term>id</term><term>string</term><term /><term> Unique job id. </term></item><item><term>status</term><term>string</term><term /><term>
-            Status of the job.
-            
-            Possible values: 'Waiting', 'Running', 'Succeeded', 'Failed', 'Cancelled'.
-            </term></item><item><term>durationInSeconds</term><term>number</term><term /><term> Duration of the job in seconds. </term></item><item><term>message</term><term>string</term><term /><term> Status message to capture more details of the job. </term></item><item><term>createdDateTime</term><term>string (ISO 8601 Format)</term><term /><term> Job created at dateTime. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>lastActionDateTime</term><term>string (ISO 8601 Format)</term><term /><term> Job was last acted upon at dateTime. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>startTime</term><term>string (ISO 8601 Format)</term><term /><term> Job start time when available. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>endTime</term><term>string (ISO 8601 Format)</term><term /><term> Job end time when available. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>name</term><term>string</term><term /><term> Name to identify resource. </term></item><item><term>description</term><term>string</term><term /><term> Textual description of the resource. </term></item><item><term>properties</term><term>Dictionary&lt;string, AnyObject&gt;</term><term /><term>
-            A collection of key value pairs that belongs to the resource.
-            
-            Each pair must not have a key greater than 50 characters
-            
-            and must not have a value greater than 150 characters.
-            
-            Note: A maximum of 25 key value pairs can be provided for a resource and only string and numeral values are supported.
-            </term></item></list>
-            Schema for <c>SatelliteData</c>:
-            <list type="table"><listeader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listeader><item><term>imageNames</term><term>string[]</term><term /><term> List of ImageNames. </term></item><item><term>imageFormats</term><term>string[]</term><term /><term> List of ImageFormats. Available value: TIF. </term></item><item><term>imageResolutions</term><term>number[]</term><term /><term> List of ImageResolutions in meters. Available values: 10, 20, 60. </term></item></list></remarks>
+            <code>{
+              farmerId: string (required),
+              boundaryId: string (required),
+              startDateTime: string (ISO 8601 Format) (required),
+              endDateTime: string (ISO 8601 Format) (required),
+              provider: "Microsoft",
+              source: "Sentinel_2_L2A",
+              data: {
+                imageNames: [string],
+                imageFormats: [string],
+                imageResolutions: [number]
+              },
+              id: string,
+              status: string,
+              durationInSeconds: number,
+              message: string,
+              createdDateTime: string (ISO 8601 Format),
+              lastActionDateTime: string (ISO 8601 Format),
+              startTime: string (ISO 8601 Format),
+              endTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              properties: Dictionary&lt;string, AnyObject&gt;
+            }
+            </code>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              boundaryId: string,
+              startDateTime: string (ISO 8601 Format),
+              endDateTime: string (ISO 8601 Format),
+              provider: "Microsoft",
+              source: "Sentinel_2_L2A",
+              data: {
+                imageNames: [string],
+                imageFormats: [string],
+                imageResolutions: [number]
+              },
+              id: string,
+              status: string,
+              durationInSeconds: number,
+              message: string,
+              createdDateTime: string (ISO 8601 Format),
+              lastActionDateTime: string (ISO 8601 Format),
+              startTime: string (ISO 8601 Format),
+              endTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              properties: Dictionary&lt;string, AnyObject&gt;
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSatelliteDataIngestionJobAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateSatelliteDataIngestionJobAsync (string jobId, Azure.Core.RequestContent requestBody, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CreateSatelliteDataIngestionJobAsync(string jobId, class Azure.Core.RequestContent requestBody, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.CreateSatelliteDataIngestionJobAsync(System.String,Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSatelliteDataIngestionJobAsync (jobId As String, requestBody As RequestContent, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member CreateSatelliteDataIngestionJobAsync : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CreateSatelliteDataIngestionJobAsync : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="scenesClient.CreateSatelliteDataIngestionJobAsync (jobId, requestBody, requestOptions)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&lt;BinaryData&gt;&gt; CreateSatelliteDataIngestionJobAsync (string jobId, Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation`1&lt;class System.BinaryData&gt;&gt; CreateSatelliteDataIngestionJobAsync(string jobId, class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.CreateSatelliteDataIngestionJobAsync(System.String,Azure.Core.RequestContent,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSatelliteDataIngestionJobAsync (jobId As String, content As RequestContent, Optional context As RequestContext = Nothing) As Task(Of Operation(Of BinaryData))" />
+      <MemberSignature Language="F#" Value="abstract member CreateSatelliteDataIngestionJobAsync : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&lt;BinaryData&gt;&gt;&#xA;override this.CreateSatelliteDataIngestionJobAsync : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&lt;BinaryData&gt;&gt;" Usage="scenesClient.CreateSatelliteDataIngestionJobAsync (jobId, content, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Operation&lt;System.BinaryData&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="jobId" Type="System.String" />
-        <Parameter Name="requestBody" Type="Azure.Core.RequestContent" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="content" Type="Azure.Core.RequestContent" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="jobId"> JobId provided by user. </param>
-        <param name="requestBody"> The request body. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="content"> The content to send as the body of the request. </param>
+        <param name="context"> The request context. </param>
         <summary> Create a satellite data ingestion job. </summary>
         <returns>To be added.</returns>
         <remarks>
             Schema for <c>Request Body</c>:
-            <list type="table"><listeader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listeader><item><term>farmerId</term><term>string</term><term>Yes</term><term> Farmer ID. </term></item><item><term>boundaryId</term><term>string</term><term>Yes</term><term> The id of the boundary object for which satellite data is being fetched. </term></item><item><term>startDateTime</term><term>string (ISO 8601 Format)</term><term>Yes</term><term> Start Date. </term></item><item><term>endDateTime</term><term>string (ISO 8601 Format)</term><term>Yes</term><term> End Date. </term></item><item><term>provider</term><term>"Microsoft"</term><term /><term> Provider of satellite data. </term></item><item><term>source</term><term>"Sentinel_2_L2A"</term><term /><term> Source of satellite data. </term></item><item><term>data</term><term>SatelliteData</term><term /><term> Data Model for SatelliteIngestionJobRequest. </term></item><item><term>id</term><term>string</term><term /><term> Unique job id. </term></item><item><term>status</term><term>string</term><term /><term>
-            Status of the job.
-            
-            Possible values: 'Waiting', 'Running', 'Succeeded', 'Failed', 'Cancelled'.
-            </term></item><item><term>durationInSeconds</term><term>number</term><term /><term> Duration of the job in seconds. </term></item><item><term>message</term><term>string</term><term /><term> Status message to capture more details of the job. </term></item><item><term>createdDateTime</term><term>string (ISO 8601 Format)</term><term /><term> Job created at dateTime. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>lastActionDateTime</term><term>string (ISO 8601 Format)</term><term /><term> Job was last acted upon at dateTime. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>startTime</term><term>string (ISO 8601 Format)</term><term /><term> Job start time when available. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>endTime</term><term>string (ISO 8601 Format)</term><term /><term> Job end time when available. Sample format: yyyy-MM-ddTHH:mm:ssZ. </term></item><item><term>name</term><term>string</term><term /><term> Name to identify resource. </term></item><item><term>description</term><term>string</term><term /><term> Textual description of the resource. </term></item><item><term>properties</term><term>Dictionary&lt;string, AnyObject&gt;</term><term /><term>
-            A collection of key value pairs that belongs to the resource.
-            
-            Each pair must not have a key greater than 50 characters
-            
-            and must not have a value greater than 150 characters.
-            
-            Note: A maximum of 25 key value pairs can be provided for a resource and only string and numeral values are supported.
-            </term></item></list>
-            Schema for <c>SatelliteData</c>:
-            <list type="table"><listeader><term>Name</term><term>Type</term><term>Required</term><term>Description</term></listeader><item><term>imageNames</term><term>string[]</term><term /><term> List of ImageNames. </term></item><item><term>imageFormats</term><term>string[]</term><term /><term> List of ImageFormats. Available value: TIF. </term></item><item><term>imageResolutions</term><term>number[]</term><term /><term> List of ImageResolutions in meters. Available values: 10, 20, 60. </term></item></list></remarks>
+            <code>{
+              farmerId: string (required),
+              boundaryId: string (required),
+              startDateTime: string (ISO 8601 Format) (required),
+              endDateTime: string (ISO 8601 Format) (required),
+              provider: "Microsoft",
+              source: "Sentinel_2_L2A",
+              data: {
+                imageNames: [string],
+                imageFormats: [string],
+                imageResolutions: [number]
+              },
+              id: string,
+              status: string,
+              durationInSeconds: number,
+              message: string,
+              createdDateTime: string (ISO 8601 Format),
+              lastActionDateTime: string (ISO 8601 Format),
+              startTime: string (ISO 8601 Format),
+              endTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              properties: Dictionary&lt;string, AnyObject&gt;
+            }
+            </code>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              boundaryId: string,
+              startDateTime: string (ISO 8601 Format),
+              endDateTime: string (ISO 8601 Format),
+              provider: "Microsoft",
+              source: "Sentinel_2_L2A",
+              data: {
+                imageNames: [string],
+                imageFormats: [string],
+                imageResolutions: [number]
+              },
+              id: string,
+              status: string,
+              durationInSeconds: number,
+              message: string,
+              createdDateTime: string (ISO 8601 Format),
+              lastActionDateTime: string (ISO 8601 Format),
+              startTime: string (ISO 8601 Format),
+              endTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              properties: Dictionary&lt;string, AnyObject&gt;
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Download">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response Download (string filePath, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Download(string filePath, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.Download(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Download (filePath As String, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member Download : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.Download : string * Azure.RequestOptions -&gt; Azure.Response" Usage="scenesClient.Download (filePath, requestOptions)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Download (string filePath, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Download(string filePath, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.Download(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Download (filePath As String, Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Download : string * Azure.RequestContext -&gt; Azure.Response&#xA;override this.Download : string * Azure.RequestContext -&gt; Azure.Response" Usage="scenesClient.Download (filePath, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -161,22 +269,39 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="filePath" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="filePath"> cloud storage path of scene file. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="context"> The request context. </param>
         <summary> Downloads and returns file stream as response for the given input filePath. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filePath" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="DownloadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DownloadAsync (string filePath, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DownloadAsync(string filePath, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.DownloadAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DownloadAsync (filePath As String, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member DownloadAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DownloadAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="scenesClient.DownloadAsync (filePath, requestOptions)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DownloadAsync (string filePath, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DownloadAsync(string filePath, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.DownloadAsync(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DownloadAsync (filePath As String, Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DownloadAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DownloadAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="scenesClient.DownloadAsync (filePath, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -187,22 +312,39 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="filePath" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="filePath"> cloud storage path of scene file. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="context"> The request context. </param>
         <summary> Downloads and returns file stream as response for the given input filePath. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filePath" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSatelliteDataIngestionJobDetails">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetSatelliteDataIngestionJobDetails (string jobId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetSatelliteDataIngestionJobDetails(string jobId, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.GetSatelliteDataIngestionJobDetails(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSatelliteDataIngestionJobDetails (jobId As String, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetSatelliteDataIngestionJobDetails : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetSatelliteDataIngestionJobDetails : string * Azure.RequestOptions -&gt; Azure.Response" Usage="scenesClient.GetSatelliteDataIngestionJobDetails (jobId, requestOptions)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetSatelliteDataIngestionJobDetails (string jobId, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetSatelliteDataIngestionJobDetails(string jobId, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.GetSatelliteDataIngestionJobDetails(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSatelliteDataIngestionJobDetails (jobId As String, Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetSatelliteDataIngestionJobDetails : string * Azure.RequestContext -&gt; Azure.Response&#xA;override this.GetSatelliteDataIngestionJobDetails : string * Azure.RequestContext -&gt; Azure.Response" Usage="scenesClient.GetSatelliteDataIngestionJobDetails (jobId, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -213,22 +355,65 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="jobId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="jobId"> ID of the job. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="context"> The request context. </param>
         <summary> Get a satellite data ingestion job. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              boundaryId: string,
+              startDateTime: string (ISO 8601 Format),
+              endDateTime: string (ISO 8601 Format),
+              provider: "Microsoft",
+              source: "Sentinel_2_L2A",
+              data: {
+                imageNames: [string],
+                imageFormats: [string],
+                imageResolutions: [number]
+              },
+              id: string,
+              status: string,
+              durationInSeconds: number,
+              message: string,
+              createdDateTime: string (ISO 8601 Format),
+              lastActionDateTime: string (ISO 8601 Format),
+              startTime: string (ISO 8601 Format),
+              endTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              properties: Dictionary&lt;string, AnyObject&gt;
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSatelliteDataIngestionJobDetailsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetSatelliteDataIngestionJobDetailsAsync (string jobId, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetSatelliteDataIngestionJobDetailsAsync(string jobId, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.GetSatelliteDataIngestionJobDetailsAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSatelliteDataIngestionJobDetailsAsync (jobId As String, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetSatelliteDataIngestionJobDetailsAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetSatelliteDataIngestionJobDetailsAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="scenesClient.GetSatelliteDataIngestionJobDetailsAsync (jobId, requestOptions)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetSatelliteDataIngestionJobDetailsAsync (string jobId, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetSatelliteDataIngestionJobDetailsAsync(string jobId, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.GetSatelliteDataIngestionJobDetailsAsync(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSatelliteDataIngestionJobDetailsAsync (jobId As String, Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetSatelliteDataIngestionJobDetailsAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetSatelliteDataIngestionJobDetailsAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="scenesClient.GetSatelliteDataIngestionJobDetailsAsync (jobId, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
@@ -239,29 +424,72 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="jobId" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="jobId"> ID of the job. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="context"> The request context. </param>
         <summary> Get a satellite data ingestion job. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              farmerId: string,
+              boundaryId: string,
+              startDateTime: string (ISO 8601 Format),
+              endDateTime: string (ISO 8601 Format),
+              provider: "Microsoft",
+              source: "Sentinel_2_L2A",
+              data: {
+                imageNames: [string],
+                imageFormats: [string],
+                imageResolutions: [number]
+              },
+              id: string,
+              status: string,
+              durationInSeconds: number,
+              message: string,
+              createdDateTime: string (ISO 8601 Format),
+              lastActionDateTime: string (ISO 8601 Format),
+              startTime: string (ISO 8601 Format),
+              endTime: string (ISO 8601 Format),
+              name: string,
+              description: string,
+              properties: Dictionary&lt;string, AnyObject&gt;
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="List">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response List (string provider, string farmerId, string boundaryId, string source = default, DateTimeOffset? startDateTime = default, DateTimeOffset? endDateTime = default, double? maxCloudCoveragePercentage = default, double? maxDarkPixelCoveragePercentage = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, System.Collections.Generic.IEnumerable&lt;double&gt; imageResolutions = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageFormats = default, int? maxPageSize = default, string skipToken = default, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response List(string provider, string farmerId, string boundaryId, string source, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime, valuetype System.Nullable`1&lt;float64&gt; maxCloudCoveragePercentage, valuetype System.Nullable`1&lt;float64&gt; maxDarkPixelCoveragePercentage, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, class System.Collections.Generic.IEnumerable`1&lt;float64&gt; imageResolutions, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageFormats, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.List(System.String,System.String,System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function List (provider As String, farmerId As String, boundaryId As String, Optional source As String = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCloudCoveragePercentage As Nullable(Of Double) = Nothing, Optional maxDarkPixelCoveragePercentage As Nullable(Of Double) = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional imageResolutions As IEnumerable(Of Double) = Nothing, Optional imageFormats As IEnumerable(Of String) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional requestOptions As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member List : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.List : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; Azure.Response" Usage="scenesClient.List (provider, farmerId, boundaryId, source, startDateTime, endDateTime, maxCloudCoveragePercentage, maxDarkPixelCoveragePercentage, imageNames, imageResolutions, imageFormats, maxPageSize, skipToken, requestOptions)" />
+    <Member MemberName="GetScenes">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetScenes (string provider, string farmerId, string boundaryId, string source = default, DateTimeOffset? startDateTime = default, DateTimeOffset? endDateTime = default, double? maxCloudCoveragePercentage = default, double? maxDarkPixelCoveragePercentage = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, System.Collections.Generic.IEnumerable&lt;double&gt; imageResolutions = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageFormats = default, int? maxPageSize = default, string skipToken = default, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetScenes(string provider, string farmerId, string boundaryId, string source, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime, valuetype System.Nullable`1&lt;float64&gt; maxCloudCoveragePercentage, valuetype System.Nullable`1&lt;float64&gt; maxDarkPixelCoveragePercentage, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, class System.Collections.Generic.IEnumerable`1&lt;float64&gt; imageResolutions, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageFormats, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.GetScenes(System.String,System.String,System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScenes (provider As String, farmerId As String, boundaryId As String, Optional source As String = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCloudCoveragePercentage As Nullable(Of Double) = Nothing, Optional maxDarkPixelCoveragePercentage As Nullable(Of Double) = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional imageResolutions As IEnumerable(Of Double) = Nothing, Optional imageFormats As IEnumerable(Of String) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional context As RequestContext = Nothing) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetScenes : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestContext -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetScenes : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestContext -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="scenesClient.GetScenes (provider, farmerId, boundaryId, source, startDateTime, endDateTime, maxCloudCoveragePercentage, maxDarkPixelCoveragePercentage, imageNames, imageResolutions, imageFormats, maxPageSize, skipToken, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response</ReturnType>
+        <ReturnType>Azure.Pageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="provider" Type="System.String" />
@@ -277,7 +505,7 @@
         <Parameter Name="imageFormats" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="maxPageSize" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="skipToken" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="provider"> Provider name of scene data. </param>
@@ -293,29 +521,74 @@
         <param name="imageFormats"> List of image formats to be filtered. </param>
         <param name="maxPageSize">
             Maximum number of items needed (inclusive).
-            
             Minimum = 10, Maximum = 1000, Default value = 50.
             </param>
         <param name="skipToken"> Skip token for getting next set of results. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="context"> The request context. </param>
         <summary> Returns a paginated list of scene resources. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              value: [
+                {
+                  sceneDateTime: string (ISO 8601 Format),
+                  provider: string,
+                  source: string,
+                  imageFiles: [
+                    {
+                      fileLink: string,
+                      name: string,
+                      imageFormat: "TIF",
+                      resolution: number
+                    }
+                  ],
+                  imageFormat: "TIF",
+                  cloudCoverPercentage: number,
+                  darkPixelPercentage: number,
+                  ndviMedianValue: number,
+                  boundaryId: string,
+                  farmerId: string,
+                  id: string,
+                  eTag: string
+                }
+              ],
+              $skipToken: string,
+              nextLink: string
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" />, <paramref name="farmerId" />, or <paramref name="boundaryId" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ListAsync (string provider, string farmerId, string boundaryId, string source = default, DateTimeOffset? startDateTime = default, DateTimeOffset? endDateTime = default, double? maxCloudCoveragePercentage = default, double? maxDarkPixelCoveragePercentage = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, System.Collections.Generic.IEnumerable&lt;double&gt; imageResolutions = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageFormats = default, int? maxPageSize = default, string skipToken = default, Azure.RequestOptions requestOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ListAsync(string provider, string farmerId, string boundaryId, string source, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime, valuetype System.Nullable`1&lt;float64&gt; maxCloudCoveragePercentage, valuetype System.Nullable`1&lt;float64&gt; maxDarkPixelCoveragePercentage, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, class System.Collections.Generic.IEnumerable`1&lt;float64&gt; imageResolutions, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageFormats, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestOptions requestOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.ListAsync(System.String,System.String,System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListAsync (provider As String, farmerId As String, boundaryId As String, Optional source As String = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCloudCoveragePercentage As Nullable(Of Double) = Nothing, Optional maxDarkPixelCoveragePercentage As Nullable(Of Double) = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional imageResolutions As IEnumerable(Of Double) = Nothing, Optional imageFormats As IEnumerable(Of String) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional requestOptions As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member ListAsync : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ListAsync : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="scenesClient.ListAsync (provider, farmerId, boundaryId, source, startDateTime, endDateTime, maxCloudCoveragePercentage, maxDarkPixelCoveragePercentage, imageNames, imageResolutions, imageFormats, maxPageSize, skipToken, requestOptions)" />
+    <Member MemberName="GetScenesAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetScenesAsync (string provider, string farmerId, string boundaryId, string source = default, DateTimeOffset? startDateTime = default, DateTimeOffset? endDateTime = default, double? maxCloudCoveragePercentage = default, double? maxDarkPixelCoveragePercentage = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, System.Collections.Generic.IEnumerable&lt;double&gt; imageResolutions = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageFormats = default, int? maxPageSize = default, string skipToken = default, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetScenesAsync(string provider, string farmerId, string boundaryId, string source, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime, valuetype System.Nullable`1&lt;float64&gt; maxCloudCoveragePercentage, valuetype System.Nullable`1&lt;float64&gt; maxDarkPixelCoveragePercentage, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, class System.Collections.Generic.IEnumerable`1&lt;float64&gt; imageResolutions, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageFormats, valuetype System.Nullable`1&lt;int32&gt; maxPageSize, string skipToken, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Verticals.AgriFood.Farming.ScenesClient.GetScenesAsync(System.String,System.String,System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScenesAsync (provider As String, farmerId As String, boundaryId As String, Optional source As String = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional maxCloudCoveragePercentage As Nullable(Of Double) = Nothing, Optional maxDarkPixelCoveragePercentage As Nullable(Of Double) = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional imageResolutions As IEnumerable(Of Double) = Nothing, Optional imageFormats As IEnumerable(Of String) = Nothing, Optional maxPageSize As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional context As RequestContext = Nothing) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetScenesAsync : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestContext -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetScenesAsync : string * string * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * seq&lt;string&gt; * seq&lt;double&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Azure.RequestContext -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="scenesClient.GetScenesAsync (provider, farmerId, boundaryId, source, startDateTime, endDateTime, maxCloudCoveragePercentage, maxDarkPixelCoveragePercentage, imageNames, imageResolutions, imageFormats, maxPageSize, skipToken, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="provider" Type="System.String" />
@@ -331,7 +604,7 @@
         <Parameter Name="imageFormats" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="maxPageSize" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="skipToken" Type="System.String" />
-        <Parameter Name="requestOptions" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="provider"> Provider name of scene data. </param>
@@ -347,14 +620,59 @@
         <param name="imageFormats"> List of image formats to be filtered. </param>
         <param name="maxPageSize">
             Maximum number of items needed (inclusive).
-            
             Minimum = 10, Maximum = 1000, Default value = 50.
             </param>
         <param name="skipToken"> Skip token for getting next set of results. </param>
-        <param name="requestOptions"> The request options. </param>
+        <param name="context"> The request context. </param>
         <summary> Returns a paginated list of scene resources. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Schema for <c>Response Body</c>:
+            <code>{
+              value: [
+                {
+                  sceneDateTime: string (ISO 8601 Format),
+                  provider: string,
+                  source: string,
+                  imageFiles: [
+                    {
+                      fileLink: string,
+                      name: string,
+                      imageFormat: "TIF",
+                      resolution: number
+                    }
+                  ],
+                  imageFormat: "TIF",
+                  cloudCoverPercentage: number,
+                  darkPixelPercentage: number,
+                  ndviMedianValue: number,
+                  boundaryId: string,
+                  farmerId: string,
+                  id: string,
+                  eTag: string
+                }
+              ],
+              $skipToken: string,
+              nextLink: string
+            }
+            </code>
+            Schema for <c>Response Error</c>:
+            <code>{
+              error: {
+                code: string,
+                message: string,
+                target: string,
+                details: [Error],
+                innererror: {
+                  code: string,
+                  innererror: InnerError
+                }
+              },
+              traceId: string
+            }
+            </code></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" />, <paramref name="farmerId" />, or <paramref name="boundaryId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

@@ -1,0 +1,417 @@
+<Type Name="InstanceFailoverGroupsOperations" FullName="Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations">
+  <TypeSignature Language="C#" Value="public class InstanceFailoverGroupsOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstanceFailoverGroupsOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstanceFailoverGroupsOperations" />
+  <TypeSignature Language="F#" Value="type InstanceFailoverGroupsOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The InstanceFailoverGroups service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InstanceFailoverGroupsOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of InstanceFailoverGroupsOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt; Get (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt; Get(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.Get(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of InstanceFailoverGroup)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&#xA;override this.Get : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;" Usage="instanceFailoverGroupsOperations.Get (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a failover group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&gt; GetAsync (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&gt; GetAsync(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of InstanceFailoverGroup))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&gt;&#xA;override this.GetAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&gt;" Usage="instanceFailoverGroupsOperations.GetAsync (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Gets a failover group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByLocation">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt; ListByLocation (string resourceGroupName, string locationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt; ListByLocation(string resourceGroupName, string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.ListByLocation(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByLocation (resourceGroupName As String, locationName As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of InstanceFailoverGroup)" />
+      <MemberSignature Language="F#" Value="abstract member ListByLocation : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&#xA;override this.ListByLocation : string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;" Usage="instanceFailoverGroupsOperations.ListByLocation (resourceGroupName, locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists the failover groups in a location. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByLocationAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt; ListByLocationAsync (string resourceGroupName, string locationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt; ListByLocationAsync(string resourceGroupName, string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.ListByLocationAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByLocationAsync (resourceGroupName As String, locationName As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of InstanceFailoverGroup)" />
+      <MemberSignature Language="F#" Value="abstract member ListByLocationAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;&#xA;override this.ListByLocationAsync : string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;" Usage="instanceFailoverGroupsOperations.ListByLocationAsync (resourceGroupName, locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.InstanceFailoverGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Lists the failover groups in a location. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation StartCreateOrUpdate (string resourceGroupName, string locationName, string failoverGroupName, Azure.ResourceManager.Sql.Models.InstanceFailoverGroup parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation StartCreateOrUpdate(string resourceGroupName, string locationName, string failoverGroupName, class Azure.ResourceManager.Sql.Models.InstanceFailoverGroup parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartCreateOrUpdate(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.InstanceFailoverGroup,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdate (resourceGroupName As String, locationName As String, failoverGroupName As String, parameters As InstanceFailoverGroup, Optional cancellationToken As CancellationToken = Nothing) As InstanceFailoverGroupsCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.InstanceFailoverGroup * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation&#xA;override this.StartCreateOrUpdate : string * string * string * Azure.ResourceManager.Sql.Models.InstanceFailoverGroup * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation" Usage="instanceFailoverGroupsOperations.StartCreateOrUpdate (resourceGroupName, locationName, failoverGroupName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.InstanceFailoverGroup" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="parameters"> The failover group parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a failover group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, <paramref name="failoverGroupName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync (string resourceGroupName, string locationName, string failoverGroupName, Azure.ResourceManager.Sql.Models.InstanceFailoverGroup parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation&gt; StartCreateOrUpdateAsync(string resourceGroupName, string locationName, string failoverGroupName, class Azure.ResourceManager.Sql.Models.InstanceFailoverGroup parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartCreateOrUpdateAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.InstanceFailoverGroup,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartCreateOrUpdateAsync (resourceGroupName As String, locationName As String, failoverGroupName As String, parameters As InstanceFailoverGroup, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstanceFailoverGroupsCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.InstanceFailoverGroup * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation&gt;&#xA;override this.StartCreateOrUpdateAsync : string * string * string * Azure.ResourceManager.Sql.Models.InstanceFailoverGroup * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation&gt;" Usage="instanceFailoverGroupsOperations.StartCreateOrUpdateAsync (resourceGroupName, locationName, failoverGroupName, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsCreateOrUpdateOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.InstanceFailoverGroup" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="parameters"> The failover group parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Creates or updates a failover group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, <paramref name="failoverGroupName" />, or <paramref name="parameters" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDelete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation StartDelete (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation StartDelete(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartDelete(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDelete (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As InstanceFailoverGroupsDeleteOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartDelete : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation&#xA;override this.StartDelete : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation" Usage="instanceFailoverGroupsOperations.StartDelete (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a failover group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, or <paramref name="failoverGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation&gt; StartDeleteAsync (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation&gt; StartDeleteAsync(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartDeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartDeleteAsync (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstanceFailoverGroupsDeleteOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartDeleteAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation&gt;&#xA;override this.StartDeleteAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation&gt;" Usage="instanceFailoverGroupsOperations.StartDeleteAsync (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsDeleteOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a failover group. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, or <paramref name="failoverGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailover">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation StartFailover (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation StartFailover(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartFailover(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailover (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As InstanceFailoverGroupsFailoverOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartFailover : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation&#xA;override this.StartFailover : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation" Usage="instanceFailoverGroupsOperations.StartFailover (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Fails over from the current primary managed instance to this managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, or <paramref name="failoverGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFailoverAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation&gt; StartFailoverAsync (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation&gt; StartFailoverAsync(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartFailoverAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartFailoverAsync (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstanceFailoverGroupsFailoverOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartFailoverAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation&gt;&#xA;override this.StartFailoverAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation&gt;" Usage="instanceFailoverGroupsOperations.StartFailoverAsync (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsFailoverOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Fails over from the current primary managed instance to this managed instance. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, or <paramref name="failoverGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartForceFailoverAllowDataLoss">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation StartForceFailoverAllowDataLoss (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation StartForceFailoverAllowDataLoss(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartForceFailoverAllowDataLoss(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartForceFailoverAllowDataLoss (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As InstanceFailoverGroupsForceFailoverAllowDataLossOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartForceFailoverAllowDataLoss : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation&#xA;override this.StartForceFailoverAllowDataLoss : string * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation" Usage="instanceFailoverGroupsOperations.StartForceFailoverAllowDataLoss (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Fails over from the current primary managed instance to this managed instance. This operation might result in data loss. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, or <paramref name="failoverGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartForceFailoverAllowDataLossAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation&gt; StartForceFailoverAllowDataLossAsync (string resourceGroupName, string locationName, string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation&gt; StartForceFailoverAllowDataLossAsync(string resourceGroupName, string locationName, string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.InstanceFailoverGroupsOperations.StartForceFailoverAllowDataLossAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartForceFailoverAllowDataLossAsync (resourceGroupName As String, locationName As String, failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstanceFailoverGroupsForceFailoverAllowDataLossOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartForceFailoverAllowDataLossAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation&gt;&#xA;override this.StartForceFailoverAllowDataLossAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation&gt;" Usage="instanceFailoverGroupsOperations.StartForceFailoverAllowDataLossAsync (resourceGroupName, locationName, failoverGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.InstanceFailoverGroupsForceFailoverAllowDataLossOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="failoverGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="failoverGroupName"> The name of the failover group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Fails over from the current primary managed instance to this managed instance. This operation might result in data loss. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="locationName" />, or <paramref name="failoverGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
