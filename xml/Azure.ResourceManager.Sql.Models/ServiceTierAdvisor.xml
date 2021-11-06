@@ -1,0 +1,417 @@
+<Type Name="ServiceTierAdvisor" FullName="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor">
+  <TypeSignature Language="C#" Value="public class ServiceTierAdvisor : Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceTierAdvisor extends Azure.ResourceManager.Sql.Models.ProxyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceTierAdvisor&#xA;Inherits ProxyResource" />
+  <TypeSignature Language="F#" Value="type ServiceTierAdvisor = class&#xA;    inherit ProxyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Sql.Models.ProxyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Represents a Service Tier Advisor. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceTierAdvisor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ServiceTierAdvisor. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveTimeRatio">
+      <MemberSignature Language="C#" Value="public double? ActiveTimeRatio { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; ActiveTimeRatio" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ActiveTimeRatio" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveTimeRatio As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.ActiveTimeRatio : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ActiveTimeRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The activeTimeRatio for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AvgDtu">
+      <MemberSignature Language="C#" Value="public double? AvgDtu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; AvgDtu" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.AvgDtu" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvgDtu As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.AvgDtu : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.AvgDtu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets avgDtu for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Confidence">
+      <MemberSignature Language="C#" Value="public double? Confidence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Confidence" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.Confidence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Confidence As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Confidence : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.Confidence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets confidence for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentServiceLevelObjective">
+      <MemberSignature Language="C#" Value="public string CurrentServiceLevelObjective { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentServiceLevelObjective" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.CurrentServiceLevelObjective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentServiceLevelObjective As String" />
+      <MemberSignature Language="F#" Value="member this.CurrentServiceLevelObjective : string" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.CurrentServiceLevelObjective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets currentServiceLevelObjective for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentServiceLevelObjectiveId">
+      <MemberSignature Language="C#" Value="public Guid? CurrentServiceLevelObjectiveId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; CurrentServiceLevelObjectiveId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.CurrentServiceLevelObjectiveId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentServiceLevelObjectiveId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.CurrentServiceLevelObjectiveId : Nullable&lt;Guid&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.CurrentServiceLevelObjectiveId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets currentServiceLevelObjectiveId for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseSizeBasedRecommendationServiceLevelObjective">
+      <MemberSignature Language="C#" Value="public string DatabaseSizeBasedRecommendationServiceLevelObjective { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseSizeBasedRecommendationServiceLevelObjective" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DatabaseSizeBasedRecommendationServiceLevelObjective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseSizeBasedRecommendationServiceLevelObjective As String" />
+      <MemberSignature Language="F#" Value="member this.DatabaseSizeBasedRecommendationServiceLevelObjective : string" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DatabaseSizeBasedRecommendationServiceLevelObjective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets databaseSizeBasedRecommendationServiceLevelObjective for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseSizeBasedRecommendationServiceLevelObjectiveId">
+      <MemberSignature Language="C#" Value="public Guid? DatabaseSizeBasedRecommendationServiceLevelObjectiveId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; DatabaseSizeBasedRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DatabaseSizeBasedRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseSizeBasedRecommendationServiceLevelObjectiveId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.DatabaseSizeBasedRecommendationServiceLevelObjectiveId : Nullable&lt;Guid&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DatabaseSizeBasedRecommendationServiceLevelObjectiveId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets databaseSizeBasedRecommendationServiceLevelObjectiveId for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisasterPlanBasedRecommendationServiceLevelObjective">
+      <MemberSignature Language="C#" Value="public string DisasterPlanBasedRecommendationServiceLevelObjective { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisasterPlanBasedRecommendationServiceLevelObjective" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DisasterPlanBasedRecommendationServiceLevelObjective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisasterPlanBasedRecommendationServiceLevelObjective As String" />
+      <MemberSignature Language="F#" Value="member this.DisasterPlanBasedRecommendationServiceLevelObjective : string" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DisasterPlanBasedRecommendationServiceLevelObjective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets disasterPlanBasedRecommendationServiceLevelObjective for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisasterPlanBasedRecommendationServiceLevelObjectiveId">
+      <MemberSignature Language="C#" Value="public Guid? DisasterPlanBasedRecommendationServiceLevelObjectiveId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; DisasterPlanBasedRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DisasterPlanBasedRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisasterPlanBasedRecommendationServiceLevelObjectiveId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.DisasterPlanBasedRecommendationServiceLevelObjectiveId : Nullable&lt;Guid&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.DisasterPlanBasedRecommendationServiceLevelObjectiveId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets disasterPlanBasedRecommendationServiceLevelObjectiveId for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDtu">
+      <MemberSignature Language="C#" Value="public double? MaxDtu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxDtu" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.MaxDtu" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxDtu As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MaxDtu : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.MaxDtu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets maxDtu for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxSizeInGB">
+      <MemberSignature Language="C#" Value="public double? MaxSizeInGB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxSizeInGB" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.MaxSizeInGB" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxSizeInGB As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MaxSizeInGB : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.MaxSizeInGB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets maxSizeInGB for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinDtu">
+      <MemberSignature Language="C#" Value="public double? MinDtu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MinDtu" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.MinDtu" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinDtu As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MinDtu : Nullable&lt;double&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.MinDtu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets minDtu for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObservationPeriodEnd">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ObservationPeriodEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ObservationPeriodEnd" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ObservationPeriodEnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObservationPeriodEnd As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ObservationPeriodEnd : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ObservationPeriodEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The observation period start (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObservationPeriodStart">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ObservationPeriodStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ObservationPeriodStart" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ObservationPeriodStart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObservationPeriodStart As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ObservationPeriodStart : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ObservationPeriodStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The observation period start (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverallRecommendationServiceLevelObjective">
+      <MemberSignature Language="C#" Value="public string OverallRecommendationServiceLevelObjective { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OverallRecommendationServiceLevelObjective" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.OverallRecommendationServiceLevelObjective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverallRecommendationServiceLevelObjective As String" />
+      <MemberSignature Language="F#" Value="member this.OverallRecommendationServiceLevelObjective : string" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.OverallRecommendationServiceLevelObjective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets overallRecommendationServiceLevelObjective for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverallRecommendationServiceLevelObjectiveId">
+      <MemberSignature Language="C#" Value="public Guid? OverallRecommendationServiceLevelObjectiveId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; OverallRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.OverallRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverallRecommendationServiceLevelObjectiveId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.OverallRecommendationServiceLevelObjectiveId : Nullable&lt;Guid&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.OverallRecommendationServiceLevelObjectiveId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets overallRecommendationServiceLevelObjectiveId for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceLevelObjectiveUsageMetrics">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.SloUsageMetric&gt; ServiceLevelObjectiveUsageMetrics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.Models.SloUsageMetric&gt; ServiceLevelObjectiveUsageMetrics" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ServiceLevelObjectiveUsageMetrics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceLevelObjectiveUsageMetrics As IReadOnlyList(Of SloUsageMetric)" />
+      <MemberSignature Language="F#" Value="member this.ServiceLevelObjectiveUsageMetrics : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.SloUsageMetric&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.ServiceLevelObjectiveUsageMetrics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.Models.SloUsageMetric&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets serviceLevelObjectiveUsageMetrics for the service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsageBasedRecommendationServiceLevelObjective">
+      <MemberSignature Language="C#" Value="public string UsageBasedRecommendationServiceLevelObjective { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UsageBasedRecommendationServiceLevelObjective" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.UsageBasedRecommendationServiceLevelObjective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsageBasedRecommendationServiceLevelObjective As String" />
+      <MemberSignature Language="F#" Value="member this.UsageBasedRecommendationServiceLevelObjective : string" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.UsageBasedRecommendationServiceLevelObjective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets usageBasedRecommendationServiceLevelObjective for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsageBasedRecommendationServiceLevelObjectiveId">
+      <MemberSignature Language="C#" Value="public Guid? UsageBasedRecommendationServiceLevelObjectiveId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; UsageBasedRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.UsageBasedRecommendationServiceLevelObjectiveId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsageBasedRecommendationServiceLevelObjectiveId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.UsageBasedRecommendationServiceLevelObjectiveId : Nullable&lt;Guid&gt;" Usage="Azure.ResourceManager.Sql.Models.ServiceTierAdvisor.UsageBasedRecommendationServiceLevelObjectiveId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets usageBasedRecommendationServiceLevelObjectiveId for service tier advisor. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

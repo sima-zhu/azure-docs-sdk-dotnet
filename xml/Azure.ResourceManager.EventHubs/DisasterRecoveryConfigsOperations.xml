@@ -487,6 +487,8 @@
         <summary> Gets all Alias(Disaster Recovery configurations). </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
@@ -515,6 +517,8 @@
         <summary> Gets all Alias(Disaster Recovery configurations). </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" /> or <paramref name="namespaceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListAuthorizationRules">
@@ -545,6 +549,8 @@
         <summary> Gets a list of authorization rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="alias" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListAuthorizationRulesAsync">
@@ -575,6 +581,8 @@
         <summary> Gets a list of authorization rules for a Namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="namespaceName" />, or <paramref name="alias" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ListKeys">

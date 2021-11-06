@@ -1,0 +1,105 @@
+<Type Name="TransparentDataEncryptionActivitiesOperations" FullName="Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations">
+  <TypeSignature Language="C#" Value="public class TransparentDataEncryptionActivitiesOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransparentDataEncryptionActivitiesOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransparentDataEncryptionActivitiesOperations" />
+  <TypeSignature Language="F#" Value="type TransparentDataEncryptionActivitiesOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The TransparentDataEncryptionActivities service client. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TransparentDataEncryptionActivitiesOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of TransparentDataEncryptionActivitiesOperations for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByConfiguration">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt; ListByConfiguration (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt; ListByConfiguration(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations.ListByConfiguration(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByConfiguration (resourceGroupName As String, serverName As String, databaseName As String, transparentDataEncryptionName As TransparentDataEncryptionName, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of TransparentDataEncryptionActivity)" />
+      <MemberSignature Language="F#" Value="abstract member ListByConfiguration : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt;&#xA;override this.ListByConfiguration : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt;" Usage="transparentDataEncryptionActivitiesOperations.ListByConfiguration (resourceGroupName, serverName, databaseName, transparentDataEncryptionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="transparentDataEncryptionName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database for which the transparent data encryption applies. </param>
+        <param name="transparentDataEncryptionName"> The name of the transparent data encryption configuration. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Returns a database's transparent data encryption operation result. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByConfigurationAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt; ListByConfigurationAsync (string resourceGroupName, string serverName, string databaseName, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt; ListByConfigurationAsync(string resourceGroupName, string serverName, string databaseName, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName transparentDataEncryptionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.TransparentDataEncryptionActivitiesOperations.ListByConfigurationAsync(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListByConfigurationAsync (resourceGroupName As String, serverName As String, databaseName As String, transparentDataEncryptionName As TransparentDataEncryptionName, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of TransparentDataEncryptionActivity)" />
+      <MemberSignature Language="F#" Value="abstract member ListByConfigurationAsync : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt;&#xA;override this.ListByConfigurationAsync : string * string * string * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt;" Usage="transparentDataEncryptionActivitiesOperations.ListByConfigurationAsync (resourceGroupName, serverName, databaseName, transparentDataEncryptionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="transparentDataEncryptionName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName"> The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal. </param>
+        <param name="serverName"> The name of the server. </param>
+        <param name="databaseName"> The name of the database for which the transparent data encryption applies. </param>
+        <param name="transparentDataEncryptionName"> The name of the transparent data encryption configuration. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Returns a database's transparent data encryption operation result. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupName" />, <paramref name="serverName" />, or <paramref name="databaseName" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

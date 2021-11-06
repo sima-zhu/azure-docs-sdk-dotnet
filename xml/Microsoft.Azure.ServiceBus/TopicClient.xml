@@ -23,8 +23,24 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+             TopicClient can be used for all basic interactions with a Service Bus topic.
+             </summary>
+    <remarks>It uses AMQP protocol for communicating with servicebus.</remarks>
+    <example>
+             Create a new TopicClient
+             <code>
+             ITopicClient topicClient = new TopicClient(
+                 namespaceConnectionString,
+                 topicName,
+                 RetryExponential);
+             </code>
+            
+             Send a message to the topic:
+             <code>
+             byte[] data = GetData();
+             await topicClient.SendAsync(data);
+             </code></example>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,10 +59,13 @@
         <Parameter Name="retryPolicy" Type="Microsoft.Azure.ServiceBus.RetryPolicy" />
       </Parameters>
       <Docs>
-        <param name="connectionStringBuilder">To be added.</param>
-        <param name="retryPolicy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="connectionStringBuilder">
+          <see cref="T:Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" /> having namespace and topic information.</param>
+        <param name="retryPolicy">Retry policy for topic operations. Defaults to <see cref="P:Microsoft.Azure.ServiceBus.RetryPolicy.Default" /></param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.TopicClient" /> to perform operations on a topic.
+            </summary>
+        <remarks>Creates a new connection to the topic, which is opened during the first send operation.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,10 +85,11 @@
         <Parameter Name="retryPolicy" Type="Microsoft.Azure.ServiceBus.RetryPolicy" />
       </Parameters>
       <Docs>
-        <param name="serviceBusConnection">To be added.</param>
-        <param name="entityPath">To be added.</param>
-        <param name="retryPolicy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceBusConnection">Connection object to the service bus namespace.</param>
+        <param name="entityPath">Topic path.</param>
+        <param name="retryPolicy">Retry policy for topic operations. Defaults to <see cref="P:Microsoft.Azure.ServiceBus.RetryPolicy.Default" /></param>
+        <summary>
+            Creates a new instance of the Topic client on a given <see cref="P:Microsoft.Azure.ServiceBus.TopicClient.ServiceBusConnection" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,11 +110,13 @@
         <Parameter Name="retryPolicy" Type="Microsoft.Azure.ServiceBus.RetryPolicy" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <param name="entityPath">To be added.</param>
-        <param name="retryPolicy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="connectionString">Namespace connection string. Must not contain topic information.</param>
+        <param name="entityPath">Path to the topic</param>
+        <param name="retryPolicy">Retry policy for topic operations. Defaults to <see cref="P:Microsoft.Azure.ServiceBus.RetryPolicy.Default" /></param>
+        <summary>
+            Instantiates a new <see cref="T:Microsoft.Azure.ServiceBus.TopicClient" /> to perform operations on a topic.
+            </summary>
+        <remarks>Creates a new connection to the topic, which is opened during the first send operation.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,13 +138,15 @@
         <Parameter Name="retryPolicy" Type="Microsoft.Azure.ServiceBus.RetryPolicy" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="entityPath">To be added.</param>
-        <param name="tokenProvider">To be added.</param>
-        <param name="transportType">To be added.</param>
-        <param name="retryPolicy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpoint">Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</param>
+        <param name="entityPath">Topic path.</param>
+        <param name="tokenProvider">Token provider which will generate security tokens for authorization.</param>
+        <param name="transportType">Transport type.</param>
+        <param name="retryPolicy">Retry policy for topic operations. Defaults to <see cref="P:Microsoft.Azure.ServiceBus.RetryPolicy.Default" /></param>
+        <summary>
+            Creates a new instance of the Topic client using the specified endpoint, entity path, and token provider.
+            </summary>
+        <remarks>Creates a new connection to the topic, which is opened during the first send operation.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelScheduledMessageAsync">
@@ -146,8 +170,10 @@
         <Parameter Name="sequenceNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="sequenceNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sequenceNumber">The <see cref="P:Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.SequenceNumber" /> of the message to be cancelled.</param>
+        <summary>
+            Cancels a message that was scheduled.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +217,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Duration after which individual operations will timeout.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +242,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the name of the topic.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +267,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a list of currently registered plugins for this TopicClient.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,7 +296,9 @@
       </Parameters>
       <Docs>
         <param name="serviceBusPlugin">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Registers a <see cref="T:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin" /> to be used with this topic client.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,10 +324,12 @@
         <Parameter Name="scheduleEnqueueTimeUtc" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="scheduleEnqueueTimeUtc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:Microsoft.Azure.ServiceBus.Message" /> that needs to be scheduled.</param>
+        <param name="scheduleEnqueueTimeUtc">The UTC time at which the message should be available for processing.</param>
+        <summary>
+            Schedules a message to appear on Service Bus at a later time.
+            </summary>
+        <returns>The sequence number of the message that was scheduled.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +355,9 @@
       </Parameters>
       <Docs>
         <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Sends a message to Service Bus.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -346,7 +384,10 @@
       </Parameters>
       <Docs>
         <param name="messageList">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Sends a list of messages to Service Bus.
+            When called on partitioned entities, messages meant for different partitions cannot be batched together.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -369,7 +410,9 @@
         <ReturnType>Microsoft.Azure.ServiceBus.ServiceBusConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Connection object to the service bus namespace.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +435,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the name of the topic.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -418,8 +463,10 @@
         <Parameter Name="serviceBusPluginName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceBusPluginName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceBusPluginName">The name <see cref="P:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.Name" /> to be unregistered</param>
+        <summary>
+            Unregisters a <see cref="T:Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

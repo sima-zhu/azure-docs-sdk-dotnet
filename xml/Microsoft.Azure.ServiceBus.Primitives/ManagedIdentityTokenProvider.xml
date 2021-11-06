@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the Azure Active Directory token provider for Azure Managed Identity integration.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes new instance of <see cref="T:Microsoft.Azure.ServiceBus.Primitives.ManagedIdentityTokenProvider" /> class with default <see cref="T:Microsoft.Azure.Services.AppAuthentication.AzureServiceTokenProvider" /> configuration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +51,8 @@
       </Parameters>
       <Docs>
         <param name="azureServiceTokenProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes new instance of <see cref="T:Microsoft.Azure.ServiceBus.Primitives.ManagedIdentityTokenProvider" /> class with <see cref="T:Microsoft.Azure.Services.AppAuthentication.AzureServiceTokenProvider" />.</summary>
+        <remarks>Call that constructore to set <see cref="T:Microsoft.Azure.Services.AppAuthentication.AzureServiceTokenProvider" /> with required Managed Identity connection string.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTokenAsync">
@@ -72,10 +74,14 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="appliesTo">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appliesTo">The URI which the access token applies to</param>
+        <param name="timeout">The time span that specifies the timeout value for the message that gets the security token</param>
+        <summary>
+            Gets a <see cref="T:Microsoft.Azure.ServiceBus.Primitives.SecurityToken" /> for the given audience and duration.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Azure.ServiceBus.Primitives.SecurityToken" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
