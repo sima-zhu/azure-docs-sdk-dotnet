@@ -1,0 +1,5 @@
+{
+  "Name": "EnterpriseLibrary.TransientFaultHandling",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

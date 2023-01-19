@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.Sql",
     "Microsoft.Azure.Management.Sql.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

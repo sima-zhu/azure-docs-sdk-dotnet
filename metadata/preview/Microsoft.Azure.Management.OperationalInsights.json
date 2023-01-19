@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.OperationalInsights",
     "Microsoft.Azure.Management.OperationalInsights.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

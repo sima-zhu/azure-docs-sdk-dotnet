@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.DataLake.Analytics",
     "Microsoft.Azure.Management.DataLake.Analytics.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

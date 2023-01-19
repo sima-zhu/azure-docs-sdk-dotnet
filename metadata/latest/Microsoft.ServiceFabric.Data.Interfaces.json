@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.ServiceFabric.Data.Interfaces",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.Azure.Management.ServiceFabricManagedClusters",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

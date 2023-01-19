@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.Azure.IoT.DigitalTwin.Model",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

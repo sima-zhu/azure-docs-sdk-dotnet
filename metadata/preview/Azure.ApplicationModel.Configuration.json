@@ -1,0 +1,5 @@
+{
+  "Name": "Azure.ApplicationModel.Configuration",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

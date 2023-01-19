@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.ServiceFabric.Services.Remoting",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

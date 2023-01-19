@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.PowerBIEmbedded",
     "Microsoft.Azure.Management.PowerBIEmbedded.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

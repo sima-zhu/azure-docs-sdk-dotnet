@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.Azure.Management.Sql",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

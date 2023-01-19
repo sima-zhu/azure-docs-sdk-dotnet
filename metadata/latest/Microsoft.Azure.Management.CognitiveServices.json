@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.CognitiveServices",
     "Microsoft.Azure.Management.CognitiveServices.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

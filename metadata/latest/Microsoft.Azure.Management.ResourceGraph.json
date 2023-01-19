@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.ResourceGraph",
     "Microsoft.Azure.Management.ResourceGraph.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

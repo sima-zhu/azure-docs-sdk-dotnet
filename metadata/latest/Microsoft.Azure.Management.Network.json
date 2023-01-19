@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.Network",
     "Microsoft.Azure.Management.Network.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

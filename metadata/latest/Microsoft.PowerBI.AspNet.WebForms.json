@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.PowerBI.AspNet.WebForms",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

@@ -1,0 +1,5 @@
+{
+  "Name": "Azure.Batch.FileStaging",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

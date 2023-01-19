@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.Advisor",
     "Microsoft.Azure.Management.Advisor.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

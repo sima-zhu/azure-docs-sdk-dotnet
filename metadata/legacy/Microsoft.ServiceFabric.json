@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.ServiceFabric",
+  "Version": "8.2.1692",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

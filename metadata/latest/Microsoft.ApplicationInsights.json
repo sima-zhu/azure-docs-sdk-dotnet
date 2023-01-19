@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.ApplicationInsights",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

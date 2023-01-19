@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.CognitiveServices.Search.VideoSearch",
     "Microsoft.Azure.CognitiveServices.Search.VideoSearch.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

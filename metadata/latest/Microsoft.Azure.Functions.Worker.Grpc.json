@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.Azure.Functions.Worker.Grpc",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

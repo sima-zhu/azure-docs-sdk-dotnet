@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.ServiceFabric.Actors.Wcf",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

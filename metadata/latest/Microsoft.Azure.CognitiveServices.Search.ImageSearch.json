@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.CognitiveServices.Search.ImageSearch",
     "Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

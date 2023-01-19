@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime",
     "Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

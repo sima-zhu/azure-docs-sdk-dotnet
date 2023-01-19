@@ -1,0 +1,5 @@
+{
+  "Name": "Microsoft.Azure.Mobile.Server.Authentication",
+  "Version": "",
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
+}

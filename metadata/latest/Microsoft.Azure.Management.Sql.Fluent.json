@@ -64,5 +64,6 @@
     "Microsoft.Azure.Management.Sql.Fluent.SqlVirtualNetworkRuleOperations.Definition",
     "Microsoft.Azure.Management.Sql.Fluent.SqlVirtualNetworkRuleOperations.SqlVirtualNetworkRuleActionsDefinition",
     "Microsoft.Azure.Management.Sql.Fluent.SqlVirtualNetworkRuleOperations.SqlVirtualNetworkRuleOperationsDefinition"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

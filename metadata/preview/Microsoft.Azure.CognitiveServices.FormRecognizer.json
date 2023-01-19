@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.CognitiveServices.FormRecognizer",
     "Microsoft.Azure.CognitiveServices.FormRecognizer.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

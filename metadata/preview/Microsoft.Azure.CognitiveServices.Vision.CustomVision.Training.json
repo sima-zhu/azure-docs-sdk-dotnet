@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training",
     "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

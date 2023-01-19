@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.EventGrid",
     "Microsoft.Azure.EventGrid.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

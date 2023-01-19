@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.DigitalTwins",
     "Microsoft.Azure.Management.DigitalTwins.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }

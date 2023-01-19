@@ -4,5 +4,6 @@
   "Namespaces": [
     "Microsoft.Azure.Management.Billing",
     "Microsoft.Azure.Management.Billing.Models"
-  ]
+  ],
+  "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true"
 }
